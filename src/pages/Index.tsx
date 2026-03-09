@@ -28,26 +28,26 @@ const Index = () => {
     },
   ];
 
-  const featuredProjects = [
+  const companies = [
     {
-      title: "Ministry of Defence Project",
-      location: "Singapore",
-      image: "https://www.ublim.com/wp-content/uploads/2024/08/b39d1bf4d7445c5c632d52bb79cefa55.jpeg",
+      name: "Cenviro",
+      logo: "https://www.ublim.com/wp-content/uploads/2024/08/cenviro.png",
     },
     {
-      title: "Metro Line Expansion",
-      location: "São Paulo, Brazil",
-      image: "https://images.unsplash.com/photo-1535732759880-bbd5c7265e3f?w=800&q=80",
+      name: "CIDB Malaysia",
+      logo: "https://www.ublim.com/wp-content/uploads/2024/08/cidb-malaysia.png",
     },
     {
-      title: "Green Energy Complex",
-      location: "Rio de Janeiro, Brazil",
-      image: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=800&q=80",
+      name: "Northport",
+      logo: "https://www.ublim.com/wp-content/uploads/2024/08/northport.png",
     },
     {
-      title: "Highway Modernization",
-      location: "Minas Gerais, Brazil",
-      image: "https://images.unsplash.com/photo-1545158927-2c94795a9a6c?w=800&q=80",
+      name: "FGV",
+      logo: "https://www.ublim.com/wp-content/uploads/2024/08/fgv.png",
+    },
+    {
+      name: "Malaysia Airports",
+      logo: "https://www.ublim.com/wp-content/uploads/2024/08/malaysia-airports.png",
     },
   ];
 
@@ -186,7 +186,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Featured Projects Slider */}
+      {/* Featured Companies Slider */}
       <section className="py-20 bg-[#1A4B8C]">
         <div className="container mx-auto px-4">
           <div className="mb-12">
@@ -194,7 +194,7 @@ const Index = () => {
               WE ARE TRUSTED BY
             </h2>
           </div>
-          <ImageSlider projects={featuredProjects} />
+          <ImageSlider companies={companies} />
         </div>
       </section>
 
