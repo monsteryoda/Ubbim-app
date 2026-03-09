@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Building2, Leaf, Award, HardHat, TrendingUp, Users, Phone, FileText, Shield, Cpu } from "lucide-react";
+import ImageSlider from "@/components/ImageSlider";
 
 const Index = () => {
   const stats = [
@@ -180,7 +181,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Featured Projects */}
+      {/* Featured Projects Slider */}
       <section className="py-20 bg-[#1A4B8C]">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
@@ -198,24 +199,7 @@ const Index = () => {
               </Link>
             </Button>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            {featuredProjects.map((project, index) => (
-              <Card key={index} className="overflow-hidden border-none group">
-                <div className="relative h-64 overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 className="text-xl font-bold text-white mb-1">{project.title}</h3>
-                    <p className="text-gray-300 text-sm">{project.location}</p>
-                  </div>
-                </div>
-              </Card>
-            ))}
-          </div>
+          <ImageSlider projects={featuredProjects} />
         </div>
       </section>
 
