@@ -55,11 +55,11 @@ const Index = () => {
   const certifications = [
     {
       id: "1",
-      title: "Best Infrastructure Company",
-      organization: "Brazil Construction Awards",
-      year: "2023",
-      image: "https://images.unsplash.com/photo-1589330694653-4a8b24e77543?w=800&q=80",
-      description: "Recognized for outstanding achievement in infrastructure development and project management excellence across multiple continents.",
+      title: "CIDB SCORE 3 Star Rating",
+      organization: "CIDB Malaysia",
+      year: "2022",
+      image: "/src/assets/certification-2022.png",
+      description: "Achieved 3-star rating under the CIDB SCORE evaluation system, recognizing excellent management and technical capabilities, compliance to best practices, and outstanding project management standards.",
     },
     {
       id: "2",
