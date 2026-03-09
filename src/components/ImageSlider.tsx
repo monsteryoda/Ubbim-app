@@ -41,11 +41,11 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ projects }) => {
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-2xl font-bold text-white mb-2">
+                <div className="absolute bottom-0 left-0 right-0 p-4" style={{ height: '58px' }}>
+                  <h3 className="text-xl font-bold text-white mb-1">
                     {project.title}
                   </h3>
-                  <p className="text-gray-300 flex items-center">
+                  <p className="text-gray-300 flex items-center text-sm">
                     <span className="w-2 h-2 bg-[#4ADE80] rounded-full mr-2" />
                     {project.location}
                   </p>
