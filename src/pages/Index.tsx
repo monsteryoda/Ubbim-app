@@ -184,20 +184,10 @@ const Index = () => {
       {/* Featured Projects Slider */}
       <section className="py-20 bg-[#1A4B8C]">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                WE ARE TRUSTED BY
-              </h2>
-              <p className="text-gray-300 max-w-xl">
-                Discover our most impactful infrastructure projects transforming communities.
-              </p>
-            </div>
-            <Button asChild variant="outline" className="border-white text-white hover:bg-white hover:text-[#1A4B8C] mt-4 md:mt-0">
-              <Link to="/projects" className="flex items-center gap-2">
-                View All Projects <ArrowRight className="w-4 h-4" />
-              </Link>
-            </Button>
+          <div className="mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              WE ARE TRUSTED BY
+            </h2>
           </div>
           <ImageSlider projects={featuredProjects} />
         </div>
