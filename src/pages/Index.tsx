@@ -25,11 +25,6 @@ const Index = () => {
       description: "Innovative engineering solutions for complex challenges in infrastructure.",
       icon: HardHat,
     },
-    {
-      title: "Sustainability",
-      description: "Sustainable practices integrated into every project we undertake.",
-      icon: Leaf,
-    },
   ];
 
   const featuredProjects = [
@@ -152,7 +147,7 @@ const Index = () => {
               to execution.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {services.map((service, index) => (
               <Card key={index} className="group hover:shadow-xl transition-shadow duration-300 border-none shadow-lg">
                 <CardContent className="p-8">
@@ -160,7 +155,7 @@ const Index = () => {
                     {index === 0 ? (
                       <Building2 className="w-7 h-7 text-[#1A4B8C] group-hover:text-white transition-colors duration-300" />
                     ) : (
-                      <Cpu className="w-7 h-7 text-[#1A4B8C] group-hover:text-white transition-colors duration-300" />
+                      <HardHat className="w-7 h-7 text-[#1A4B8C] group-hover:text-white transition-colors duration-300" />
                     )}
                   </div>
                   <h3 className="text-xl font-bold text-[#1A4B8C] mb-3">
