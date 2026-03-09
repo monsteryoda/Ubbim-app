@@ -58,12 +58,12 @@ const Index = () => {
   ];
 
   const clientLogos = [
-    { name: "Client 1", image: "https://via.placeholder.com/150x60?text=Client+1" },
-    { name: "Client 2", image: "https://via.placeholder.com/150x60?text=Client+2" },
-    { name: "Client 3", image: "https://via.placeholder.com/150x60?text=Client+3" },
-    { name: "Client 4", image: "https://via.placeholder.com/150x60?text=Client+4" },
-    { name: "Client 5", image: "https://via.placeholder.com/150x60?text=Client+5" },
-    { name: "Client 6", image: "https://via.placeholder.com/150x60?text=Client+6" },
+    { name: "MINDEF", image: "/src/assets/mindef-logo.png" },
+    { name: "Cenviro", image: "/src/assets/cenviro-logo.png" },
+    { name: "MINDEF", image: "/src/assets/mindef-logo.png" },
+    { name: "Cenviro", image: "/src/assets/cenviro-logo.png" },
+    { name: "MINDEF", image: "/src/assets/mindef-logo.png" },
+    { name: "Cenviro", image: "/src/assets/cenviro-logo.png" },
   ];
 
   return (
