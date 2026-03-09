@@ -8,7 +8,7 @@ import { ArrowRight, Building2, Leaf, Award, HardHat, TrendingUp, Users, Phone, 
 
 const Index = () => {
   const stats = [
-    { value: "40+", label: "Years of Experience", icon: TrendingUp },
+    { value: "20+", label: "Years of Experience", icon: TrendingUp },
     { value: "500+", label: "Projects Completed", icon: Building2 },
     { value: "8,000+", label: "Employees", icon: Users },
     { value: "15", label: "Countries", icon: Award },
