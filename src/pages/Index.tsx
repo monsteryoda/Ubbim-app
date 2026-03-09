@@ -84,12 +84,13 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-16 bg-white">
+      {/* Combined Stats, Video & About Section */}
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          {/* Stats Row */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
             {stats.map((stat, index) => (
-              <div key={index} className="text-center">
+              <div key={index} className="text-center bg-white rounded-2xl p-6 shadow-lg">
                 <stat.icon className="w-8 h-8 mx-auto mb-3 text-[#1A4B8C]" />
                 <div className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-1">
                   {stat.value}
@@ -98,13 +99,26 @@ const Index = () => {
               </div>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* About Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Video & About Combined */}
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* YouTube Video */}
+            <div className="relative">
+              <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl bg-gray-900">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  title="UBBIM Company Video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0"
+                ></iframe>
+              </div>
+            </div>
+
+            {/* About Content */}
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-6">
                 Transforming Infrastructure, Empowering Communities
@@ -123,13 +137,6 @@ const Index = () => {
                   Sustainability Report <ArrowRight className="w-4 h-4" />
                 </Link>
               </Button>
-            </div>
-            <div className="relative">
-              <img
-                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80"
-                alt="Construction site"
-                className="rounded-2xl shadow-xl w-full h-[400px] object-cover"
-              />
             </div>
           </div>
         </div>
