@@ -155,7 +155,7 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <Card key={index} className="group hover:shadow-xl transition-shadow duration-300 border-none shadow-lg">
-                <CardContent className="p-8">
+                <div className="p-8">
                   <div className="w-14 h-14 bg-[#1A4B8C]/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#1A4B8C] transition-colors duration-300">
                     <service.icon className="w-7 h-7 text-[#1A4B8C] group-hover:text-white transition-colors duration-300" />
                   </div>
@@ -169,7 +169,7 @@ const Index = () => {
                   >
                     Learn more <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>
-                </CardContent>
+                </div>
               </Card>
             ))}
           </div>
