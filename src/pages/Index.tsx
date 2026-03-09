@@ -166,7 +166,7 @@ const Index = () => {
                   <h3 className="text-xl font-bold text-[#1A4B8C] mb-3">
                     BUILT ENVIRONMENT SERVICES
                   </h3>
-                  <p className="text-gray-600 mb-4">
+                  <p className="text-gray-600 mb-4 text-justify">
                     {index === 0 
                       ? "Our Built Environment Services encompass every phase of construction and infrastructure development, from design and build to maintenance and refurbishment. We specialize in delivering high-quality, sustainable solutions that meet the unique needs of each project, ensuring safety, efficiency, and long-term value."
                       : service.description
