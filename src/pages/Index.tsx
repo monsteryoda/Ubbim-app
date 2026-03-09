@@ -159,7 +159,7 @@ const Index = () => {
                     )}
                   </div>
                   <h3 className="text-xl font-bold text-[#1A4B8C] mb-3">
-                    BUILT ENVIRONMENT SERVICES
+                    {index === 0 ? "BUILT ENVIRONMENT SERVICES" : "DIGITAL SOLUTIONS"}
                   </h3>
                   <p className="text-gray-600 mb-4 text-justify">
                     {index === 0 
