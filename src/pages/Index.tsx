@@ -4,7 +4,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Building2, Leaf, Award, HardHat, TrendingUp, Users, Phone, FileText, Shield, Cpu, Glasses } from "lucide-react";
+import { ArrowRight, Building2, Leaf, Award, HardHat, TrendingUp, Users, Phone, FileText, Shield, Cpu } from "lucide-react";
 
 const Index = () => {
   const stats = [
@@ -160,7 +160,7 @@ const Index = () => {
                     {index === 0 ? (
                       <Building2 className="w-7 h-7 text-[#1A4B8C] group-hover:text-white transition-colors duration-300" />
                     ) : (
-                      <Glasses className="w-7 h-7 text-[#1A4B8C] group-hover:text-white transition-colors duration-300" />
+                      <Cpu className="w-7 h-7 text-[#1A4B8C] group-hover:text-white transition-colors duration-300" />
                     )}
                   </div>
                   <h3 className="text-xl font-bold text-[#1A4B8C] mb-3">
