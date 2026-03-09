@@ -86,14 +86,6 @@ const Index = () => {
             <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
               From construction excellence to cutting-edge digital innovation, UBBIM delivers comprehensive services that shape the future of industries.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <Button asChild size="lg" className="bg-[#4ADE80] text-[#1A4B8C] hover:bg-[#22c55e] font-semibold">
-                <Link to="/services">Our Services</Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-[#1A4B8C]">
-                <Link to="/projects">View Projects</Link>
-              </Button>
-            </div>
           </div>
         </div>
       </section>
