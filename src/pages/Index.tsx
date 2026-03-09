@@ -66,8 +66,8 @@ const Index = () => {
         <div className="container mx-auto px-4 relative">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Building the Future with{" "}
-              <span className="text-[#4ADE80]">Sustainability</span>
+              Integrated Solutions for the{" "}
+              <span className="text-[#4ADE80]">Built Environment</span> and Beyond
             </h1>
             <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
               Ubbim is a leader in construction and infrastructure, committed to 
