@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Building2, Leaf, Award, HardHat, TrendingUp, Users, Phone, FileText, Shield, Cpu } from "lucide-react";
+import RangeSlider from "@/components/RangeSlider";
 
 const Index = () => {
   const stats = [
@@ -198,6 +199,13 @@ const Index = () => {
               </Link>
             </Button>
           </div>
+          
+          {/* Range Slider */}
+          <div className="mb-12 max-w-2xl">
+            <h3 className="text-white text-lg font-semibold mb-4">Filter Projects</h3>
+            <RangeSlider min={0} max={100} defaultValue={[20, 80]} />
+          </div>
+          
           <div className="grid md:grid-cols-3 gap-6">
             {featuredProjects.map((project, index) => (
               <Card key={index} className="overflow-hidden border-none group">
