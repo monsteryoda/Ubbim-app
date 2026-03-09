@@ -32,7 +32,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 flex items-center justify-center">
+            <div className="w-14 h-14 flex items-center justify-center">
               <img 
                 src="/logo.png" 
                 alt="Ubbim Logo" 
@@ -68,7 +68,7 @@ const Navbar = () => {
             <SheetContent side="right" className="w-[300px] bg-white">
               <div className="flex flex-col gap-4 mt-8">
                 <Link to="/" className="flex items-center gap-2 mb-4" onClick={() => setIsOpen(false)}>
-                  <div className="w-10 h-10 flex items-center justify-center">
+                  <div className="w-14 h-14 flex items-center justify-center">
                     <img 
                       src="/logo.png" 
                       alt="Ubbim Logo" 
