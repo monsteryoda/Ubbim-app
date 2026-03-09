@@ -1,26 +1,28 @@
 "use client";
 
 import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-interface Company {
-  name: string;
-  logo: string;
+interface Project {
+  title: string;
+  location: string;
+  image: string;
 }
 
 interface ImageSliderProps {
-  companies: Company[];
+  projects: Project[];
 }
 
-const ImageSlider: React.FC<ImageSliderProps> = ({ companies }) => {
+const ImageSlider: React.FC<ImageSliderProps> = ({ projects }) => {
   const [currentIndex, setCurrentIndex] = React.useState(0);
 
   const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % companies.length);
+    setCurrentIndex((prev) => (prev + 1) % projects.length);
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + companies.length) % companies.length);
+    setCurrentIndex((prev) => (prev - 1 + projects.length) % projects.length);
   };
 
   return (
@@ -30,14 +32,24 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ companies }) => {
           className="flex transition-transform duration-500 ease-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
-          {companies.map((company, index) => (
+          {projects.map((project, index) => (
             <div key={index} className="w-full flex-shrink-0">
-              <div className="relative aspect-video rounded-2xl overflow-hidden bg-white">
+              <div className="relative aspect-video rounded-2xl overflow-hidden">
                 <img
-                  src={company.logo}
-                  alt={company.name}
-                  className="w-full h-full object-contain p-8"
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="text-2xl font-bold text-white mb-2">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-300 flex items-center">
+                    <span className="w-2 h-2 bg-[#4ADE80] rounded-full mr-2" />
+                    {project.location}
+                  </p>
+                </div>
               </div>
             </div>
           ))}
@@ -62,7 +74,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ companies }) => {
 
       {/* Dots Indicator */}
       <div className="flex justify-center gap-2 mt-6">
-        {companies.map((_, index) => (
+        {projects.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
