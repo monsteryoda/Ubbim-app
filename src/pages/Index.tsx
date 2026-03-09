@@ -4,7 +4,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Building2, Leaf, Award, HardHat, TrendingUp, Users, Phone, FileText, Shield, Cpu } from "lucide-react";
+import { ArrowRight, Building2, Leaf, Award, HardHat, TrendingUp, Users, Phone, FileText, Shield, Cpu, Glasses } from "lucide-react";
 
 const Index = () => {
   const stats = [
@@ -157,7 +157,11 @@ const Index = () => {
               <Card key={index} className="group hover:shadow-xl transition-shadow duration-300 border-none shadow-lg">
                 <CardContent className="p-8">
                   <div className="w-14 h-14 bg-[#1A4B8C]/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#1A4B8C] transition-colors duration-300">
-                    <Cpu className="w-7 h-7 text-[#1A4B8C] group-hover:text-white transition-colors duration-300" />
+                    {index === 0 ? (
+                      <Glasses className="w-7 h-7 text-[#1A4B8C] group-hover:text-white transition-colors duration-300" />
+                    ) : (
+                      <Cpu className="w-7 h-7 text-[#1A4B8C] group-hover:text-white transition-colors duration-300" />
+                    )}
                   </div>
                   <h3 className="text-xl font-bold text-[#1A4B8C] mb-3">
                     BUILT ENVIRONMENT SERVICES
