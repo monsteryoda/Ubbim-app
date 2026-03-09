@@ -37,19 +37,6 @@ const Navbar = () => {
                 src="/logo.png" 
                 alt="Ubbim Logo" 
                 className="w-full h-full object-contain"
-                onError={(e) => {
-                  // Fallback to text logo if image fails to load
-                  const target = e.target as HTMLImageElement;
-                  target.style.display = 'none';
-                  const parent = target.parentElement;
-                  if (parent) {
-                    parent.className = "w-10 h-10 bg-[#1A4B8C] rounded-lg flex items-center justify-center";
-                    const span = document.createElement('span');
-                    span.className = "text-white font-bold text-xl";
-                    span.textContent = "U";
-                    parent.appendChild(span);
-                  }
-                }}
               />
             </div>
             <span className="text-xl font-bold text-[#1A4B8C]">Ubbim</span>
@@ -87,18 +74,6 @@ const Navbar = () => {
                       src="/logo.png" 
                       alt="Ubbim Logo" 
                       className="w-full h-full object-contain"
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement;
-                        target.style.display = 'none';
-                        const parent = target.parentElement;
-                        if (parent) {
-                          parent.className = "w-10 h-10 bg-[#1A4B8C] rounded-lg flex items-center justify-center";
-                          const span = document.createElement('span');
-                          span.className = "text-white font-bold text-xl";
-                          span.textContent = "U";
-                          parent.appendChild(span);
-                        }
-                      }}
                     />
                   </div>
                   <span className="text-xl font-bold text-[#1A4B8C]">Ubbim</span>
