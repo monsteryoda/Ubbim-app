@@ -67,26 +67,6 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
                 className="w-full h-auto"
               />
             </div>
-            <div className="p-8">
-              <h2 className="text-3xl font-bold text-[#1A4B8C] mb-4">
-                {selectedCertification.title}
-              </h2>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <p className="text-sm text-gray-500 mb-1">Organization</p>
-                  <p className="font-semibold text-gray-800">{selectedCertification.organization}</p>
-                </div>
-                <div>
-                  <p className="text-sm text-gray-500 mb-1">Year Awarded</p>
-                  <p className="font-semibold text-[#4ADE80]">{selectedCertification.year}</p>
-                </div>
-              </div>
-              <div className="mt-6">
-                <p className="text-gray-600 leading-relaxed">
-                  {selectedCertification.description}
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       )}
