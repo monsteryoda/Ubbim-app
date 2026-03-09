@@ -202,7 +202,7 @@ const Index = () => {
       {/* Featured Projects Slider */}
       <section className="py-20 bg-[#1A4B8C]">
         <div className="container mx-auto px-4">
-          <div className="mb-12">
+          <div className="mb-12 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               WE ARE TRUSTED BY
             </h2>
