@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { X, Award } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 
 interface Certification {
   id: string;
@@ -40,11 +40,6 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
                 <Award className="w-12 h-12 text-[#4ADE80]" />
               </div>
             </div>
-            <CardContent className="p-6">
-              <h3 className="font-bold text-[#1A4B8C] mb-2 text-lg">{cert.title}</h3>
-              <p className="text-sm text-gray-500 mb-1">{cert.organization}</p>
-              <p className="text-sm font-semibold text-[#4ADE80]">{cert.year}</p>
-            </CardContent>
           </Card>
         ))}
       </div>
