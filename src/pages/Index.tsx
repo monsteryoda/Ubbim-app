@@ -32,17 +32,17 @@ const Index = () => {
     {
       title: "Metro Line Expansion",
       location: "São Paulo, Brazil",
-      image: "https://images.unsplash.com/photo-1545987796-200677ee1011?w=800&q=80",
+      image: "https://images.unsplash.com/photo-1535732759880-bbd5c7265e3f?w=800&q=80",
     },
     {
       title: "Green Energy Complex",
       location: "Rio de Janeiro, Brazil",
-      image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80",
+      image: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=800&q=80",
     },
     {
       title: "Highway Modernization",
       location: "Minas Gerais, Brazil",
-      image: "https://images.unsplash.com/photo-1590644365607-1c5a8b57d0aa?w=800&q=80",
+      image: "https://images.unsplash.com/photo-1545158927-2c94795a9a6c?w=800&q=80",
     },
   ];
 
