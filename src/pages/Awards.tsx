@@ -3,7 +3,7 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Award, Trophy, Star, Medal, Certificate, Globe, Leaf, Shield } from "lucide-react";
+import { Award, Trophy, Star, Medal, FileCheck, Globe, Leaf, Shield } from "lucide-react";
 
 const Awards = () => {
   const recentAwards = [
@@ -125,7 +125,7 @@ const Awards = () => {
             {certifications.map((cert, index) => (
               <Card key={index} className="border-none shadow-md text-center">
                 <CardContent className="p-6">
-                  <Certificate className="w-10 h-10 mx-auto mb-4 text-[#1A4B8C]" />
+                  <FileCheck className="w-10 h-10 mx-auto mb-4 text-[#1A4B8C]" />
                   <h4 className="font-bold text-[#1A4B8C] text-sm mb-1">{cert.name}</h4>
                   <p className="text-xs text-gray-500">{cert.description}</p>
                 </CardContent>
