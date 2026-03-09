@@ -121,7 +121,7 @@ const Index = () => {
             {/* About Content */}
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-6">
-                Transforming Infrastructure, Empowering Communities
+                ABOUT US
               </h2>
               <p className="text-gray-600 mb-6 leading-relaxed">
                 For over four decades, Ubbim has been at the forefront of Brazil's 
