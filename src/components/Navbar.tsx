@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,8 +32,25 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-[#1A4B8C] rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">U</span>
+            <div className="w-10 h-10 flex items-center justify-center">
+              <img 
+                src="/logo.png" 
+                alt="Ubbim Logo" 
+                className="w-full h-full object-contain"
+                onError={(e) => {
+                  // Fallback to text logo if image fails to load
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = 'none';
+                  const parent = target.parentElement;
+                  if (parent) {
+                    parent.className = "w-10 h-10 bg-[#1A4B8C] rounded-lg flex items-center justify-center";
+                    const span = document.createElement('span');
+                    span.className = "text-white font-bold text-xl";
+                    span.textContent = "U";
+                    parent.appendChild(span);
+                  }
+                }}
+              />
             </div>
             <span className="text-xl font-bold text-[#1A4B8C]">Ubbim</span>
           </Link>
@@ -65,8 +82,24 @@ const Navbar = () => {
             <SheetContent side="right" className="w-[300px] bg-white">
               <div className="flex flex-col gap-4 mt-8">
                 <Link to="/" className="flex items-center gap-2 mb-4" onClick={() => setIsOpen(false)}>
-                  <div className="w-10 h-10 bg-[#1A4B8C] rounded-lg flex items-center justify-center">
-                    <span className="text-white font-bold text-xl">U</span>
+                  <div className="w-10 h-10 flex items-center justify-center">
+                    <img 
+                      src="/logo.png" 
+                      alt="Ubbim Logo" 
+                      className="w-full h-full object-contain"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.style.display = 'none';
+                        const parent = target.parentElement;
+                        if (parent) {
+                          parent.className = "w-10 h-10 bg-[#1A4B8C] rounded-lg flex items-center justify-center";
+                          const span = document.createElement('span');
+                          span.className = "text-white font-bold text-xl";
+                          span.textContent = "U";
+                          parent.appendChild(span);
+                        }
+                      }}
+                    />
                   </div>
                   <span className="text-xl font-bold text-[#1A4B8C]">Ubbim</span>
                 </Link>
