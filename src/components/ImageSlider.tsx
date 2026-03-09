@@ -43,18 +43,18 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ projects }) => {
       >
         {projects.map((project, index) => (
           <div key={index} className="w-full flex-shrink-0">
-            <div className="relative h-96 md:h-[500px]">
+            <div className="relative h-48 md:h-64">
               <img
                 src={project.image}
                 alt={project.title}
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
-                <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
+              <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+                <h3 className="text-xl md:text-2xl font-bold text-white mb-1">
                   {project.title}
                 </h3>
-                <p className="text-gray-300 text-base">{project.location}</p>
+                <p className="text-gray-300 text-sm">{project.location}</p>
               </div>
             </div>
           </div>
@@ -64,18 +64,18 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ projects }) => {
       {/* Navigation Arrows */}
       <button
         onClick={goToPrevious}
-        className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center text-white transition-all duration-300 hover:scale-110"
+        className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center text-white transition-all duration-300 hover:scale-110"
         aria-label="Previous slide"
       >
-        <ChevronLeft className="w-6 h-6" />
+        <ChevronLeft className="w-5 h-5" />
       </button>
 
       <button
         onClick={goToNext}
-        className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center text-white transition-all duration-300 hover:scale-110"
+        className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center text-white transition-all duration-300 hover:scale-110"
         aria-label="Next slide"
       >
-        <ChevronRight className="w-6 h-6" />
+        <ChevronRight className="w-5 h-5" />
       </button>
 
       {/* Dots Indicator */}
@@ -84,9 +84,9 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ projects }) => {
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${
               currentIndex === index 
-                ? "bg-[#4ADE80] w-8" 
+                ? "bg-[#4ADE80] w-6" 
                 : "bg-white/50 hover:bg-white/70"
             }`}
             aria-label={`Go to slide ${index + 1}`}
