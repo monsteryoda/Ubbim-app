@@ -120,9 +120,12 @@ const Index = () => {
 
             {/* About Content */}
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-2">
                 ABOUT US
               </h2>
+              <p className="text-sm text-gray-500 mb-6">
+                Experience, Expertise, and a Commitment to Excellence
+              </p>
               <p className="text-gray-600 mb-6 leading-relaxed text-justify">
                 UBBIM is a leading construction project management company with over 20 years of experience in the industry. We provide comprehensive solutions for construction projects, including design-build services, project management, progress monitoring, and data analytics. Our team of experts is committed to delivering high-quality services that meet the unique needs of each and every one of our clients.
               </p>
