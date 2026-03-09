@@ -160,7 +160,7 @@ const Index = () => {
                     <HardHat className="w-7 h-7 text-[#1A4B8C] group-hover:text-white transition-colors duration-300" />
                   </div>
                   <h3 className="text-xl font-bold text-[#1A4B8C] mb-3">
-                    {service.title}
+                    BUILT ENVIRONMENT SERVICES
                   </h3>
                   <p className="text-gray-600 mb-4">{service.description}</p>
                   <Link
