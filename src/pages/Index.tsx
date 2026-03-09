@@ -70,8 +70,7 @@ const Index = () => {
               <span className="text-[#4ADE80]">Built Environment</span> and Beyond
             </h1>
             <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
-              Ubbim is a leader in construction and infrastructure, committed to 
-              excellence, innovation, and sustainable development across Brazil and beyond.
+              From construction excellence to cutting-edge digital innovation, UBBIM delivers comprehensive services that shape the future of industries.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg" className="bg-[#4ADE80] text-[#1A4B8C] hover:bg-[#22c55e] font-semibold">
