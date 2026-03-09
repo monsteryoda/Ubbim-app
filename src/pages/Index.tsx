@@ -210,9 +210,6 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
               LICENSES & CERTIFICATIONS
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Our commitment to excellence has been recognized by industry leaders worldwide.
-            </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {awards.map((award, index) => (
