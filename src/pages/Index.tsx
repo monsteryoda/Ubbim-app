@@ -108,12 +108,12 @@ const Index = () => {
                 <iframe
                   width="100%"
                   height="100%"
-                  src="https://youtu.be/IMFSWjvVlUM"
+                  src="https://www.youtube.com/embed/IMFSWjvVlUM"
                   title="UBBIM Company Video"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
-                  className="absolute inset-0"
+                  className="absolute inset-0 w-full h-full"
                 ></iframe>
               </div>
             </div>
