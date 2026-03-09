@@ -164,7 +164,7 @@ const Index = () => {
                   <p className="text-gray-600 mb-4 text-justify">
                     {index === 0 
                       ? "Our Built Environment Services encompass every phase of construction and infrastructure development, from design and build to maintenance and refurbishment. We specialize in delivering high-quality, sustainable solutions that meet the unique needs of each project, ensuring safety, efficiency, and long-term value."
-                      : service.description
+                      : "Our Digital Solutions integrate advanced technologies like aerial analytics, 3D scanning, and virtual design coordination to transform how projects are planned, executed, and managed. We also develop custom software tailored to optimize operations, enhance collaboration, and drive innovation across industries."
                     }
                   </p>
                   <Link
