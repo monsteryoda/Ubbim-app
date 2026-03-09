@@ -124,13 +124,10 @@ const Index = () => {
                 ABOUT US
               </h2>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                For over four decades, Ubbim has been at the forefront of Brazil's 
-                infrastructure development. We combine technical expertise with a 
-                deep commitment to sustainability and social responsibility.
+                UBBIM is a leading construction project management company with over 20 years of experience in the industry. We provide comprehensive solutions for construction projects, including design-build services, project management, progress monitoring, and data analytics. Our team of experts is committed to delivering high-quality services that meet the unique needs of each and every one of our clients.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Our projects connect cities, improve quality of life, and drive 
-                economic growth while respecting the environment and local communities.
+                At UBBIM, we are continuously looking for ways to improve our services through technology adoption. We utilize advanced digital technologies such as Building Information Modeling (BIM), virtual reality (VR), and other digital tools to optimize project performance and delivery. Our focus on technology adoption allows us to stay at the forefront of the industry and provide innovative solutions for our clients.
               </p>
             </div>
           </div>
