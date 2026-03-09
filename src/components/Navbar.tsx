@@ -39,7 +39,6 @@ const Navbar = () => {
                 className="w-full h-full object-contain"
               />
             </div>
-            <span className="text-xl font-bold text-[#1A4B8C]">Ubbim</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -76,7 +75,6 @@ const Navbar = () => {
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <span className="text-xl font-bold text-[#1A4B8C]">Ubbim</span>
                 </Link>
                 {navLinks.map((link) => (
                   <Link
