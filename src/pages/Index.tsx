@@ -44,6 +44,11 @@ const Index = () => {
       location: "Minas Gerais, Brazil",
       image: "https://images.unsplash.com/photo-1545158927-2c94795a9a6c?w=800&q=80",
     },
+    {
+      title: "MINDEF Project",
+      location: "Singapore",
+      image: "/src/assets/mindef.jpeg",
+    },
   ];
 
   const awards = [
