@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Building2, Leaf, Award, HardHat, TrendingUp, Users, Phone, FileText, Shield, Cpu } from "lucide-react";
-import ImageSlider from "@/components/ImageSlider";
+import LogoCarousel from "@/components/LogoCarousel";
 
 const Index = () => {
   const stats = [
@@ -55,6 +55,15 @@ const Index = () => {
     { title: "Best Infrastructure Company", year: "2023", org: "Brazil Construction Awards" },
     { title: "Sustainability Excellence", year: "2023", org: "Green Business Council" },
     { title: "Safety Leadership Award", year: "2022", org: "National Safety Council" },
+  ];
+
+  const clientLogos = [
+    { name: "Client 1", image: "https://via.placeholder.com/150x60?text=Client+1" },
+    { name: "Client 2", image: "https://via.placeholder.com/150x60?text=Client+2" },
+    { name: "Client 3", image: "https://via.placeholder.com/150x60?text=Client+3" },
+    { name: "Client 4", image: "https://via.placeholder.com/150x60?text=Client+4" },
+    { name: "Client 5", image: "https://via.placeholder.com/150x60?text=Client+5" },
+    { name: "Client 6", image: "https://via.placeholder.com/150x60?text=Client+6" },
   ];
 
   return (
@@ -194,7 +203,7 @@ const Index = () => {
               WE ARE TRUSTED BY
             </h2>
           </div>
-          <ImageSlider projects={featuredProjects} />
+          <LogoCarousel logos={clientLogos} />
         </div>
       </section>
 
