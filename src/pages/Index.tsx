@@ -126,8 +126,11 @@ const Index = () => {
               <p className="text-gray-600 mb-6 leading-relaxed">
                 UBBIM is a leading construction project management company with over 20 years of experience in the industry. We provide comprehensive solutions for construction projects, including design-build services, project management, progress monitoring, and data analytics. Our team of experts is committed to delivering high-quality services that meet the unique needs of each and every one of our clients.
               </p>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 mb-6 leading-relaxed">
                 At UBBIM, we are continuously looking for ways to improve our services through technology adoption. We utilize advanced digital technologies such as Building Information Modeling (BIM), virtual reality (VR), and other digital tools to optimize project performance and delivery. Our focus on technology adoption allows us to stay at the forefront of the industry and provide innovative solutions for our clients.
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                Our team brings a wealth of experience and expertise to every project, providing expert guidance and support throughout the project lifecycle. We are committed to delivering projects on time, on budget, and to the highest standards of quality. Contact us today to learn more about how we can help you with your construction project needs.
               </p>
             </div>
           </div>
