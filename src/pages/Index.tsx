@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Building2, Leaf, Award, HardHat, TrendingUp, Users, Phone, FileText, Shield, Cpu } from "lucide-react";
 import LogoCarousel from "@/components/LogoCarousel";
+import CertificationsGrid from "@/components/CertificationsGrid";
 
 const Index = () => {
   const stats = [
@@ -51,10 +52,55 @@ const Index = () => {
     },
   ];
 
-  const awards = [
-    { title: "Best Infrastructure Company", year: "2023", org: "Brazil Construction Awards" },
-    { title: "Sustainability Excellence", year: "2023", org: "Green Business Council" },
-    { title: "Safety Leadership Award", year: "2022", org: "National Safety Council" },
+  const certifications = [
+    {
+      id: "1",
+      title: "Best Infrastructure Company",
+      organization: "Brazil Construction Awards",
+      year: "2023",
+      image: "https://images.unsplash.com/photo-1589330694653-4a8b24e77543?w=800&q=80",
+      description: "Recognized for outstanding achievement in infrastructure development and project management excellence across multiple continents.",
+    },
+    {
+      id: "2",
+      title: "Sustainability Excellence",
+      organization: "Green Business Council",
+      year: "2023",
+      image: "https://images.unsplash.com/photo-1560421683-6856ea585c78?w=800&q=80",
+      description: "Awarded for implementing sustainable practices in construction projects, reducing carbon footprint by 40% across operations.",
+    },
+    {
+      id: "3",
+      title: "Safety Leadership Award",
+      organization: "National Safety Council",
+      year: "2022",
+      image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=80",
+      description: "Honored for maintaining the highest safety standards with zero lost-time incidents across all project sites for three consecutive years.",
+    },
+    {
+      id: "4",
+      title: "Innovation in Construction",
+      organization: "International Building Tech Awards",
+      year: "2023",
+      image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80",
+      description: "Recognized for pioneering the use of BIM and AI-driven project management tools in large-scale infrastructure projects.",
+    },
+    {
+      id: "5",
+      title: "Excellence in Project Delivery",
+      organization: "Project Management Institute",
+      year: "2022",
+      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
+      description: "Awarded for delivering complex projects on time and within budget, exceeding client expectations across multiple sectors.",
+    },
+    {
+      id: "6",
+      title: "Environmental Stewardship",
+      organization: "Environmental Protection Agency",
+      year: "2023",
+      image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&q=80",
+      description: "Recognized for implementing eco-friendly construction practices and achieving LEED certification on multiple projects.",
+    },
   ];
 
   const clientLogos = [
@@ -203,31 +249,18 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Awards Section */}
+      {/* Certifications Grid Section */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
               LICENSES & CERTIFICATIONS
             </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Our commitment to excellence has been recognized by industry leaders worldwide. Click on any certification to view details.
+            </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            {awards.map((award, index) => (
-              <Card key={index} className="border-none shadow-md">
-                <CardContent className="p-6 text-center">
-                  <Award className="w-10 h-10 mx-auto mb-4 text-[#4ADE80]" />
-                  <h3 className="font-bold text-[#1A4B8C] mb-1">{award.title}</h3>
-                  <p className="text-sm text-gray-500 mb-1">{award.org}</p>
-                  <p className="text-sm font-semibold text-[#4ADE80]">{award.year}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-          <div className="text-center mt-8">
-            <Button asChild variant="outline" className="border-[#1A4B8C] text-[#1A4B8C] hover:bg-[#1A4B8C] hover:text-white">
-              <Link to="/awards">View All Awards</Link>
-            </Button>
-          </div>
+          <CertificationsGrid certifications={certifications} />
         </div>
       </section>
 
