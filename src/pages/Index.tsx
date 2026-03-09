@@ -128,15 +128,10 @@ const Index = () => {
                 infrastructure development. We combine technical expertise with a 
                 deep commitment to sustainability and social responsibility.
               </p>
-              <p className="text-gray-600 mb-8 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed">
                 Our projects connect cities, improve quality of life, and drive 
                 economic growth while respecting the environment and local communities.
               </p>
-              <Button asChild className="bg-[#1A4B8C] hover:bg-[#153d73]">
-                <Link to="/sustainability-report" className="flex items-center gap-2">
-                  Sustainability Report <ArrowRight className="w-4 h-4" />
-                </Link>
-              </Button>
             </div>
           </div>
         </div>
