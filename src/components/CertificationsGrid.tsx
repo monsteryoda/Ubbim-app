@@ -43,14 +43,15 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
             className="group hover:shadow-xl transition-all duration-300 border-none cursor-pointer overflow-hidden"
             onClick={() => setSelectedCertification(cert)}
           >
-            <div className="relative w-full" style={{ paddingBottom: "177.78%" }}>
-              {cert.image && (
-                <img
-                  src={cert.image}
-                  alt={cert.title}
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              )}
+            <div className="p-6">
+              <div className="flex items-center justify-between mb-4">
+                <div>
+                  <h3 className="text-lg font-bold text-[#1A4B8C]">{cert.title}</h3>
+                  <p className="text-gray-600">{cert.organization}</p>
+                </div>
+                <span className="text-2xl font-bold text-[#4ADE80]">{cert.year}</span>
+              </div>
+              <p className="text-gray-600 text-sm">{cert.description}</p>
             </div>
           </Card>
         ))}
@@ -73,13 +74,11 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
               >
                 <X className="w-6 h-6" />
               </button>
-              {selectedCertification.image && (
-                <img
-                  src={selectedCertification.image}
-                  alt={selectedCertification.title}
-                  className="w-full h-auto"
-                />
-              )}
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-[#1A4B8C] mb-2">{selectedCertification.title}</h3>
+                <p className="text-gray-600 mb-4">{selectedCertification.organization} • {selectedCertification.year}</p>
+                <p className="text-gray-700">{selectedCertification.description}</p>
+              </div>
             </div>
           </div>
         </div>
