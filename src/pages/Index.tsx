@@ -272,6 +272,14 @@ const Index = () => {
       {/* Quick Links CTA */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
+              CONTACT US
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Get in touch for partnerships, inquiries, or to learn more about our services.
+            </p>
+          </div>
           <div className="grid md:grid-cols-3 gap-6">
             <Card className="bg-[#1A4B8C] text-white border-none">
               <CardContent className="p-8 flex flex-col items-center text-center">
