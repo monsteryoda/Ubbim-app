@@ -8,10 +8,11 @@ import DesignBuildServices from "./pages/DesignBuildServices";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import FirefightingServices from "./pages/FirefightingServices";
 
 function App() {
   return (
-    <Router>
+    <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/services" element={<Services />} />
@@ -19,6 +20,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/firefighting" element={<FirefightingServices />} />
       </Routes>
     </Router>
   );
