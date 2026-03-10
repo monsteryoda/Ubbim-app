@@ -2,6 +2,7 @@
 
 import React from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import cidbLogo from "../assets/cidb-logo.png";
 
 interface Logo {
   name: string;
@@ -42,7 +43,11 @@ const LogoCarousel: React.FC<LogoCarouselProps> = ({ logos }) => {
           {logos.map((logo, index) => (
             <div key={index} className="w-full flex-shrink-0 px-4">
               <div className="flex items-center justify-center">
-                {/* Logo image removed */}
+                <img
+                  src={logo.image}
+                  alt={logo.name}
+                  className="h-16 md:h-20 object-contain bg-transparent"
+                />
               </div>
             </div>
           ))}
