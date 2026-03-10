@@ -10,7 +10,7 @@ const FirefightingServices = () => {
   const services = [
     {
       title: "Structural Repairs",
-      description: "Advanced fire detection and alarm systems that provide early warning and automatic notification to emergency services.",
+      description: "Reinforce and restore the structural integrity of buildings, addressing issues such as cracks, settlement, and foundation damage.",
       image: "/src/assets/firefighting-services.jpg"
     },
     {
