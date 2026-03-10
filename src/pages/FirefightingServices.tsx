@@ -177,7 +177,7 @@ const FirefightingServices = () => {
               </div>
               <div className="text-right md:text-right">
                 <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Client-Centered Design
+                  Attention to Detail
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-right">
                   We prioritize your vision and needs, creating designs that are not only functional but also aesthetically pleasing and sustainable.
