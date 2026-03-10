@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, Building2 } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
@@ -24,8 +24,11 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
-              <Building2 className="w-8 h-8 text-[#4ADE80]" />
-              <span className="text-white font-bold text-xl">UBBIM</span>
+              <img 
+                src="/ubbim.png" 
+                alt="UBBIM Logo" 
+                className="h-8 w-auto"
+              />
             </Link>
 
             {/* Desktop Navigation */}
@@ -67,8 +70,11 @@ const Navbar = () => {
           {/* Drawer Header */}
           <div className="flex items-center justify-between p-4 border-b">
             <Link to="/" className="flex items-center space-x-2">
-              <Building2 className="w-8 h-8 text-[#1A4B8C]" />
-              <span className="text-[#1A4B8C] font-bold text-xl">UBBIM</span>
+              <img 
+                src="/ubbim.png" 
+                alt="UBBIM Logo" 
+                className="h-8 w-auto"
+              />
             </Link>
             <button
               onClick={() => setIsDrawerOpen(false)}

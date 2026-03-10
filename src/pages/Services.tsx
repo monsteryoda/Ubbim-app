@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowLeft, Building2, HardHat, TrendingUp, Users, Award, MapPin, Phone, Mail } from "lucide-react";
+import { ArrowLeft, HardHat, TrendingUp, Users, Award, MapPin, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -47,8 +47,11 @@ const Services = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             <Link to="/" className="flex items-center space-x-2">
-              <Building2 className="w-8 h-8 text-[#4ADE80]" />
-              <span className="text-white font-bold text-xl">UBBIM</span>
+              <img 
+                src="/ubbim.png" 
+                alt="UBBIM Logo" 
+                className="h-8 w-auto"
+              />
             </Link>
             <div className="hidden md:flex items-center space-x-8">
               <Link to="/" className="text-white hover:text-[#4ADE80] transition-colors font-medium">
