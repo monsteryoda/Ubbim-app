@@ -11,7 +11,7 @@ const FirefightingServices = () => {
     {
       title: "Structural Repairs",
       description: "Reinforce and restore the structural integrity of buildings, addressing issues such as cracks, settlement, and foundation damage.",
-      image: "/src/assets/firefighting-services.jpg"
+      image: "/src/assets/structural-repair.png"
     },
     {
       title: "Interior Refurbishment",
