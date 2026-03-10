@@ -103,7 +103,7 @@ const SecuritySurveillance = () => {
           <div className="flex items-center justify-between h-16">
             <Link to="/" className="flex items-center space-x-2">
               <img 
-                src="/ubbim-logo.png" 
+                src="/src/assets/ubbim-logo.png" 
                 alt="UBBIM Logo" 
                 className="h-10 w-auto"
               />
@@ -255,7 +255,7 @@ const SecuritySurveillance = () => {
             <div>
               <div className="flex items-center space-x-2 mb-6">
                 <img 
-                  src="/ubbim-logo.png" 
+                  src="/src/assets/ubbim-logo.png" 
                   alt="UBBIM Logo" 
                   className="h-12 w-auto"
                 />
