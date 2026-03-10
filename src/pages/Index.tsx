@@ -284,40 +284,17 @@ const Index = () => {
       {/* Contact Us Section with Office Details */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Left Side - Contact CTA */}
-            <div>
-              <div className="mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
-                  CONTACT US
-                </h2>
-                <p className="text-gray-600 max-w-xl">
-                  Get in touch for partnerships, inquiries, or to learn more about our services.
-                </p>
-              </div>
-              <Card className="bg-[#1A4B8C] text-white border-none">
-                <CardContent className="p-8 flex flex-col items-center text-center">
-                  <Phone className="w-10 h-10 mb-4 text-[#4ADE80]" />
-                  <h3 className="text-xl font-bold mb-2">Contact Us</h3>
-                  <p className="text-gray-300 text-sm mb-4">Get in touch for partnerships or inquiries.</p>
-                  <Button asChild variant="outline" className="border-white text-white hover:bg-white hover:text-[#1A4B8C]">
-                    <Link to="/contact">Contact Now</Link>
-                  </Button>
-                </CardContent>
-              </Card>
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
+                CONTACT US
+              </h2>
+              <p className="text-gray-600 max-w-xl mx-auto">
+                Get in touch for partnerships, inquiries, or to learn more about our services.
+              </p>
             </div>
 
-            {/* Right Side - Office Details */}
             <div className="space-y-6">
-              <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-6">
-                  Office Details
-                </h2>
-                <p className="text-gray-600 mb-8">
-                  Visit us or reach out through any of the following channels.
-                </p>
-              </div>
-
               {/* Address Card */}
               <Card className="border-none shadow-lg">
                 <CardContent className="p-6">
