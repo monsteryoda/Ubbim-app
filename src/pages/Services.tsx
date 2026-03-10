@@ -18,6 +18,7 @@ const Services = () => {
       title: "Firefighting Services",
       description: "Advanced fire protection systems designed to safeguard lives and property, from alarms to suppression systems.",
       image: "/src/assets/firefighting-services.jpg",
+      hasButton: true,
     },
     {
       title: "Structural Repair and Refurbishment",
