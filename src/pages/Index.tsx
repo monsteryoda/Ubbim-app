@@ -101,14 +101,6 @@ const Index = () => {
       image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&q=80",
       description: "Recognized for implementing eco-friendly construction practices and achieving LEED certification on multiple projects.",
     },
-    {
-      id: "7",
-      title: "ISO 9001:2015",
-      organization: "ACM-CCAS Limited",
-      year: "2017",
-      image: "/src/assets/certifications/iso-9001.png",
-      description: "Quality Management System Certification"
-    }
   ];
 
   const clientLogos = [
