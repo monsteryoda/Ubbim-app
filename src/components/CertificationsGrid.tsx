@@ -43,12 +43,10 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
             className="group hover:shadow-xl transition-all duration-300 border-none cursor-pointer overflow-hidden"
             onClick={() => setSelectedCertification(cert)}
           >
-            <div className="relative overflow-hidden bg-gray-100">
-              <img
-                src={cert.image}
-                alt={cert.title}
-                className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-500"
-              />
+            <div className="p-6">
+              <h3 className="text-lg font-semibold text-gray-900">{cert.title}</h3>
+              <p className="text-gray-600 mt-1">{cert.organization}</p>
+              <p className="text-gray-500 text-sm mt-2">{cert.year}</p>
             </div>
           </Card>
         ))}
