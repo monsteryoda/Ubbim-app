@@ -116,7 +116,7 @@ const SecuritySurveillance = () => {
               SECURITY & SURVEILLANCE SOLUTIONS
             </h1>
             <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
-              Advanced Security Systems for Maximum Protection
+              Comprehensive Security Systems for Enhanced Protection
             </p>
           </div>
         </div>
@@ -130,7 +130,7 @@ const SecuritySurveillance = () => {
               Our Core Services
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              UBBIM's Security & Surveillance Solutions provide comprehensive protection for your property and assets. From advanced CCTV systems to access control and alarm integration, our team ensures that your facility is equipped with the latest security technologies.
+              UBBIM's Security & Surveillance Solutions are designed to provide robust, reliable protection for your facilities. From high-definition video surveillance to advanced access control systems, our solutions are tailored to meet the specific security needs of your environment, ensuring peace of mind through cutting-edge technology.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
