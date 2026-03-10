@@ -127,7 +127,7 @@ const Index = () => {
   const officeDetails = {
     address: "No. 219, Jalan S2 B10, Seremban 2, 70300 Seremban, Negeri Sembilan",
     phone: "+606-6016007",
-    email: "info@ublim.com",
+    email: "admin@ubbim.com",
     socialLinks: [
       { icon: Facebook, href: "#", label: "Facebook" },
       { icon: Twitter, href: "#", label: "Twitter" },
