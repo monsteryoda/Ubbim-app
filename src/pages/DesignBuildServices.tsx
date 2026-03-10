@@ -72,7 +72,7 @@ const DesignBuildServices = () => {
     {
       title: "Construction Management",
       description: "Ensure your project stays on track with expert management of timelines, resources, and quality control.",
-      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80"
+      image: "/src/assets/construction-management.png"
     },
     {
       title: "General Contracting",
