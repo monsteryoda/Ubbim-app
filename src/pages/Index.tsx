@@ -336,25 +336,6 @@ const Index = () => {
                   </div>
                 </CardContent>
               </Card>
-
-              {/* Social Media */}
-              <Card className="border-none shadow-lg">
-                <CardContent className="p-6">
-                  <h3 className="font-semibold text-lg text-[#1A4B8C] mb-4">Follow Us</h3>
-                  <div className="flex space-x-4">
-                    {officeDetails.socialLinks.map((social, index) => (
-                      <a
-                        key={index}
-                        href={social.href}
-                        className="w-12 h-12 bg-[#1A4B8C]/10 rounded-xl flex items-center justify-center hover:bg-[#1A4B8C] transition-colors duration-300"
-                        aria-label={social.label}
-                      >
-                        <social.icon className="w-5 h-5 text-[#1A4B8C] hover:text-white transition-colors duration-300" />
-                      </a>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </div>
