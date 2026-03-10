@@ -200,15 +200,15 @@ const SecuritySurveillance = () => {
                   Comprehensive Solutions
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-right">
-                  We provide end-to-end security services, from design and installation to maintenance and monitoring, ensuring total protection.
+                  We use the latest in security technology, including high-definition cameras, biometric access controls, and AI-driven analytics.
                 </p>
               </div>
               <div className="text-right md:text-right">
                 <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Advanced Technology
+                  Expert Installation
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-right">
-                  We utilize the latest security technologies to deliver systems that are both effective and efficient.
+                  Our team of security experts ensures that every system is installed with precision and care, providing reliable, long-term security.
                 </p>
               </div>
             </div>
@@ -228,18 +228,18 @@ const SecuritySurveillance = () => {
             <div className="space-y-8 md:pl-12">
               <div className="text-left md:text-left">
                 <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Experienced Team
+                  Tailored Solutions
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-left">
-                  Our team of security experts brings extensive experience in protecting diverse environments, from commercial buildings to industrial facilities.
+                  Our security systems are customized to meet the specific needs and challenges of your environment, ensuring optimal protection.
                 </p>
               </div>
               <div className="text-left md:text-left">
                 <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Regulatory Compliance
+                  Ongoing Support
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-left">
-                  Our solutions meet all relevant security regulations and standards, giving you peace of mind that your facility is protected and compliant.
+                  We offer comprehensive maintenance and support services to ensure your security systems remain effective and up-to-date.
                 </p>
               </div>
             </div>
