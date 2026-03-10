@@ -20,7 +20,7 @@ const Services = () => {
     },
     {
       title: "Structural Repair and Refurbishment",
-      description: "Comprehensive design and build services tailored to meet the specific needs of each project, ensuring seamless execution.",
+      description: "Expert repair and refurbishment services that breathe new life into existing structures, enhancing durability and appearance.",
       image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=80",
     },
     {
