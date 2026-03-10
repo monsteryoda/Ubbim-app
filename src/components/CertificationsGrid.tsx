@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { X, Award, Shield, FileText, Leaf } from "lucide-react";
+import { X } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 interface Certification {
@@ -9,7 +9,7 @@ interface Certification {
   title: string;
   organization: string;
   year: string;
-  image?: string;
+  image: string;
   description: string;
 }
 
@@ -27,18 +27,12 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
       title: "ISO 14001:2015",
       organization: "ACM-CCAS Limited",
       year: "2019",
+      image: "/src/assets/certifications/cenviro.png",
       description: "Environmental Management System Certification"
     }
   ];
 
   const displayCertifications = certifications || defaultCertifications;
-
-  const getIcon = (title: string) => {
-    if (title.includes("ISO")) return <Shield className="w-6 h-6" />;
-    if (title.includes("Environmental") || title.includes("Sustainability")) return <Leaf className="w-6 h-6" />;
-    if (title.includes("Award") || title.includes("Excellence")) return <Award className="w-6 h-6" />;
-    return <FileText className="w-6 h-6" />;
-  };
 
   return (
     <>
@@ -49,24 +43,14 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
             className="group hover:shadow-xl transition-all duration-300 border-none cursor-pointer overflow-hidden"
             onClick={() => setSelectedCertification(cert)}
           >
-            <div className="p-6">
-              <div className="w-14 h-14 bg-[#1A4B8C]/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-[#1A4B8C] transition-colors duration-300">
-                <div className="text-[#1A4B8C] group-hover:text-white transition-colors duration-300">
-                  {getIcon(cert.title)}
-                </div>
-              </div>
-              <h3 className="text-lg font-bold text-[#1A4B8C] mb-2">
-                {cert.title}
-              </h3>
-              <p className="text-gray-600 text-sm mb-3">
-                {cert.organization}
-              </p>
-              <p className="text-gray-500 text-xs mb-4">
-                {cert.year}
-              </p>
-              <p className="text-gray-600 text-sm">
-                {cert.description}
-              </p>
+            <div className="relative overflow-hidden bg-gray-100">
+              {cert.image && (
+                <img
+                  src={cert.image}
+                  alt={cert.title}
+                  className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-500"
+                />
+              )}
             </div>
           </Card>
         ))}
@@ -79,33 +63,23 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
           onClick={() => setSelectedCertification(null)}
         >
           <div 
-            className="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+            className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="relative p-6">
+            <div className="relative">
               <button
                 onClick={() => setSelectedCertification(null)}
                 className="absolute top-4 right-4 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center text-gray-700 hover:bg-white transition-colors z-10"
               >
                 <X className="w-6 h-6" />
               </button>
-              <div className="w-16 h-16 bg-[#1A4B8C]/10 rounded-xl flex items-center justify-center mb-4">
-                <div className="text-[#1A4B8C]">
-                  {getIcon(selectedCertification.title)}
-                </div>
-              </div>
-              <h3 className="text-2xl font-bold text-[#1A4B8C] mb-2">
-                {selectedCertification.title}
-              </h3>
-              <p className="text-gray-600 mb-2">
-                {selectedCertification.organization}
-              </p>
-              <p className="text-gray-500 text-sm mb-4">
-                {selectedCertification.year}
-              </p>
-              <p className="text-gray-600">
-                {selectedCertification.description}
-              </p>
+              {selectedCertification.image && (
+                <img
+                  src={selectedCertification.image}
+                  alt={selectedCertification.title}
+                  className="w-full h-auto"
+                />
+              )}
             </div>
           </div>
         </div>
