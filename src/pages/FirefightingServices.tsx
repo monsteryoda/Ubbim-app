@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowLeft, Fire, Shield, AlertTriangle, Wrench, CheckCircle, Phone, Mail, MapPin } from "lucide-react";
+import { ArrowLeft, Fire, Shield, AlertTriangle, Wrench, CheckCircle, Building2, Clock, Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -11,35 +11,40 @@ const FirefightingServices = () => {
     {
       title: "Fire Alarm Systems",
       description: "Advanced fire detection and alarm systems that provide early warning and automatic notification to emergency services.",
-      features: ["24/7 Monitoring", "Smart Detection", "Automatic Alerting", "Integration Ready"]
+      image: "/src/assets/firefighting-services.jpg"
     },
     {
       title: "Fire Suppression Systems",
       description: "Comprehensive suppression solutions including sprinkler systems, gas suppression, and foam systems for various applications.",
-      features: ["Sprinkler Systems", "Gas Suppression", "Foam Systems", "Water Mist"]
-    },
-    {
-      title: "Fire Extinguisher Services",
-      description: "Installation, maintenance, and inspection of fire extinguishers to ensure they're ready when you need them most.",
-      features: ["Installation", "Regular Inspection", "Maintenance", "Recharging"]
+      image: "/src/assets/firefighting-services.jpg"
     },
     {
       title: "Fire Safety Consulting",
       description: "Expert consultation on fire safety compliance, risk assessment, and development of comprehensive fire safety plans.",
-      features: ["Risk Assessment", "Compliance Audit", "Safety Planning", "Staff Training"]
+      image: "/src/assets/firefighting-services.jpg"
     }
   ];
 
   const features = [
     {
-      icon: Fire,
-      title: "24/7 Emergency Response",
-      description: "Round-the-clock support and emergency response for all fire safety incidents."
+      icon: Building2,
+      title: "Integrated Approach",
+      description: "Seamless coordination between design and construction teams for optimal project outcomes."
+    },
+    {
+      icon: Clock,
+      title: "Time Efficiency",
+      description: "Streamlined processes that reduce project timelines without compromising quality."
     },
     {
       icon: Shield,
-      title: "Certified Professionals",
-      description: "Our team consists of certified fire safety experts with extensive industry experience."
+      title: "Quality Assurance",
+      description: "Rigorous quality control measures throughout every phase of the project lifecycle."
+    },
+    {
+      icon: Fire,
+      title: "24/7 Emergency Response",
+      description: "Round-the-clock support and emergency response for all fire safety incidents."
     },
     {
       icon: AlertTriangle,
@@ -53,13 +58,13 @@ const FirefightingServices = () => {
     }
   ];
 
-  const complianceStandards = [
-    "NFPA Standards Compliance",
-    "Local Fire Code Requirements",
-    "OSHA Safety Regulations",
-    "Insurance Company Standards",
-    "Building Code Requirements",
-    "Industry Best Practices"
+  const benefits = [
+    "Single point of responsibility for design and construction",
+    "Reduced project risks through early contractor involvement",
+    "Faster project delivery with overlapping design and construction phases",
+    "Cost certainty with guaranteed maximum price options",
+    "Enhanced collaboration between all project stakeholders",
+    "Improved project quality through integrated team approach"
   ];
 
   return (
@@ -111,138 +116,105 @@ const FirefightingServices = () => {
               FIREFIGHTING SERVICES
             </h1>
             <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
-              Comprehensive Fire Protection Solutions for Your Safety and Peace of Mind
+              Comprehensive Solutions from Concept to Completion
             </p>
           </div>
         </div>
       </section>
 
-      {/* Introduction Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-6">
-              Protecting What Matters Most
-            </h2>
-            <p className="text-gray-600 text-lg leading-relaxed mb-8">
-              At UBBIM, we understand that fire safety is not just about compliance—it's about protecting lives, property, and your peace of mind. Our comprehensive firefighting services are designed to provide complete fire protection for residential, commercial, and industrial properties.
-            </p>
-            <p className="text-gray-600 text-lg leading-relaxed">
-              From initial design and installation to ongoing maintenance and emergency response, our certified team ensures your fire protection systems are always ready when you need them most.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Grid */}
+      {/* Services Section */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
-              Our Firefighting Services
+              Our Core Services
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              We offer a complete range of fire protection services tailored to meet the specific needs of your property.
+              UBBIM's Firefighting Services offer a seamless approach to fire protection, integrating design, planning, and execution under one roof. Our team of experienced fire safety experts, engineers, and project managers work closely with you to bring your vision to life, ensuring quality, efficiency, and cost-effectiveness at every stage.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <CardContent className="p-8">
-                  <div className="flex items-start space-x-4">
-                    <div className="bg-[#1A4B8C] p-3 rounded-lg">
-                      <Fire className="w-6 h-6 text-white" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold text-[#1A4B8C] mb-3">
-                        {service.title}
-                      </h3>
-                      <p className="text-gray-600 mb-4 leading-relaxed">
-                        {service.description}
-                      </p>
-                      <ul className="space-y-2">
-                        {service.features.map((feature, idx) => (
-                          <li key={idx} className="flex items-center space-x-2 text-sm text-gray-600">
-                            <CheckCircle className="w-4 h-4 text-[#4ADE80]" />
-                            <span>{feature}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Why Choose Us */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
-              Why Choose Our Firefighting Services
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              We bring expertise, reliability, and commitment to every fire protection project we undertake.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {features.map((feature, index) => (
-              <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <CardContent className="p-6 text-center">
-                  <div className="bg-[#1A4B8C] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <feature.icon className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-lg font-bold text-[#1A4B8C] mb-3">
-                    {feature.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    {feature.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Compliance Section */}
-      <section className="py-20 bg-[#1A4B8C] text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              Compliance & Standards
-            </h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              {complianceStandards.map((standard, index) => (
-                <div key={index} className="flex items-center space-x-3 bg-white/10 p-4 rounded-lg">
-                  <CheckCircle className="w-6 h-6 text-[#4ADE80]" />
-                  <span className="font-medium">{standard}</span>
+              <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div className="aspect-video overflow-hidden">
+                  <img 
+                    src={service.image} 
+                    alt={service.title} 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-              ))}
-            </div>
+                <div className="p-8 bg-gray-100">
+                  <h3 className="text-xl font-bold text-[#1A4B8C] mb-3">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-6">
-            Need Fire Safety Solutions?
+      {/* Why Choose Us Section */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#1A4B8C] mb-16 text-center">
+            Why Choose Us
           </h2>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Contact us today for a free consultation and let our experts design a fire protection system that meets your needs.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-[#1A4B8C] hover:bg-[#143a6e] text-white px-8 py-6 text-lg">
-              Get a Free Quote
-            </Button>
-            <Button className="bg-[#4ADE80] hover:bg-[#3dd673] text-[#1A4B8C] px-8 py-6 text-lg font-semibold">
-              Contact Us Now
-            </Button>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            {/* Left Column - Text Blocks */}
+            <div className="space-y-8 md:pr-12">
+              <div className="text-right md:text-right">
+                <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
+                  Integrated Approach
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-right">
+                  From design to construction, we manage every aspect of your project, ensuring seamless coordination and communication.
+                </p>
+              </div>
+              <div className="text-right md:text-right">
+                <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
+                  Client-Centered Design
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-right">
+                  We prioritize your vision and needs, creating designs that are not only functional but also aesthetically pleasing and sustainable.
+                </p>
+              </div>
+            </div>
+
+            {/* Center Column - Large Image */}
+            <div className="relative">
+              <div className="aspect-[16/10] overflow-hidden rounded-2xl shadow-2xl">
+                <img 
+                  src="/src/assets/firefighting-services.jpg" 
+                  alt="Firefighting Services" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Right Column - Text Blocks */}
+            <div className="space-y-8 md:pl-12">
+              <div className="text-left md:text-left">
+                <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
+                  Experienced Team
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-left">
+                  Our team brings decades of experience and expertise in delivering high-quality, on-time, and on-budget projects.
+                </p>
+              </div>
+              <div className="text-left md:text-left">
+                <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
+                  Proven Track Record
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-left">
+                  Our portfolio of successful projects speaks for itself, showcasing our ability to deliver exceptional results.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -261,8 +233,22 @@ const FirefightingServices = () => {
                 />
               </div>
               <p className="text-gray-300 leading-relaxed mb-6">
-                UBBIM delivers comprehensive fire protection solutions with a focus on safety, compliance, and reliability.
+                UBBIM delivers comprehensive firefighting solutions with a focus on safety, innovation, and client satisfaction.
               </p>
+              <div className="flex space-x-4">
+                <a href="#" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                  <Facebook className="w-5 h-5" />
+                </a>
+                <a href="#" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                  <Twitter className="w-5 h-5" />
+                </a>
+                <a href="#" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                  <Instagram className="w-5 h-5" />
+                </a>
+                <a href="#" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                  <Linkedin className="w-5 h-5" />
+                </a>
+              </div>
             </div>
 
             {/* Quick Links */}
@@ -312,13 +298,13 @@ const FirefightingServices = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/structural-repair" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                    Structural Repair
+                  <Link to="/architectural-design" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                    Architectural Design
                   </Link>
                 </li>
                 <li>
-                  <Link to="/security-surveillance" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                    Security & Surveillance
+                  <Link to="/construction-management" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                    Construction Management
                   </Link>
                 </li>
               </ul>
