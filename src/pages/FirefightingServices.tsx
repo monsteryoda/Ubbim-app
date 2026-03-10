@@ -19,7 +19,7 @@ const FirefightingServices = () => {
       image: "/src/assets/firefighting-services.jpg"
     },
     {
-      title: "Fire Safety Consulting",
+      title: "Waterproofing and Damp Proofing",
       description: "Expert consultation on fire safety compliance, risk assessment, and development of comprehensive fire safety plans.",
       image: "/src/assets/firefighting-services.jpg"
     }
