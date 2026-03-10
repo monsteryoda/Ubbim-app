@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { X } from "lucide-react";
-import { Card } from "@/components/ui/card";
 
 interface Certification {
   id: string;
@@ -38,21 +37,19 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {displayCertifications.map((cert) => (
-          <Card 
+          <div 
             key={cert.id} 
-            className="group hover:shadow-xl transition-all duration-300 border-none cursor-pointer overflow-hidden"
+            className="group cursor-pointer p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100"
             onClick={() => setSelectedCertification(cert)}
           >
-            <div className="relative overflow-hidden bg-gray-100">
-              {cert.image && (
-                <img
-                  src={cert.image}
-                  alt={cert.title}
-                  className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-500"
-                />
-              )}
+            <div className="text-center">
+              <h3 className="text-lg font-bold text-[#1A4B8C] mb-2">
+                {cert.title}
+              </h3>
+              <p className="text-gray-600 text-sm mb-1">{cert.organization}</p>
+              <p className="text-gray-500 text-sm">{cert.year}</p>
             </div>
-          </Card>
+          </div>
         ))}
       </div>
 
