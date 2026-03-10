@@ -40,15 +40,15 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
         {displayCertifications.map((cert) => (
           <Card 
             key={cert.id} 
-            className="group hover:shadow-xl transition-all duration-300 border-none cursor-pointer overflow-hidden"
+            className="group hover:shadow-xl transition-all duration-300 border-none cursor-pointer overflow-hidden h-64"
             onClick={() => setSelectedCertification(cert)}
           >
-            <div className="relative overflow-hidden bg-gray-100">
+            <div className="relative overflow-hidden w-full h-full bg-gray-100">
               {cert.image && (
                 <img
                   src={cert.image}
                   alt={cert.title}
-                  className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               )}
             </div>
