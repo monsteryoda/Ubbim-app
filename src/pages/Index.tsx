@@ -281,16 +281,17 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Contact Us Section with Office Details */}
+      {/* Contact Us Section with Office Details and Map */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
-                CONTACT US
-              </h2>
-            </div>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
+              CONTACT US
+            </h2>
+          </div>
 
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Contact Details */}
             <div className="space-y-6">
               {/* Address Card */}
               <Card className="border-none shadow-lg">
@@ -336,6 +337,20 @@ const Index = () => {
                   </div>
                 </CardContent>
               </Card>
+            </div>
+
+            {/* Google Map */}
+            <div className="rounded-2xl overflow-hidden shadow-lg h-96">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.823456789012!2d101.9123456!3d2.6987654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d33f1234567890%3A0x1234567890abcdef!2sNo.%20219%2C%20Jalan%20S2%20B10%2C%20Seremban%202%2C%2070300%20Seremban%2C%20Negeri%20Sembilan!5e0!3m2!1sen!2smy!4v1234567890123!5m2!1sen!2smy"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="UBBIM Office Location"
+              ></iframe>
             </div>
           </div>
         </div>
