@@ -16,7 +16,7 @@ const FirefightingServices = () => {
     {
       title: "Interior Refurbishment",
       description: "Modernize and refresh interior spaces, from offices to residential units, with custom refurbishment solutions that enhance functionality and aesthetics.",
-      image: "/src/assets/firefighting-services.jpg"
+      image: "/src/assets/interior-refurbishment.jpeg"
     },
     {
       title: "Waterproofing and Damp Proofing",
