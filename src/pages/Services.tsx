@@ -10,22 +10,22 @@ const Services = () => {
   const services = [
     {
       title: "Design & Build Services",
-      description: "Comprehensive design and construction solutions delivered with precision and expertise.",
+      description: "Comprehensive design and build services tailored to meet the specific needs of each project, ensuring seamless execution.",
       image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80",
     },
     {
       title: "Firefighting Services",
-      description: "Advanced fire safety systems and emergency response solutions for all building types.",
+      description: "Comprehensive design and build services tailored to meet the specific needs of each project, ensuring seamless execution.",
       image: "https://images.unsplash.com/photo-1555617798-318eb574e6e9?w=600&q=80",
     },
     {
       title: "Electrical Services",
-      description: "Complete electrical installation, maintenance, and upgrade services for commercial projects.",
+      description: "Comprehensive design and build services tailored to meet the specific needs of each project, ensuring seamless execution.",
       image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=80",
     },
     {
       title: "Mechanical Services",
-      description: "HVAC, plumbing, and mechanical systems designed for optimal performance and efficiency.",
+      description: "Comprehensive design and build services tailored to meet the specific needs of each project, ensuring seamless execution.",
       image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80",
     },
   ];
