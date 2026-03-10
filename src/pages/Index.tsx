@@ -280,29 +280,7 @@ const Index = () => {
               Get in touch for partnerships, inquiries, or to learn more about our services.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card className="bg-[#1A4B8C] text-white border-none">
-              <CardContent className="p-8 flex flex-col items-center text-center">
-                <FileText className="w-10 h-10 mb-4 text-[#4ADE80]" />
-                <h3 className="text-xl font-bold mb-2">Sustainability Report</h3>
-                <p className="text-gray-300 text-sm mb-4">Download our latest ESG report and see our impact.</p>
-                <Button asChild variant="outline" className="border-white text-white hover:bg-white hover:text-[#1A4B8C]">
-                  <Link to="/sustainability-report">Access Report</Link>
-                </Button>
-              </CardContent>
-            </Card>
-            
-            <Card className="bg-[#1A4B8C] text-white border-none">
-              <CardContent className="p-8 flex flex-col items-center text-center">
-                <Shield className="w-10 h-10 mb-4 text-[#4ADE80]" />
-                <h3 className="text-xl font-bold mb-2">Whistleblower Channel</h3>
-                <p className="text-gray-300 text-sm mb-4">Report concerns confidentially and securely.</p>
-                <Button asChild variant="outline" className="border-white text-white hover:bg-white hover:text-[#1A4B8C]">
-                  <Link to="/whistleblower">Access Channel</Link>
-                </Button>
-              </CardContent>
-            </Card>
-            
+          <div className="grid md:grid-cols-1 gap-6 max-w-md mx-auto">
             <Card className="bg-[#1A4B8C] text-white border-none">
               <CardContent className="p-8 flex flex-col items-center text-center">
                 <Phone className="w-10 h-10 mb-4 text-[#4ADE80]" />
