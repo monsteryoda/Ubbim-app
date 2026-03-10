@@ -11,7 +11,8 @@ const Services = () => {
     {
       title: "Design & Build Services",
       description: "Comprehensive design and build services tailored to meet the specific needs of each project, ensuring seamless execution.",
-      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80",
+      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
+      hasButton: true,
     },
     {
       title: "Firefighting Services",
@@ -90,12 +91,19 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service, index) => (
               <Card key={index} className="border-none shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300">
-                <div className="h-48 overflow-hidden">
+                <div className="h-48 overflow-hidden relative">
                   <img 
                     src={service.image} 
                     alt={service.title} 
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
+                  {service.hasButton && (
+                    <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+                      <button className="bg-[#135D77] hover:bg-[#0f4a5e] text-white font-bold text-lg px-10 py-4 rounded-full transition-all duration-300 hover:scale-105">
+                        Learn More
+                      </button>
+                    </div>
+                  )}
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-[#1A4B8C] mb-3">
