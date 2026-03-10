@@ -203,7 +203,7 @@ const DesignBuildServices = () => {
                   Client-Centered Design
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-right">
-                  We prioritize your needs and vision throughout every phase, creating solutions that perfectly balance aesthetics, functionality, and your unique requirements.
+                  We prioritize your vision and needs, creating designs that are not only functional but also aesthetically pleasing and sustainable.
                 </p>
               </div>
             </div>
