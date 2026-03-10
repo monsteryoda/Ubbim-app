@@ -43,11 +43,14 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
             className="group hover:shadow-xl transition-all duration-300 border-none cursor-pointer overflow-hidden"
             onClick={() => setSelectedCertification(cert)}
           >
-            <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2">{cert.title}</h3>
-              <p className="text-gray-600">{cert.organization}</p>
-              <p className="text-gray-500 text-sm mt-1">{cert.year}</p>
-              <p className="text-gray-700 mt-4">{cert.description}</p>
+            <div className="relative w-full" style={{ paddingBottom: "177.78%" }}>
+              {cert.image && (
+                <img
+                  src={cert.image}
+                  alt={cert.title}
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              )}
             </div>
           </Card>
         ))}
@@ -63,17 +66,20 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
             className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="relative p-6">
+            <div className="relative">
               <button
                 onClick={() => setSelectedCertification(null)}
                 className="absolute top-4 right-4 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center text-gray-700 hover:bg-white transition-colors z-10"
               >
                 <X className="w-6 h-6" />
               </button>
-              <h2 className="text-2xl font-bold mb-2">{selectedCertification.title}</h2>
-              <p className="text-gray-600 mb-1">{selectedCertification.organization}</p>
-              <p className="text-gray-500 text-sm mb-4">{selectedCertification.year}</p>
-              <p className="text-gray-700">{selectedCertification.description}</p>
+              {selectedCertification.image && (
+                <img
+                  src={selectedCertification.image}
+                  alt={selectedCertification.title}
+                  className="w-full h-auto"
+                />
+              )}
             </div>
           </div>
         </div>
