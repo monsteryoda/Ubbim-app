@@ -22,6 +22,11 @@ const SecuritySurveillance = () => {
       title: "Alarm & Intrusion Detection",
       description: "Advanced alarm systems and intrusion detection technology that provides real-time alerts and integrates with monitoring centers for rapid response.",
       image: "/src/assets/alarm-systems.jpeg"
+    },
+    {
+      title: "Security Consulting",
+      description: "Expert security consulting services to assess risks, develop strategies, and implement tailored security solutions for your specific needs.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80"
     }
   ];
 
@@ -156,7 +161,7 @@ const SecuritySurveillance = () => {
               UBBIM's Security & Surveillance Solutions are designed to provide robust, reliable protection for your facilities. From high-definition video surveillance to advanced access control systems, our solutions are tailored to meet the specific security needs of your environment, ensuring peace of mind through cutting-edge technology.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
               <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="aspect-video overflow-hidden">
