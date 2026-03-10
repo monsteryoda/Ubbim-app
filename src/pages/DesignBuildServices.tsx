@@ -212,7 +212,7 @@ const DesignBuildServices = () => {
             <div className="relative">
               <div className="aspect-[16/10] overflow-hidden rounded-2xl shadow-2xl">
                 <img 
-                  src="/src/assets/chooseus.jpg" 
+                  src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1200&q=80" 
                   alt="Construction Site" 
                   className="w-full h-full object-cover"
                 />
