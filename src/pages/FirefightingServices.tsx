@@ -208,10 +208,10 @@ const FirefightingServices = () => {
               </div>
               <div className="text-left md:text-left">
                 <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Proven Track Record
+                  Proven Results
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-left">
-                  Our portfolio of successful projects speaks for itself, showcasing our ability to deliver exceptional results.
+                  Our portfolio of successful projects demonstrates our ability to restore and enhance buildings, preserving their value and functionality.
                 </p>
               </div>
             </div>
