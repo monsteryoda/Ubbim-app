@@ -9,18 +9,18 @@ import { Card, CardContent } from "@/components/ui/card";
 const FirefightingServices = () => {
   const services = [
     {
-      title: "Structural Repairs",
-      description: "Reinforce and restore the structural integrity of buildings, addressing issues such as cracks, settlement, and foundation damage.",
+      title: "Fire Alarm Systems",
+      description: "Design and installation of advanced fire alarm systems that ensure early detection and prompt response to fire emergencies.",
       image: "/src/assets/structural-repair.png"
     },
     {
-      title: "Interior Refurbishment",
-      description: "Modernize and refresh interior spaces, from offices to residential units, with custom refurbishment solutions that enhance functionality and aesthetics.",
+      title: "Fire Suppression Systems",
+      description: "Implement effective fire suppression systems, including sprinklers, gas suppression, and foam systems, tailored to your facility's needs.",
       image: "/src/assets/interior-refurbishment.jpeg"
     },
     {
-      title: "Waterproofing and Damp Proofing",
-      description: "Protect buildings from water damage with advanced waterproofing and damp proofing techniques that ensure long-lasting durability.",
+      title: "Fire Extinguishers and Hose Reels",
+      description: "Supply and maintenance of fire extinguishers and hose reels, ensuring they are always ready for use in an emergency.",
       image: "/src/assets/damp-proofing.jpeg"
     }
   ];
