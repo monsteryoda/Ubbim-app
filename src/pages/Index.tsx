@@ -4,7 +4,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Building2, Leaf, Award, HardHat, TrendingUp, Users, Phone, FileText, Shield, Cpu } from "lucide-react";
+import { ArrowRight, Building2, Leaf, Award, HardHat, TrendingUp, Users, Phone, FileText, Shield, Cpu, MapPin, Mail, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 import LogoCarousel from "@/components/LogoCarousel";
 import CertificationsGrid from "@/components/CertificationsGrid";
 
@@ -123,6 +123,18 @@ const Index = () => {
     { name: "FGV", image: "/src/assets/fgv-logo.jpg" },
     { name: "Northport", image: "/src/assets/northport-logo.png" },
   ];
+
+  const officeDetails = {
+    address: "123 Business Street, Business District, 50000 Kuala Lumpur, Malaysia",
+    phone: "+60 3-1234 5678",
+    email: "info@ublim.com",
+    socialLinks: [
+      { icon: Facebook, href: "#", label: "Facebook" },
+      { icon: Twitter, href: "#", label: "Twitter" },
+      { icon: Linkedin, href: "#", label: "LinkedIn" },
+      { icon: Instagram, href: "#", label: "Instagram" },
+    ],
+  };
 
   return (
     <div className="min-h-screen">
@@ -269,28 +281,107 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Quick Links CTA */}
+      {/* Contact Us Section with Office Details */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
-              CONTACT US
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Get in touch for partnerships, inquiries, or to learn more about our services.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-1 gap-6 max-w-md mx-auto">
-            <Card className="bg-[#1A4B8C] text-white border-none">
-              <CardContent className="p-8 flex flex-col items-center text-center">
-                <Phone className="w-10 h-10 mb-4 text-[#4ADE80]" />
-                <h3 className="text-xl font-bold mb-2">Contact Us</h3>
-                <p className="text-gray-300 text-sm mb-4">Get in touch for partnerships or inquiries.</p>
-                <Button asChild variant="outline" className="border-white text-white hover:bg-white hover:text-[#1A4B8C]">
-                  <Link to="/contact">Contact Now</Link>
-                </Button>
-              </CardContent>
-            </Card>
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Left Side - Contact CTA */}
+            <div>
+              <div className="mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
+                  CONTACT US
+                </h2>
+                <p className="text-gray-600 max-w-xl">
+                  Get in touch for partnerships, inquiries, or to learn more about our services.
+                </p>
+              </div>
+              <Card className="bg-[#1A4B8C] text-white border-none">
+                <CardContent className="p-8 flex flex-col items-center text-center">
+                  <Phone className="w-10 h-10 mb-4 text-[#4ADE80]" />
+                  <h3 className="text-xl font-bold mb-2">Contact Us</h3>
+                  <p className="text-gray-300 text-sm mb-4">Get in touch for partnerships or inquiries.</p>
+                  <Button asChild variant="outline" className="border-white text-white hover:bg-white hover:text-[#1A4B8C]">
+                    <Link to="/contact">Contact Now</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Right Side - Office Details */}
+            <div className="space-y-6">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-6">
+                  Office Details
+                </h2>
+                <p className="text-gray-600 mb-8">
+                  Visit us or reach out through any of the following channels.
+                </p>
+              </div>
+
+              {/* Address Card */}
+              <Card className="border-none shadow-lg">
+                <CardContent className="p-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-[#1A4B8C]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <MapPin className="w-6 h-6 text-[#1A4B8C]" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-lg text-[#1A4B8C] mb-2">Address</h3>
+                      <p className="text-gray-600">{officeDetails.address}</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Phone Card */}
+              <Card className="border-none shadow-lg">
+                <CardContent className="p-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-[#1A4B8C]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <Phone className="w-6 h-6 text-[#1A4B8C]" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-lg text-[#1A4B8C] mb-2">Phone</h3>
+                      <p className="text-gray-600">{officeDetails.phone}</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Email Card */}
+              <Card className="border-none shadow-lg">
+                <CardContent className="p-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-[#1A4B8C]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <Mail className="w-6 h-6 text-[#1A4B8C]" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-lg text-[#1A4B8C] mb-2">Email</h3>
+                      <p className="text-gray-600">{officeDetails.email}</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Social Media */}
+              <Card className="border-none shadow-lg">
+                <CardContent className="p-6">
+                  <h3 className="font-semibold text-lg text-[#1A4B8C] mb-4">Follow Us</h3>
+                  <div className="flex space-x-4">
+                    {officeDetails.socialLinks.map((social, index) => (
+                      <a
+                        key={index}
+                        href={social.href}
+                        className="w-12 h-12 bg-[#1A4B8C]/10 rounded-xl flex items-center justify-center hover:bg-[#1A4B8C] transition-colors duration-300"
+                        aria-label={social.label}
+                      >
+                        <social.icon className="w-5 h-5 text-[#1A4B8C] hover:text-white transition-colors duration-300" />
+                      </a>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
