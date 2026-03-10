@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import ubbimLogo from "@/assets/ubbim-logo.png";
 
 const Navbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -26,7 +25,7 @@ const Navbar = () => {
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
               <img 
-                src={ubbimLogo} 
+                src="/ubbim-logo.png" 
                 alt="UBBIM Logo" 
                 className="h-10 w-auto"
               />
@@ -72,7 +71,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between p-4 border-b">
             <Link to="/" className="flex items-center space-x-2">
               <img 
-                src={ubbimLogo} 
+                src="/ubbim-logo.png" 
                 alt="UBBIM Logo" 
                 className="h-10 w-auto"
               />
