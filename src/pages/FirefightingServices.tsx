@@ -113,7 +113,7 @@ const FirefightingServices = () => {
               Back to Services
             </Link>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              FIREFIGHTING SERVICES
+              STRUCTURAL REPAIR AND REFURBISHMENT
             </h1>
             <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
               Comprehensive Solutions from Concept to Completion
