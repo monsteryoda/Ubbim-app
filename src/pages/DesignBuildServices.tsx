@@ -242,43 +242,6 @@ const DesignBuildServices = () => {
         </div>
       </section>
 
-      {/* Process Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
-              Our Design & Build Process
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              A proven methodology that ensures project success from concept to completion.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {processSteps.map((step, index) => (
-              <Card key={index} className="border-none shadow-lg overflow-hidden">
-                <CardContent className="p-8">
-                  <div className="flex items-start space-x-6">
-                    <div className="flex-shrink-0">
-                      <div className="w-16 h-16 bg-[#1A4B8C] text-white rounded-full flex items-center justify-center text-2xl font-bold">
-                        {step.step}
-                      </div>
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-[#1A4B8C] mb-3">
-                        {step.title}
-                      </h3>
-                      <p className="text-gray-600 leading-relaxed">
-                        {step.description}
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-20 bg-[#1A4B8C]">
         <div className="container mx-auto px-4 text-center">
