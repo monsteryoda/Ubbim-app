@@ -24,11 +24,11 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
   const defaultCertifications: Certification[] = [
     {
       id: "1",
-      title: "ISO 14001:2015",
+      title: "ISO 9001:2015",
       organization: "ACM-CCAS Limited",
-      year: "2019",
-      image: "/src/assets/certifications/cenviro.png",
-      description: "Environmental Management System Certification"
+      year: "2017",
+      image: "/src/assets/certifications/9001.png",
+      description: "Quality Management System Certification"
     }
   ];
 
