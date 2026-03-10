@@ -24,7 +24,7 @@ const Services = () => {
       image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=80",
     },
     {
-      title: "Mechanical Services",
+      title: "Security & Surveillance Solutions",
       description: "Comprehensive design and build services tailored to meet the specific needs of each project, ensuring seamless execution.",
       image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80",
     },
