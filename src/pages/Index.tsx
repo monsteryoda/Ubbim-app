@@ -55,58 +55,18 @@ const Index = () => {
   const certifications = [
     {
       id: "1",
-      title: "CIDB SCORE 3 Star Rating",
-      organization: "CIDB Malaysia",
-      year: "2022",
-      image: "/src/assets/certification-2022.png",
-      description: "Achieved 3-star rating under the CIDB SCORE evaluation system, recognizing excellent management and technical capabilities, compliance to best practices, and outstanding project management standards.",
+      title: "ISO 14001:2015",
+      organization: "ACM-CCAS Limited",
+      year: "2019",
+      image: "/src/assets/certifications/iso-14001.png",
+      description: "Environmental Management System Certification"
     },
     {
       id: "2",
-      title: "Sustainability Excellence",
-      organization: "Green Business Council",
-      year: "2023",
-      image: "https://images.unsplash.com/photo-1560421683-6856ea585c78?w=800&q=80",
-      description: "Awarded for implementing sustainable practices in construction projects, reducing carbon footprint by 40% across operations.",
-    },
-    {
-      id: "3",
-      title: "Safety Leadership Award",
-      organization: "National Safety Council",
-      year: "2022",
-      image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=80",
-      description: "Honored for maintaining the highest safety standards with zero lost-time incidents across all project sites for three consecutive years.",
-    },
-    {
-      id: "4",
-      title: "Innovation in Construction",
-      organization: "International Building Tech Awards",
-      year: "2023",
-      image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80",
-      description: "Recognized for pioneering the use of BIM and AI-driven project management tools in large-scale infrastructure projects.",
-    },
-    {
-      id: "5",
-      title: "Excellence in Project Delivery",
-      organization: "Project Management Institute",
-      year: "2022",
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
-      description: "Awarded for delivering complex projects on time and within budget, exceeding client expectations across multiple sectors.",
-    },
-    {
-      id: "6",
-      title: "Environmental Stewardship",
-      organization: "Environmental Protection Agency",
-      year: "2023",
-      image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&q=80",
-      description: "Recognized for implementing eco-friendly construction practices and achieving LEED certification on multiple projects.",
-    },
-    {
-      id: "7",
       title: "ISO 9001:2015",
       organization: "ACM-CCAS Limited",
-      year: "2017",
-      image: "/src/assets/certifications/iso-9001.png",
+      year: "2020",
+      image: "",
       description: "Quality Management System Certification"
     }
   ];
