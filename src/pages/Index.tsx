@@ -109,6 +109,14 @@ const Index = () => {
       year: "2017",
       image: "/src/assets/certifications/iso-9001.png",
       description: "Quality Management System Certification"
+    },
+    {
+      id: "8",
+      title: "ISO 14001:2015",
+      organization: "ACM-CCAS Limited",
+      year: "2019",
+      image: "/src/assets/certifications/14001.png",
+      description: "Environmental Management System Certification for general construction, civil and structural engineering services"
     }
   ];
 
