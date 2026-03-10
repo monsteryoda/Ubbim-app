@@ -21,7 +21,16 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
   const [selectedCertification, setSelectedCertification] = useState<Certification | null>(null);
 
   // Sample certifications data
-  const defaultCertifications: Certification[] = [];
+  const defaultCertifications: Certification[] = [
+    {
+      id: "1",
+      title: "ISO 14001:2015",
+      organization: "ACM-CCAS Limited",
+      year: "2019",
+      image: "/src/assets/certifications/iso-14001.png",
+      description: "Environmental Management System Certification"
+    }
+  ];
 
   const displayCertifications = certifications || defaultCertifications;
 
