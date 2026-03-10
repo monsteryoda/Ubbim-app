@@ -9,23 +9,23 @@ import { Card, CardContent } from "@/components/ui/card";
 const SecuritySurveillance = () => {
   const services = [
     {
-      title: "CCTV Surveillance Systems",
-      description: "State-of-the-art CCTV systems with high-definition cameras, remote monitoring capabilities, and advanced analytics for comprehensive security coverage.",
+      title: "Video Surveillance Systems",
+      description: "Install high-definition CCTV cameras with advanced features like motion detection, night vision, and remote monitoring to keep your property secure.",
       image: "/src/assets/cctv-systems.jpeg"
     },
     {
       title: "Access Control Systems",
-      description: "Secure and convenient access control solutions including biometric scanners, card readers, and mobile access management for all entry points.",
+      description: "Implement access control systems that restrict entry to authorized personnel only, using key cards, biometrics, or mobile credentials.",
       image: "/src/assets/access-control.jpeg"
     },
     {
-      title: "Alarm & Intrusion Detection",
-      description: "Advanced alarm systems and intrusion detection technology that provides real-time alerts and integrates with monitoring centers for rapid response.",
+      title: "Intrusion Detection Systems",
+      description: "Detect unauthorized access and potential threats with intrusion detection systems that alert you in real-time.",
       image: "/src/assets/alarm-systems.jpeg"
     },
     {
-      title: "Security Consulting",
-      description: "Expert security consulting services to assess risks, develop strategies, and implement tailored security solutions for your specific needs.",
+      title: "Integrated Security Management",
+      description: "Centralize your security operations with integrated management systems that control video, access, and alarm systems from a single platform.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80"
     }
   ];
