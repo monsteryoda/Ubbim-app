@@ -125,7 +125,7 @@ const Index = () => {
   ];
 
   const officeDetails = {
-    address: "123 Business Street, Business District, 50000 Kuala Lumpur, Malaysia",
+    address: "No. 219, Jalan S2 B10, Seremban 2, 70300 Seremban, Negeri Sembilan",
     phone: "+60 3-1234 5678",
     email: "info@ublim.com",
     socialLinks: [
