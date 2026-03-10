@@ -180,33 +180,64 @@ const DesignBuildServices = () => {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-20 bg-white">
+      {/* Why Choose Us Section */}
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
-              Why Choose Our Design & Build Services?
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Our integrated approach delivers superior results through collaboration, innovation, and expertise.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
-              <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <CardContent className="p-8">
-                  <div className="w-14 h-14 bg-[#1A4B8C]/10 rounded-xl flex items-center justify-center mb-6">
-                    <feature.icon className="w-7 h-7 text-[#1A4B8C]" />
-                  </div>
-                  <h3 className="text-xl font-bold text-[#1A4B8C] mb-3">
-                    {feature.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    {feature.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
+          <h2 className="text-4xl md:text-5xl font-bold text-[#1A4B8C] mb-16 text-center">
+            Why Choose Us
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            {/* Left Column - Text Blocks */}
+            <div className="space-y-8 md:pr-12">
+              <div className="text-right md:text-right">
+                <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
+                  Integrated Approach
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-right">
+                  Our seamless coordination between design and construction teams ensures optimal project outcomes with streamlined communication and unified vision.
+                </p>
+              </div>
+              <div className="text-right md:text-right">
+                <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
+                  Client-Centered Design
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-right">
+                  We prioritize your needs and vision throughout every phase, creating solutions that perfectly balance aesthetics, functionality, and your unique requirements.
+                </p>
+              </div>
+            </div>
+
+            {/* Center Column - Large Image */}
+            <div className="relative">
+              <div className="aspect-[16/10] overflow-hidden rounded-2xl shadow-2xl">
+                <img 
+                  src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1200&q=80" 
+                  alt="Construction Site" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Right Column - Text Blocks */}
+            <div className="space-y-8 md:pl-12">
+              <div className="text-left md:text-left">
+                <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
+                  Experienced Team
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-left">
+                  Our professionals bring decades of combined industry knowledge and technical expertise, delivering exceptional results on every project we undertake.
+                </p>
+              </div>
+              <div className="text-left md:text-left">
+                <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
+                  Proven Track Record
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-left">
+                  With hundreds of successful projects completed, we have established ourselves as a trusted partner for clients seeking quality, reliability, and excellence.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
