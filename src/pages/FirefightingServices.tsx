@@ -20,7 +20,7 @@ const FirefightingServices = () => {
     },
     {
       title: "Waterproofing and Damp Proofing",
-      description: "Expert consultation on fire safety compliance, risk assessment, and development of comprehensive fire safety plans.",
+      description: "Protect buildings from water damage with advanced waterproofing and damp proofing techniques that ensure long-lasting durability.",
       image: "/src/assets/firefighting-services.jpg"
     }
   ];
