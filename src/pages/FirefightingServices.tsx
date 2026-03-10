@@ -203,7 +203,7 @@ const FirefightingServices = () => {
                   Quality Materials
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-left">
-                  We use only the highest quality materials and equipment to ensure durability and long-term performance.
+                  We use only the highest quality materials and techniques to ensure that our repairs and refurbishments are built to last.
                 </p>
               </div>
               <div className="text-left md:text-left">
