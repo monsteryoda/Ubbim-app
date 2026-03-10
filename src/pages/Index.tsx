@@ -117,6 +117,14 @@ const Index = () => {
       year: "2019",
       image: "/src/assets/certifications/14001.png",
       description: "Environmental Management System Certification for general construction, civil and structural engineering services"
+    },
+    {
+      id: "9",
+      title: "ISO 45001:2018",
+      organization: "ACM-CCAS Limited",
+      year: "2019",
+      image: "/src/assets/certifications/iso-45001-2018.png",
+      description: "Occupational Health and Safety Management System Certification for provision of general construction, civil and structural engineering services"
     }
   ];
 
