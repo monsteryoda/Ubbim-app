@@ -14,7 +14,7 @@ const FirefightingServices = () => {
       image: "/src/assets/firefighting-services.jpg"
     },
     {
-      title: "Fire Suppression Systems",
+      title: "Interior Refurbishment",
       description: "Comprehensive suppression solutions including sprinkler systems, gas suppression, and foam systems for various applications.",
       image: "/src/assets/firefighting-services.jpg"
     },
