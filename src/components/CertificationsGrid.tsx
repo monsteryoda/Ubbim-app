@@ -29,6 +29,14 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
       year: "2019",
       image: "/src/assets/certifications/iso-14001.png",
       description: "Environmental Management System Certification"
+    },
+    {
+      id: "2",
+      title: "ISO 9001:2015",
+      organization: "ACM-CCAS Limited",
+      year: "2020",
+      image: "",
+      description: "Quality Management System Certification"
     }
   ];
 
@@ -44,11 +52,13 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
             onClick={() => setSelectedCertification(cert)}
           >
             <div className="relative overflow-hidden bg-gray-100">
-              <img
-                src={cert.image}
-                alt={cert.title}
-                className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-500"
-              />
+              {cert.image && (
+                <img
+                  src={cert.image}
+                  alt={cert.title}
+                  className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-500"
+                />
+              )}
             </div>
           </Card>
         ))}
@@ -71,11 +81,13 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
               >
                 <X className="w-6 h-6" />
               </button>
-              <img
-                src={selectedCertification.image}
-                alt={selectedCertification.title}
-                className="w-full h-auto"
-              />
+              {selectedCertification.image && (
+                <img
+                  src={selectedCertification.image}
+                  alt={selectedCertification.title}
+                  className="w-full h-auto"
+                />
+              )}
             </div>
           </div>
         </div>
