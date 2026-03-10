@@ -26,7 +26,7 @@ const SecuritySurveillance = () => {
     {
       title: "Integrated Security Management",
       description: "Centralize your security operations with integrated management systems that control video, access, and alarm systems from a single platform.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80"
+      image: "/src/assets/integrated-security.jpeg"
     }
   ];
 
