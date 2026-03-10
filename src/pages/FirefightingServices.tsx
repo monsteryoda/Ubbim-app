@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowLeft, Fire, Shield, AlertTriangle, Wrench, CheckCircle, Building2, Clock, Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { ArrowLeft, Flame, Shield, AlertTriangle, Wrench, CheckCircle, Building2, Clock, Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -42,7 +42,7 @@ const FirefightingServices = () => {
       description: "Rigorous quality control measures throughout every phase of the project lifecycle."
     },
     {
-      icon: Fire,
+      icon: Flame,
       title: "24/7 Emergency Response",
       description: "Round-the-clock support and emergency response for all fire safety incidents."
     },
