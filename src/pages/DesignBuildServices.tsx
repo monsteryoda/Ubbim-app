@@ -234,7 +234,7 @@ const DesignBuildServices = () => {
                   Proven Track Record
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-left">
-                  With hundreds of successful projects completed, we have established ourselves as a trusted partner for clients seeking quality, reliability, and excellence.
+                  Our portfolio of successful projects speaks for itself, showcasing our ability to deliver exceptional results.
                 </p>
               </div>
             </div>
