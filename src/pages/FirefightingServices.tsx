@@ -11,7 +11,7 @@ const FirefightingServices = () => {
     {
       title: "Fire Alarm Systems",
       description: "Design and installation of advanced fire alarm systems that ensure early detection and prompt response to fire emergencies.",
-      image: "/src/assets/structural-repair.png"
+      image: "/src/assets/fire-alarm.png"
     },
     {
       title: "Fire Suppression Systems",
