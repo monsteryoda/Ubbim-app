@@ -27,7 +27,7 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
       title: "ISO 45001:2018",
       organization: "ACM-CCAS Limited",
       year: "2019",
-      image: "/src/assets/certifications/iso-45001.png",
+      image: "https://www.dyad.sh/media/6d38d49425cee744972f16f4935862ab.png",
       description: "Occupational Health and Safety Management System Certification"
     }
   ];
