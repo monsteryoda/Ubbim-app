@@ -24,11 +24,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
-              <img 
-                src="/ubbim-logo.png" 
-                alt="UBBIM Logo" 
-                className="h-10 w-auto"
-              />
+              <span className="text-white font-bold text-xl">UBBIM</span>
             </Link>
 
             {/* Desktop Navigation */}
@@ -70,11 +66,7 @@ const Navbar = () => {
           {/* Drawer Header */}
           <div className="flex items-center justify-between p-4 border-b">
             <Link to="/" className="flex items-center space-x-2">
-              <img 
-                src="/ubbim-logo.png" 
-                alt="UBBIM Logo" 
-                className="h-10 w-auto"
-              />
+              <span className="text-gray-800 font-bold text-xl">UBBIM</span>
             </Link>
             <button
               onClick={() => setIsDrawerOpen(false)}
