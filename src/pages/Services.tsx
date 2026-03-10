@@ -13,24 +13,28 @@ const Services = () => {
       description: "Comprehensive design and build services tailored to meet the specific needs of each project, ensuring seamless execution.",
       image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
       hasButton: true,
+      link: "/services/design-build",
     },
     {
       title: "Firefighting Services",
       description: "Advanced fire protection systems designed to safeguard lives and property, from alarms to suppression systems.",
       image: "/src/assets/firefighting-services.jpg",
       hasButton: true,
+      link: "/services/firefighting",
     },
     {
       title: "Structural Repair and Refurbishment",
       description: "Expert repair and refurbishment services that breathe new life into existing structures, enhancing durability and appearance.",
       image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=80",
       hasButton: true,
+      link: "/services/structural-repair",
     },
     {
       title: "Security & Surveillance Solutions",
       description: "Integrated security and surveillance solutions that provide peace of mind through advanced monitoring and control systems.",
       image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80",
       hasButton: true,
+      link: "/services/security-surveillance",
     },
   ];
 
@@ -113,9 +117,11 @@ const Services = () => {
                   />
                   {service.hasButton && (
                     <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-                      <button className="bg-[#135D77] hover:bg-[#0f4a5e] text-white font-bold text-lg px-10 py-4 rounded-full transition-all duration-300 hover:scale-105">
-                        Learn More
-                      </button>
+                      <Link to={service.link}>
+                        <button className="bg-[#135D77] hover:bg-[#0f4a5e] text-white font-bold text-lg px-10 py-4 rounded-full transition-all duration-300 hover:scale-105">
+                          Learn More
+                        </button>
+                      </Link>
                     </div>
                   )}
                 </div>
