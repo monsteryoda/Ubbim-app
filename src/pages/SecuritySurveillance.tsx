@@ -67,6 +67,29 @@ const SecuritySurveillance = () => {
     "Improved security posture through comprehensive approach"
   ];
 
+  const serviceFeatures = [
+    {
+      title: "Video Surveillance",
+      description: "High-definition cameras with night vision, motion detection, and remote viewing capabilities for complete visibility.",
+      image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=400&q=80"
+    },
+    {
+      title: "Access Control",
+      description: "Multi-factor authentication systems including card readers, biometric scanners, and mobile credential management.",
+      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&q=80"
+    },
+    {
+      title: "Intrusion Detection",
+      description: "Advanced sensors and alarm systems that detect unauthorized entry and trigger immediate alerts to security teams.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80"
+    },
+    {
+      title: "Integrated Security Management",
+      description: "Centralized platform that unifies all security systems for streamlined monitoring and response management.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80"
+    }
+  ];
+
   return (
     <div className="min-h-screen">
       {/* Navigation Bar */}
@@ -149,6 +172,41 @@ const SecuritySurveillance = () => {
                   </h3>
                   <p className="text-gray-600 leading-relaxed">
                     {service.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Service Features Section - 4 Column */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
+              Our Security Solutions
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Comprehensive security features designed to protect your property and assets
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {serviceFeatures.map((feature, index) => (
+              <div key={index} className="flex flex-col">
+                <div className="aspect-[4/3] overflow-hidden rounded-lg">
+                  <img 
+                    src={feature.image} 
+                    alt={feature.title} 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="mt-4 p-5 bg-gray-100 rounded-lg">
+                  <h3 className="text-lg font-bold text-[#1A4B8C] mb-2">
+                    {feature.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    {feature.description}
                   </p>
                 </div>
               </div>
