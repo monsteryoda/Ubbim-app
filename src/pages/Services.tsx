@@ -48,9 +48,9 @@ const Services = () => {
           <div className="flex items-center justify-between h-16">
             <Link to="/" className="flex items-center space-x-2">
               <img 
-                src="/ubbim-logo.png" 
+                src="/ubbim.png" 
                 alt="UBBIM Logo" 
-                className="h-8 w-auto"
+                className="h-10 w-auto"
               />
             </Link>
             <div className="hidden md:flex items-center space-x-8">
