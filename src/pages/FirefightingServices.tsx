@@ -116,7 +116,7 @@ const FirefightingServices = () => {
               STRUCTURAL REPAIR AND REFURBISHMENT
             </h1>
             <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
-              Comprehensive Solutions from Concept to Completion
+              Restoring and Enhancing Buildings with Precision and Care
             </p>
           </div>
         </div>
