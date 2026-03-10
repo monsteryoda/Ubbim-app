@@ -195,7 +195,7 @@ const DesignBuildServices = () => {
                   Integrated Approach
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-right">
-                  Our seamless coordination between design and construction teams ensures optimal project outcomes with streamlined communication and unified vision.
+                  From design to construction, we manage every aspect of your project, ensuring seamless coordination and communication.
                 </p>
               </div>
               <div className="text-right md:text-right">
