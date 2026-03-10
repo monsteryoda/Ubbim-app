@@ -77,7 +77,7 @@ const DesignBuildServices = () => {
     {
       title: "General Contracting",
       description: "Rely on our skilled team to handle every aspect of construction, from sourcing materials to managing subcontractors.",
-      image: "https://images.unsplash.com/photo-1590644365607-1c5a38fc43e0?w=800&q=80"
+      image: "/src/assets/general-contracting.jpeg"
     }
   ];
 
