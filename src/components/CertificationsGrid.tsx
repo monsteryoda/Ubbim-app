@@ -35,7 +35,7 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
       title: "ISO 9001:2015",
       organization: "ACM-CCAS Limited",
       year: "2020",
-      image: "/src/assets/certifications/iso-9001.png",
+      image: "",
       description: "Quality Management System Certification"
     }
   ];
