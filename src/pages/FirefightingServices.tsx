@@ -169,18 +169,18 @@ const FirefightingServices = () => {
             <div className="space-y-8 md:pr-12">
               <div className="text-right md:text-right">
                 <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Technical Expertise
+                  Comprehensive Solutions
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-right">
-                  Our team of engineers and craftsmen bring years of experience in addressing complex structural issues with precision and care.
+                  We provide end-to-end firefighting services, from design and installation to maintenance and compliance, ensuring total protection.
                 </p>
               </div>
               <div className="text-right md:text-right">
                 <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Attention to Detail
+                  Advanced Technology
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-right">
-                  We prioritize your vision and needs, creating designs that are not only functional but also aesthetically pleasing and sustainable.
+                  We utilize the latest fire protection technologies to deliver systems that are both effective and efficient.
                 </p>
               </div>
             </div>
@@ -200,18 +200,18 @@ const FirefightingServices = () => {
             <div className="space-y-8 md:pl-12">
               <div className="text-left md:text-left">
                 <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Quality Materials
+                  Experienced Team
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-left">
-                  We use only the highest quality materials and techniques to ensure that our repairs and refurbishments are built to last.
+                  Our team of fire safety experts brings extensive experience in protecting diverse environments, from high-rise buildings to industrial facilities.
                 </p>
               </div>
               <div className="text-left md:text-left">
                 <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Proven Results
+                  Regulatory Compliance
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-left">
-                  Our portfolio of successful projects demonstrates our ability to restore and enhance buildings, preserving their value and functionality.
+                  Our solutions meet all relevant fire safety regulations and standards, giving you peace of mind that your facility is protected and compliant.
                 </p>
               </div>
             </div>
