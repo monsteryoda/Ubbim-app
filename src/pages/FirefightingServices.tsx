@@ -15,7 +15,7 @@ const FirefightingServices = () => {
     },
     {
       title: "Interior Refurbishment",
-      description: "Comprehensive suppression solutions including sprinkler systems, gas suppression, and foam systems for various applications.",
+      description: "Modernize and refresh interior spaces, from offices to residential units, with custom refurbishment solutions that enhance functionality and aesthetics.",
       image: "/src/assets/firefighting-services.jpg"
     },
     {
