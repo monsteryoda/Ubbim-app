@@ -148,16 +148,6 @@ const DesignBuildServices = () => {
       {/* Overview Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-6">
-                Our Services
-              </h2>
-              <p className="text-gray-600 mb-6 leading-relaxed text-justify">
-                Design & Build is a project delivery method where a single entity—the Design & Build contractor—takes responsibility for both the design and construction of a project. This integrated approach streamlines communication, reduces project timelines, and provides clients with a single point of accountability.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 
