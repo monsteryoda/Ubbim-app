@@ -27,7 +27,7 @@ const Navbar = () => {
               <img 
                 src="/src/assets/ubbim-logo.png" 
                 alt="UBBIM Logo" 
-                className="h-10 w-auto"
+                className="h-[58px] w-auto"
               />
             </Link>
 
