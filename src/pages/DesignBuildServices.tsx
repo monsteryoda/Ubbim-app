@@ -153,7 +153,7 @@ const DesignBuildServices = () => {
               Our Core Services
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Comprehensive solutions tailored to meet your project needs with excellence and precision.
+              UBBIM's Design and Build Services offer a seamless approach to construction, integrating design, planning, and execution under one roof. Our team of experienced architects, engineers, and project managers work closely with you to bring your vision to life, ensuring quality, efficiency, and cost-effectiveness at every stage.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
