@@ -138,24 +138,6 @@ const DesignBuildServices = () => {
               <p className="text-gray-600 mb-6 leading-relaxed text-justify">
                 Design & Build is a project delivery method where a single entity—the Design & Build contractor—takes responsibility for both the design and construction of a project. This integrated approach streamlines communication, reduces project timelines, and provides clients with a single point of accountability.
               </p>
-              <p className="text-gray-600 mb-6 leading-relaxed text-justify">
-                At UBBIM, we leverage our extensive experience in both design and construction to offer comprehensive Design & Build services that ensure your project is delivered efficiently, cost-effectively, and to the highest quality standards.
-              </p>
-              <div className="space-y-4">
-                {benefits.map((benefit, index) => (
-                  <div key={index} className="flex items-start space-x-3">
-                    <CheckCircle className="w-5 h-5 text-[#4ADE80] flex-shrink-0 mt-0.5" />
-                    <p className="text-gray-700">{benefit}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80" 
-                alt="Design & Build Process" 
-                className="rounded-2xl shadow-2xl"
-              />
             </div>
           </div>
         </div>
