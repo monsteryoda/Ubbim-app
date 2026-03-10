@@ -9,32 +9,24 @@ import { Card, CardContent } from "@/components/ui/card";
 const Services = () => {
   const services = [
     {
-      title: "Construction",
-      description: "Large-scale infrastructure and building construction with cutting-edge technology.",
-      icon: Building2,
-      details: "Our Built Environment Services encompass every phase of construction and infrastructure development, from design and build to maintenance and refurbishment. We specialize in delivering high-quality, sustainable solutions that meet the unique needs of each project, ensuring safety, efficiency, and long-term value.",
-      features: [
-        "Project Management & Supervision",
-        "Design-Build Services",
-        "Progress Monitoring & Reporting",
-        "Quality Assurance & Control",
-        "Safety Management Systems",
-        "Sustainable Construction Practices",
-      ],
+      title: "Design & Build Services",
+      description: "Comprehensive design and construction solutions delivered with precision and expertise.",
+      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80",
     },
     {
-      title: "Engineering",
-      description: "Innovative engineering solutions for complex challenges in infrastructure.",
-      icon: HardHat,
-      details: "Our Digital Solutions integrate advanced technologies like aerial analytics, 3D scanning, and virtual design coordination to transform how projects are planned, executed, and managed. We also develop custom software tailored to optimize operations, enhance collaboration, and drive innovation across industries.",
-      features: [
-        "Building Information Modeling (BIM)",
-        "Virtual Reality (VR) Design Coordination",
-        "3D Laser Scanning & Surveying",
-        "Aerial Analytics & Drone Mapping",
-        "Custom Software Development",
-        "Data Analytics & Reporting",
-      ],
+      title: "Firefighting Services",
+      description: "Advanced fire safety systems and emergency response solutions for all building types.",
+      image: "https://images.unsplash.com/photo-1555617798-318eb574e6e9?w=600&q=80",
+    },
+    {
+      title: "Electrical Services",
+      description: "Complete electrical installation, maintenance, and upgrade services for commercial projects.",
+      image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=80",
+    },
+    {
+      title: "Mechanical Services",
+      description: "HVAC, plumbing, and mechanical systems designed for optimal performance and efficiency.",
+      image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80",
     },
   ];
 
@@ -95,29 +87,25 @@ const Services = () => {
       {/* Services Content */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service, index) => (
-              index === 0 && (
-                <div key={index} className="space-y-6">
-                  <div className="w-16 h-16 bg-[#1A4B8C]/10 rounded-xl flex items-center justify-center">
-                    <service.icon className="w-8 h-8 text-[#1A4B8C]" />
-                  </div>
-                  <h2 className="text-2xl font-bold text-[#1A4B8C]">
-                    BUILT ENVIRONMENT SERVICES
-                  </h2>
-                  <p className="text-gray-600 text-justify">
-                    {service.details}
-                  </p>
-                  <ul className="space-y-3">
-                    {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start">
-                        <div className="w-2 h-2 bg-[#4ADE80] rounded-full mt-2 mr-3 flex-shrink-0" />
-                        <span className="text-gray-700">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
+              <Card key={index} className="border-none shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300">
+                <div className="h-48 overflow-hidden">
+                  <img 
+                    src={service.image} 
+                    alt={service.title} 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
                 </div>
-              )
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-[#1A4B8C] mb-3">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    {service.description}
+                  </p>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
