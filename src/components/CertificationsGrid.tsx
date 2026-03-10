@@ -27,8 +27,24 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
       title: "ISO 14001:2015",
       organization: "ACM-CCAS Limited",
       year: "2019",
-      image: "/src/assets/certifications/iso-14001.png",
+      image: "https://www.dyad.sh/media/35743c1126fbacd0dc99f170e3df800c.png",
       description: "Environmental Management System Certification"
+    },
+    {
+      id: "2",
+      title: "ISO 45001:2018",
+      organization: "ACM-CCAS Limited",
+      year: "2019",
+      image: "https://www.dyad.sh/media/6d38d49425cee744972f16f4935862ab.png",
+      description: "Occupational Health and Safety Management System Certification"
+    },
+    {
+      id: "3",
+      title: "ISO 9001:2015",
+      organization: "ACM-CCAS Limited",
+      year: "2017",
+      image: "https://www.dyad.sh/media/iso-9001.png",
+      description: "Quality Management System Certification"
     }
   ];
 
