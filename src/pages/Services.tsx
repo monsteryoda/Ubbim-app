@@ -99,8 +99,7 @@ const Services = () => {
               OUR SERVICES
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Comprehensive solutions for infrastructure development, from planning 
-              to execution.
+              At UBBIM, we provide end-to-end services that cover every aspect of the built environment. From conceptual design to final construction, and ongoing maintenance, our team is dedicated to delivering projects that stand the test of time, ensuring safety, efficiency, and sustainability.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
