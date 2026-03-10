@@ -172,7 +172,7 @@ const FirefightingServices = () => {
                   Technical Expertise
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-right">
-                  From design to construction, we manage every aspect of your project, ensuring seamless coordination and communication.
+                  Our team of engineers and craftsmen bring years of experience in addressing complex structural issues with precision and care.
                 </p>
               </div>
               <div className="text-right md:text-right">
