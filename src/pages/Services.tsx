@@ -94,6 +94,15 @@ const Services = () => {
       {/* Services Content */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
+              OUR SERVICES
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Comprehensive solutions for infrastructure development, from planning 
+              to execution.
+            </p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service, index) => (
               <Card key={index} className="border-none shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300">
