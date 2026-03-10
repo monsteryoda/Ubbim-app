@@ -25,7 +25,7 @@ const Services = () => {
     },
     {
       title: "Security & Surveillance Solutions",
-      description: "Comprehensive design and build services tailored to meet the specific needs of each project, ensuring seamless execution.",
+      description: "Integrated security and surveillance solutions that provide peace of mind through advanced monitoring and control systems.",
       image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80",
     },
   ];
