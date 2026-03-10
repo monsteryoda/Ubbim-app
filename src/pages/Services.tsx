@@ -97,27 +97,25 @@ const Services = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12">
             {services.map((service, index) => (
-              <Card key={index} className="border-none shadow-xl">
-                <CardContent className="p-8">
-                  <div className="w-16 h-16 bg-[#1A4B8C]/10 rounded-xl flex items-center justify-center mb-6">
-                    <service.icon className="w-8 h-8 text-[#1A4B8C]" />
-                  </div>
-                  <h2 className="text-2xl font-bold text-[#1A4B8C] mb-4">
-                    {index === 0 ? "BUILT ENVIRONMENT SERVICES" : "DIGITAL SOLUTIONS"}
-                  </h2>
-                  <p className="text-gray-600 mb-6 text-justify">
-                    {service.details}
-                  </p>
-                  <ul className="space-y-3 mb-6">
-                    {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start">
-                        <div className="w-2 h-2 bg-[#4ADE80] rounded-full mt-2 mr-3 flex-shrink-0" />
-                        <span className="text-gray-700">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
+              <div key={index} className="space-y-6">
+                <div className="w-16 h-16 bg-[#1A4B8C]/10 rounded-xl flex items-center justify-center">
+                  <service.icon className="w-8 h-8 text-[#1A4B8C]" />
+                </div>
+                <h2 className="text-2xl font-bold text-[#1A4B8C]">
+                  {index === 0 ? "BUILT ENVIRONMENT SERVICES" : "DIGITAL SOLUTIONS"}
+                </h2>
+                <p className="text-gray-600 text-justify">
+                  {service.details}
+                </p>
+                <ul className="space-y-3">
+                  {service.features.map((feature, idx) => (
+                    <li key={idx} className="flex items-start">
+                      <div className="w-2 h-2 bg-[#4ADE80] rounded-full mt-2 mr-3 flex-shrink-0" />
+                      <span className="text-gray-700">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
           </div>
         </div>
