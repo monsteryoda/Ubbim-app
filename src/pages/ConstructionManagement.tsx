@@ -6,93 +6,37 @@ import { ArrowLeft, Shield, Camera, Lock, Eye, Smartphone, AlertTriangle, Wrench
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
-const SecuritySurveillance = () => {
+const ConstructionManagement = () => {
   const services = [
     {
-      title: "Video Surveillance Systems",
-      description: "Install high-definition CCTV cameras with advanced features like motion detection, night vision, and remote monitoring to keep your property secure.",
-      image: "/src/assets/cctv-systems.jpeg"
+      title: "Project Planning",
+      description: "Comprehensive project planning and scheduling to ensure efficient execution and timely delivery.",
+      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&q=80"
     },
     {
-      title: "Access Control Systems",
-      description: "Implement access control systems that restrict entry to authorized personnel only, using key cards, biometrics, or mobile credentials.",
-      image: "/src/assets/access-control.jpeg"
+      title: "Cost Management",
+      description: "Detailed cost estimation, budgeting, and financial control throughout the project lifecycle.",
+      image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=400&q=80"
     },
     {
-      title: "Intrusion Detection Systems",
-      description: "Detect unauthorized access and potential threats with intrusion detection systems that alert you in real-time.",
-      image: "/src/assets/alarm-systems.png"
+      title: "Quality Control",
+      description: "Rigorous quality assurance programs to maintain the highest standards of workmanship.",
+      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&q=80"
     },
     {
-      title: "Integrated Security Management",
-      description: "Centralize your security operations with integrated management systems that control video, access, and alarm systems from a single platform.",
-      image: "/src/assets/integrated-security.jpeg"
-    }
-  ];
-
-  const features = [
-    {
-      icon: Building2,
-      title: "Integrated Approach",
-      description: "Seamless coordination between design and construction teams for optimal project outcomes."
-    },
-    {
-      icon: Clock,
-      title: "Time Efficiency",
-      description: "Streamlined processes that reduce project timelines without compromising quality."
-    },
-    {
-      icon: Shield,
-      title: "Quality Assurance",
-      description: "Rigorous quality control measures throughout every phase of the project lifecycle."
-    },
-    {
-      icon: Eye,
-      title: "24/7 Monitoring",
-      description: "Round-the-clock surveillance and monitoring for continuous protection of your premises."
-    },
-    {
-      icon: AlertTriangle,
-      title: "Risk Assessment",
-      description: "Comprehensive security risk assessments to identify vulnerabilities and implement effective countermeasures."
-    },
-    {
-      icon: Wrench,
-      title: "Maintenance & Support",
-      description: "Regular maintenance and prompt technical support to keep your security systems operational."
+      title: "Safety Management",
+      description: "Comprehensive safety programs ensuring the well-being of all project personnel.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80"
     }
   ];
 
   const benefits = [
-    "Single point of responsibility for design and installation",
-    "Reduced security risks through integrated systems",
-    "Faster deployment with overlapping design and installation phases",
-    "Cost certainty with guaranteed maximum price options",
-    "Enhanced collaboration between security and IT teams",
-    "Improved security posture through comprehensive approach"
-  ];
-
-  const serviceFeatures = [
-    {
-      title: "Video Surveillance",
-      description: "High-definition cameras with night vision, motion detection, and remote viewing capabilities for complete visibility.",
-      image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=400&q=80"
-    },
-    {
-      title: "Access Control",
-      description: "Multi-factor authentication systems including card readers, biometric scanners, and mobile credential management.",
-      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&q=80"
-    },
-    {
-      title: "Intrusion Detection",
-      description: "Advanced sensors and alarm systems that detect unauthorized entry and trigger immediate alerts to security teams.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80"
-    },
-    {
-      title: "Integrated Security Management",
-      description: "Centralized platform that unifies all security systems for streamlined monitoring and response management.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80"
-    }
+    "Single point of responsibility",
+    "Improved project coordination",
+    "Enhanced cost control",
+    "Reduced project risks",
+    "Better quality outcomes",
+    "Faster project delivery"
   ];
 
   return (
@@ -132,7 +76,7 @@ const SecuritySurveillance = () => {
       {/* Hero Section */}
       <section className="relative bg-[#1A4B8C] text-white py-24 lg:py-32 overflow-hidden pt-20">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1920&q=80')] bg-cover bg-center" />
+          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80')] bg-cover bg-center" />
         </div>
         <div className="container mx-auto px-4 relative">
           <div className="max-w-3xl">
@@ -141,10 +85,10 @@ const SecuritySurveillance = () => {
               Back to Services
             </Link>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              SECURITY & SURVEILLANCE SOLUTIONS
+              CONSTRUCTION MANAGEMENT
             </h1>
             <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
-              Comprehensive Security Systems for Enhanced Protection
+              Professional oversight for successful project delivery
             </p>
           </div>
         </div>
@@ -155,10 +99,10 @@ const SecuritySurveillance = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
-              Our Core Services
+              Our Construction Management Services
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              UBBIM's Security & Surveillance Solutions are designed to provide robust, reliable protection for your facilities. From high-definition video surveillance to advanced access control systems, our solutions are tailored to meet the specific security needs of your environment, ensuring peace of mind through cutting-edge technology.
+              Expert management services to ensure your construction project succeeds
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -185,64 +129,19 @@ const SecuritySurveillance = () => {
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
-      <section className="py-24 bg-white">
+      {/* Benefits Section */}
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#1A4B8C] mb-16 text-center">
-            Why Choose Us
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-16 text-center">
+            Benefits of Professional Construction Management
           </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-            {/* Left Column - Text Blocks */}
-            <div className="space-y-8 md:pr-12">
-              <div className="text-right md:text-right">
-                <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Comprehensive Solutions
-                </h3>
-                <p className="text-gray-600 leading-relaxed text-right">
-                  We use the latest in security technology, including high-definition cameras, biometric access controls, and AI-driven analytics.
-                </p>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {benefits.map((benefit, index) => (
+              <div key={index} className="flex items-center space-x-4">
+                <CheckCircle className="w-6 h-6 text-[#4ADE80] flex-shrink-0" />
+                <span className="text-gray-700 text-lg">{benefit}</span>
               </div>
-              <div className="text-right md:text-right">
-                <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Expert Installation
-                </h3>
-                <p className="text-gray-600 leading-relaxed text-right">
-                  Our team of security experts ensures that every system is installed with precision and care, providing reliable, long-term security.
-                </p>
-              </div>
-            </div>
-
-            {/* Center Column - Large Image */}
-            <div className="relative">
-              <div className="aspect-[16/10] overflow-hidden rounded-2xl shadow-2xl">
-                <img 
-                  src="/src/assets/security-surveillance.jpg" 
-                  alt="Why Choose Us" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-
-            {/* Right Column - Text Blocks */}
-            <div className="space-y-8 md:pl-12">
-              <div className="text-left md:text-left">
-                <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Tailored Solutions
-                </h3>
-                <p className="text-gray-600 leading-relaxed text-left">
-                  Our security systems are customized to meet the specific needs and challenges of your environment, ensuring optimal protection.
-                </p>
-              </div>
-              <div className="text-left md:text-left">
-                <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Ongoing Support
-                </h3>
-                <p className="text-gray-600 leading-relaxed text-left">
-                  We offer comprehensive maintenance and support services to ensure your security systems remain effective and up-to-date.
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -261,7 +160,7 @@ const SecuritySurveillance = () => {
                 />
               </div>
               <p className="text-gray-300 leading-relaxed mb-6">
-                UBBIM delivers comprehensive security solutions with a focus on safety, innovation, and client satisfaction.
+                UBBIM delivers comprehensive construction solutions with a focus on safety, innovation, and client satisfaction.
               </p>
               <div className="flex space-x-4">
                 <a href="#" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
@@ -383,4 +282,4 @@ const SecuritySurveillance = () => {
   );
 };
 
-export default SecuritySurveillance;
+export default ConstructionManagement;
