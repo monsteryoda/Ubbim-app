@@ -36,6 +36,34 @@ const Services = () => {
         "Data Analytics & Reporting",
       ],
     },
+    {
+      title: "Project Management",
+      description: "Expert oversight and coordination for successful project delivery.",
+      icon: TrendingUp,
+      details: "Our Project Management services ensure your construction projects are delivered on time, within budget, and to the highest quality standards. We provide comprehensive oversight from planning through completion.",
+      features: [
+        "Resource Allocation & Planning",
+        "Risk Management",
+        "Stakeholder Communication",
+        "Budget Control & Monitoring",
+        "Timeline Management",
+        "Quality Assurance",
+      ],
+    },
+    {
+      title: "Consulting",
+      description: "Strategic advice and expert guidance for your construction projects.",
+      icon: Users,
+      details: "Our consulting services provide expert advice on construction methodologies, regulatory compliance, sustainability practices, and industry best practices to help you make informed decisions.",
+      features: [
+        "Feasibility Studies",
+        "Regulatory Compliance",
+        "Sustainability Consulting",
+        "Cost Optimization",
+        "Technical Advisory",
+        "Training & Development",
+      ],
+    },
   ];
 
   const contactInfo = {
@@ -95,29 +123,29 @@ const Services = () => {
       {/* Services Content */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service, index) => (
-              index === 0 && (
-                <div key={index} className="space-y-6">
-                  <div className="w-16 h-16 bg-[#1A4B8C]/10 rounded-xl flex items-center justify-center">
-                    <service.icon className="w-8 h-8 text-[#1A4B8C]" />
+              <Card key={index} className="border-none shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                <CardContent className="p-6">
+                  <div className="w-14 h-14 bg-[#1A4B8C]/10 rounded-xl flex items-center justify-center mb-4">
+                    <service.icon className="w-7 h-7 text-[#1A4B8C]" />
                   </div>
-                  <h2 className="text-2xl font-bold text-[#1A4B8C]">
-                    BUILT ENVIRONMENT SERVICES
-                  </h2>
-                  <p className="text-gray-600 text-justify">
-                    {service.details}
+                  <h3 className="text-xl font-bold text-[#1A4B8C] mb-3">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4">
+                    {service.description}
                   </p>
-                  <ul className="space-y-3">
-                    {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start">
-                        <div className="w-2 h-2 bg-[#4ADE80] rounded-full mt-2 mr-3 flex-shrink-0" />
+                  <ul className="space-y-2">
+                    {service.features.slice(0, 3).map((feature, idx) => (
+                      <li key={idx} className="flex items-start text-sm">
+                        <div className="w-1.5 h-1.5 bg-[#4ADE80] rounded-full mt-1.5 mr-2 flex-shrink-0" />
                         <span className="text-gray-700">{feature}</span>
                       </li>
                     ))}
                   </ul>
-                </div>
-              )
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
