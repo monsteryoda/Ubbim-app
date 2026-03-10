@@ -67,17 +67,17 @@ const DesignBuildServices = () => {
     {
       title: "Architectural Design",
       description: "Transform your ideas into detailed architectural plans that reflect your vision, needs, and budget.",
-      image: "/src/assets/architectural-design.png"
+      image: "/architectural-design.png"
     },
     {
       title: "Construction Management",
       description: "Ensure your project stays on track with expert management of timelines, resources, and quality control.",
-      image: "/src/assets/construction-management.png"
+      image: "/construction-management.png"
     },
     {
       title: "General Contracting",
       description: "Rely on our skilled team to handle every aspect of construction, from sourcing materials to managing subcontractors.",
-      image: "/src/assets/general-contracting.jpeg"
+      image: "/general-contracting.jpeg"
     }
   ];
 
