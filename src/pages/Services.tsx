@@ -82,9 +82,6 @@ const Services = () => {
         </div>
         <div className="container mx-auto px-4 relative">
           <div className="max-w-3xl">
-            <Link to="/" className="inline-flex items-center text-[#4ADE80] hover:text-white transition-colors mb-6">
-              <ArrowLeft className="w-4 h-4 mr-2" /> Back to Home
-            </Link>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               OUR SERVICES
             </h1>
