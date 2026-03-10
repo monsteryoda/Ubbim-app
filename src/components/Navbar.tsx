@@ -24,7 +24,11 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
-              <span className="text-white font-bold text-xl">UBBIM</span>
+              <img 
+                src="/src/assets/ubbim-logo.png" 
+                alt="UBBIM Logo" 
+                className="h-10 w-auto"
+              />
             </Link>
 
             {/* Desktop Navigation */}
