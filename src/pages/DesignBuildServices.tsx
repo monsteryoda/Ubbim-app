@@ -226,7 +226,7 @@ const DesignBuildServices = () => {
                   Experienced Team
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-left">
-                  Our professionals bring decades of combined industry knowledge and technical expertise, delivering exceptional results on every project we undertake.
+                  Our team brings decades of experience and expertise in delivering high-quality, on-time, and on-budget projects.
                 </p>
               </div>
               <div className="text-left md:text-left">
