@@ -264,9 +264,6 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
               LICENSES & CERTIFICATIONS
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Our commitment to excellence has been recognized by industry leaders worldwide. Click on any certification to view details.
-            </p>
           </div>
           <CertificationsGrid certifications={certifications} />
         </div>
