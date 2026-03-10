@@ -8,7 +8,7 @@ import { ArrowRight, Building2, Leaf, Award, HardHat, TrendingUp, Users, Phone, 
 import LogoCarousel from "@/components/LogoCarousel";
 import CertificationsGrid from "@/components/CertificationsGrid";
 import Navbar from "@/components/Navbar";
-import ubbimLogo from "@/assets/ubbim-logo.png";
+import ubbimLogo from "@/assets/ubbim-logo.png"
 
 const Index = () => {
   const stats = [
