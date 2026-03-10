@@ -169,7 +169,7 @@ const FirefightingServices = () => {
             <div className="space-y-8 md:pr-12">
               <div className="text-right md:text-right">
                 <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Integrated Approach
+                  Technical Expertise
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-right">
                   From design to construction, we manage every aspect of your project, ensuring seamless coordination and communication.
