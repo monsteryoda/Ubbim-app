@@ -9,7 +9,7 @@ import { Card, CardContent } from "@/components/ui/card";
 const FirefightingServices = () => {
   const services = [
     {
-      title: "Fire Alarm Systems",
+      title: "Structural Repairs",
       description: "Advanced fire detection and alarm systems that provide early warning and automatic notification to emergency services.",
       image: "/src/assets/firefighting-services.jpg"
     },
