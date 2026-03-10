@@ -66,7 +66,7 @@ const DesignBuildServices = () => {
   const services = [
     {
       title: "Architectural Design",
-      description: "Innovative and functional design solutions that bring your vision to life while meeting all regulatory requirements and sustainability goals.",
+      description: "Transform your ideas into detailed architectural plans that reflect your vision, needs, and budget.",
       image: "https://images.unsplash.com/photo-1506146332389-18140dc7b2fb?w=800&q=80"
     },
     {
