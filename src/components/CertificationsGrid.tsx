@@ -43,7 +43,7 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
             className="group hover:shadow-xl transition-all duration-300 border-none cursor-pointer overflow-hidden"
             onClick={() => setSelectedCertification(cert)}
           >
-            <div className="relative w-full" style={{ paddingBottom: "70.7%" }}>
+            <div className="relative w-full" style={{ paddingBottom: "100%" }}>
               {cert.image && (
                 <img
                   src={cert.image}
