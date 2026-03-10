@@ -121,7 +121,7 @@ const DesignBuildServices = () => {
               DESIGN AND BUILD SERVICES
             </h1>
             <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
-              Integrated solutions that combine design excellence with construction expertise to deliver projects on time and within budget.
+              Comprehensive Solutions from Concept to Completion
             </p>
           </div>
         </div>
