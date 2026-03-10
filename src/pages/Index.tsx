@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Building2, Leaf, Award, HardHat, TrendingUp, Users, Phone, FileText, Shield, Cpu, MapPin, Mail, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 import LogoCarousel from "@/components/LogoCarousel";
 import CertificationsGrid from "@/components/CertificationsGrid";
+import Navbar from "@/components/Navbar";
 
 const Index = () => {
   const stats = [
@@ -138,8 +139,11 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      {/* Navigation Bar */}
+      <Navbar />
+
       {/* Hero Section */}
-      <section className="relative bg-[#1A4B8C] text-white py-24 lg:py-32 overflow-hidden">
+      <section className="relative bg-[#1A4B8C] text-white py-24 lg:py-32 overflow-hidden pt-16">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80')] bg-cover bg-center" />
         </div>
