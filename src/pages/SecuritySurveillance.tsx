@@ -185,41 +185,6 @@ const SecuritySurveillance = () => {
         </div>
       </section>
 
-      {/* Service Features Section - 4 Column */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
-              Our Security Solutions
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Comprehensive security features designed to protect your property and assets
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {serviceFeatures.map((feature, index) => (
-              <div key={index} className="flex flex-col">
-                <div className="aspect-[4/3] overflow-hidden rounded-lg">
-                  <img 
-                    src={feature.image} 
-                    alt={feature.title} 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="mt-4 p-5 bg-gray-100 rounded-lg">
-                  <h3 className="text-lg font-bold text-[#1A4B8C] mb-2">
-                    {feature.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    {feature.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Why Choose Us Section */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
