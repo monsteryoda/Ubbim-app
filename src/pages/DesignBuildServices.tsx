@@ -67,7 +67,7 @@ const DesignBuildServices = () => {
     {
       title: "Architectural Design",
       description: "Transform your ideas into detailed architectural plans that reflect your vision, needs, and budget.",
-      image: "https://images.unsplash.com/photo-1506146332389-18140dc7b2fb?w=800&q=80"
+      image: "/src/assets/architectural-design.png"
     },
     {
       title: "Construction Management",
