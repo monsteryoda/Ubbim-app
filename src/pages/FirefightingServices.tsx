@@ -113,10 +113,10 @@ const FirefightingServices = () => {
               Back to Services
             </Link>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              STRUCTURAL REPAIR AND REFURBISHMENT
+              FIREFIGHTING SERVICES
             </h1>
             <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
-              Restoring and Enhancing Buildings with Precision and Care
+              Fire Protection Solutions for Maximum Safety
             </p>
           </div>
         </div>
@@ -130,7 +130,7 @@ const FirefightingServices = () => {
               Our Core Services
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              UBBIM's Structural Repair and Refurbishment services are designed to breathe new life into aging or damaged structures. Whether it's restoring historical buildings, reinforcing structural integrity, or modernizing outdated facilities, our team combines technical expertise with a keen eye for detail to deliver results that stand the test of time.
+              UBBIM's Firefighting Services provide comprehensive fire protection solutions designed to safeguard lives and property. From designing and installing state-of-the-art fire suppression systems to ongoing maintenance and compliance checks, our team ensures that your facility is fully equipped to prevent and respond to fire emergencies.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
