@@ -9,8 +9,8 @@ import { Card, CardContent } from "@/components/ui/card";
 const Services = () => {
   const services = [
     {
-      title: "Design & Build Services",
-      description: "Comprehensive design and build services tailored to meet the specific needs of each project, ensuring seamless execution.",
+      title: "Structural Repair and Refurbishment",
+      description: "Expert repair and refurbishment services that breathe new life into existing structures, enhancing durability and appearance.",
       image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80",
     },
     {
