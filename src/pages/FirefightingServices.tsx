@@ -200,10 +200,10 @@ const FirefightingServices = () => {
             <div className="space-y-8 md:pl-12">
               <div className="text-left md:text-left">
                 <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Experienced Team
+                  Quality Materials
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-left">
-                  Our team brings decades of experience and expertise in delivering high-quality, on-time, and on-budget projects.
+                  We use only the highest quality materials and equipment to ensure durability and long-term performance.
                 </p>
               </div>
               <div className="text-left md:text-left">
