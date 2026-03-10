@@ -63,6 +63,24 @@ const DesignBuildServices = () => {
     }
   ];
 
+  const services = [
+    {
+      title: "Architectural Design",
+      description: "Innovative and functional design solutions that bring your vision to life while meeting all regulatory requirements and sustainability goals.",
+      image: "https://images.unsplash.com/photo-1506146332389-18140dc7b2fb?w=800&q=80"
+    },
+    {
+      title: "Construction Management",
+      description: "Expert oversight of all construction activities ensuring quality, safety, and timely project delivery within budget constraints.",
+      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80"
+    },
+    {
+      title: "General Contracting",
+      description: "Comprehensive contracting services managing all aspects of construction from subcontractor coordination to final project completion.",
+      image: "https://images.unsplash.com/photo-1590644365607-1c5a38fc43e0?w=800&q=80"
+    }
+  ];
+
   const benefits = [
     "Single point of responsibility for design and construction",
     "Reduced project risks through early contractor involvement",
@@ -143,8 +161,43 @@ const DesignBuildServices = () => {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Services Section */}
       <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
+              Our Core Services
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Comprehensive solutions tailored to meet your project needs with excellence and precision.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {services.map((service, index) => (
+              <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div className="aspect-video overflow-hidden">
+                  <img 
+                    src={service.image} 
+                    alt={service.title} 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-8 bg-gray-100">
+                  <h3 className="text-xl font-bold text-[#1A4B8C] mb-3">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
@@ -175,7 +228,7 @@ const DesignBuildServices = () => {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
