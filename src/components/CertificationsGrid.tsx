@@ -14,16 +14,30 @@ interface Certification {
 }
 
 interface CertificationsGridProps {
-  certifications: Certification[];
+  certifications?: Certification[];
 }
 
 const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications }) => {
   const [selectedCertification, setSelectedCertification] = useState<Certification | null>(null);
 
+  // Sample certifications data
+  const defaultCertifications: Certification[] = [
+    {
+      id: "1",
+      title: "ISO 9001:2015",
+      organization: "ACM-CCAS Limited",
+      year: "2017",
+      image: "/src/assets/certifications/iso-9001.png",
+      description: "Quality Management System Certification"
+    }
+  ];
+
+  const displayCertifications = certifications || defaultCertifications;
+
   return (
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        {certifications.map((cert) => (
+        {displayCertifications.map((cert) => (
           <Card 
             key={cert.id} 
             className="group hover:shadow-xl transition-all duration-300 border-none cursor-pointer overflow-hidden"
