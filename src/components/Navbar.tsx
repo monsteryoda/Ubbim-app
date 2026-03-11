@@ -48,6 +48,9 @@ const Navbar = () => {
                 src="/ubbim-logo.png" 
                 alt="UBBIM Logo" 
                 className="h-[58px] w-auto"
+                onError={(e) => {
+                  (e.target as HTMLImageElement).src = "/src/assets/ubbim-logo.png";
+                }}
               />
             </Link>
 
