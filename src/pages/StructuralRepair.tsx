@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Flame, Shield, AlertTriangle, Wrench, CheckCircle, Building2, Clock, Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import Navbar from "@/components/Navbar";
 
 const StructuralRepair = () => {
   const services = [
@@ -70,36 +71,7 @@ const StructuralRepair = () => {
   return (
     <div className="min-h-screen">
       {/* Navigation Bar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#1A4B8C] shadow-lg">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
-            <Link to="/" className="flex items-center space-x-2">
-              <img 
-                src="/ubbim-logo.png" 
-                alt="UBBIM Logo" 
-                className="h-10 w-auto"
-              />
-            </Link>
-            <div className="hidden md:flex items-center space-x-8">
-              <Link to="/" className="text-white hover:text-[#4ADE80] transition-colors font-medium">
-                Home
-              </Link>
-              <Link to="/services" className="text-white hover:text-[#4ADE80] transition-colors font-medium">
-                Services
-              </Link>
-              <Link to="/projects" className="text-white hover:text-[#4ADE80] transition-colors font-medium">
-                Projects
-              </Link>
-              <Link to="/about" className="text-white hover:text-[#4ADE80] transition-colors font-medium">
-                About
-              </Link>
-              <Link to="/contact" className="text-white hover:text-[#4ADE80] transition-colors font-medium">
-                Contact
-              </Link>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Hero Section */}
       <section className="relative bg-[#1A4B8C] text-white py-24 lg:py-32 overflow-hidden pt-20">
