@@ -261,34 +261,44 @@ const Index = () => {
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
-            {services.map((service, index) => (
-              <Card key={index} className="group hover:shadow-xl transition-shadow duration-300 border-none shadow-lg">
-                <CardContent className="p-8">
-                  <div className="w-14 h-14 bg-[#1A4B8C]/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#1A4B8C] transition-colors duration-300">
-                    {index === 0 ? (
-                      <Building2 className="w-7 h-7 text-[#1A4B8C] group-hover:text-white transition-colors duration-300" />
-                    ) : (
-                      <HardHat className="w-7 h-7 text-[#1A4B8C] group-hover:text-white transition-colors duration-300" />
-                    )}
-                  </div>
-                  <h3 className="text-xl font-bold text-[#1A4B8C] mb-3">
-                    {index === 0 ? "BUILT ENVIRONMENT SERVICES" : "DIGITAL SOLUTIONS"}
-                  </h3>
-                  <p className="text-gray-600 mb-4 text-justify">
-                    {index === 0 
-                      ? "Our Built Environment Services encompass every phase of construction and infrastructure development, from design and build to maintenance and refurbishment. We specialize in delivering high-quality, sustainable solutions that meet the unique needs of each project, ensuring safety, efficiency, and long-term value."
-                      : "Our Digital Solutions integrate advanced technologies like aerial analytics, 3D scanning, and virtual design coordination to transform how projects are planned, executed, and managed. We also develop custom software tailored to optimize operations, enhance collaboration, and drive innovation across industries."
-                    }
-                  </p>
-                  <Link
-                    to="/services"
-                    className="inline-flex items-center text-[#1A4B8C] font-semibold hover:text-[#4ADE80] transition-colors"
-                  >
-                    Learn more <ArrowRight className="w-4 h-4 ml-2" />
-                  </Link>
-                </CardContent>
-              </Card>
-            ))}
+            <Card key="construction" className="group hover:shadow-xl transition-shadow duration-300 border-none shadow-lg">
+              <CardContent className="p-8">
+                <div className="w-14 h-14 bg-[#1A4B8C]/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#1A4B8C] transition-colors duration-300">
+                  <Building2 className="w-7 h-7 text-[#1A4B8C] group-hover:text-white transition-colors duration-300" />
+                </div>
+                <h3 className="text-xl font-bold text-[#1A4B8C] mb-3">
+                  BUILT ENVIRONMENT SERVICES
+                </h3>
+                <p className="text-gray-600 mb-4 text-justify">
+                  Our Built Environment Services encompass every phase of construction and infrastructure development, from design and build to maintenance and refurbishment. We specialize in delivering high-quality, sustainable solutions that meet the unique needs of each project, ensuring safety, efficiency, and long-term value.
+                </p>
+                <Link
+                  to="/services"
+                  className="inline-flex items-center text-[#1A4B8C] font-semibold hover:text-[#4ADE80] transition-colors"
+                >
+                  Learn more <ArrowRight className="w-4 h-4 ml-2" />
+                </Link>
+              </CardContent>
+            </Card>
+            <Card key="digital" className="group hover:shadow-xl transition-shadow duration-300 border-none shadow-lg">
+              <CardContent className="p-8">
+                <div className="w-14 h-14 bg-[#1A4B8C]/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#1A4B8C] transition-colors duration-300">
+                  <Cpu className="w-7 h-7 text-[#1A4B8C] group-hover:text-white transition-colors duration-300" />
+                </div>
+                <h3 className="text-xl font-bold text-[#1A4B8C] mb-3">
+                  DIGITAL SOLUTIONS
+                </h3>
+                <p className="text-gray-600 mb-4 text-justify">
+                  Our Digital Solutions integrate advanced technologies like aerial analytics, 3D scanning, and virtual design coordination to transform how projects are planned, executed, and managed. We also develop custom software tailored to optimize operations, enhance collaboration, and drive innovation across industries.
+                </p>
+                <Link
+                  to="/digital-solutions"
+                  className="inline-flex items-center text-[#1A4B8C] font-semibold hover:text-[#4ADE80] transition-colors"
+                >
+                  Learn more <ArrowRight className="w-4 h-4 ml-2" />
+                </Link>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
