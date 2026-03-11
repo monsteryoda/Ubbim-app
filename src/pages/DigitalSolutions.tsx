@@ -32,11 +32,6 @@ const DigitalSolutions = () => {
       title: "IoT & Sensor Integration",
       description: "Connect physical assets to digital systems with IoT sensors for real-time monitoring, predictive maintenance, and data-driven decisions.",
       image: "https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=600&q=80"
-    },
-    {
-      title: "Digital Twin Technology",
-      description: "Create virtual replicas of physical assets to simulate, analyze, and optimize performance throughout the project lifecycle.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80"
     }
   ];
 
