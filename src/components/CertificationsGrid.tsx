@@ -29,6 +29,38 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
       year: "2017",
       image: "/src/assets/certifications/9001.png",
       description: "Quality Management System Certification"
+    },
+    {
+      id: "2",
+      title: "ISO 14001:2015",
+      organization: "ACM-CCAS Limited",
+      year: "2018",
+      image: "/src/assets/certifications/14001.png",
+      description: "Environmental Management System Certification"
+    },
+    {
+      id: "3",
+      title: "ISO 45001:2018",
+      organization: "ACM-CCAS Limited",
+      year: "2019",
+      image: "/src/assets/certifications/45001.png",
+      description: "Occupational Health and Safety Certification"
+    },
+    {
+      id: "4",
+      title: "ISO 27001:2013",
+      organization: "ACM-CCAS Limited",
+      year: "2020",
+      image: "/src/assets/certifications/27001.png",
+      description: "Information Security Management Certification"
+    },
+    {
+      id: "5",
+      title: "ISO 50001:2018",
+      organization: "ACM-CCAS Limited",
+      year: "2021",
+      image: "/src/assets/certifications/50001.png",
+      description: "Energy Management System Certification"
     }
   ];
 
@@ -38,22 +70,24 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {displayCertifications.map((cert, index) => (
-          <Card 
-            key={cert.id} 
-            className="group hover:shadow-xl transition-all duration-300 border-none cursor-pointer overflow-hidden"
-            onClick={() => setSelectedCertification(cert)}
-          >
-            <div className="relative w-full" style={{ paddingBottom: "177.78%" }}>
-              {/* Skip image for second card only (index 1) */}
-              {cert.image && index !== 1 && (
-                <img
-                  src={cert.image}
-                  alt={cert.title}
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              )}
-            </div>
-          </Card>
+          // Skip cards 2, 3, 4, 5 (indices 1, 2, 3, 4)
+          index === 0 && (
+            <Card 
+              key={cert.id} 
+              className="group hover:shadow-xl transition-all duration-300 border-none cursor-pointer overflow-hidden"
+              onClick={() => setSelectedCertification(cert)}
+            >
+              <div className="relative w-full" style={{ paddingBottom: "177.78%" }}>
+                {cert.image && (
+                  <img
+                    src={cert.image}
+                    alt={cert.title}
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                )}
+              </div>
+            </Card>
+          )
         ))}
       </div>
 
