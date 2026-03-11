@@ -45,7 +45,7 @@ const Navbar = () => {
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
               <img 
-                src="/src/assets/ubbim-logo.png" 
+                src="/ubbim-logo.png" 
                 alt="UBBIM Logo" 
                 className="h-[58px] w-auto"
               />
@@ -177,7 +177,7 @@ const Navbar = () => {
                       {link.dropdownItems.map((item) => (
                         <Link
                           key={item.name}
-                          to={item.href}
+                          to="/services"
                           onClick={() => setIsDrawerOpen(false)}
                           className={`block px-4 py-2 text-sm text-gray-600 hover:bg-[#1A4B8C]/10 hover:text-[#1A4B8C] rounded transition-colors ${
                             isActive(item.href) ? "bg-[#1A4B8C]/10 text-[#1A4B8C]" : ""
