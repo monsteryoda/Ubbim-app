@@ -6,7 +6,7 @@ import { ArrowLeft, MapPin, Phone, Mail, Cube, Scan, FileText, Shield, TrendingU
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
-import pointCloudImage from "/assets/construction-model-point-cloud.webp";
+import pointCloudImage from "../assets/construction-model-point-cloud.webp";
 
 const ThreeDScanning = () => {
   const services = [
