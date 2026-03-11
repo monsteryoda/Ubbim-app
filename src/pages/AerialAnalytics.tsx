@@ -20,7 +20,7 @@ const AerialAnalytics = () => {
       image: "https://images.unsplash.com/photo-1506947411487-a56738267384?w=600&q=80"
     },
     {
-      title: "Thermal & Multispectral Analysis",
+      title: "Aerial Mapping",
       description: "Advanced thermal imaging and multispectral analysis for infrastructure inspection and environmental monitoring.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80"
     }
