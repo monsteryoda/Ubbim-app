@@ -23,6 +23,11 @@ const AerialAnalytics = () => {
       title: "Aerial Mapping",
       description: "Advanced thermal imaging and multispectral analysis for infrastructure inspection and environmental monitoring.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80"
+    },
+    {
+      title: "Infrastructure Inspection",
+      description: "Comprehensive drone-based inspections for bridges, power lines, and industrial facilities to identify issues before they become problems.",
+      image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80"
     }
   ];
 
@@ -128,7 +133,7 @@ const AerialAnalytics = () => {
               UBBIM's Aerial Analytics Solutions harness the power of drone technology to deliver precise, real-time data for your projects. Whether it's land surveying, site monitoring, or infrastructure inspection, our solutions provide actionable insights that drive smarter, faster decision-making.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
               <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
                 <div className="aspect-video overflow-hidden">
