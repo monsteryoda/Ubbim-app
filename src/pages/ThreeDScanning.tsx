@@ -130,7 +130,7 @@ const ThreeDScanning = () => {
               Our Core Services
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              UBBIM's 3D Scanning Solutions provide accurate digital representations of physical spaces and structures. From architectural documentation to industrial facility modeling, our scanning services deliver the precision needed for successful project outcomes.
+              UBBIM's 3D Scanning Solutions offer unparalleled accuracy and detail, transforming physical spaces into precise digital models. Whether for construction, renovation, or industrial design, our advanced scanning technology provides the foundation for successful project planning and execution.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
