@@ -15,18 +15,18 @@ const VRCoordination = () => {
       image: "/vr.jpeg"
     },
     {
-      title: "Augmented Reality Walkthroughs",
-      description: "Experience your project in real-time scale using AR, allowing stakeholders to walk through spaces before they're built.",
+      title: "Augmented Reality (AR) Site Visualization",
+      description: "Overlay digital models onto real-world sites using AR, providing a clear understanding of how designs will fit within existing environments.",
       image: "/ar-walkthrough.png"
     },
     {
-      title: "Immersive Training",
-      description: "Provide immersive training experiences for construction teams using VR simulations of complex systems and procedures.",
+      title: "Process Video Animation",
+      description: "Illustrate complex plant building processes and workflows with custom animations, making it easier for stakeholders to visualize and understand each step.",
       image: "/vr-training.png"
     },
     {
       title: "Clash Detection & Resolution",
-      description: "Identify and resolve design conflicts in a virtual environment before they become costly issues on-site.",
+      description: "Immerse stakeholders in a fully interactive virtual environment, allowing them to explore and experience the design before construction.",
       image: "/clash-detection.png"
     }
   ];
