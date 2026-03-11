@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowLeft, HardHat, TrendingUp, Users, Award, MapPin, Phone, Mail } from "lucide-react";
+import { ArrowLeft, HardHat, TrendingUp, Users, Award, MapPin, Phone, Mail, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
@@ -111,49 +111,137 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
-              GET IN TOUCH
-            </h2>
-            <p className="text-gray-600">Ready to start your project? Contact us today.</p>
+      {/* Footer */}
+      <footer className="bg-[#1A4B8C] text-white">
+        <div className="container mx-auto px-4 py-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            {/* Company Info */}
+            <div>
+              <div className="flex items-center space-x-2 mb-6">
+                <img 
+                  src="/ubbim-logo.png" 
+                  alt="UBBIM Logo" 
+                  className="h-12 w-auto"
+                />
+              </div>
+              <p className="text-gray-300 leading-relaxed mb-6">
+                UBBIM delivers comprehensive built environment services with a focus on innovation, reliability, and client satisfaction.
+              </p>
+              <div className="flex space-x-4">
+                <a href="#" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                  <Facebook className="w-5 h-5" />
+                </a>
+                <a href="#" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                  <Twitter className="w-5 h-5" />
+                </a>
+                <a href="#" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                  <Instagram className="w-5 h-5" />
+                </a>
+                <a href="#" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                  <Linkedin className="w-5 h-5" />
+                </a>
+              </div>
+            </div>
+
+            {/* Quick Links */}
+            <div>
+              <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
+              <ul className="space-y-3">
+                <li>
+                  <Link to="/" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/services" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                    Services
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/projects" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                    Projects
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/about" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Services */}
+            <div>
+              <h3 className="text-lg font-semibold mb-6">Our Services</h3>
+              <ul className="space-y-3">
+                <li>
+                  <Link to="/services/design-build" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                    Design & Build
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/firefighting" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                    Firefighting Services
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/services/structural-repair" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                    Structural Repair
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/services/security-surveillance" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                    Security & Surveillance
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Contact Info */}
+            <div>
+              <h3 className="text-lg font-semibold mb-6">Contact Us</h3>
+              <ul className="space-y-4">
+                <li className="flex items-start space-x-3">
+                  <MapPin className="w-5 h-5 text-[#4ADE80] mt-0.5" />
+                  <span className="text-gray-300">
+                    {contactInfo.address}
+                  </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <Phone className="w-5 h-5 text-[#4ADE80]" />
+                  <span className="text-gray-300">{contactInfo.phone}</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <Mail className="w-5 h-5 text-[#4ADE80]" />
+                  <span className="text-gray-300">{contactInfo.email}</span>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <Card className="border-none shadow-lg">
-              <CardContent className="p-6 text-center">
-                <MapPin className="w-8 h-8 mx-auto mb-3 text-[#1A4B8C]" />
-                <h3 className="font-semibold text-lg text-[#1A4B8C] mb-2">Address</h3>
-                <p className="text-gray-600">{contactInfo.address}</p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-none shadow-lg">
-              <CardContent className="p-6 text-center">
-                <Phone className="w-8 h-8 mx-auto mb-3 text-[#1A4B8C]" />
-                <h3 className="font-semibold text-lg text-[#1A4B8C] mb-2">Phone</h3>
-                <p className="text-gray-600">{contactInfo.phone}</p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-none shadow-lg">
-              <CardContent className="p-6 text-center">
-                <Mail className="w-8 h-8 mx-auto mb-3 text-[#1A4B8C]" />
-                <h3 className="font-semibold text-lg text-[#1A4B8C] mb-2">Email</h3>
-                <p className="text-gray-600">{contactInfo.email}</p>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="text-center mt-8">
-            <Button className="bg-[#1A4B8C] hover:bg-[#143a6e] text-white px-8 py-6 text-lg">
-              Contact Us Now
-            </Button>
+          {/* Bottom Bar */}
+          <div className="border-t border-gray-700 mt-12 pt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+              <p className="text-gray-400 text-sm">
+                © {new Date().getFullYear()} UBBIM. All rights reserved.
+              </p>
+              <div className="flex space-x-6">
+                <a href="#" className="text-gray-400 hover:text-[#4ADE80] text-sm transition-colors">
+                  Privacy Policy
+                </a>
+                <a href="#" className="text-gray-400 hover:text-[#4ADE80] text-sm transition-colors">
+                  Terms of Service
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
+      </footer>
     </div>
   );
 };
