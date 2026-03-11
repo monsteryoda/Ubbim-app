@@ -88,9 +88,9 @@ const Services = () => {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                   {service.hasButton && (
-                    <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+                    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                       <Link to={service.link}>
-                        <button className="bg-[#135D77] hover:bg-[#0f4a5e] text-white font-bold text-lg px-10 py-4 rounded-full transition-all duration-300 hover:scale-105">
+                        <button className="px-8 py-3 bg-[#005F6B] hover:bg-[#007A8A] text-white font-bold rounded-full text-sm transition-all duration-200 hover:scale-105">
                           Learn More
                         </button>
                       </Link>
