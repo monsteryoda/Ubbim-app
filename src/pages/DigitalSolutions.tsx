@@ -20,8 +20,8 @@ const DigitalSolutions = () => {
       image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&q=80"
     },
     {
-      title: "Custom Software Solutions",
-      description: "Tailored software solutions, including project management systems, digital permit to work systems, and GHG tracking systems, designed to meet your specific operational needs.",
+      title: "3D Scanning Solutions",
+      description: "Capture precise as-built conditions with advanced laser scanning technology, enabling accurate documentation and seamless integration with BIM workflows.",
       image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80"
     },
     {
