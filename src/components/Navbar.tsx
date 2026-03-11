@@ -177,7 +177,7 @@ const Navbar = () => {
                       {link.dropdownItems.map((item) => (
                         <Link
                           key={item.name}
-                          to="/services"
+                          to={item.href}
                           onClick={() => setIsDrawerOpen(false)}
                           className={`block px-4 py-2 text-sm text-gray-600 hover:bg-[#1A4B8C]/10 hover:text-[#1A4B8C] rounded transition-colors ${
                             isActive(item.href) ? "bg-[#1A4B8C]/10 text-[#1A4B8C]" : ""
