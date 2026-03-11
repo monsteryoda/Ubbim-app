@@ -9,24 +9,28 @@ import { Card, CardContent } from "@/components/ui/card";
 const DigitalSolutions = () => {
   const services = [
     {
-      title: "Building Information Modeling (BIM)",
-      description: "Create detailed 3D models that enhance collaboration, reduce errors, and improve project outcomes through intelligent design and construction planning.",
-      image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80"
+      title: "Design & Build",
+      description: "Comprehensive construction services from concept to completion",
+      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80",
+      link: "/services/design-build"
     },
     {
-      title: "Aerial Analytics & 3D Scanning",
-      description: "Capture precise site data using drones and LiDAR technology for accurate mapping, progress tracking, and as-built documentation.",
-      image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&q=80"
+      title: "Firefighting Services",
+      description: "Complete fire protection systems and safety solutions",
+      image: "https://images.unsplash.com/photo-1594498653385-d5175c532bf3?w=600&q=80",
+      link: "/firefighting"
     },
     {
-      title: "Custom Software Development",
-      description: "Tailor-made software solutions designed to streamline your operations, enhance productivity, and solve unique business challenges.",
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80"
+      title: "Structural Repair",
+      description: "Expert structural assessment and restoration services",
+      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
+      link: "/services/structural-repair"
     },
     {
-      title: "Cloud-Based Collaboration",
-      description: "Centralized project management platforms that enable seamless communication and file sharing across all project stakeholders.",
-      image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&q=80"
+      title: "Surveillance Systems",
+      description: "Advanced security monitoring and surveillance solutions",
+      image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=600&q=80",
+      link: "/services/surveillance"
     }
   ];
 
@@ -99,31 +103,37 @@ const DigitalSolutions = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
-              Our Core Services
+              OUR SERVICES
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              UBBIM's Digital Solutions bring the power of cutting-edge technology to the built environment. From aerial analytics to 3D scanning and custom software development, we offer tools that enhance project precision, streamline processes, and unlock new possibilities for innovation.
+              UBBIM delivers comprehensive construction and digital solutions tailored to your project needs. From design to execution, we ensure quality and innovation at every stage.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {services.map((service, index) => (
-              <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="aspect-video overflow-hidden">
-                  <img 
-                    src={service.image} 
-                    alt={service.title} 
-                    className="w-full h-full object-cover"
-                  />
+              <Link key={index} to={service.link} className="group">
+                <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="relative aspect-video overflow-hidden">
+                    <img 
+                      src={service.image} 
+                      alt={service.title} 
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#1A4B8C]/80 to-transparent" />
+                    <div className="absolute bottom-0 left-0 right-0 p-6">
+                      <h3 className="text-xl font-bold text-white mb-2">
+                        {service.title}
+                      </h3>
+                      <p className="text-white/90 text-sm mb-4">
+                        {service.description}
+                      </p>
+                      <Button className="bg-[#4ADE80] hover:bg-[#22c55e] text-[#1A4B8C] font-semibold">
+                        Learn More
+                      </Button>
+                    </div>
+                  </div>
                 </div>
-                <div className="p-8 bg-gray-100">
-                  <h3 className="text-xl font-bold text-[#1A4B8C] mb-3">
-                    {service.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    {service.description}
-                  </p>
-                </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
