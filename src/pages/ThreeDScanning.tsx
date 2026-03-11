@@ -12,22 +12,22 @@ const ThreeDScanning = () => {
     {
       title: "Laser Scanning",
       description: "Capture millions of data points to generate detailed 3D models of buildings, infrastructure, and industrial sites, ensuring no detail is overlooked.",
-      image: "/src/assets/laser-scan-1.jpeg"
+      image: "/assets/laser-scan-1.jpeg"
     },
     {
       title: "As-Built Documentation",
       description: "Produce precise as-built models for renovations, retrofits, and historical preservation, ensuring all modifications are accurately recorded.",
-      image: "/src/assets/built.webp"
+      image: "/assets/built.webp"
     },
     {
       title: "Industrial Plant Scanning",
       description: "Detailed 3D scanning of industrial plants and facilities to support maintenance, upgrades, and safety compliance.",
-      image: "/src/assets/industrial-plant.png"
+      image: "/assets/industrial-plant.png"
     },
     {
       title: "Heritage Preservation",
       description: "Preserve the details of historical sites and artifacts with accurate 3D models, facilitating restoration and conservation efforts.",
-      image: "/src/assets/heritage.png"
+      image: "/assets/heritage.png"
     }
   ];
 
