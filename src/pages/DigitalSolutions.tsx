@@ -22,7 +22,7 @@ const DigitalSolutions = () => {
     {
       title: "Virtual Design Coordination",
       description: "Utilize virtual and augmented reality to visualize designs, coordinate teams, and improve project outcomes with immersive experiences.",
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80"
+      image: "/vr.jpeg"
     },
     {
       title: "Custom Software Solutions",
