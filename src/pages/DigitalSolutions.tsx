@@ -116,7 +116,7 @@ const DigitalSolutions = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="p-8 bg-gray-100">
+                <div className="p-8 bg-white">
                   <h3 className="text-xl font-bold text-[#1A4B8C] mb-3">
                     {service.title}
                   </h3>
