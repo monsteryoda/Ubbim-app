@@ -17,7 +17,7 @@ const AerialAnalytics = () => {
     {
       title: "Construction Site Monitoring",
       description: "Regular aerial monitoring of construction sites to track progress, identify potential issues, and ensure compliance with project timelines.",
-      image: "https://images.unsplash.com/photo-1506947411487-a56738267384?w=600&q=80"
+      image: "/monitoring.png"
     },
     {
       title: "Aerial Mapping",
