@@ -103,9 +103,9 @@ const DesignBuildServices = () => {
         </div>
         <div className="container mx-auto px-4 relative">
           <div className="max-w-3xl">
-            <Link to="/services" className="inline-flex items-center text-white/80 hover:text-white mb-6 transition-colors">
+            <Link to="/" className="inline-flex items-center text-white/80 hover:text-white mb-6 transition-colors">
               <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Services
+              Back to Home
             </Link>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               DESIGN AND BUILD SERVICES
