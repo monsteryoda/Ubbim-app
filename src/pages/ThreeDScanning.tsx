@@ -10,23 +10,23 @@ import Navbar from "@/components/Navbar";
 const ThreeDScanning = () => {
   const services = [
     {
-      title: "Architectural Scanning",
-      description: "Capture precise 3D models of existing structures for renovation, retrofitting, and documentation purposes.",
+      title: "Laser Scanning",
+      description: "Capture millions of data points to generate detailed 3D models of buildings, infrastructure, and industrial sites, ensuring no detail is overlooked.",
       image: "/architectural-scanning.png"
     },
     {
-      title: "Industrial Facility Scanning",
-      description: "Create detailed 3D representations of industrial facilities for planning, maintenance, and safety compliance.",
+      title: "As-Built Documentation",
+      description: "Produce precise as-built models for renovations, retrofits, and historical preservation, ensuring all modifications are accurately recorded.",
       image: "/industrial-scanning.png"
     },
     {
-      title: "Historic Preservation",
-      description: "Document and preserve historic structures with accurate 3D scanning for restoration and archival purposes.",
+      title: "Industrial Plant Scanning",
+      description: "Detailed 3D scanning of industrial plants and facilities to support maintenance, upgrades, and safety compliance.",
       image: "/historic-scanning.png"
     },
     {
-      title: "As-Built Documentation",
-      description: "Generate precise as-built models to compare design intent with actual construction for quality assurance.",
+      title: "Heritage Preservation",
+      description: "Preserve the details of historical sites and artifacts with accurate 3D models, facilitating restoration and conservation efforts.",
       image: "/asbuilt-scanning.png"
     }
   ];
