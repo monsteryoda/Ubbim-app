@@ -281,7 +281,7 @@ const Index = () => {
                     }
                   </p>
                   <Link
-                    to={index === 0 ? "/services" : "/digital-solutions"}
+                    to="/services"
                     className="inline-flex items-center text-[#1A4B8C] font-semibold hover:text-[#4ADE80] transition-colors"
                   >
                     Learn more <ArrowRight className="w-4 h-4 ml-2" />
