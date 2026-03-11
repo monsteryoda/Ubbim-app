@@ -12,22 +12,22 @@ const CustomSoftware = () => {
     {
       title: "Project Management Systems",
       description: "Streamline your project workflows with custom management systems that provide real-time tracking, reporting, and collaboration tools.",
-      image: "/coding.jpeg"
+      image: "/project-management.png"
     },
     {
       title: "Digital Permit to Work Systems",
       description: "Simplify the permit process with a digital system that ensures compliance, enhances safety, and reduces administrative burdens.",
-      image: "/permit-system.png"
+      image: "/digital-permit.png"
     },
     {
       title: "Facility Management Solutions",
       description: "Optimize facility operations with software that helps you manage maintenance schedules, asset tracking, and resource allocation efficiently.",
-      image: "/ghg-tracking.png"
+      image: "/facility.png"
     },
     {
       title: "Custom ERP Solutions",
       description: "Develop a bespoke ERP system that integrates all facets of your business, providing seamless operations and real-time data visibility.",
-      image: "/analytics-dashboard.png"
+      image: "/custom-erp.jpg"
     }
   ];
 
@@ -172,7 +172,7 @@ const CustomSoftware = () => {
                   Tailored Solutions
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-right">
-                  Our software is custom-built to match your specific workflows and requirements, ensuring maximum efficiency and user adoption.
+                  Get software solutions that are specifically designed to address the unique challenges of your business, ensuring maximum relevance and impact.
                 </p>
               </div>
               <div className="text-right md:text-right">
@@ -180,7 +180,7 @@ const CustomSoftware = () => {
                   Scalable Architecture
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-right">
-                  Built with scalability in mind, our solutions grow with your business and adapt to changing operational needs.
+                  Our software grows with your business, providing the flexibility to adapt to changing needs and expanding operations.
                 </p>
               </div>
             </div>
@@ -189,7 +189,7 @@ const CustomSoftware = () => {
             <div className="relative">
               <div className="aspect-[16/10] overflow-hidden rounded-2xl shadow-2xl">
                 <img 
-                  src="/coding.jpeg" 
+                  src="/key-digital.png" 
                   alt="Custom Software" 
                   className="w-full h-full object-cover"
                 />
@@ -200,18 +200,18 @@ const CustomSoftware = () => {
             <div className="space-y-8 md:pl-12">
               <div className="text-left md:text-left">
                 <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Enhanced Security
+                  Improved Efficiency
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-left">
-                  Our software incorporates robust security measures to protect your data and ensure compliance with industry standards.
+                  Automate processes, reduce manual errors, and enhance productivity with software that streamlines your operations.
                 </p>
               </div>
               <div className="text-left md:text-left">
                 <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Ongoing Support
+                  Enhanced Decision-Making
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-left">
-                  We provide comprehensive maintenance and support services to keep your software running smoothly and up-to-date.
+                  Leverage real-time data and analytics to make informed decisions, improve forecasting, and optimize resource allocation.
                 </p>
               </div>
             </div>
