@@ -172,10 +172,10 @@ const VRCoordination = () => {
               </div>
               <div className="text-right md:text-right">
                 <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Faster Decision-Making
+                  Early Issue Detection
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-right">
-                  Accelerate project timelines with immersive experiences that enable stakeholders to make informed decisions quickly.
+                  Identify and resolve design conflicts early, reducing the risk of costly errors and delays during construction.
                 </p>
               </div>
             </div>
@@ -184,7 +184,7 @@ const VRCoordination = () => {
             <div className="relative">
               <div className="aspect-[16/10] overflow-hidden rounded-2xl shadow-2xl">
                 <img 
-                  src="/vr.jpeg" 
+                  src="/src/assets/key-benefit.jpg" 
                   alt="VR Coordination" 
                   className="w-full h-full object-cover"
                 />
@@ -195,18 +195,18 @@ const VRCoordination = () => {
             <div className="space-y-8 md:pl-12">
               <div className="text-left md:text-left">
                 <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Cost-Effective Coordination
+                  Improved Collaboration
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-left">
-                  Reduce costs by identifying and resolving design conflicts in virtual environments before they become expensive on-site issues.
+                  Enable real-time collaboration among project teams, ensuring that everyone is aligned and informed at every stage.
                 </p>
               </div>
               <div className="text-left md:text-left">
                 <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Improved Safety
+                  Streamlined Decision-Making
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-left">
-                  Train teams in safe VR environments, reducing risks while ensuring comprehensive understanding of complex systems and procedures.
+                  Make informed decisions faster with the ability to review, adjust, and approve designs in real-time.
                 </p>
               </div>
             </div>
