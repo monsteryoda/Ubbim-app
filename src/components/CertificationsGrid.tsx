@@ -20,47 +20,15 @@ interface CertificationsGridProps {
 const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications }) => {
   const [selectedCertification, setSelectedCertification] = useState<Certification | null>(null);
 
-  // Updated certifications data with 5 specific items
+  // Sample certifications data
   const defaultCertifications: Certification[] = [
     {
       id: "1",
-      title: "SME Corp Certificate",
-      organization: "SME Corporation Malaysia",
-      year: "2023",
-      image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80",
-      description: "Recognized certification for small and medium enterprises, highlighting our commitment to excellence and innovation in the construction industry."
-    },
-    {
-      id: "2",
-      title: "Quality Excellence Award",
-      organization: "International Construction Awards",
-      year: "2023",
-      image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=80",
-      description: "Awarded for outstanding quality standards and precision in metal fabrication and construction processes."
-    },
-    {
-      id: "3",
-      title: "Digital Innovation Certificate",
-      organization: "Tech Innovation Council",
-      year: "2024",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&q=80",
-      description: "Recognized for integrating advanced digital technologies and software solutions into construction project management."
-    },
-    {
-      id: "4",
-      title: "Sustainability Leadership",
-      organization: "Green Building Council",
-      year: "2023",
-      image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80",
-      description: "Honored for implementing sustainable practices and eco-friendly solutions across all project operations."
-    },
-    {
-      id: "5",
-      title: "Environmental Stewardship",
-      organization: "Environmental Protection Agency",
-      year: "2024",
-      image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&q=80",
-      description: "Certified for outstanding environmental responsibility and commitment to sustainable development practices."
+      title: "ISO 9001:2015",
+      organization: "ACM-CCAS Limited",
+      year: "2017",
+      image: "/src/assets/certifications/9001.png",
+      description: "Quality Management System Certification"
     }
   ];
 
