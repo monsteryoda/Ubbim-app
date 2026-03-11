@@ -12,7 +12,7 @@ const ThreeDScanning = () => {
     {
       title: "Laser Scanning",
       description: "Capture millions of data points to generate detailed 3D models of buildings, infrastructure, and industrial sites, ensuring no detail is overlooked.",
-      image: "/architectural-scanning.png"
+      image: "/src/assets/laser-scan-1.jpeg"
     },
     {
       title: "As-Built Documentation",
