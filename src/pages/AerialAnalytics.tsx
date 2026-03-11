@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowLeft, MapPin, Phone, Mail, Plane, Camera, Map, FileText, Shield, TrendingUp, CheckCircle, Building2, Clock, Leaf } from "lucide-react";
+import { ArrowLeft, MapPin, Phone, Mail, Plane, Camera, Map, FileText, Shield, TrendingUp, CheckCircle, Building2, Clock, Leaf, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
