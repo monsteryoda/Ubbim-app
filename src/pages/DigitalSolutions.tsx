@@ -10,14 +10,14 @@ import Navbar from "@/components/Navbar";
 const DigitalSolutions = () => {
   const services = [
     {
-      title: "Building Information Modeling (BIM)",
-      description: "Create detailed 3D models that enhance collaboration, reduce errors, and improve project outcomes through intelligent design and construction planning.",
-      image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80"
+      title: "Aerial Analytics Solutions",
+      description: "Leverage drone technology and aerial imagery to capture site data, monitor progress, and gain valuable insights for informed decision-making.",
+      image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&q=80"
     },
     {
       title: "Virtual Design Coordination",
       description: "Utilize virtual and augmented reality to visualize designs, coordinate teams, and improve project outcomes with immersive experiences.",
-      image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&q=80"
+      image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80"
     },
     {
       title: "3D Scanning Solutions",
