@@ -57,15 +57,26 @@ const Navbar = () => {
                   onMouseEnter={() => link.hasDropdown && setIsServicesDropdownOpen(true)}
                   onMouseLeave={() => link.hasDropdown && setIsServicesDropdownOpen(false)}
                 >
-                  <Link
-                    to={link.href}
-                    className={`flex items-center space-x-1 transition-colors font-medium ${
-                      isActive(link.href) ? "text-[#4ADE80]" : "text-white hover:text-[#4ADE80]"
-                    }`}
-                  >
-                    <span>{link.name}</span>
-                    {link.hasDropdown && <ChevronDown className="w-4 h-4" />}
-                  </Link>
+                  {link.name === "Services" ? (
+                    <span
+                      className={`flex items-center space-x-1 transition-colors font-medium ${
+                        isActive(link.href) ? "text-[#4ADE80]" : "text-white hover:text-[#4ADE80]"
+                      }`}
+                    >
+                      <span>{link.name}</span>
+                      {link.hasDropdown && <ChevronDown className="w-4 h-4" />}
+                    </span>
+                  ) : (
+                    <Link
+                      to={link.href}
+                      className={`flex items-center space-x-1 transition-colors font-medium ${
+                        isActive(link.href) ? "text-[#4ADE80]" : "text-white hover:text-[#4ADE80]"
+                      }`}
+                    >
+                      <span>{link.name}</span>
+                      {link.hasDropdown && <ChevronDown className="w-4 h-4" />}
+                    </Link>
+                  )}
 
                   {/* Dropdown Menu */}
                   {link.hasDropdown && (
@@ -135,15 +146,25 @@ const Navbar = () => {
             <nav className="space-y-2">
               {navLinks.map((link) => (
                 <div key={link.name}>
-                  <Link
-                    to={link.href}
-                    onClick={() => setIsDrawerOpen(false)}
-                    className={`block px-4 py-3 text-gray-700 hover:bg-[#1A4B8C]/10 hover:text-[#1A4B8C] rounded-lg transition-colors font-medium ${
-                      isActive(link.href) ? "bg-[#1A4B8C]/10 text-[#1A4B8C]" : ""
-                    }`}
-                  >
-                    {link.name}
-                  </Link>
+                  {link.name === "Services" ? (
+                    <span
+                      className={`block px-4 py-3 text-gray-700 hover:bg-[#1A4B8C]/10 hover:text-[#1A4B8C] rounded-lg transition-colors font-medium ${
+                        isActive(link.href) ? "bg-[#1A4B8C]/10 text-[#1A4B8C]" : ""
+                      }`}
+                    >
+                      {link.name}
+                    </span>
+                  ) : (
+                    <Link
+                      to={link.href}
+                      onClick={() => setIsDrawerOpen(false)}
+                      className={`block px-4 py-3 text-gray-700 hover:bg-[#1A4B8C]/10 hover:text-[#1A4B8C] rounded-lg transition-colors font-medium ${
+                        isActive(link.href) ? "bg-[#1A4B8C]/10 text-[#1A4B8C]" : ""
+                      }`}
+                    >
+                      {link.name}
+                    </Link>
+                  )}
                   {link.hasDropdown && link.dropdownItems && (
                     <div className="ml-4 mt-1 space-y-1">
                       {link.dropdownItems.map((item) => (
