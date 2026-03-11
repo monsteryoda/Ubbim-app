@@ -12,7 +12,7 @@ import AerialAnalytics from './pages/AerialAnalytics';
 import ThreeDScanning from './pages/ThreeDScanning';
 import VRCoordination from './pages/VRCoordination';
 import CustomSoftware from './pages/CustomSoftware';
-import FirefightingServices from './pages/FirefightingServices';
+import Firefighting from './pages/Firefighting';
 import StructuralRepair from './pages/StructuralRepair';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -32,7 +32,7 @@ function App() {
           <Route path="/3d-scanning" element={<ThreeDScanning />} />
           <Route path="/vr-coordination" element={<VRCoordination />} />
           <Route path="/custom-software" element={<CustomSoftware />} />
-          <Route path="/firefighting" element={<FirefightingServices />} />
+          <Route path="/firefighting" element={<Firefighting />} />
           <Route path="/services/structural-repair" element={<StructuralRepair />} />
         </Routes>
       </div>
