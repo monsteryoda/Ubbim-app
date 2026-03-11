@@ -17,17 +17,17 @@ const ThreeDScanning = () => {
     {
       title: "As-Built Documentation",
       description: "Produce precise as-built models for renovations, retrofits, and historical preservation, ensuring all modifications are accurately recorded.",
-      image: "/industrial-scanning.png"
+      image: "/src/assets/built.webp"
     },
     {
       title: "Industrial Plant Scanning",
       description: "Detailed 3D scanning of industrial plants and facilities to support maintenance, upgrades, and safety compliance.",
-      image: "/historic-scanning.png"
+      image: "/src/assets/industrial-plant.png"
     },
     {
       title: "Heritage Preservation",
       description: "Preserve the details of historical sites and artifacts with accurate 3D models, facilitating restoration and conservation efforts.",
-      image: "/asbuilt-scanning.png"
+      image: "/src/assets/heritage.png"
     }
   ];
 
