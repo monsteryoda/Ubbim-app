@@ -2,19 +2,41 @@
 
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "Services", href: "/services" },
+    { 
+      name: "Built Environment On Services", 
+      href: "/services",
+      dropdown: [
+        { name: "Service 1", href: "/services/service-1" },
+        { name: "Service 2", href: "/services/service-2" },
+        { name: "Service 3", href: "/services/service-3" },
+      ]
+    },
+    { 
+      name: "Digital Solution", 
+      href: "/digital",
+      dropdown: [
+        { name: "Solution 1", href: "/digital/solution-1" },
+        { name: "Solution 2", href: "/digital/solution-2" },
+        { name: "Solution 3", href: "/digital/solution-3" },
+      ]
+    },
     { name: "Projects", href: "/projects" },
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
   ];
+
+  const handleDropdownToggle = (name: string) => {
+    setOpenDropdown(openDropdown === name ? null : name);
+  };
 
   return (
     <>
@@ -32,15 +54,47 @@ const Navbar = () => {
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden md:flex items-center space-x-2">
               {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  to={link.href}
-                  className="text-white hover:text-[#4ADE80] transition-colors font-medium"
-                >
-                  {link.name}
-                </Link>
+                <div key={link.name} className="relative">
+                  {link.dropdown ? (
+                    <>
+                      <button
+                        onClick={() => handleDropdownToggle(link.name)}
+                        className="flex items-center space-x-1 text-white hover:text-[#4ADE80] transition-colors font-medium px-3 py-2 rounded-lg"
+                      >
+                        <span>{link.name}</span>
+                        <ChevronDown 
+                          className={`w-4 h-4 transition-transform ${
+                            openDropdown === link.name ? "rotate-180" : ""
+                          }`}
+                        />
+                      </button>
+                      {/* Dropdown Menu */}
+                      {openDropdown === link.name && (
+                        <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl border border-gray-100 overflow-hidden z-50">
+                          {link.dropdown.map((subLink) => (
+                            <Link
+                              key={subLink.name}
+                              to={subLink.href}
+                              onClick={() => setOpenDropdown(null)}
+                              className="block px-4 py-3 text-gray-700 hover:bg-[#1A4B8C]/10 hover:text-[#1A4B8C] transition-colors font-medium"
+                            >
+                              {subLink.name}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+                    </>
+                  ) : (
+                    <Link
+                      to={link.href}
+                      className="text-white hover:text-[#4ADE80] transition-colors font-medium px-3 py-2 rounded-lg"
+                    >
+                      {link.name}
+                    </Link>
+                  )}
+                </div>
               ))}
             </div>
 
@@ -85,14 +139,39 @@ const Navbar = () => {
           <div className="flex-1 overflow-y-auto p-4">
             <nav className="space-y-2">
               {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  to={link.href}
-                  onClick={() => setIsDrawerOpen(false)}
-                  className="block px-4 py-3 text-gray-700 hover:bg-[#1A4B8C]/10 hover:text-[#1A4B8C] rounded-lg transition-colors font-medium"
-                >
-                  {link.name}
-                </Link>
+                <div key={link.name}>
+                  {link.dropdown ? (
+                    <div>
+                      <button
+                        onClick={() => setIsDrawerOpen(false)}
+                        className="flex items-center justify-between w-full px-4 py-3 text-gray-700 hover:bg-[#1A4B8C]/10 hover:text-[#1A4B8C] rounded-lg transition-colors font-medium"
+                      >
+                        <span>{link.name}</span>
+                        <ChevronDown className="w-4 h-4" />
+                      </button>
+                      <div className="ml-4 mt-1 space-y-1">
+                        {link.dropdown.map((subLink) => (
+                          <Link
+                            key={subLink.name}
+                            to={subLink.href}
+                            onClick={() => setIsDrawerOpen(false)}
+                            className="block px-4 py-2 text-gray-600 hover:bg-[#1A4B8C]/5 hover:text-[#1A4B8C] rounded-lg transition-colors"
+                          >
+                            {subLink.name}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
+                    <Link
+                      to={link.href}
+                      onClick={() => setIsDrawerOpen(false)}
+                      className="block px-4 py-3 text-gray-700 hover:bg-[#1A4B8C]/10 hover:text-[#1A4B8C] rounded-lg transition-colors font-medium"
+                    >
+                      {link.name}
+                    </Link>
+                  )}
+                </div>
               ))}
             </nav>
           </div>
