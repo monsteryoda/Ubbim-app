@@ -30,6 +30,39 @@ const SecuritySurveillance = () => {
     }
   ];
 
+  const features = [
+    {
+      icon: Building2,
+      title: "Integrated Approach",
+      description: "Seamless coordination between design and construction teams for optimal project outcomes."
+    },
+    {
+      icon: Clock,
+      title: "Time Efficiency",
+      description: "Streamlined processes that reduce project timelines without compromising quality."
+    },
+    {
+      icon: Shield,
+      title: "Quality Assurance",
+      description: "Rigorous quality control measures throughout every phase of the project lifecycle."
+    },
+    {
+      icon: Eye,
+      title: "24/7 Monitoring",
+      description: "Round-the-clock surveillance and monitoring for continuous protection of your premises."
+    },
+    {
+      icon: AlertTriangle,
+      title: "Risk Assessment",
+      description: "Comprehensive security risk assessments to identify vulnerabilities and implement effective countermeasures."
+    },
+    {
+      icon: Wrench,
+      title: "Maintenance & Support",
+      description: "Regular maintenance and prompt technical support to keep your security systems operational."
+    }
+  ];
+
   const benefits = [
     "Single point of responsibility for design and installation",
     "Reduced security risks through integrated systems",
@@ -37,6 +70,29 @@ const SecuritySurveillance = () => {
     "Cost certainty with guaranteed maximum price options",
     "Enhanced collaboration between security and IT teams",
     "Improved security posture through comprehensive approach"
+  ];
+
+  const serviceFeatures = [
+    {
+      title: "Video Surveillance",
+      description: "High-definition cameras with night vision, motion detection, and remote viewing capabilities for complete visibility.",
+      image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=400&q=80"
+    },
+    {
+      title: "Access Control",
+      description: "Multi-factor authentication systems including card readers, biometric scanners, and mobile credential management.",
+      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&q=80"
+    },
+    {
+      title: "Intrusion Detection",
+      description: "Advanced sensors and alarm systems that detect unauthorized entry and trigger immediate alerts to security teams.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80"
+    },
+    {
+      title: "Integrated Security Management",
+      description: "Centralized platform that unifies all security systems for streamlined monitoring and response management.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80"
+    }
   ];
 
   return (
@@ -260,7 +316,7 @@ const SecuritySurveillance = () => {
               <h3 className="text-lg font-semibold mb-6">Our Services</h3>
               <ul className="space-y-3">
                 <li>
-                  <Link to="/services/design-build" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                  <Link to="/design-build" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
                     Design & Build
                   </Link>
                 </li>
@@ -270,13 +326,13 @@ const SecuritySurveillance = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services/security-surveillance" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                  <Link to="/security-surveillance" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
                     Security & Surveillance
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services/structural-repair" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                    Structural Repair
+                  <Link to="/construction-management" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                    Construction Management
                   </Link>
                 </li>
               </ul>
