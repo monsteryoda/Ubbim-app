@@ -11,7 +11,7 @@ const DigitalSolutions = () => {
   const services = [
     {
       title: "Aerial Analytics Solutions",
-      description: "Leverage drone technology and aerial imagery to capture site data, monitor progress, and gain valuable insights for informed decision-making.",
+      description: "Leverage drone technology for precise aerial surveys, mapping, and data analysis.",
       image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&q=80"
     },
     {
