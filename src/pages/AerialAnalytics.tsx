@@ -12,7 +12,7 @@ const AerialAnalytics = () => {
     {
       title: "Land Surveying",
       description: "High-resolution aerial surveys that provide accurate topographical data, saving time and reducing costs compared to traditional methods.",
-      image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&q=80"
+      image: "/land-surveying.png"
     },
     {
       title: "Construction Site Monitoring",
