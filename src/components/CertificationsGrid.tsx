@@ -43,11 +43,14 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
             className="group hover:shadow-xl transition-all duration-300 border-none cursor-pointer overflow-hidden"
             onClick={() => setSelectedCertification(cert)}
           >
-            <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2">{cert.title}</h3>
-              <p className="text-gray-600 mb-2">{cert.organization}</p>
-              <p className="text-gray-500 text-sm">{cert.year}</p>
-              <p className="text-gray-700 mt-4">{cert.description}</p>
+            <div className="relative w-full" style={{ paddingBottom: "177.78%" }}>
+              {cert.image && (
+                <img
+                  src={cert.image}
+                  alt={cert.title}
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              )}
             </div>
           </Card>
         ))}
@@ -70,12 +73,13 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
               >
                 <X className="w-6 h-6" />
               </button>
-              <div className="p-6">
-                <h2 className="text-2xl font-bold mb-2">{selectedCertification.title}</h2>
-                <p className="text-gray-600 mb-2">{selectedCertification.organization}</p>
-                <p className="text-gray-500 mb-4">{selectedCertification.year}</p>
-                <p className="text-gray-700">{selectedCertification.description}</p>
-              </div>
+              {selectedCertification.image && (
+                <img
+                  src={selectedCertification.image}
+                  alt={selectedCertification.title}
+                  className="w-full h-auto"
+                />
+              )}
             </div>
           </div>
         </div>
