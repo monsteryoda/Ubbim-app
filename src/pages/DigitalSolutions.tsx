@@ -17,7 +17,7 @@ const DigitalSolutions = () => {
     {
       title: "3D Scanning Solutions",
       description: "Advanced 3D scanning that provide accurate representations of physical spaces, enhancing project planning and execution",
-      image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80"
+      image: "/3d-scanning.jpeg"
     },
     {
       title: "Virtual Design Coordination",
