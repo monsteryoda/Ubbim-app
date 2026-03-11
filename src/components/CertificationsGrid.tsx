@@ -11,6 +11,7 @@ interface Certification {
   year: string;
   image: string;
   description: string;
+  hasLightbox?: boolean;
 }
 
 interface CertificationsGridProps {
@@ -28,7 +29,26 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
       organization: "ACM-CCAS Limited",
       year: "2017",
       image: "/src/assets/certifications/9001.png",
-      description: "Quality Management System Certification"
+      description: "Quality Management System Certification",
+      hasLightbox: true
+    },
+    {
+      id: "2",
+      title: "ISO 14001:2015",
+      organization: "ACM-CCAS Limited",
+      year: "2019",
+      image: "/src/assets/certifications/14001.png",
+      description: "Environmental Management System Certification",
+      hasLightbox: false
+    },
+    {
+      id: "3",
+      title: "ISO 45001:2018",
+      organization: "ACM-CCAS Limited",
+      year: "2019",
+      image: "/src/assets/certifications/iso-45001-2018.png",
+      description: "Occupational Health and Safety Management System Certification",
+      hasLightbox: true
     }
   ];
 
@@ -40,8 +60,10 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
         {displayCertifications.map((cert) => (
           <Card 
             key={cert.id} 
-            className="group hover:shadow-xl transition-all duration-300 border-none cursor-pointer overflow-hidden"
-            onClick={() => setSelectedCertification(cert)}
+            className={`group hover:shadow-xl transition-all duration-300 border-none overflow-hidden ${
+              cert.hasLightbox !== false ? "cursor-pointer" : ""
+            }`}
+            onClick={() => cert.hasLightbox !== false && setSelectedCertification(cert)}
           >
             <div className="relative w-full" style={{ paddingBottom: "177.78%" }}>
               {cert.image && (
