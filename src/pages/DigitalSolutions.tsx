@@ -16,7 +16,7 @@ const DigitalSolutions = () => {
     },
     {
       title: "3D Scanning Solutions",
-      description: "Capture precise as-built conditions with advanced laser scanning technology, enabling accurate documentation and seamless integration with BIM workflows.",
+      description: "Advanced 3D scanning that provide accurate representations of physical spaces, enhancing project planning and execution",
       image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80"
     },
     {
