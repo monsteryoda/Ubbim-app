@@ -37,21 +37,30 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
   return (
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        {displayCertifications.map((cert) => (
+        {displayCertifications.map((cert, index) => (
           <Card 
             key={cert.id} 
-            className="group hover:shadow-xl transition-all duration-300 border-none cursor-pointer overflow-hidden"
+            className={`group hover:shadow-xl transition-all duration-300 border-none cursor-pointer overflow-hidden ${index === 0 ? 'opacity-50' : ''}`}
             onClick={() => setSelectedCertification(cert)}
           >
-            <div className="relative w-full" style={{ paddingBottom: "177.78%" }}>
-              {cert.image && (
-                <img
-                  src={cert.image}
-                  alt={cert.title}
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              )}
-            </div>
+            {index === 0 ? (
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-[#1A4B8C] mb-2">{cert.title}</h3>
+                <p className="text-gray-600 mb-1"><strong>Organization:</strong> {cert.organization}</p>
+                <p className="text-gray-600 mb-1"><strong>Year:</strong> {cert.year}</p>
+                <p className="text-gray-600">{cert.description}</p>
+              </div>
+            ) : (
+              <div className="relative w-full" style={{ paddingBottom: "177.78%" }}>
+                {cert.image && (
+                  <img
+                    src={cert.image}
+                    alt={cert.title}
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                )}
+              </div>
+            )}
           </Card>
         ))}
       </div>
