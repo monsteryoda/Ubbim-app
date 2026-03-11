@@ -15,8 +15,8 @@ const DigitalSolutions = () => {
       image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80"
     },
     {
-      title: "Aerial Analytics & 3D Scanning",
-      description: "Capture precise site data using drones and LiDAR technology for accurate mapping, progress tracking, and as-built documentation.",
+      title: "Aerial Analytics Solutions",
+      description: "Leverage drone technology for precise aerial surveys, mapping, and data analysis.",
       image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&q=80"
     },
     {
