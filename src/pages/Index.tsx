@@ -56,91 +56,43 @@ const Index = () => {
   const certifications = [
     {
       id: "1",
-      title: "CIDB SCORE 3 Star Rating",
-      organization: "CIDB Malaysia",
-      year: "2022",
-      image: "/src/assets/certification-2022.png",
-      description: "Achieved 3-star rating under the CIDB SCORE evaluation system, recognizing excellent management and technical capabilities, compliance to best practices, and outstanding project management standards.",
+      title: "SME Corp Certificate",
+      organization: "SME Corporation Malaysia",
+      year: "2023",
+      image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80",
+      description: "Recognized certification for small and medium enterprises, highlighting our commitment to excellence and innovation in the construction industry."
     },
     {
       id: "2",
-      title: "Sustainability Excellence",
-      organization: "Green Business Council",
+      title: "Quality Excellence Award",
+      organization: "International Construction Awards",
       year: "2023",
-      image: "https://images.unsplash.com/photo-1560421683-6856ea585c78?w=800&q=80",
-      description: "Awarded for implementing sustainable practices in construction projects, reducing carbon footprint by 40% across operations.",
+      image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=80",
+      description: "Awarded for outstanding quality standards and precision in metal fabrication and construction processes."
     },
     {
       id: "3",
-      title: "Safety Leadership Award",
-      organization: "National Safety Council",
-      year: "2022",
-      image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=80",
-      description: "Honored for maintaining the highest safety standards with zero lost-time incidents across all project sites for three consecutive years.",
+      title: "Digital Innovation Certificate",
+      organization: "Tech Innovation Council",
+      year: "2024",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&q=80",
+      description: "Recognized for integrating advanced digital technologies and software solutions into construction project management."
     },
     {
       id: "4",
-      title: "Innovation in Construction",
-      organization: "International Building Tech Awards",
+      title: "Sustainability Leadership",
+      organization: "Green Building Council",
       year: "2023",
-      image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80",
-      description: "Recognized for pioneering the use of BIM and AI-driven project management tools in large-scale infrastructure projects.",
+      image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80",
+      description: "Honored for implementing sustainable practices and eco-friendly solutions across all project operations."
     },
     {
       id: "5",
-      title: "Excellence in Project Delivery",
-      organization: "Project Management Institute",
-      year: "2022",
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
-      description: "Awarded for delivering complex projects on time and within budget, exceeding client expectations across multiple sectors.",
-    },
-    {
-      id: "6",
       title: "Environmental Stewardship",
       organization: "Environmental Protection Agency",
-      year: "2023",
-      image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&q=80",
-      description: "Recognized for implementing eco-friendly construction practices and achieving LEED certification on multiple projects.",
-    },
-    {
-      id: "7",
-      title: "ISO 9001:2015",
-      organization: "ACM-CCAS Limited",
-      year: "2017",
-      image: "/src/assets/certifications/iso-9001.png",
-      description: "Quality Management System Certification"
-    },
-    {
-      id: "8",
-      title: "ISO 14001:2015",
-      organization: "ACM-CCAS Limited",
-      year: "2019",
-      image: "/src/assets/certifications/14001.png",
-      description: "Environmental Management System Certification for general construction, civil and structural engineering services"
-    },
-    {
-      id: "9",
-      title: "ISO 45001:2018",
-      organization: "ACM-CCAS Limited",
-      year: "2019",
-      image: "/src/assets/certifications/iso-45001-2018.png",
-      description: "Occupational Health and Safety Management System Certification for provision of general construction, civil and structural engineering services"
-    },
-    {
-      id: "10",
-      title: "ISO 14064-1:2018",
-      organization: "Institute of Quality Malaysia",
-      year: "2022",
-      image: "/src/assets/certifications/14064.png",
-      description: "Greenhouse Gases Part 1 - Organization Level for Quantification and Reporting Greenhouse Gas Emission and Removals"
-    },
-    {
-      id: "11",
-      title: "Malaysia Book of Records",
-      organization: "Malaysia Book of Records",
-      year: "2022",
-      image: "/src/assets/certifications/malaysia-book.png",
-      description: "First construction company certified by ISO 14064-1:2018 Greenhouse Part 1 for provision of construction in civil, structural engineering and E-Construction Project Management Service"
+      year: "2024",
+      image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&q=80",
+      description: "Certified for outstanding environmental responsibility and commitment to sustainable development practices."
     }
   ];
 
