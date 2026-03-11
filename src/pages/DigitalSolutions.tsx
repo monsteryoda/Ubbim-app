@@ -15,13 +15,13 @@ const DigitalSolutions = () => {
       image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&q=80"
     },
     {
-      title: "Virtual Design Coordination",
-      description: "Utilize virtual and augmented reality to visualize designs, coordinate teams, and improve project outcomes with immersive experiences.",
+      title: "3D Scanning Solutions",
+      description: "Capture precise as-built conditions with advanced laser scanning technology, enabling accurate documentation and seamless integration with BIM workflows.",
       image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80"
     },
     {
-      title: "3D Scanning Solutions",
-      description: "Capture precise as-built conditions with advanced laser scanning technology, enabling accurate documentation and seamless integration with BIM workflows.",
+      title: "Virtual Design Coordination",
+      description: "Utilize virtual and augmented reality to visualize designs, coordinate teams, and improve project outcomes with immersive experiences.",
       image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80"
     },
     {
