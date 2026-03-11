@@ -111,7 +111,7 @@ const AerialAnalytics = () => {
               AERIAL ANALYTICS SOLUTIONS
             </h1>
             <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
-              Transform Your Projects with Cutting-Edge Drone Technology and Data-Driven Insights
+              Precision Insights from Above for Smarter Decision-Making
             </p>
           </div>
         </div>
@@ -125,7 +125,7 @@ const AerialAnalytics = () => {
               Our Core Services
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              UBBIM's Aerial Analytics Solutions leverage advanced drone technology to provide precise aerial surveys, mapping, and data analysis. Our team of experts transforms raw aerial data into actionable insights that drive better project outcomes.
+              UBBIM's Aerial Analytics Solutions harness the power of drone technology to deliver precise, real-time data for your projects. Whether it's land surveying, site monitoring, or infrastructure inspection, our solutions provide actionable insights that drive smarter, faster decision-making.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
