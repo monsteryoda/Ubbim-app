@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Services from "./pages/Services";
 import DesignBuildServices from "./pages/DesignBuildServices";
+import DigitalSolutions from "./pages/DigitalSolutions";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Index />} />
         <Route path="/services" element={<Services />} />
         <Route path="/services/design-build" element={<DesignBuildServices />} />
+        <Route path="/services/digital-solutions" element={<DigitalSolutions />} />
         <Route path="/services/structural-repair" element={<StructuralRepair />} />
         <Route path="/services/security-surveillance" element={<SecuritySurveillance />} />
         <Route path="/projects" element={<Projects />} />
