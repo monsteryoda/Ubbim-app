@@ -139,8 +139,39 @@ const DigitalSolutions = () => {
               DIGITAL SOLUTIONS
             </h1>
             <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
-              Transforming Construction Through Innovation and Technology
+              Innovative Technology Solutions for the Built Environment
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Grid Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
+              Key Features
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Our digital solutions are designed to empower your construction projects with cutting-edge technology and intelligent insights.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {features.map((feature, index) => (
+              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <CardContent className="p-8">
+                  <div className="w-14 h-14 bg-[#1A4B8C]/10 rounded-xl flex items-center justify-center mb-6">
+                    <feature.icon className="w-7 h-7 text-[#1A4B8C]" />
+                  </div>
+                  <h3 className="text-xl font-bold text-[#1A4B8C] mb-3">
+                    {feature.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {feature.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
@@ -153,7 +184,7 @@ const DigitalSolutions = () => {
               Our Core Services
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              UBBIM's Digital Solutions leverage cutting-edge technology to revolutionize how construction projects are planned, executed, and managed. From BIM and 3D scanning to custom software development, we provide innovative tools that drive efficiency, accuracy, and collaboration across your entire project lifecycle.
+              UBBIM's Digital Solutions bring the power of cutting-edge technology to the built environment. From aerial analytics to 3D scanning and custom software development, we offer tools that enhance project precision, streamline processes, and unlock new possibilities for innovation.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
