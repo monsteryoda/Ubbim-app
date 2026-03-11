@@ -10,7 +10,7 @@ import Navbar from "@/components/Navbar";
 const AerialAnalytics = () => {
   const services = [
     {
-      title: "Aerial Surveys & Mapping",
+      title: "Land Surveying",
       description: "High-precision drone surveys for topographic mapping, land development, and construction site documentation.",
       image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&q=80"
     },
