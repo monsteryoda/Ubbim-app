@@ -1,20 +1,37 @@
 "use client";
 
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
+  const location = useLocation();
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "Services", href: "/services" },
+    { 
+      name: "Services", 
+      href: "/services",
+      hasDropdown: true,
+      dropdownItems: [
+        { name: "Built Environment Services", href: "/services/design-build" },
+        { name: "Digital Solutions", href: "/services/digital-solutions" }
+      ]
+    },
     { name: "Projects", href: "/projects" },
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
   ];
+
+  const isActive = (path: string) => {
+    if (path === "/") {
+      return location.pathname === "/";
+    }
+    return location.pathname.startsWith(path);
+  };
 
   return (
     <>
@@ -32,15 +49,47 @@ const Navbar = () => {
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden md:flex items-center space-x-8 relative">
               {navLinks.map((link) => (
-                <Link
+                <div 
                   key={link.name}
-                  to={link.href}
-                  className="text-white hover:text-[#4ADE80] transition-colors font-medium"
+                  className="relative"
+                  onMouseEnter={() => link.hasDropdown && setIsServicesDropdownOpen(true)}
+                  onMouseLeave={() => link.hasDropdown && setIsServicesDropdownOpen(false)}
                 >
-                  {link.name}
-                </Link>
+                  <Link
+                    to={link.href}
+                    className={`flex items-center space-x-1 transition-colors font-medium ${
+                      isActive(link.href) ? "text-[#4ADE80]" : "text-white hover:text-[#4ADE80]"
+                    }`}
+                  >
+                    <span>{link.name}</span>
+                    {link.hasDropdown && <ChevronDown className="w-4 h-4" />}
+                  </Link>
+
+                  {/* Dropdown Menu */}
+                  {link.hasDropdown && (
+                    <div
+                      className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-64 bg-white rounded-lg shadow-xl overflow-hidden transition-all duration-200 ${
+                        isServicesDropdownOpen ? "opacity-100 visible" : "opacity-0 invisible"
+                      }`}
+                    >
+                      <div className="py-2">
+                        {link.dropdownItems?.map((item) => (
+                          <Link
+                            key={item.name}
+                            to={item.href}
+                            className={`block px-4 py-3 text-gray-700 hover:bg-[#1A4B8C]/10 hover:text-[#1A4B8C] transition-colors font-medium ${
+                              isActive(item.href) ? "bg-[#1A4B8C]/10 text-[#1A4B8C]" : ""
+                            }`}
+                          >
+                            {item.name}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
               ))}
             </div>
 
@@ -85,14 +134,33 @@ const Navbar = () => {
           <div className="flex-1 overflow-y-auto p-4">
             <nav className="space-y-2">
               {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  to={link.href}
-                  onClick={() => setIsDrawerOpen(false)}
-                  className="block px-4 py-3 text-gray-700 hover:bg-[#1A4B8C]/10 hover:text-[#1A4B8C] rounded-lg transition-colors font-medium"
-                >
-                  {link.name}
-                </Link>
+                <div key={link.name}>
+                  <Link
+                    to={link.href}
+                    onClick={() => setIsDrawerOpen(false)}
+                    className={`block px-4 py-3 text-gray-700 hover:bg-[#1A4B8C]/10 hover:text-[#1A4B8C] rounded-lg transition-colors font-medium ${
+                      isActive(link.href) ? "bg-[#1A4B8C]/10 text-[#1A4B8C]" : ""
+                    }`}
+                  >
+                    {link.name}
+                  </Link>
+                  {link.hasDropdown && link.dropdownItems && (
+                    <div className="ml-4 mt-1 space-y-1">
+                      {link.dropdownItems.map((item) => (
+                        <Link
+                          key={item.name}
+                          to={item.href}
+                          onClick={() => setIsDrawerOpen(false)}
+                          className={`block px-4 py-2 text-sm text-gray-600 hover:bg-[#1A4B8C]/10 hover:text-[#1A4B8C] rounded transition-colors ${
+                            isActive(item.href) ? "bg-[#1A4B8C]/10 text-[#1A4B8C]" : ""
+                          }`}
+                        >
+                          {item.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
               ))}
             </nav>
           </div>
