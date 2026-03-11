@@ -15,7 +15,7 @@ const AerialAnalytics = () => {
       image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&q=80"
     },
     {
-      title: "3D Modeling & Visualization",
+      title: "Construction Site Monitoring",
       description: "Transform aerial data into detailed 3D models for project planning, stakeholder presentations, and progress tracking.",
       image: "https://images.unsplash.com/photo-1506947411487-a56738267384?w=600&q=80"
     },
