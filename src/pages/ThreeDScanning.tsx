@@ -116,7 +116,7 @@ const ThreeDScanning = () => {
               3D SCANNING SOLUTIONS
             </h1>
             <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
-              Precision Digital Twins for Enhanced Project Planning and Execution
+              Precision and Detail in Every Dimension
             </p>
           </div>
         </div>
