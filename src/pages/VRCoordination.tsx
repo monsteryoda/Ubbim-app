@@ -167,7 +167,7 @@ const VRCoordination = () => {
                   Enhanced Visualization
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-right">
-                  Experience your project in immersive VR/AR environments, ensuring every detail is accurately understood before construction begins.
+                  Experience designs in a fully immersive environment, providing a clear and realistic view of the final project.
                 </p>
               </div>
               <div className="text-right md:text-right">
