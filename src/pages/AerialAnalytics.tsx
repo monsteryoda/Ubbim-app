@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowLeft, MapPin, Phone, Mail, Drone, Camera, Map, FileText, Shield, TrendingUp } from "lucide-react";
+import { ArrowLeft, MapPin, Phone, Mail, Plane, Camera, Map, FileText, Shield, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
@@ -10,7 +10,7 @@ import Navbar from "@/components/Navbar";
 const AerialAnalytics = () => {
   const features = [
     {
-      icon: Drone,
+      icon: Plane,
       title: "Advanced Drone Technology",
       description: "State-of-the-art drones equipped with high-resolution cameras and sensors for precise data collection."
     },
