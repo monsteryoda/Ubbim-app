@@ -23,11 +23,6 @@ const VRCoordination = () => {
       title: "Process Video Animation",
       description: "Illustrate complex plant building processes and workflows with custom animations, making it easier for stakeholders to visualize and understand each step.",
       image: "/vr-training.png"
-    },
-    {
-      title: "Clash Detection & Resolution",
-      description: "Immerse stakeholders in a fully interactive virtual environment, allowing them to explore and experience the design before construction.",
-      image: "/clash-detection.png"
     }
   ];
 
@@ -133,7 +128,7 @@ const VRCoordination = () => {
               UBBIM's Virtual Design Coordination services bring your projects to life with advanced VR, AR, and BIM technologies. By integrating these tools into the design process, we enable seamless collaboration, enhance decision-making, and ensure every detail is perfected before construction begins.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
                 <div className="aspect-video overflow-hidden">
