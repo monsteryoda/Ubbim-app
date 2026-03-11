@@ -130,68 +130,6 @@ const DigitalSolutions = () => {
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#1A4B8C] mb-16 text-center">
-            Why Choose Us
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-            {/* Left Column - Text Blocks */}
-            <div className="space-y-8 md:pr-12">
-              <div className="text-right md:text-right">
-                <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Technology Leadership
-                </h3>
-                <p className="text-gray-600 leading-relaxed text-right">
-                  We stay at the forefront of digital innovation, continuously adopting and implementing the latest technologies to give our clients a competitive edge.
-                </p>
-              </div>
-              <div className="text-right md:text-right">
-                <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Industry Expertise
-                </h3>
-                <p className="text-gray-600 leading-relaxed text-right">
-                  Our team combines deep construction knowledge with advanced technical skills, ensuring solutions that are both innovative and practical.
-                </p>
-              </div>
-            </div>
-
-            {/* Center Column - Large Image */}
-            <div className="relative">
-              <div className="aspect-[16/10] overflow-hidden rounded-2xl shadow-2xl">
-                <img 
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" 
-                  alt="Digital Solutions" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-
-            {/* Right Column - Text Blocks */}
-            <div className="space-y-8 md:pl-12">
-              <div className="text-left md:text-left">
-                <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Custom Solutions
-                </h3>
-                <p className="text-gray-600 leading-relaxed text-left">
-                  We don't believe in one-size-fits-all. Every digital solution we deliver is tailored to your specific needs and business objectives.
-                </p>
-              </div>
-              <div className="text-left md:text-left">
-                <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Proven Results
-                </h3>
-                <p className="text-gray-600 leading-relaxed text-left">
-                  Our track record of successful digital transformations speaks for itself, with measurable improvements in efficiency and project outcomes.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Footer */}
       <footer className="bg-[#1A4B8C] text-white">
         <div className="container mx-auto px-4 py-16">
