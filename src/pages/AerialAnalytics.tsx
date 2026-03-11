@@ -22,12 +22,12 @@ const AerialAnalytics = () => {
     {
       title: "Aerial Mapping",
       description: "Create precise, up-to-date maps for urban planning, environmental monitoring, and more using advanced drone technology.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80"
+      image: "/mapping.png"
     },
     {
       title: "Volume Calculation",
       description: "Accurately calculate volumes of stockpiles, earthworks, and other materials using aerial data, ensuring precise resource management.",
-      image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80"
+      image: "/volpng.png"
     }
   ];
 
