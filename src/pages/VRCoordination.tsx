@@ -10,7 +10,7 @@ import Navbar from "@/components/Navbar";
 const VRCoordination = () => {
   const services = [
     {
-      title: "Virtual Design Coordination",
+      title: "Virtual Reality (VR) Design Reviews",
       description: "Use VR to visualize and coordinate complex building designs before construction begins, reducing errors and rework.",
       image: "/vr.jpeg"
     },
@@ -116,7 +116,7 @@ const VRCoordination = () => {
               VIRTUAL DESIGN COORDINATION
             </h1>
             <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
-              Immersive Visualization for Smarter Construction Decisions
+              Transforming Project Collaboration with VR, AR, and BIM
             </p>
           </div>
         </div>
@@ -130,7 +130,7 @@ const VRCoordination = () => {
               Our Core Services
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              UBBIM's Virtual Design Coordination solutions bring your projects to life before construction begins. Using cutting-edge VR and AR technology, we enable stakeholders to experience, visualize, and coordinate complex designs in immersive environments, reducing errors and accelerating decision-making.
+              UBBIM's Virtual Design Coordination services bring your projects to life with advanced VR, AR, and BIM technologies. By integrating these tools into the design process, we enable seamless collaboration, enhance decision-making, and ensure every detail is perfected before construction begins.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
