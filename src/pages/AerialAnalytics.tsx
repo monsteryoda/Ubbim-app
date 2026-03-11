@@ -25,8 +25,8 @@ const AerialAnalytics = () => {
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80"
     },
     {
-      title: "Infrastructure Inspection",
-      description: "Comprehensive drone-based inspections for bridges, power lines, and industrial facilities to identify issues before they become problems.",
+      title: "Volume Calculation",
+      description: "Accurate earthwork and material volume calculations using drone data for precise project cost estimation and progress tracking.",
       image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80"
     }
   ];
