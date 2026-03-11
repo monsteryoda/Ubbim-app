@@ -7,6 +7,39 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 const DigitalSolutions = () => {
+  const features = [
+    {
+      icon: Cpu,
+      title: "AI-Powered Analytics",
+      description: "Leverage artificial intelligence to extract actionable insights from your construction data."
+    },
+    {
+      icon: Clock,
+      title: "Real-Time Monitoring",
+      description: "Track project progress and performance metrics in real-time with our digital dashboards."
+    },
+    {
+      icon: Shield,
+      title: "Data Security",
+      description: "Enterprise-grade security protocols to protect your sensitive project information."
+    },
+    {
+      icon: Leaf,
+      title: "Sustainability Tracking",
+      description: "Monitor and optimize environmental impact with built-in sustainability analytics."
+    },
+    {
+      icon: Users,
+      title: "Collaboration Tools",
+      description: "Seamless collaboration platforms connecting all stakeholders across the project lifecycle."
+    },
+    {
+      icon: Award,
+      title: "Performance Optimization",
+      description: "Data-driven insights to continuously improve project outcomes and operational efficiency."
+    }
+  ];
+
   const processSteps = [
     {
       step: "01",
@@ -55,15 +88,6 @@ const DigitalSolutions = () => {
     "Cost savings through optimized resource allocation",
     "Enhanced collaboration across all project teams",
     "Improved project quality through data-driven processes"
-  ];
-
-  const galleryImages = [
-    "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
-    "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80",
-    "https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?w=600&q=80",
-    "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80",
-    "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80",
-    "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&q=80"
   ];
 
   return (
@@ -121,6 +145,37 @@ const DigitalSolutions = () => {
         </div>
       </section>
 
+      {/* Features Grid Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
+              Key Features
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Our digital solutions are designed to empower your construction projects with cutting-edge technology and intelligent insights.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {features.map((feature, index) => (
+              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <CardContent className="p-8">
+                  <div className="w-14 h-14 bg-[#1A4B8C]/10 rounded-xl flex items-center justify-center mb-6">
+                    <feature.icon className="w-7 h-7 text-[#1A4B8C]" />
+                  </div>
+                  <h3 className="text-xl font-bold text-[#1A4B8C] mb-3">
+                    {feature.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {feature.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -150,31 +205,6 @@ const DigitalSolutions = () => {
                     {service.description}
                   </p>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Photo Gallery Grid */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
-              Our Digital Solutions in Action
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              See how our cutting-edge technology transforms construction projects across the industry.
-            </p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {galleryImages.map((image, index) => (
-              <div key={index} className="aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <img 
-                  src={image} 
-                  alt={`Digital solution ${index + 1}`} 
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
               </div>
             ))}
           </div>
