@@ -12,22 +12,26 @@ const DigitalSolutions = () => {
     {
       title: "Aerial Analytics Solutions",
       description: "Leverage drone technology for precise aerial surveys, mapping, and data analysis.",
-      image: "/aerial-analytics.png"
+      image: "/aerial-analytics.png",
+      link: "/aerial-analytics"
     },
     {
       title: "3D Scanning Solutions",
       description: "Advanced 3D scanning that provide accurate representations of physical spaces, enhancing project planning and execution",
-      image: "/3d-scanning.jpeg"
+      image: "/3d-scanning.jpeg",
+      link: "/3d-scanning"
     },
     {
       title: "Virtual Design Coordination",
       description: "Utilize virtual and augmented reality to visualize designs, coordinate teams, and improve project outcomes with immersive experiences.",
-      image: "/vr.jpeg"
+      image: "/vr.jpeg",
+      link: "/vr-coordination"
     },
     {
       title: "Custom Software Solutions",
       description: "Tailored software solutions, including project management systems, digital permit to work systems, and GHG tracking systems, designed to meet your specific operational needs.",
-      image: "/coding.jpeg"
+      image: "/coding.jpeg",
+      link: "/custom-software"
     }
   ];
 
@@ -116,9 +120,11 @@ const DigitalSolutions = () => {
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <button className="px-8 py-3 bg-[#005F6B] hover:bg-[#007A8A] text-white font-bold rounded-full text-sm transition-colors duration-200">
-                      Learn More
-                    </button>
+                    <Link to={service.link}>
+                      <button className="px-8 py-3 bg-[#005F6B] hover:bg-[#007A8A] text-white font-bold rounded-full text-sm transition-colors duration-200">
+                        Learn More
+                      </button>
+                    </Link>
                   </div>
                 </div>
                 <div className="p-8 bg-white">
