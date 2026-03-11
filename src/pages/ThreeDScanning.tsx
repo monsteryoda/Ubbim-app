@@ -169,18 +169,18 @@ const ThreeDScanning = () => {
             <div className="space-y-8 md:pr-12">
               <div className="text-right md:text-right">
                 <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Enhanced Accuracy
+                  High Precision
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-right">
-                  Capture millimeter-precise 3D data that ensures every detail is accurately documented for informed decision-making.
+                  Achieve unparalleled accuracy with millions of data points capturing every detail of your project.
                 </p>
               </div>
               <div className="text-right md:text-right">
                 <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Faster Project Turnaround
+                  Comprehensive Documentation
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-right">
-                  Accelerate project timelines with rapid 3D data capture and immediate model availability for analysis and action.
+                  Generate detailed as-built models that serve as an accurate reference for future modifications and renovations.
                 </p>
               </div>
             </div>
@@ -200,18 +200,18 @@ const ThreeDScanning = () => {
             <div className="space-y-8 md:pl-12">
               <div className="text-left md:text-left">
                 <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Cost-Effective Documentation
+                  Time Efficiency
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-left">
-                  Reduce costs by leveraging 3D scanning for efficient documentation, minimizing the need for manual measurements and extensive labor.
+                  Significantly reduce the time needed for measurements and documentation, allowing for quicker project turnaround.
                 </p>
               </div>
               <div className="text-left md:text-left">
                 <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Improved Safety
+                  Versatility Across Industries
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-left">
-                  Conduct scans from safe distances in hazardous environments, reducing risk to personnel while ensuring comprehensive data collection.
+                  From construction to heritage preservation, our 3D scanning solutions are adaptable to a wide range of applications.
                 </p>
               </div>
             </div>
