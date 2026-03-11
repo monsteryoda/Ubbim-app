@@ -189,7 +189,7 @@ const ThreeDScanning = () => {
             <div className="relative">
               <div className="aspect-[16/10] overflow-hidden rounded-2xl shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80" 
+                  src="/assets/construction-model-point-cloud.webp" 
                   alt="3D Scanning" 
                   className="w-full h-full object-cover"
                 />
