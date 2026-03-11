@@ -37,14 +37,15 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
   return (
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        {displayCertifications.map((cert) => (
+        {displayCertifications.map((cert, index) => (
           <Card 
             key={cert.id} 
             className="group hover:shadow-xl transition-all duration-300 border-none cursor-pointer overflow-hidden"
             onClick={() => setSelectedCertification(cert)}
           >
             <div className="relative w-full" style={{ paddingBottom: "177.78%" }}>
-              {cert.image && (
+              {/* Skip image for second card only (index 1) */}
+              {cert.image && index !== 1 && (
                 <img
                   src={cert.image}
                   alt={cert.title}
