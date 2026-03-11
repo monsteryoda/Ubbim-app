@@ -133,6 +133,14 @@ const Index = () => {
       year: "2022",
       image: "/src/assets/certifications/14064.png",
       description: "Greenhouse Gases Part 1 - Organization Level for Quantification and Reporting Greenhouse Gas Emission and Removals"
+    },
+    {
+      id: "11",
+      title: "Malaysia Book of Records",
+      organization: "Malaysia Book of Records",
+      year: "2022",
+      image: "/src/assets/certifications/malaysia-book.png",
+      description: "First construction company certified by ISO 14064-1:2018 Greenhouse Part 1 for provision of construction in civil, structural engineering and E-Construction Project Management Service"
     }
   ];
 
