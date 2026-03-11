@@ -27,11 +27,6 @@ const DigitalSolutions = () => {
       title: "Cloud-Based Collaboration",
       description: "Centralized project management platforms that enable seamless communication and file sharing across all project stakeholders.",
       image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&q=80"
-    },
-    {
-      title: "IoT & Sensor Integration",
-      description: "Connect physical assets to digital systems with IoT sensors for real-time monitoring, predictive maintenance, and data-driven decisions.",
-      image: "https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=600&q=80"
     }
   ];
 
