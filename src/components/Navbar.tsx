@@ -25,7 +25,7 @@ const Navbar = () => {
     { name: "About", href: "/about" },
     { name: "Sustainability Report", href: "https://ecologi.com/ubbim", isExternal: true },
     { name: "Award", href: "/award" },
-    { name: "Whistleblower Channel", href: "/whistleblower" },
+    { name: "Whistleblower Channel", href: "https://docs.google.com/forms/d/e/1FAIpQLSds-egyIK3N89YF8esbs0-J-Cv0OIPKZjxyzN8ZpTrQUjJ30g/viewform?pli=1", isExternal: true },
     { name: "Contact", href: "/contact" },
   ];
 
