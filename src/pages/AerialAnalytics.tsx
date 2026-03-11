@@ -11,22 +11,22 @@ const AerialAnalytics = () => {
   const services = [
     {
       title: "Land Surveying",
-      description: "High-precision drone surveys for topographic mapping, land development, and construction site documentation.",
+      description: "High-resolution aerial surveys that provide accurate topographical data, saving time and reducing costs compared to traditional methods.",
       image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&q=80"
     },
     {
       title: "Construction Site Monitoring",
-      description: "Transform aerial data into detailed 3D models for project planning, stakeholder presentations, and progress tracking.",
+      description: "Regular aerial monitoring of construction sites to track progress, identify potential issues, and ensure compliance with project timelines.",
       image: "https://images.unsplash.com/photo-1506947411487-a56738267384?w=600&q=80"
     },
     {
       title: "Aerial Mapping",
-      description: "Advanced thermal imaging and multispectral analysis for infrastructure inspection and environmental monitoring.",
+      description: "Create precise, up-to-date maps for urban planning, environmental monitoring, and more using advanced drone technology.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80"
     },
     {
       title: "Volume Calculation",
-      description: "Accurate earthwork and material volume calculations using drone data for precise project cost estimation and progress tracking.",
+      description: "Accurately calculate volumes of stockpiles, earthworks, and other materials using aerial data, ensuring precise resource management.",
       image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80"
     }
   ];
