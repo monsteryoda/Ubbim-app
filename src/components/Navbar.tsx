@@ -17,7 +17,7 @@ const Navbar = () => {
       href: "/services",
       hasDropdown: true,
       dropdownItems: [
-        { name: "Built Environment Services", href: "/services/built-environment" },
+        { name: "Built Environment Services", href: "/services/design-build" },
         { name: "Digital Solutions", href: "/services/digital-solutions" }
       ]
     },
