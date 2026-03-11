@@ -11,22 +11,22 @@ const CustomSoftware = () => {
   const services = [
     {
       title: "Project Management Systems",
-      description: "Custom-built project management platforms that streamline workflows, track progress, and enhance team collaboration.",
+      description: "Streamline your project workflows with custom management systems that provide real-time tracking, reporting, and collaboration tools.",
       image: "/coding.jpeg"
     },
     {
       title: "Digital Permit to Work Systems",
-      description: "Secure digital permit systems that ensure compliance, track approvals, and maintain safety standards across all operations.",
+      description: "Simplify the permit process with a digital system that ensures compliance, enhances safety, and reduces administrative burdens.",
       image: "/permit-system.png"
     },
     {
-      title: "GHG Tracking Systems",
-      description: "Comprehensive greenhouse gas tracking solutions that monitor emissions, generate reports, and support sustainability goals.",
+      title: "Facility Management Solutions",
+      description: "Optimize facility operations with software that helps you manage maintenance schedules, asset tracking, and resource allocation efficiently.",
       image: "/ghg-tracking.png"
     },
     {
-      title: "Custom Analytics Dashboards",
-      description: "Tailored analytics dashboards that provide real-time insights into project performance, resource utilization, and key metrics.",
+      title: "Custom ERP Solutions",
+      description: "Develop a bespoke ERP system that integrates all facets of your business, providing seamless operations and real-time data visibility.",
       image: "/analytics-dashboard.png"
     }
   ];
@@ -116,7 +116,7 @@ const CustomSoftware = () => {
               CUSTOM SOFTWARE SOLUTIONS
             </h1>
             <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
-              Tailored Digital Tools for Enhanced Project Management and Operations
+              Tailored Digital Solutions for Enhanced Efficiency and Control
             </p>
           </div>
         </div>
@@ -130,7 +130,7 @@ const CustomSoftware = () => {
               Our Core Services
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              UBBIM's Custom Software Solutions are designed to meet your unique operational needs. From project management systems to digital permit-to-work platforms and GHG tracking, our software solutions streamline processes, enhance collaboration, and drive efficiency across your entire organization.
+              UBBIM's Custom Software Solutions are designed to meet the unique challenges of your industry. From project management to facility maintenance, our tailored software enhances efficiency, improves collaboration, and provides you with the tools needed to achieve your goals.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
