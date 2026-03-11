@@ -6,6 +6,7 @@ import { ArrowLeft, MapPin, Phone, Mail, Cube, Scan, FileText, Shield, TrendingU
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
+import pointCloudImage from "/assets/construction-model-point-cloud.webp";
 
 const ThreeDScanning = () => {
   const services = [
@@ -189,7 +190,7 @@ const ThreeDScanning = () => {
             <div className="relative">
               <div className="aspect-[16/10] overflow-hidden rounded-2xl shadow-2xl">
                 <img 
-                  src="/assets/construction-model-point-cloud.webp" 
+                  src={pointCloudImage} 
                   alt="3D Scanning" 
                   className="w-full h-full object-cover"
                 />
