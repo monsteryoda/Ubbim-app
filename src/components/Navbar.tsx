@@ -23,10 +23,10 @@ const Navbar = () => {
     },
     { name: "Projects", href: "/projects" },
     { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" },
     { name: "Sustainability Report", href: "/sustainability-report" },
     { name: "Award", href: "/award" },
     { name: "Whistleblower Channel", href: "/whistleblower" },
+    { name: "Contact", href: "/contact" },
   ];
 
   const isActive = (path: string) => {
