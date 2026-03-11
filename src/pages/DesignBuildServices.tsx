@@ -138,7 +138,7 @@ const DesignBuildServices = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="p-6 bg-gray-100 flex-1 flex flex-col">
+                <div className="p-6 bg-white flex-1 flex flex-col">
                   <h3 className="text-xl font-bold text-[#1A4B8C] mb-3">
                     {service.title}
                   </h3>
