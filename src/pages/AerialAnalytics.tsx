@@ -161,7 +161,7 @@ const AerialAnalytics = () => {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold text-[#1A4B8C] mb-16 text-center">
-            Why Choose Us
+            Key Benefits
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
@@ -169,18 +169,18 @@ const AerialAnalytics = () => {
             <div className="space-y-8 md:pr-12">
               <div className="text-right md:text-right">
                 <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Integrated Approach
+                  Enhanced Accuracy
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-right">
-                  From data collection to analysis, we manage every aspect of your aerial analytics project, ensuring seamless coordination and communication.
+                  Capture precise, high-resolution data from above, ensuring every detail is accurately documented for informed decision-making.
                 </p>
               </div>
               <div className="text-right md:text-right">
                 <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Client-Centered Design
+                  Faster Project Turnaround
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-right">
-                  We prioritize your vision and needs, creating aerial solutions that are not only accurate but also actionable and sustainable.
+                  Accelerate project timelines with rapid data collection and real-time insights, allowing for quicker analysis and action.
                 </p>
               </div>
             </div>
@@ -200,18 +200,18 @@ const AerialAnalytics = () => {
             <div className="space-y-8 md:pl-12">
               <div className="text-left md:text-left">
                 <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Experienced Team
+                  Cost-Effective Data Collection
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-left">
-                  Our team brings decades of experience and expertise in delivering high-quality, on-time, and on-budget aerial analytics projects.
+                  Reduce costs by leveraging drone technology for efficient data gathering, minimizing the need for manual labor and extensive equipment.
                 </p>
               </div>
               <div className="text-left md:text-left">
                 <h3 className="text-2xl font-bold text-[#1A4B8C] mb-3">
-                  Proven Track Record
+                  Improved Safety
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-left">
-                  Our portfolio of successful projects speaks for itself, showcasing our ability to deliver exceptional aerial analytics results.
+                  Conduct inspections and surveys from a safe distance, reducing the risk to personnel and ensuring compliance with safety standards.
                 </p>
               </div>
             </div>
