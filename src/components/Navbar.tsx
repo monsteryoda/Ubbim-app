@@ -23,7 +23,7 @@ const Navbar = () => {
     },
     { name: "Projects", href: "/projects" },
     { name: "About", href: "/about" },
-    { name: "Sustainability Report", href: "/sustainability-report" },
+    { name: "Sustainability Report", href: "https://ecologi.com/ubbim", isExternal: true },
     { name: "Award", href: "/award" },
     { name: "Whistleblower Channel", href: "/whistleblower" },
     { name: "Contact", href: "/contact" },
@@ -72,6 +72,8 @@ const Navbar = () => {
                   ) : (
                     <Link
                       to={link.href}
+                      target={link.isExternal ? "_blank" : undefined}
+                      rel={link.isExternal ? "noopener noreferrer" : undefined}
                       className={`flex items-center space-x-1 transition-colors font-medium ${
                         isActive(link.href) ? "text-[#4ADE80]" : "text-white hover:text-[#4ADE80]"
                       }`}
@@ -160,6 +162,8 @@ const Navbar = () => {
                   ) : (
                     <Link
                       to={link.href}
+                      target={link.isExternal ? "_blank" : undefined}
+                      rel={link.isExternal ? "noopener noreferrer" : undefined}
                       onClick={() => setIsDrawerOpen(false)}
                       className={`block px-4 py-3 text-gray-700 hover:bg-[#1A4B8C]/10 hover:text-[#1A4B8C] rounded-lg transition-colors font-medium ${
                         isActive(link.href) ? "bg-[#1A4B8C]/10 text-[#1A4B8C]" : ""
