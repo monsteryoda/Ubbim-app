@@ -25,7 +25,7 @@ const DigitalSolutions = () => {
       image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80"
     },
     {
-      title: "Cloud-Based Project Management",
+      title: "Custom Software Solutions",
       description: "Centralize your project data in the cloud for real-time collaboration, document control, and seamless communication across all project stakeholders.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80"
     }
