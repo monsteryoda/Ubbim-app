@@ -27,7 +27,7 @@ const DigitalSolutions = () => {
     {
       title: "Custom Software Solutions",
       description: "Tailored software solutions, including project management systems, digital permit to work systems, and GHG tracking systems, designed to meet your specific operational needs.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80"
+      image: "/coding.jpeg"
     }
   ];
 
