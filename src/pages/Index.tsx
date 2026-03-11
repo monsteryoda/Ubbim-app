@@ -125,6 +125,14 @@ const Index = () => {
       year: "2019",
       image: "/src/assets/certifications/iso-45001-2018.png",
       description: "Occupational Health and Safety Management System Certification for provision of general construction, civil and structural engineering services"
+    },
+    {
+      id: "10",
+      title: "ISO 14064-1:2018",
+      organization: "Institute of Quality Malaysia",
+      year: "2022",
+      image: "/src/assets/certifications/14064.png",
+      description: "Greenhouse Gases Part 1 - Organization Level for Quantification and Reporting Greenhouse Gas Emission and Removals"
     }
   ];
 
