@@ -7,29 +7,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 const DigitalSolutions = () => {
-  const processSteps = [
-    {
-      step: "01",
-      title: "Discovery & Assessment",
-      description: "We begin by understanding your digital needs and current infrastructure. Our team conducts a comprehensive assessment to identify opportunities for digital transformation."
-    },
-    {
-      step: "02",
-      title: "Solution Design",
-      description: "Our experts design customized digital solutions tailored to your specific requirements, leveraging the latest technologies and best practices in the industry."
-    },
-    {
-      step: "03",
-      title: "Implementation & Integration",
-      description: "We deploy and integrate your digital solutions seamlessly with existing systems, ensuring minimal disruption and maximum efficiency from day one."
-    },
-    {
-      step: "04",
-      title: "Training & Support",
-      description: "Comprehensive training programs and ongoing support ensure your team can fully leverage the digital tools we implement for long-term success."
-    }
-  ];
-
   const services = [
     {
       title: "Building Information Modeling (BIM)",
@@ -45,6 +22,21 @@ const DigitalSolutions = () => {
       title: "Custom Software Development",
       description: "Tailor-made software solutions designed to streamline your operations, enhance productivity, and solve unique business challenges.",
       image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80"
+    },
+    {
+      title: "Cloud-Based Collaboration",
+      description: "Centralized project management platforms that enable seamless communication and file sharing across all project stakeholders.",
+      image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&q=80"
+    },
+    {
+      title: "IoT & Sensor Integration",
+      description: "Connect physical assets to digital systems with IoT sensors for real-time monitoring, predictive maintenance, and data-driven decisions.",
+      image: "https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=600&q=80"
+    },
+    {
+      title: "Digital Twin Technology",
+      description: "Create virtual replicas of physical assets to simulate, analyze, and optimize performance throughout the project lifecycle.",
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80"
     }
   ];
 
@@ -123,7 +115,7 @@ const DigitalSolutions = () => {
               UBBIM's Digital Solutions bring the power of cutting-edge technology to the built environment. From aerial analytics to 3D scanning and custom software development, we offer tools that enhance project precision, streamline processes, and unlock new possibilities for innovation.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="aspect-video overflow-hidden">
