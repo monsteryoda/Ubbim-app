@@ -23,6 +23,11 @@ const DigitalSolutions = () => {
       title: "Custom Software Development",
       description: "Tailor-made software solutions designed to streamline your operations, enhance productivity, and solve unique business challenges.",
       image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80"
+    },
+    {
+      title: "Cloud-Based Project Management",
+      description: "Centralize your project data in the cloud for real-time collaboration, document control, and seamless communication across all project stakeholders.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80"
     }
   ];
 
@@ -101,7 +106,7 @@ const DigitalSolutions = () => {
               UBBIM's Digital Solutions bring the power of cutting-edge technology to the built environment. From aerial analytics to 3D scanning and custom software development, we offer tools that enhance project precision, streamline processes, and unlock new possibilities for innovation.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
               <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="aspect-video overflow-hidden">
