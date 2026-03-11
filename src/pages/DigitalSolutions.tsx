@@ -15,13 +15,13 @@ const DigitalSolutions = () => {
       image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80"
     },
     {
-      title: "Aerial Analytics Solutions",
-      description: "Leverage drone technology for precise aerial surveys, mapping, and data analysis.",
+      title: "Virtual Design Coordination",
+      description: "Utilize virtual and augmented reality to visualize designs, coordinate teams, and improve project outcomes with immersive experiences.",
       image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&q=80"
     },
     {
-      title: "Custom Software Development",
-      description: "Tailor-made software solutions designed to streamline your operations, enhance productivity, and solve unique business challenges.",
+      title: "Custom Software Solutions",
+      description: "Tailored software solutions, including project management systems, digital permit to work systems, and GHG tracking systems, designed to meet your specific operational needs.",
       image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80"
     },
     {
