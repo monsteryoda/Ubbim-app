@@ -6,7 +6,7 @@ import Index from './pages/Index';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Services from './pages/Services';
-import DesignBuild from './pages/DesignBuild';
+import DesignBuildServices from './pages/DesignBuildServices';
 import DigitalSolutions from './pages/DigitalSolutions';
 import AerialAnalytics from './pages/AerialAnalytics';
 import ThreeDScanning from './pages/ThreeDScanning';
@@ -26,7 +26,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/services/design-build" element={<DesignBuild />} />
+          <Route path="/services/design-build" element={<DesignBuildServices />} />
           <Route path="/services/digital-solutions" element={<DigitalSolutions />} />
           <Route path="/aerial-analytics" element={<AerialAnalytics />} />
           <Route path="/3d-scanning" element={<ThreeDScanning />} />
