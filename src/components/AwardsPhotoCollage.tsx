@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
-import { Trophy, Award, Star } from "lucide-react";
+import { Award, Star } from "lucide-react";
 
 interface PhotoItem {
   id: string;
@@ -71,7 +71,7 @@ const AwardsPhotoCollage: React.FC<AwardsPhotoCollageProps> = ({ photos }) => {
           className="text-center mb-12"
         >
           <div className="flex items-center justify-center mb-4">
-            <Trophy className="w-10 h-10 text-[#4ADE80] mr-3" />
+            <Award className="w-10 h-10 text-[#4ADE80] mr-3" />
             <h2 className="text-3xl md:text-4xl font-bold text-white">
               Award Ceremony Moments
             </h2>
@@ -122,28 +122,6 @@ const AwardsPhotoCollage: React.FC<AwardsPhotoCollageProps> = ({ photos }) => {
               </Card>
             </motion.div>
           ))}
-        </div>
-
-        {/* Decorative Elements */}
-        <div className="flex justify-center gap-8 mt-12">
-          <motion.div
-            animate={{ rotate: 360 }}
-            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-          >
-            <Star className="w-6 h-6 text-[#4ADE80]/30" />
-          </motion.div>
-          <motion.div
-            animate={{ rotate: -360 }}
-            transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-          >
-            <Award className="w-6 h-6 text-[#4ADE80]/30" />
-          </motion.div>
-          <motion.div
-            animate={{ rotate: 360 }}
-            transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-          >
-            <Trophy className="w-6 h-6 text-[#4ADE80]/30" />
-          </motion.div>
         </div>
       </div>
     </section>
