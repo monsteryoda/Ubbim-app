@@ -73,29 +73,6 @@ const SecuritySurveillance = () => {
     "Improved security posture through comprehensive approach"
   ];
 
-  const serviceFeatures = [
-    {
-      title: "Video Surveillance",
-      description: "High-definition cameras with night vision, motion detection, and remote viewing capabilities for complete visibility.",
-      image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=400&q=80"
-    },
-    {
-      title: "Access Control",
-      description: "Multi-factor authentication systems including card readers, biometric scanners, and mobile credential management.",
-      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&q=80"
-    },
-    {
-      title: "Intrusion Detection",
-      description: "Advanced sensors and alarm systems that detect unauthorized entry and trigger immediate alerts to security teams.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80"
-    },
-    {
-      title: "Integrated Security Management",
-      description: "Centralized platform that unifies all security systems for streamlined monitoring and response management.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80"
-    }
-  ];
-
   return (
     <div className="min-h-screen">
       {/* Navigation Bar */}
@@ -288,7 +265,7 @@ const SecuritySurveillance = () => {
               <h3 className="text-lg font-semibold mb-6">Our Services</h3>
               <ul className="space-y-3">
                 <li>
-                  <Link to="/design-build" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                  <Link to="/services/design-build" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
                     Design & Build
                   </Link>
                 </li>

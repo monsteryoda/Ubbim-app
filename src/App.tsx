@@ -16,6 +16,7 @@ import FirefightingServices from './pages/FirefightingServices';
 import StructuralRepair from './pages/StructuralRepair';
 import Award from './pages/Award';
 import Projects from './pages/Projects';
+import SecuritySurveillance from './pages/SecuritySurveillance';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="/services/structural-repair" element={<StructuralRepair />} />
           <Route path="/award" element={<Award />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/services/security-surveillance" element={<SecuritySurveillance />} />
         </Routes>
       </div>
     </Router>
