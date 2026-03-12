@@ -246,6 +246,14 @@ const Projects: React.FC = () => {
                                 </div>
                               </>
                             )}
+                            {index === 1 && (
+                              <>
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                                  <h4 className="text-2xl font-bold mb-2">Project Management System for Shutdown Operation</h4>
+                                </div>
+                              </>
+                            )}
                           </div>
                         </CardContent>
                       </Card>
