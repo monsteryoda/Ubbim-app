@@ -234,8 +234,8 @@ const Projects: React.FC = () => {
                         <CardContent className="p-0">
                           <div className="relative aspect-[16/9] overflow-hidden">
                             <img
-                              src={project.image}
-                              alt={project.title}
+                              src="/src/assets/projects/highlights-banner.png"
+                              alt="Project Highlights"
                               className="w-full h-full object-cover"
                             />
                           </div>
