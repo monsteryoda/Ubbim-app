@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-[#1A4B8C] text-white">
       <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-2 mb-6">
@@ -48,6 +48,27 @@ const Footer: React.FC = () => {
                 </a>
               ))}
             </div>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h3 className="text-lg font-semibold mb-6">Contact Us</h3>
+            <ul className="space-y-4">
+              <li className="flex items-start space-x-3">
+                <MapPin className="w-5 h-5 text-[#4ADE80] mt-0.5" />
+                <span className="text-gray-300">
+                  {contactInfo.address}
+                </span>
+              </li>
+              <li className="flex items-center space-x-3">
+                <Phone className="w-5 h-5 text-[#4ADE80]" />
+                <span className="text-gray-300">{contactInfo.phone}</span>
+              </li>
+              <li className="flex items-center space-x-3">
+                <Mail className="w-5 h-5 text-[#4ADE80]" />
+                <span className="text-gray-300">{contactInfo.email}</span>
+              </li>
+            </ul>
           </div>
 
           {/* Quick Links */}
@@ -78,54 +99,6 @@ const Footer: React.FC = () => {
                 <Link to="/contact" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
                   Contact
                 </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Services */}
-          <div>
-            <h3 className="text-lg font-semibold mb-6">Our Services</h3>
-            <ul className="space-y-3">
-              <li>
-                <Link to="/services" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                  Built Environment Services
-                </Link>
-              </li>
-              <li>
-                <Link to="/services/digital-solutions" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                  Digital Solutions
-                </Link>
-              </li>
-              <li>
-                <Link to="/firefighting" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                  Firefighting Services
-                </Link>
-              </li>
-              <li>
-                <Link to="/services/structural-repair" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                  Structural Repair
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Contact Info */}
-          <div>
-            <h3 className="text-lg font-semibold mb-6">Contact Us</h3>
-            <ul className="space-y-4">
-              <li className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-[#4ADE80] mt-0.5" />
-                <span className="text-gray-300">
-                  {contactInfo.address}
-                </span>
-              </li>
-              <li className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-[#4ADE80]" />
-                <span className="text-gray-300">{contactInfo.phone}</span>
-              </li>
-              <li className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-[#4ADE80]" />
-                <span className="text-gray-300">{contactInfo.email}</span>
               </li>
             </ul>
           </div>
