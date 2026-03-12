@@ -38,10 +38,6 @@ const AwardFilters: React.FC<AwardFiltersProps> = ({
                 alt="Platinum Award for ESG Ceremony" 
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#1A4B8C]/90 to-transparent flex items-end">
-                <div className="p-8 text-white">
-                </div>
-              </div>
             </div>
             <div className="p-8">
               <h4 className="text-xl font-bold text-gray-800 mb-4">Leadership in Environmental & Social Governance</h4>
@@ -63,11 +59,6 @@ const AwardFilters: React.FC<AwardFiltersProps> = ({
                 alt="Platinum Award for ICT/Digitalization Ceremony" 
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#1A4B8C]/90 to-transparent flex items-end">
-                <div className="p-8 text-white">
-                  <h3 className="text-2xl font-bold">Platinum Award for ICT/Digitalization</h3>
-                </div>
-              </div>
             </div>
             <div className="p-8">
               <h4 className="text-xl font-bold text-gray-800 mb-4">Pioneering Digital Construction Technology</h4>
