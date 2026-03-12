@@ -151,19 +151,6 @@ const AwardsPhotoCollage: React.FC<AwardsPhotoCollageProps> = ({ photos }) => {
                 alt={selectedPhoto.alt}
                 className="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"
               />
-
-              {/* Caption */}
-              {selectedPhoto.caption && (
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className="mt-4 text-center"
-                >
-                  <p className="text-white text-lg font-medium">
-                    {selectedPhoto.caption}
-                  </p>
-                </motion.div>
-              )}
             </motion.div>
           </motion.div>
         )}
