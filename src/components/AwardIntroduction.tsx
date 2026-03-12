@@ -17,10 +17,10 @@ const AwardIntroduction: React.FC = () => {
               Recognized Excellence
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
-              UBBIM Resources has been honored by the SME Association of Malaysia for our outstanding contributions to the construction industry. This recognition reflects our unwavering commitment to quality, innovation, and sustainable practices that set new standards for the sector.
+              We are proud to be recognized by the SME Association of Malaysia for our excellence in innovation and responsible growth.
             </p>
             <p className="text-gray-600 text-lg leading-relaxed">
-              As a leader in AI integration, digital twin technology, and sustainable construction materials, we continue to push boundaries and deliver solutions that shape the future of built environments while protecting our planet for generations to come.
+              These awards celebrate UBBIM's leadership in integrating AI, digital twin technologies, and sustainable materials to drive meaningful impact across Malaysia's construction sector.
             </p>
           </motion.div>
         </div>
