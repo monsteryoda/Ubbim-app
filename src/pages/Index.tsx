@@ -288,7 +288,7 @@ const Index = () => {
                 className="group hover:shadow-2xl transition-all duration-300 border-none overflow-hidden"
               >
                 <CardContent className="p-6">
-                  <div className="relative aspect-[9/16] rounded-lg overflow-hidden bg-gray-100">
+                  <div className="relative aspect-[3/4] rounded-lg overflow-hidden bg-gray-100">
                     <img
                       src={cert.image}
                       alt={cert.title}
