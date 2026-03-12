@@ -122,11 +122,11 @@ const Projects: React.FC = () => {
   };
 
   const nextHighlightsSlide = () => {
-    setHighlightsIndex((prev) => (prev + 1) % projects.length);
+    setHighlightsIndex((prev) => (prev + 1) % 6);
   };
 
   const prevHighlightsSlide = () => {
-    setHighlightsIndex((prev) => (prev - 1 + projects.length) % projects.length);
+    setHighlightsIndex((prev) => (prev - 1 + 6) % 6);
   };
 
   const goToHighlightsSlide = (index: number) => {
@@ -228,14 +228,14 @@ const Projects: React.FC = () => {
                   className="flex transition-transform duration-500 ease-out"
                   style={{ transform: `translateX(-${highlightsIndex * 100}%)` }}
                 >
-                  {projects.map((project, index) => (
+                  {projects.slice(0, 6).map((project, index) => (
                     <div key={project.id} className="w-full flex-shrink-0">
                       <Card className="border-none">
                         <CardContent className="p-0">
                           <div className="relative aspect-[16/9] overflow-hidden">
                             <img
-                              src={index === 0 ? "/src/assets/projects/highlights-banner.png" : index === 1 ? "/src/assets/projects/highlights-2.png" : index === 2 ? "/src/assets/projects/highlights-3.png" : index === 3 ? "/src/assets/projects/highlights-4.png" : index === 4 ? "/src/assets/projects/highlights-5.png" : index === 5 ? "/src/assets/projects/highlights-6.png" : index === 6 ? "/src/assets/projects/highlights-7.png" : project.image}
-                              alt={index === 0 ? "Financial Summary Dashboard" : index === 1 ? "Lorry Movement Tracking" : index === 2 ? "Aerial Analytics Services" : index === 3 ? "3D Scanning and Facility Management" : index === 4 ? "3D Process Animation Video for a Waste to Energy Plant in Johor" : index === 5 ? "Virtual Reality Remodelling of a Storage Warehouse in Melaka" : index === 6 ? "Development of Building Contractors App (BEENA) for Association of Construction Project Managers" : project.title}
+                              src={index === 0 ? "/src/assets/projects/highlights-banner.png" : index === 1 ? "/src/assets/projects/highlights-2.png" : index === 2 ? "/src/assets/projects/highlights-3.png" : index === 3 ? "/src/assets/projects/highlights-4.png" : index === 4 ? "/src/assets/projects/highlights-5.png" : index === 5 ? "/src/assets/projects/highlights-6.png" : project.image}
+                              alt={index === 0 ? "Project Management System for Shutdown Operation" : index === 1 ? "Aerial Analytics Services for an Earthworks Project in Port Dickson" : index === 2 ? "3D Scanning and Facility Management System for Large Mechanical Room" : index === 3 ? "3D Process Animation Video for a Waste to Energy Plant in Johor" : index === 4 ? "Virtual Reality Remodelling of a Storage Warehouse in Melaka" : index === 5 ? "Development of Building Contractors App (BEENA) for Association of Construction Project Managers" : project.title}
                               className="w-full h-full object-cover"
                             />
                             {index === 0 && (
@@ -314,7 +314,7 @@ const Projects: React.FC = () => {
 
               {/* Dots Indicator */}
               <div className="flex justify-center gap-2 mt-6">
-                {projects.map((_, index) => (
+                {[0, 1, 2, 3, 4, 5].map((_, index) => (
                   <button
                     key={index}
                     onClick={() => goToHighlightsSlide(index)}
