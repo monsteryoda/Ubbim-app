@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
-import { Award, Star } from "lucide-react";
+import { Camera, Star } from "lucide-react";
 
 interface PhotoItem {
   id: string;
@@ -71,7 +71,7 @@ const AwardsPhotoCollage: React.FC<AwardsPhotoCollageProps> = ({ photos }) => {
           className="text-center mb-12"
         >
           <div className="flex items-center justify-center mb-4">
-            <Award className="w-10 h-10 text-[#4ADE80] mr-3" />
+            <Camera className="w-10 h-10 text-[#4ADE80] mr-3" />
             <h2 className="text-3xl md:text-4xl font-bold text-white">
               Award Ceremony Moments
             </h2>
@@ -115,7 +115,7 @@ const AwardsPhotoCollage: React.FC<AwardsPhotoCollageProps> = ({ photos }) => {
 
                     {/* Award Icon Overlay */}
                     <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <Award className="w-8 h-8 text-[#4ADE80] drop-shadow-lg" />
+                      <Camera className="w-8 h-8 text-[#4ADE80] drop-shadow-lg" />
                     </div>
                   </div>
                 </CardContent>
