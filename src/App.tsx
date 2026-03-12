@@ -16,6 +16,8 @@ import FirefightingServices from './pages/FirefightingServices';
 import StructuralRepair from './pages/StructuralRepair';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Award from './pages/Award';
+import Projects from './pages/Projects';
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
           <Route path="/custom-software" element={<CustomSoftware />} />
           <Route path="/firefighting" element={<FirefightingServices />} />
           <Route path="/services/structural-repair" element={<StructuralRepair />} />
+          <Route path="/award" element={<Award />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </div>
     </Router>
