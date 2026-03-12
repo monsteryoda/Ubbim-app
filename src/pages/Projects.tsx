@@ -238,18 +238,6 @@ const Projects: React.FC = () => {
                               alt={project.title}
                               className="w-full h-full object-cover"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                            
-                            {/* Project Info Overlay */}
-                            <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                              <h4 className="text-2xl font-bold mb-2">{project.title}</h4>
-                              <div className="flex items-center gap-4 mt-2">
-                                <span className="px-3 py-1 bg-[#1A4B8C]/80 rounded-full text-sm font-medium">
-                                  {project.category}
-                                </span>
-                                <span className="text-gray-300">{project.year}</span>
-                              </div>
-                            </div>
                           </div>
                         </CardContent>
                       </Card>
