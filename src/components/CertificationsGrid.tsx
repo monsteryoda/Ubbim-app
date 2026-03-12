@@ -9,6 +9,7 @@ import iso14001 from "@/assets/certifications/iso-14001.png";
 import iso45001 from "@/assets/certifications/iso-45001-2018.png";
 import iso14064 from "@/assets/certifications/14064.png";
 import malaysiaBook from "@/assets/certifications/malaysia-book.png";
+import cidbScore from "@/assets/certifications/2022.png";
 
 interface Certification {
   id: string;
@@ -67,6 +68,15 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
     },
     {
       id: "5",
+      title: "CIDB SCORE 3 Star Rating",
+      organization: "CIDB Malaysia",
+      year: "2022",
+      image: cidbScore,
+      description: "Certificate of Achievement for Good management and technical capabilities, compliance to best practices and good project management",
+      hasLightbox: true
+    },
+    {
+      id: "6",
       title: "Malaysia Book of Records",
       organization: "Malaysia Book of Records",
       year: "2022",
