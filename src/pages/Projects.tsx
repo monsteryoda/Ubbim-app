@@ -122,43 +122,16 @@ const Projects: React.FC = () => {
   };
 
   const nextHighlightsSlide = () => {
-    setHighlightsIndex((prev) => (prev + 1) % 6);
+    setHighlightsIndex((prev) => (prev + 1) % projects.length);
   };
 
   const prevHighlightsSlide = () => {
-    setHighlightsIndex((prev) => (prev - 1 + 6) % 6);
+    setHighlightsIndex((prev) => (prev - 1 + projects.length) % projects.length);
   };
 
   const goToHighlightsSlide = (index: number) => {
     setHighlightsIndex(index);
   };
-
-  const digitalSolutions = [
-    {
-      title: "Digital Permit to Work System (e-ptw) for an incineration plant",
-      image: "/src/assets/projects/highlights-banner.png"
-    },
-    {
-      title: "Project Management System for Shutdown Operation",
-      image: "/src/assets/projects/highlights-2.png"
-    },
-    {
-      title: "Aerial Analytics Services for an Earthworks Project in Port Dickson",
-      image: "/src/assets/projects/highlights-3.png"
-    },
-    {
-      title: "3D Scanning and Facility Management System for Large Mechanical Room",
-      image: "/src/assets/projects/highlights-4.png"
-    },
-    {
-      title: "3D Process Animation Video for a Waste to Energy Plant in Johor",
-      image: "/src/assets/projects/highlights-5.png"
-    },
-    {
-      title: "Development of Building Contractors App (BEENA) for Association of Construction Project Managers",
-      image: "/src/assets/projects/highlights-7.png"
-    }
-  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 pt-24 pb-16">
@@ -166,7 +139,7 @@ const Projects: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-[#1A4B8C] mb-4">
-            Built Environment Projects
+            Our Projects
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Explore Our Success Stories in the Built Environment and Digital Innovation
@@ -242,10 +215,10 @@ const Projects: React.FC = () => {
           </div>
         </div>
 
-        {/* Digital Solutions Carousel */}
+        {/* Project Highlights Carousel */}
         <div className="mt-16">
           <h2 className="text-3xl font-bold text-[#1A4B8C] text-center mb-8">
-            Digital Solutions
+            Project Highlights
           </h2>
           <div className="max-w-6xl mx-auto">
             <div className="relative">
@@ -255,20 +228,56 @@ const Projects: React.FC = () => {
                   className="flex transition-transform duration-500 ease-out"
                   style={{ transform: `translateX(-${highlightsIndex * 100}%)` }}
                 >
-                  {digitalSolutions.map((solution, index) => (
-                    <div key={index} className="w-full flex-shrink-0">
+                  {projects.map((project, index) => (
+                    <div key={project.id} className="w-full flex-shrink-0">
                       <Card className="border-none">
                         <CardContent className="p-0">
                           <div className="relative aspect-[16/9] overflow-hidden">
                             <img
-                              src={solution.image}
-                              alt={solution.title}
+                              src={index === 0 ? "/src/assets/projects/highlights-banner.png" : index === 1 ? "/src/assets/projects/highlights-2.png" : index === 2 ? "/src/assets/projects/highlights-3.png" : index === 3 ? "/src/assets/projects/highlights-4.png" : index === 4 ? "/src/assets/projects/highlights-5.png" : project.image}
+                              alt={index === 0 ? "Digital Permit to Work System" : index === 1 ? "Financial Summary Dashboard" : index === 2 ? "Lorry Movement Tracking" : index === 3 ? "Aerial Analytics Services" : index === 4 ? "3D Scanning and Facility Management" : project.title}
                               className="w-full h-full object-cover"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                            <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                              <h4 className="text-2xl font-bold mb-2">{solution.title}</h4>
-                            </div>
+                            {index === 0 && (
+                              <>
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                                  <h4 className="text-2xl font-bold mb-2">Digital Permit to Work System (e-ptw) for an incineration plant</h4>
+                                </div>
+                              </>
+                            )}
+                            {index === 1 && (
+                              <>
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                                  <h4 className="text-2xl font-bold mb-2">Project Management System for Shutdown Operation</h4>
+                                </div>
+                              </>
+                            )}
+                            {index === 2 && (
+                              <>
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                                  <h4 className="text-2xl font-bold mb-2">Aerial Analytics Services for an Earthworks Project in Port Dickson</h4>
+                                </div>
+                              </>
+                            )}
+                            {index === 3 && (
+                              <>
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                                  <h4 className="text-2xl font-bold mb-2">3D Scanning and Facility Management System for Large Mechanical Room</h4>
+                                </div>
+                              </>
+                            )}
+                            {index === 4 && (
+                              <>
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                                  <h4 className="text-2xl font-bold mb-2">3D Process Animation Video for a Waste to Energy Plant in Johor</h4>
+                                </div>
+                              </>
+                            )}
                           </div>
                         </CardContent>
                       </Card>
@@ -297,7 +306,7 @@ const Projects: React.FC = () => {
 
               {/* Dots Indicator */}
               <div className="flex justify-center gap-2 mt-6">
-                {digitalSolutions.map((_, index) => (
+                {projects.map((_, index) => (
                   <button
                     key={index}
                     onClick={() => goToHighlightsSlide(index)}
