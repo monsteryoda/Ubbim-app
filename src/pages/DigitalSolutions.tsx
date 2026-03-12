@@ -84,7 +84,7 @@ const DigitalSolutions: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
-              OUR DIGITAL SOLUTIONS
+              OUR SERVICES
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               At UBBIM, we leverage cutting-edge digital technologies to enhance project planning, execution, and management. From 3D scanning to virtual reality, our solutions drive efficiency and innovation.
