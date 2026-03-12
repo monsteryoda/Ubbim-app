@@ -89,7 +89,7 @@ const Projects: React.FC = () => {
             Our Projects
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Explore our portfolio of innovative construction projects that showcase our commitment to quality, sustainability, and excellence.
+            Explore Our Success Stories in the Built Environment and Digital Innovation
           </p>
         </div>
 
