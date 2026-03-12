@@ -41,7 +41,7 @@ const CommitmentSection: React.FC = () => {
             </blockquote>
             <div className="mt-4 pl-6">
               <cite className="not-italic text-sm font-semibold text-[#1A4B8C]">
-                — Managing Director, UBBIM Resources
+                — Jesu Dass, Managing Director, UBBIM Resources Sdn Bhd
               </cite>
             </div>
           </div>
