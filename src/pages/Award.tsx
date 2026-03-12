@@ -121,9 +121,9 @@ const Award: React.FC = () => {
         selectedCertification={selectedCertification}
         setSelectedCertification={setSelectedCertification}
       />
-      <LookingAheadBanner />
       <CommitmentSection />
       <AwardsPhotoCollage />
+      <LookingAheadBanner />
       <Footer />
     </div>
   );
