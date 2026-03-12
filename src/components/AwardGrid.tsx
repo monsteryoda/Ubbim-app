@@ -70,42 +70,40 @@ const AwardGrid: React.FC<AwardGridProps> = ({
               className={`group hover:shadow-2xl transition-all duration-500 border-none overflow-hidden cursor-pointer bg-white ${award.borderColor} border-2 hover:-translate-y-2`}
               onClick={() => setSelectedCertification(award.id)}
             >
-              <div className="p-8">
-                <div className="relative">
-                  <div className={`absolute inset-0 bg-gradient-to-br ${award.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500 rounded-2xl`} />
-                  
-                  <div className="flex items-start space-x-4 mb-6">
-                    <motion.div
-                      whileHover={{ scale: 1.1, rotate: 5 }}
-                      className={`flex-shrink-0 p-4 rounded-2xl bg-gradient-to-br ${award.color} text-white shadow-lg`}
-                    >
-                      {award.icon}
-                    </motion.div>
-                    <div className="flex-1">
-                      <div className="flex items-center justify-between mb-2">
-                        <Badge className="bg-[#1A4B8C]/10 text-[#1A4B8C] hover:bg-[#1A4B8C]/20">
-                          {award.category}
-                        </Badge>
-                        <span className="text-sm text-gray-500 font-medium">{award.year}</span>
-                      </div>
-                      <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-[#1A4B8C] transition-colors">
-                        {award.title}
-                      </h3>
-                    </div>
-                  </div>
-                  
-                  <p className="text-gray-600 mb-4 leading-relaxed">
-                    {award.description}
-                  </p>
-                  
+              <div className="relative">
+                <div className={`absolute inset-0 bg-gradient-to-br ${award.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500 rounded-2xl`} />
+                
+                <div className="flex items-start space-x-4 mb-6">
                   <motion.div
-                    className="flex items-center text-[#1A4B8C] font-semibold"
-                    whileHover={{ x: 8 }}
+                    whileHover={{ scale: 1.1, rotate: 5 }}
+                    className={`flex-shrink-0 p-4 rounded-2xl bg-gradient-to-br ${award.color} text-white shadow-lg`}
                   >
-                    <span>View Details</span>
-                    <ChevronRight className="w-5 h-5 ml-1" />
+                    {award.icon}
                   </motion.div>
+                  <div className="flex-1">
+                    <div className="flex items-center justify-between mb-2">
+                      <Badge className="bg-[#1A4B8C]/10 text-[#1A4B8C] hover:bg-[#1A4B8C]/20">
+                        {award.category}
+                      </Badge>
+                      <span className="text-sm text-gray-500 font-medium">{award.year}</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-[#1A4B8C] transition-colors">
+                      {award.title}
+                    </h3>
+                  </div>
                 </div>
+                
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  {award.description}
+                </p>
+                
+                <motion.div
+                  className="flex items-center text-[#1A4B8C] font-semibold"
+                  whileHover={{ x: 8 }}
+                >
+                  <span>View Details</span>
+                  <ChevronRight className="w-5 h-5 ml-1" />
+                </motion.div>
               </div>
             </Card>
           </motion.div>
