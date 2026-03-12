@@ -21,11 +21,11 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: "1",
-      title: "Site Clearance Earthwork, Road & Drainage and Detention Pond Works for Kualiti Alam Sdn Bhd",
+      title: "Digital Permit to Work System (e-ptw) for an incineration plant",
       description: "A modern residential development featuring sustainable design and premium amenities.",
       image: "/src/assets/projects/construction-site.jpg",
-      category: "Residential",
-      year: "2023"
+      category: "Industrial",
+      year: "2024"
     },
     {
       id: "2",
