@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Award, Trophy, Medal, Star, Shield, CheckCircle, ChevronRight, X, Sparkles, Calendar, Building2 } from "lucide-react";
+import { Award, Trophy, Medal, Star, Shield, CheckCircle, ChevronRight, X, Sparkles, Calendar, Building2, Filter, Clock, TrendingUp, ArrowUp } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -11,6 +11,8 @@ import { useRef } from "react";
 
 const Award: React.FC = () => {
   const [selectedCertification, setSelectedCertification] = useState<string | null>(null);
+  const [filterCategory, setFilterCategory] = useState<string>("all");
+  const [showTimeline, setShowTimeline] = useState(false);
 
   const awards = [
     {
@@ -108,6 +110,14 @@ const Award: React.FC = () => {
     { icon: <Medal className="w-5 h-5" />, top: "70%", right: "5%", delay: 1.5 },
     { icon: <Shield className="w-6 h-6" />, top: "80%", left: "8%", delay: 2 },
   ];
+
+  const categories = ["all", "Certification", "Record", "Rating"];
+  
+  const filteredAwards = filterCategory === "all" 
+    ? awards 
+    : awards.filter(award => award.category === filterCategory);
+
+  const sortedAwards = [...filteredAwards].sort((a, b) => parseInt(b.year) - parseInt(a.year));
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 pt-24 pb-16">
@@ -233,6 +243,130 @@ const Award: React.FC = () => {
         </div>
       </section>
 
+      {/* Filter & View Toggle Section */}
+      <section className="py-8">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="flex flex-col md:flex-row items-center justify-between gap-4"
+          >
+            {/* Category Filters */}
+            <div className="flex flex-wrap items-center gap-2">
+              <Filter className="w-5 h-5 text-[#1A4B8C] mr-2" />
+              <span className="text-gray-700 font-medium mr-2">Filter by:</span>
+              {categories.map((category) => (
+                <Button
+                  key={category}
+                  onClick={() => setFilterCategory(category)}
+                  variant={filterCategory === category ? "default" : "outline"}
+                  className={`capitalize ${
+                    filterCategory === category 
+                      ? "bg-[#1A4B8C] text-white" 
+                      : "text-gray-700 hover:bg-[#1A4B8C]/10"
+                  }`}
+                >
+                  {category}
+                </Button>
+              ))}
+            </div>
+
+            {/* View Toggle */}
+            <div className="flex items-center gap-2">
+              <span className="text-gray-700 font-medium mr-2">View:</span>
+              <Button
+                onClick={() => setShowTimeline(!showTimeline)}
+                variant={showTimeline ? "default" : "outline"}
+                className={showTimeline ? "bg-[#1A4B8C] text-white" : "text-gray-700 hover:bg-[#1A4B8C]/10"}
+              >
+                {showTimeline ? (
+                  <>
+                    <Award className="w-4 h-4 mr-2" />
+                    Grid View
+                  </>
+                ) : (
+                  <>
+                    <Clock className="w-4 h-4 mr-2" />
+                    Timeline
+                  </>
+                )}
+              </Button>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Timeline View */}
+      <AnimatePresence>
+        {showTimeline && (
+          <motion.section
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.5 }}
+            className="py-12"
+          >
+            <div className="container mx-auto px-4">
+              <div className="relative">
+                {/* Timeline Line */}
+                <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#1A4B8C] via-[#2563eb] to-[#1A4B8C]" />
+                
+                {/* Timeline Items */}
+                <div className="space-y-8">
+                  {sortedAwards.map((award, index) => (
+                    <motion.div
+                      key={award.id}
+                      initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.5, delay: index * 0.1 }}
+                      className={`relative flex items-center ${
+                        index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                      }`}
+                    >
+                      {/* Timeline Dot */}
+                      <div className="absolute left-4 md:left-1/2 w-4 h-4 bg-[#4ADE80] rounded-full border-4 border-white shadow-lg transform -translate-x-1/2" />
+                      
+                      {/* Content */}
+                      <div className={`ml-12 md:ml-0 md:w-1/2 ${
+                        index % 2 === 0 ? "md:pr-12" : "md:pl-12"
+                      }`}>
+                        <Card 
+                          className="hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+                          onClick={() => setSelectedCertification(award.id)}
+                        >
+                          <CardContent className="p-6">
+                            <div className="flex items-start space-x-4">
+                              <div className={`p-3 rounded-xl bg-gradient-to-br ${award.color} text-white`}>
+                                {award.icon}
+                              </div>
+                              <div className="flex-1">
+                                <div className="flex items-center justify-between mb-2">
+                                  <Badge className="bg-[#1A4B8C]/10 text-[#1A4B8C]">
+                                    {award.category}
+                                  </Badge>
+                                  <span className="text-sm text-gray-500 font-medium">{award.year}</span>
+                                </div>
+                                <h3 className="text-lg font-bold text-gray-800 mb-1">
+                                  {award.title}
+                                </h3>
+                                <p className="text-sm text-gray-600">
+                                  {award.description}
+                                </p>
+                              </div>
+                            </div>
+                          </CardContent>
+                        </Card>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </motion.section>
+        )}
+      </AnimatePresence>
+
       {/* Awards Grid */}
       <section className="py-20">
         <div className="container mx-auto px-4">
@@ -243,7 +377,7 @@ const Award: React.FC = () => {
             animate={isInView ? "visible" : "hidden"}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
           >
-            {awards.map((award, index) => (
+            {sortedAwards.map((award, index) => (
               <motion.div key={award.id} variants={itemVariants} style={{ delay: index * 0.1 }}>
                 <Card 
                   className={`group hover:shadow-2xl transition-all duration-500 border-none overflow-hidden cursor-pointer bg-white ${award.borderColor} border-2 hover:-translate-y-2`}
