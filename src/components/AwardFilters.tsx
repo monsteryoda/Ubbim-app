@@ -58,12 +58,8 @@ const AwardFilters: React.FC<AwardFiltersProps> = ({
             </div>
             <div className="p-8">
               <h4 className="text-xl font-bold text-gray-800 mb-4">Platinum Award for ICT/Digitalization</h4>
-              <p className="text-gray-600 leading-relaxed">
-                Awarded for groundbreaking digital transformation in construction using cutting-edge 
-                technologies. Our implementation of AI-powered project management, Building Information 
-                Modeling (BIM), drone-based site analytics, and digital twin technology has increased 
-                project efficiency by 35% while reducing costs and improving safety standards across 
-                all our construction sites.
+              <p className="text-gray-600 leading-relaxed text-justify">
+                Honored for driving digital transformation in Malaysia's construction sector, UBBIM Resources leverages AI, BIM, drone analytics, and digital twin technologies to enhance project efficiency, transparency, and safety. This award reflects our commitment to reshaping the built environment through purposeful innovation and future-ready digital practices.
               </p>
             </div>
           </div>
