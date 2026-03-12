@@ -18,8 +18,8 @@ interface DigitalSolution {
 const DigitalSolutions: React.FC = () => {
   const solutions: DigitalSolution[] = [
     {
-      title: "Digital Permit to Work System (e-ptw)",
-      description: "A comprehensive digital permit management system designed for incineration plants and industrial facilities. Streamline your safety protocols with automated workflows and real-time monitoring.",
+      title: "Aerial Analytics Solutions",
+      description: "Advanced aerial data analytics for earthworks projects. Utilize drone technology and AI-powered analysis to optimize site planning and monitoring.",
       image: "/src/assets/projects/highlights-banner.png",
       hasButton: true,
       link: "/services/digital-solutions/e-ptw"
