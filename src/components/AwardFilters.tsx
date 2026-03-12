@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import esgAwardImage from "../assets/esg-award.jpg";
 
 interface AwardFiltersProps {
   filterCategory: string;
@@ -30,15 +31,22 @@ const AwardFilters: React.FC<AwardFiltersProps> = ({
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Award 1: Platinum Award for ESG */}
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500">
-            <div className="h-64 bg-gradient-to-br from-[#1A4B8C] to-[#2D6BA8] flex items-center justify-center">
-              <div className="text-center p-8">
-                <div className="w-24 h-24 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+            <div className="relative h-80">
+              <img 
+                src={esgAwardImage} 
+                alt="Platinum Award for ESG Ceremony" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1A4B8C]/90 to-transparent flex items-end">
+                <div className="p-8 text-white">
+                  <div className="flex items-center space-x-3 mb-2">
+                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <h3 className="text-2xl font-bold">Platinum Award for ESG</h3>
+                  </div>
+                  <p className="text-white/90">Excellence in Sustainability</p>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-2">Platinum Award for ESG</h3>
-                <p className="text-white/80">Excellence in Sustainability</p>
               </div>
             </div>
             <div className="p-8">
