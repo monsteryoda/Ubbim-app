@@ -51,13 +51,6 @@ const DigitalSolutions: React.FC = () => {
       image: "/src/assets/projects/highlights-5.png",
       hasButton: true,
       link: "/services/digital-solutions/3d-animation"
-    },
-    {
-      title: "Building Contractors App (BEENA)",
-      description: "Custom mobile application developed for the Association of Construction Project Managers. Connect contractors, share resources, and streamline project collaboration.",
-      image: "/src/assets/projects/highlights-7.png",
-      hasButton: true,
-      link: "/services/digital-solutions/beena-app"
     }
   ];
 
