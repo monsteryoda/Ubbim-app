@@ -8,6 +8,7 @@ import { ArrowRight, Building2, Leaf, Award, HardHat, TrendingUp, Users, Phone, 
 import LogoCarousel from "@/components/LogoCarousel";
 import CertificationsGrid from "@/components/CertificationsGrid";
 import Navbar from "@/components/Navbar";
+import { showSuccess } from "@/utils/toast";
 
 const Index = () => {
   const stats = [
@@ -76,6 +77,10 @@ const Index = () => {
       { icon: Linkedin, href: "#", label: "LinkedIn" },
       { icon: Instagram, href: "#", label: "Instagram" },
     ],
+  };
+
+  const handleContactClick = () => {
+    showSuccess("Thank you for your interest! We'll contact you shortly.");
   };
 
   return (
