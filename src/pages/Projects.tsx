@@ -74,6 +74,38 @@ const Projects: React.FC = () => {
       image: "/src/assets/projects/environmental-facility.jpg",
       category: "Infrastructure",
       year: "2024"
+    },
+    {
+      id: "8",
+      title: "High-Rise Commercial Tower Development in Kuala Lumpur City Centre",
+      description: "Premium office tower with smart building technology and LEED certification.",
+      image: "/src/assets/projects/commercial-tower.jpg",
+      category: "Commercial",
+      year: "2024"
+    },
+    {
+      id: "9",
+      title: "Sustainable Housing Estate with Green Community Spaces",
+      description: "Eco-friendly residential community with solar panels and rainwater harvesting systems.",
+      image: "/src/assets/projects/green-housing.jpg",
+      category: "Residential",
+      year: "2024"
+    },
+    {
+      id: "10",
+      title: "Advanced Manufacturing Facility for Automotive Industry",
+      description: "State-of-the-art production plant with automated assembly lines and quality control systems.",
+      image: "/src/assets/projects/manufacturing-facility.jpg",
+      category: "Industrial",
+      year: "2024"
+    },
+    {
+      id: "11",
+      title: "Regional Highway Expansion and Bridge Construction Project",
+      description: "Major infrastructure upgrade connecting urban centers with modern bridge structures.",
+      image: "/src/assets/projects/highway-bridge.jpg",
+      category: "Infrastructure",
+      year: "2024"
     }
   ];
 
