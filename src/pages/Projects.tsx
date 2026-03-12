@@ -228,24 +228,16 @@ const Projects: React.FC = () => {
                   className="flex transition-transform duration-500 ease-out"
                   style={{ transform: `translateX(-${highlightsIndex * 100}%)` }}
                 >
-                  {projects.map((project, index) => (
+                  {projects.map((project) => (
                     <div key={project.id} className="w-full flex-shrink-0">
                       <Card className="border-none">
                         <CardContent className="p-0">
                           <div className="relative aspect-[16/9] overflow-hidden">
                             <img
-                              src={index === 0 ? "/src/assets/projects/highlights-banner.png" : project.image}
-                              alt={index === 0 ? "Digital Permit to Work System" : project.title}
+                              src="/src/assets/projects/highlights-banner.png"
+                              alt="Project Highlights"
                               className="w-full h-full object-cover"
                             />
-                            {index === 0 && (
-                              <>
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                                  <h4 className="text-2xl font-bold mb-2">Digital Permit to Work System (e-ptw) for an incineration plant</h4>
-                                </div>
-                              </>
-                            )}
                           </div>
                         </CardContent>
                       </Card>
