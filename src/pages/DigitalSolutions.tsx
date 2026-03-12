@@ -44,13 +44,6 @@ const DigitalSolutions: React.FC = () => {
       image: "/src/assets/projects/highlights-4.png",
       hasButton: true,
       link: "/services/digital-solutions/3d-scanning"
-    },
-    {
-      title: "3D Process Animation Video",
-      description: "Immersive 3D animation videos for waste-to-energy plants. Visualize complex processes for training, safety briefings, and stakeholder presentations.",
-      image: "/src/assets/projects/highlights-5.png",
-      hasButton: true,
-      link: "/services/digital-solutions/3d-animation"
     }
   ];
 
