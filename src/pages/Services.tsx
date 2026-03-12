@@ -66,7 +66,7 @@ const Services = () => {
               BUILT ENVIRONMENT SERVICES
             </h1>
             <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
-              Comprehensive Solutions for the Built Environment and Digital Innovation
+              Comprehensive Solutions for Every Stage of Construction and Infrastructure Development
             </p>
           </div>
         </div>
