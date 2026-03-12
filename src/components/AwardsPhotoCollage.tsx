@@ -76,9 +76,6 @@ const AwardsPhotoCollage: React.FC<AwardsPhotoCollageProps> = ({ photos }) => {
               Award Ceremony Moments
             </h2>
           </div>
-          <p className="text-gray-300 max-w-2xl mx-auto">
-            Capturing the pride and celebration of our achievements
-          </p>
         </motion.div>
 
         {/* Photo Grid */}
