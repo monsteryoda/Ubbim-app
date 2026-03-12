@@ -42,11 +42,7 @@ const AwardFilters: React.FC<AwardFiltersProps> = ({
             <div className="p-8">
               <h4 className="text-xl font-bold text-gray-800 mb-4">Platinum Award for ESG</h4>
               <p className="text-gray-600 leading-relaxed">
-                Recognized for outstanding leadership in integrating ESG principles across all operations. 
-                Our commitment to sustainability includes eco-friendly construction materials, ISO 14001 
-                environmental governance certification, and community empowerment programs that have 
-                positively impacted over 50,000 lives. We lead the industry in reducing carbon footprint 
-                while delivering exceptional construction quality.
+                Recognized for our leadership in sustainability, UBBIM Resources integrates ESG principles across every stage of our projects — from turning industrial by-products into eco-friendly materials like CenPave to upholding transparent governance through ISO standards and empowering local communities through training. This award affirms our belief that innovation and sustainability can progress hand in hand to build a greener future.
               </p>
             </div>
           </div>
