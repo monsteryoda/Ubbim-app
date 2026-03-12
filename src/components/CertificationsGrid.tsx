@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import { X } from "lucide-react";
-import { Card } from "@/components/ui/card";
+import { X, Award } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
 interface Certification {
   id: string;
@@ -21,14 +22,14 @@ interface CertificationsGridProps {
 const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications }) => {
   const [selectedCertification, setSelectedCertification] = useState<Certification | null>(null);
 
-  // Sample certifications data
+  // Core certifications data
   const defaultCertifications: Certification[] = [
     {
       id: "1",
       title: "ISO 9001:2015",
       organization: "ACM-CCAS Limited",
       year: "2017",
-      image: "/src/assets/certifications/9001.png",
+      image: "/src/assets/certifications/iso-9001-2015.png",
       description: "Quality Management System Certification",
       hasLightbox: true
     },
@@ -37,9 +38,9 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
       title: "ISO 14001:2015",
       organization: "ACM-CCAS Limited",
       year: "2019",
-      image: "/src/assets/certifications/14001.png",
+      image: "/src/assets/certifications/iso-14001-2015.png",
       description: "Environmental Management System Certification",
-      hasLightbox: false
+      hasLightbox: true
     },
     {
       id: "3",
@@ -49,6 +50,33 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
       image: "/src/assets/certifications/iso-45001-2018.png",
       description: "Occupational Health and Safety Management System Certification",
       hasLightbox: true
+    },
+    {
+      id: "4",
+      title: "ISO 14064-1:2018",
+      organization: "Institute of Quality Malaysia",
+      year: "2022",
+      image: "/src/assets/certifications/iso-14064-1.png",
+      description: "Greenhouse Gases Part 1 - Organization Level for Quantification and Reporting Greenhouse Gas Emission and Removals",
+      hasLightbox: true
+    },
+    {
+      id: "5",
+      title: "CIDB G7",
+      organization: "CIDB Malaysia",
+      year: "2022",
+      image: "/src/assets/certifications/g7.png",
+      description: "General Construction Class 7 Rating",
+      hasLightbox: true
+    },
+    {
+      id: "6",
+      title: "Malaysia Book of Records",
+      organization: "Malaysia Book of Records",
+      year: "2022",
+      image: "/src/assets/certifications/malaysia-book.png",
+      description: "First construction company certified by ISO 14064-1:2018 Greenhouse Part 1",
+      hasLightbox: true
     }
   ];
 
@@ -56,24 +84,41 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
 
   return (
     <>
-      <div className="space-y-6 max-w-4xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {displayCertifications.map((cert) => (
           <Card 
             key={cert.id} 
-            className={`group hover:shadow-xl transition-all duration-300 border-none overflow-hidden ${
-              cert.hasLightbox !== false ? "cursor-pointer" : ""
-            }`}
+            className="group hover:shadow-2xl transition-all duration-300 border-none overflow-hidden cursor-pointer"
             onClick={() => cert.hasLightbox !== false && setSelectedCertification(cert)}
           >
-            <div className="relative w-full" style={{ paddingBottom: "100%" }}>
-              {cert.image && (
-                <img
-                  src={cert.image}
-                  alt={cert.title}
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              )}
-            </div>
+            <CardContent className="p-0">
+              <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
+                {cert.image && (
+                  <img
+                    src={cert.image}
+                    alt={cert.title}
+                    className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-500"
+                  />
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1A4B8C]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </div>
+              <div className="p-6">
+                <div className="flex items-start justify-between mb-3">
+                  <h3 className="text-lg font-bold text-[#1A4B8C] line-clamp-2">
+                    {cert.title}
+                  </h3>
+                  <Badge variant="secondary" className="bg-[#4ADE80] text-[#1A4B8C] text-xs font-semibold">
+                    {cert.year}
+                  </Badge>
+                </div>
+                <p className="text-sm text-gray-600 mb-3 line-clamp-2">
+                  {cert.organization}
+                </p>
+                <p className="text-sm text-gray-500 line-clamp-2">
+                  {cert.description}
+                </p>
+              </div>
+            </CardContent>
           </Card>
         ))}
       </div>
@@ -81,7 +126,7 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
       {/* Lightbox Modal */}
       {selectedCertification && (
         <div 
-          className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
+          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
           onClick={() => setSelectedCertification(null)}
         >
           <div 
@@ -91,7 +136,7 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
             <div className="relative">
               <button
                 onClick={() => setSelectedCertification(null)}
-                className="absolute top-4 right-4 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center text-gray-700 hover:bg-white transition-colors z-10"
+                className="absolute top-4 right-4 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center text-gray-700 hover:bg-white hover:text-[#1A4B8C] transition-colors z-10"
               >
                 <X className="w-6 h-6" />
               </button>
@@ -102,6 +147,20 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
                   className="w-full h-auto"
                 />
               )}
+            </div>
+            <div className="p-8">
+              <h3 className="text-2xl font-bold text-[#1A4B8C] mb-2">
+                {selectedCertification.title}
+              </h3>
+              <p className="text-gray-600 mb-2">
+                <span className="font-semibold">Organization:</span> {selectedCertification.organization}
+              </p>
+              <p className="text-gray-600 mb-2">
+                <span className="font-semibold">Year:</span> {selectedCertification.year}
+              </p>
+              <p className="text-gray-600">
+                {selectedCertification.description}
+              </p>
             </div>
           </div>
         </div>
