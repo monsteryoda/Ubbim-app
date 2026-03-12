@@ -10,6 +10,7 @@ import AwardModal from "@/components/AwardModal";
 import CommitmentSection from "@/components/CommitmentSection";
 import AwardIntroduction from "@/components/AwardIntroduction";
 import AwardsPhotoCollage from "@/components/AwardsPhotoCollage";
+import Navbar from "@/components/Navbar";
 
 interface AwardItem {
   id: string;
@@ -97,7 +98,8 @@ const Award: React.FC = () => {
   const sortedAwards = [...filteredAwards].sort((a, b) => parseInt(b.year) - parseInt(a.year));
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 pt-24 pb-16">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100">
+      <Navbar />
       <AwardHero />
       <AwardFilters 
         filterCategory={filterCategory}
