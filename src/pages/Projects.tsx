@@ -1,9 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, MapPin, Phone, Mail, Facebook, Twitter, Instagram, Linkedin, Link } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Link as RouterLink } from "react-router-dom";
 
 interface Project {
   id: string;
@@ -317,6 +318,140 @@ const Projects: React.FC = () => {
             </div>
           </div>
         </div>
+
+        {/* Footer */}
+        <footer className="bg-[#1A4B8C] text-white mt-16">
+          <div className="container mx-auto px-4 py-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+              {/* Company Info */}
+              <div>
+                <div className="flex items-center space-x-2 mb-6">
+                  <img 
+                    src="/ubbim-logo.png" 
+                    alt="UBBIM Logo" 
+                    className="h-12 w-auto"
+                  />
+                </div>
+                <p className="text-gray-300 leading-relaxed mb-6">
+                  UBBIM delivers comprehensive construction solutions with a focus on quality, innovation, and client satisfaction.
+                </p>
+                <div className="flex space-x-4">
+                  <a href="#" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                    <Facebook className="w-5 h-5" />
+                  </a>
+                  <a href="#" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                    <Twitter className="w-5 h-5" />
+                  </a>
+                  <a href="#" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                    <Instagram className="w-5 h-5" />
+                  </a>
+                  <a href="#" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                    <Linkedin className="w-5 h-5" />
+                  </a>
+                </div>
+              </div>
+
+              {/* Quick Links */}
+              <div>
+                <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
+                <ul className="space-y-3">
+                  <li>
+                    <RouterLink to="/" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                      Home
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink to="/services" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                      Services
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink to="/projects" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                      Projects
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink to="/about" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                      About Us
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink to="/contact" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                      Contact
+                    </RouterLink>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Services */}
+              <div>
+                <h3 className="text-lg font-semibold mb-6">Our Services</h3>
+                <ul className="space-y-3">
+                  <li>
+                    <RouterLink to="/services/design-build" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                      Design & Build
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink to="/firefighting" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                      Firefighting Services
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink to="/services/structural-repair" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                      Structural Repair
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink to="/services/security-surveillance" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                      Security & Surveillance
+                    </RouterLink>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Contact Info */}
+              <div>
+                <h3 className="text-lg font-semibold mb-6">Contact Us</h3>
+                <ul className="space-y-4">
+                  <li className="flex items-start space-x-3">
+                    <MapPin className="w-5 h-5 text-[#4ADE80] mt-0.5" />
+                    <span className="text-gray-300">
+                      No. 219, Jalan S2 B10,<br />
+                      Seremban 2, 70300 Seremban,<br />
+                      Negeri Sembilan
+                    </span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <Phone className="w-5 h-5 text-[#4ADE80]" />
+                    <span className="text-gray-300">+606-6016007</span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <Mail className="w-5 h-5 text-[#4ADE80]" />
+                    <span className="text-gray-300">admin@ubbim.com</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Bottom Bar */}
+            <div className="border-t border-gray-700 mt-12 pt-8">
+              <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <p className="text-gray-400 text-sm">
+                  © {new Date().getFullYear()} UBBIM. All rights reserved.
+                </p>
+                <div className="flex space-x-6">
+                  <a href="#" className="text-gray-400 hover:text-[#4ADE80] text-sm transition-colors">
+                    Privacy Policy
+                  </a>
+                  <a href="#" className="text-gray-400 hover:text-[#4ADE80] text-sm transition-colors">
+                    Terms of Service
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
   );
