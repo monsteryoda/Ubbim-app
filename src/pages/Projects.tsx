@@ -52,10 +52,10 @@ const Projects: React.FC = () => {
     },
     {
       id: "5",
-      title: "Design, Fabrication and Erection of Storage Tank and Process Equipments for Cenviro Recovery and Recycling Plant",
+      title: "Green Valley Resort",
       description: "Eco-friendly resort featuring sustainable architecture and nature-integrated design.",
       image: "/src/assets/projects/green-valley-resort.jpg",
-      category: "Industrial",
+      category: "Hospitality",
       year: "2023"
     },
     {
