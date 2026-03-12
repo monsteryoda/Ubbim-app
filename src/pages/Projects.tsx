@@ -22,7 +22,7 @@ const Projects: React.FC = () => {
       id: "1",
       title: "Site Clearance Earthwork, Road & Drainage and Detention Pond Works for Kualiti Alam Sdn Bhd",
       description: "A modern residential development featuring sustainable design and premium amenities.",
-      image: "/src/assets/projects/construction-site.jpg",
+      image: "/projects/construction-site.jpg",
       category: "Residential",
       year: "2023"
     },
@@ -30,7 +30,7 @@ const Projects: React.FC = () => {
       id: "2",
       title: "Development of Scheduled Waste Management Centre (\"SWMCJ\") Infrastructure Package for Cenviro Johor Sdn Bhd.",
       description: "State-of-the-art corporate headquarters with green building certification.",
-      image: "/src/assets/projects/ubbim-hq.jpg",
+      image: "/projects/ubbim-hq.jpg",
       category: "Commercial",
       year: "2022"
     },
@@ -38,7 +38,7 @@ const Projects: React.FC = () => {
       id: "3",
       title: "Modularised Incinerator Project for Kualiti Alam Sdn Bhd",
       description: "Sustainable industrial complex designed for energy efficiency and minimal environmental impact.",
-      image: "/src/assets/projects/eco-industrial-park.jpg",
+      image: "/projects/eco-industrial-park.jpg",
       category: "Industrial",
       year: "2023"
     },
@@ -46,7 +46,7 @@ const Projects: React.FC = () => {
       id: "4",
       title: "Design and Construction of Depolution System Plant at Tanjong Malim Perak for M/S Special Builder Sdn Bhd",
       description: "Modern transportation hub integrating multiple transit systems with retail and office spaces.",
-      image: "/src/assets/projects/transit-hub.jpg",
+      image: "/projects/transit-hub.jpg",
       category: "Infrastructure",
       year: "2024"
     },
@@ -54,7 +54,7 @@ const Projects: React.FC = () => {
       id: "5",
       title: "Design, Fabrication and Erection of Storage Tank and Process Equipments for Cenviro Recovery and Recycling Plant",
       description: "Eco-friendly resort featuring sustainable architecture and nature-integrated design.",
-      image: "/src/assets/projects/green-valley-resort.jpg",
+      image: "/projects/storage-tank.jpg",
       category: "Industrial",
       year: "2023"
     },
@@ -62,7 +62,7 @@ const Projects: React.FC = () => {
       id: "6",
       title: "Fabrication & Erection of Structure Steel for the Ampang Line LRT extension project",
       description: "Integrated smart city development with IoT-enabled infrastructure and sustainable systems.",
-      image: "/src/assets/projects/smart-city-plaza.jpg",
+      image: "/projects/smart-city-plaza.jpg",
       category: "Infrastructure",
       year: "2024"
     }
