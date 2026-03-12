@@ -16,37 +16,32 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-[#1A4B8C] text-white">
       <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
           {/* Company Info */}
-          <div>
-            <div className="flex items-center space-x-2 mb-6">
-              <img 
-                src="/ubbim-logo.png" 
-                alt="UBBIM Logo" 
-                className="h-12 w-auto"
-              />
-            </div>
+          <div className="flex items-center space-x-2">
+            <img 
+              src="/ubbim-logo.png" 
+              alt="UBBIM Logo" 
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Contact Info */}
-          <div>
-            <h3 className="text-lg font-semibold mb-6">Contact Us</h3>
-            <ul className="space-y-4">
-              <li className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-[#4ADE80] mt-0.5" />
-                <span className="text-gray-300">
-                  {contactInfo.address}
-                </span>
-              </li>
-              <li className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-[#4ADE80]" />
-                <span className="text-gray-300">{contactInfo.phone}</span>
-              </li>
-              <li className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-[#4ADE80]" />
-                <span className="text-gray-300">{contactInfo.email}</span>
-              </li>
-            </ul>
+          <div className="flex flex-col md:flex-row gap-6 md:gap-12">
+            <div className="flex items-center space-x-3">
+              <MapPin className="w-5 h-5 text-[#4ADE80]" />
+              <span className="text-gray-300 text-sm">
+                {contactInfo.address}
+              </span>
+            </div>
+            <div className="flex items-center space-x-3">
+              <Phone className="w-5 h-5 text-[#4ADE80]" />
+              <span className="text-gray-300 text-sm">{contactInfo.phone}</span>
+            </div>
+            <div className="flex items-center space-x-3">
+              <Mail className="w-5 h-5 text-[#4ADE80]" />
+              <span className="text-gray-300 text-sm">{contactInfo.email}</span>
+            </div>
           </div>
         </div>
 
