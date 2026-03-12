@@ -274,7 +274,7 @@ const Projects: React.FC = () => {
                               <>
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                                 <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                                  <h4 className="text-2xl font-bold mb-2">Digital Twin Technology for Industrial Facilities</h4>
+                                  <h4 className="text-2xl font-bold mb-2">3D Process Animation Video for a Waste to Energy Plant in Johor</h4>
                                 </div>
                               </>
                             )}
