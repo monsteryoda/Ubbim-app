@@ -53,97 +53,6 @@ const Index = () => {
     },
   ];
 
-  const certifications = [
-    {
-      id: "1",
-      title: "CIDB SCORE 3 Star Rating",
-      organization: "CIDB Malaysia",
-      year: "2022",
-      image: "/src/assets/certification-2022.png",
-      description: "Achieved 3-star rating under the CIDB SCORE evaluation system, recognizing excellent management and technical capabilities, compliance to best practices, and outstanding project management standards.",
-    },
-    {
-      id: "2",
-      title: "Sustainability Excellence",
-      organization: "Green Business Council",
-      year: "2023",
-      image: "https://images.unsplash.com/photo-1560421683-6856ea585c78?w=800&q=80",
-      description: "Awarded for implementing sustainable practices in construction projects, reducing carbon footprint by 40% across operations.",
-    },
-    {
-      id: "3",
-      title: "Safety Leadership Award",
-      organization: "National Safety Council",
-      year: "2022",
-      image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=80",
-      description: "Honored for maintaining the highest safety standards with zero lost-time incidents across all project sites for three consecutive years.",
-    },
-    {
-      id: "4",
-      title: "Innovation in Construction",
-      organization: "International Building Tech Awards",
-      year: "2023",
-      image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80",
-      description: "Recognized for pioneering the use of BIM and AI-driven project management tools in large-scale infrastructure projects.",
-    },
-    {
-      id: "5",
-      title: "Excellence in Project Delivery",
-      organization: "Project Management Institute",
-      year: "2022",
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
-      description: "Awarded for delivering complex projects on time and within budget, exceeding client expectations across multiple sectors.",
-    },
-    {
-      id: "6",
-      title: "Environmental Stewardship",
-      organization: "Environmental Protection Agency",
-      year: "2023",
-      image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&q=80",
-      description: "Recognized for implementing eco-friendly construction practices and achieving LEED certification on multiple projects.",
-    },
-    {
-      id: "7",
-      title: "ISO 9001:2015",
-      organization: "ACM-CCAS Limited",
-      year: "2017",
-      image: "/src/assets/certifications/iso-9001.png",
-      description: "Quality Management System Certification"
-    },
-    {
-      id: "8",
-      title: "ISO 14001:2015",
-      organization: "ACM-CCAS Limited",
-      year: "2019",
-      image: "/src/assets/certifications/14001.png",
-      description: "Environmental Management System Certification for general construction, civil and structural engineering services"
-    },
-    {
-      id: "9",
-      title: "ISO 45001:2018",
-      organization: "ACM-CCAS Limited",
-      year: "2019",
-      image: "/src/assets/certifications/iso-45001-2018.png",
-      description: "Occupational Health and Safety Management System Certification for provision of general construction, civil and structural engineering services"
-    },
-    {
-      id: "10",
-      title: "ISO 14064-1:2018",
-      organization: "Institute of Quality Malaysia",
-      year: "2022",
-      image: "/src/assets/certifications/14064.png",
-      description: "Greenhouse Gases Part 1 - Organization Level for Quantification and Reporting Greenhouse Gas Emission and Removals"
-    },
-    {
-      id: "11",
-      title: "Malaysia Book of Records",
-      organization: "Malaysia Book of Records",
-      year: "2022",
-      image: "/src/assets/certifications/malaysia-book.png",
-      description: "First construction company certified by ISO 14064-1:2018 Greenhouse Part 1 for provision of construction in civil, structural engineering and E-Construction Project Management Service"
-    }
-  ];
-
   const clientLogos = [
     { name: "CIDB", image: "/src/assets/cidb-logo.png" },
     { name: "Malaysia Airports", image: "/src/assets/malaysia-airports-logo.png" },
@@ -290,6 +199,21 @@ const Index = () => {
               </Card>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Licenses & Certifications Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
+              LICENSES & CERTIFICATIONS
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Our commitment to excellence is reflected in our industry-recognized certifications and credentials.
+            </p>
+          </div>
+          <CertificationsGrid />
         </div>
       </section>
 
