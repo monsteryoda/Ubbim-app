@@ -98,20 +98,6 @@ const AwardsPhotoCollage: React.FC<AwardsPhotoCollageProps> = ({ photos }) => {
                       className="w-full h-64 md:h-80 object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    
-                    {/* Caption */}
-                    {photo.caption && (
-                      <div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                        <p className="text-white text-sm font-medium">
-                          {photo.caption}
-                        </p>
-                      </div>
-                    )}
-
-                    {/* Award Icon Overlay */}
-                    <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <Camera className="w-8 h-8 text-[#4ADE80] drop-shadow-lg" />
-                    </div>
                   </div>
                 </CardContent>
               </Card>
