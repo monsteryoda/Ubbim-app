@@ -1,9 +1,9 @@
 "use client";
 
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
-import { Camera, Star } from "lucide-react";
+import { Camera, X, Maximize2 } from "lucide-react";
 
 interface PhotoItem {
   id: string;
@@ -59,6 +59,7 @@ const defaultPhotos: PhotoItem[] = [
 
 const AwardsPhotoCollage: React.FC<AwardsPhotoCollageProps> = ({ photos }) => {
   const displayPhotos = photos || defaultPhotos;
+  const [selectedPhoto, setSelectedPhoto] = useState<PhotoItem | null>(null);
 
   return (
     <section className="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
@@ -85,9 +86,10 @@ const AwardsPhotoCollage: React.FC<AwardsPhotoCollageProps> = ({ photos }) => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className={`relative overflow-hidden rounded-xl ${
+              className={`relative overflow-hidden rounded-xl cursor-pointer ${
                 photo.span === "2x1" ? "md:col-span-2" : ""
               }`}
+              onClick={() => setSelectedPhoto(photo)}
             >
               <Card className="border-none bg-gray-800/50 backdrop-blur-sm">
                 <CardContent className="p-0">
@@ -98,6 +100,18 @@ const AwardsPhotoCollage: React.FC<AwardsPhotoCollageProps> = ({ photos }) => {
                       className="w-full h-64 md:h-80 object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    
+                    {/* Click to View Indicator */}
+                    <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <Maximize2 className="w-8 h-8 text-[#4ADE80] drop-shadow-lg" />
+                    </div>
+                    
+                    {/* Click Hint */}
+                    <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <p className="text-white text-xs font-medium bg-black/50 px-3 py-1 rounded-full">
+                        Click to view full
+                      </p>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -105,6 +119,55 @@ const AwardsPhotoCollage: React.FC<AwardsPhotoCollageProps> = ({ photos }) => {
           ))}
         </div>
       </div>
+
+      {/* Full Screen Modal */}
+      <AnimatePresence>
+        {selectedPhoto && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 backdrop-blur-sm p-4"
+            onClick={() => setSelectedPhoto(null)}
+          >
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              className="relative max-w-5xl max-h-[90vh]"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* Close Button */}
+              <button
+                onClick={() => setSelectedPhoto(null)}
+                className="absolute -top-12 right-0 text-white hover:text-[#4ADE80] transition-colors"
+              >
+                <X className="w-8 h-8" />
+              </button>
+
+              {/* Full Image */}
+              <img
+                src={selectedPhoto.src}
+                alt={selectedPhoto.alt}
+                className="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"
+              />
+
+              {/* Caption */}
+              {selectedPhoto.caption && (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="mt-4 text-center"
+                >
+                  <p className="text-white text-lg font-medium">
+                    {selectedPhoto.caption}
+                  </p>
+                </motion.div>
+              )}
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 };
