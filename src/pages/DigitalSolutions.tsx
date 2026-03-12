@@ -19,7 +19,7 @@ const DigitalSolutions: React.FC = () => {
   const solutions: DigitalSolution[] = [
     {
       title: "Aerial Analytics Solutions",
-      description: "Advanced aerial data analytics for earthworks projects. Utilize drone technology and AI-powered analysis to optimize site planning and monitoring.",
+      description: "Leverage drone technology for precise aerial surveys, mapping, and data analysis.",
       image: "/src/assets/projects/highlights-banner.png",
       hasButton: true,
       link: "/services/digital-solutions/e-ptw"
