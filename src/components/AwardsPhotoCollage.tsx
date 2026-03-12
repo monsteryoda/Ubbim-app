@@ -45,9 +45,9 @@ const defaultPhotos: PhotoItem[] = [
   },
   {
     id: "5",
-    src: "https://images.unsplash.com/photo-1475721027767-p05a6dbf283f?w=800&q=80",
-    alt: "Award presentation",
-    caption: "Digitalization Award presentation"
+    src: "/src/assets/award-ceremony-5.jpeg",
+    alt: "UBBIM team with awards at SME Malaysia event",
+    caption: "SME Malaysia Platinum Business Awards 2025"
   },
   {
     id: "6",
