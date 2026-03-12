@@ -10,6 +10,7 @@ import AwardModal from "@/components/AwardModal";
 import CommitmentSection from "@/components/CommitmentSection";
 import AwardIntroduction from "@/components/AwardIntroduction";
 import AwardsPhotoCollage from "@/components/AwardsPhotoCollage";
+import LookingAheadBanner from "@/components/LookingAheadBanner";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -120,6 +121,7 @@ const Award: React.FC = () => {
         selectedCertification={selectedCertification}
         setSelectedCertification={setSelectedCertification}
       />
+      <LookingAheadBanner />
       <CommitmentSection />
       <AwardsPhotoCollage />
       <Footer />
