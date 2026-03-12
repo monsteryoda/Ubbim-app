@@ -234,8 +234,8 @@ const Projects: React.FC = () => {
                         <CardContent className="p-0">
                           <div className="relative aspect-[16/9] overflow-hidden">
                             <img
-                              src={index === 0 ? "/src/assets/projects/highlights-banner.png" : index === 1 ? "/src/assets/projects/highlights-2.png" : project.image}
-                              alt={index === 0 ? "Digital Permit to Work System" : index === 1 ? "Financial Summary Dashboard" : project.title}
+                              src={index === 0 ? "/src/assets/projects/highlights-banner.png" : project.image}
+                              alt={index === 0 ? "Digital Permit to Work System" : project.title}
                               className="w-full h-full object-cover"
                             />
                             {index === 0 && (
