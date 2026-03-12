@@ -288,6 +288,23 @@ const Index = () => {
                 className="group hover:shadow-2xl transition-all duration-300 border-none overflow-hidden"
               >
                 <CardContent className="p-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <div className={`w-12 h-12 rounded-xl bg-${cert.color}-100 flex items-center justify-center`}>
+                      <cert.icon className={`w-6 h-6 text-${cert.color}-600`} />
+                    </div>
+                    <CheckCircle className="w-5 h-5 text-[#4ADE80]" />
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-[#1A4B8C] mb-2">
+                    {cert.title}
+                  </h3>
+                  <p className="text-sm text-gray-500 mb-3">
+                    {cert.subtitle}
+                  </p>
+                  <p className="text-gray-600 text-sm mb-4">
+                    {cert.description}
+                  </p>
+                  
                   <div className="relative aspect-[3/4] rounded-lg overflow-hidden bg-gray-100">
                     <img
                       src={cert.image}
