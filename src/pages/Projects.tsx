@@ -36,7 +36,7 @@ const Projects: React.FC = () => {
     },
     {
       id: "3",
-      title: "Modularised Incinerator Project for Kualiti Alam Sdn Bhd",
+      title: "Eco Industrial Park",
       description: "Sustainable industrial complex designed for energy efficiency and minimal environmental impact.",
       image: "/src/assets/projects/eco-industrial-park.jpg",
       category: "Industrial",
