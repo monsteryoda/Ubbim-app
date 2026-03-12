@@ -60,10 +60,10 @@ const Projects: React.FC = () => {
     },
     {
       id: "6",
-      title: "Smart City Plaza",
+      title: "Fabrication & Erection of Structure Steel for the Ampang Line LRT extension project",
       description: "Integrated smart city development with IoT-enabled infrastructure and sustainable systems.",
       image: "/src/assets/projects/smart-city-plaza.jpg",
-      category: "Commercial",
+      category: "Infrastructure",
       year: "2024"
     }
   ];
