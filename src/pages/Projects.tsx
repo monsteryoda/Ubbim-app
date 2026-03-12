@@ -122,11 +122,11 @@ const Projects: React.FC = () => {
   };
 
   const nextHighlightsSlide = () => {
-    setHighlightsIndex((prev) => (prev + 1) % 7);
+    setHighlightsIndex((prev) => (prev + 1) % 6);
   };
 
   const prevHighlightsSlide = () => {
-    setHighlightsIndex((prev) => (prev - 1 + 7) % 7);
+    setHighlightsIndex((prev) => (prev - 1 + 6) % 6);
   };
 
   const goToHighlightsSlide = (index: number) => {
@@ -157,10 +157,6 @@ const Projects: React.FC = () => {
     {
       title: "Development of Building Contractors App (BEENA) for Association of Construction Project Managers",
       image: "/src/assets/projects/highlights-7.png"
-    },
-    {
-      title: "AI-Powered Safety Monitoring System for Construction Sites",
-      image: "/src/assets/projects/highlights-8.png"
     }
   ];
 
