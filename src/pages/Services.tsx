@@ -63,7 +63,7 @@ const Services = () => {
         <div className="container mx-auto px-4 relative">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              OUR SERVICES
+              BUILT ENVIRONMENT SERVICES
             </h1>
             <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
               Comprehensive Solutions for the Built Environment and Digital Innovation
