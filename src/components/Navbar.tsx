@@ -22,7 +22,6 @@ const Navbar = () => {
       ]
     },
     { name: "Projects", href: "/projects" },
-    { name: "About", href: "/about" },
     { name: "Sustainability Report", href: "https://ecologi.com/ubbim", isExternal: true },
     { name: "Award", href: "/award" },
     { name: "Whistleblower Channel", href: "https://docs.google.com/forms/d/e/1FAIpQLSds-egyIK3N89YF8esbs0-J-Cv0OIPKZjxyzN8ZpTrQUjJ30g/viewform?pli=1", isExternal: true },
@@ -86,7 +85,7 @@ const Navbar = () => {
                   {/* Dropdown Menu */}
                   {link.hasDropdown && (
                     <div
-                      className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-64 bg-white rounded-lg shadow-xl overflow-hidden transition-all duration-200 ${
+                      className={`absolute top-full left-1/2 transform -translate-x/2 mt-2 w-64 bg-white rounded-lg shadow-xl overflow-hidden transition-all duration-200 ${
                         isServicesDropdownOpen ? "opacity-100 visible" : "opacity-0 invisible"
                       }`}
                     >
