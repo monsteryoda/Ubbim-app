@@ -127,7 +127,7 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
                 <img
                   src={selectedCertification.image}
                   alt={selectedCertification.title}
-                  className="w-full h-auto"
+                  className="w-full aspect-[9/16] object-contain"
                 />
               )}
             </div>
