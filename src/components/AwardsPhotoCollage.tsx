@@ -33,9 +33,9 @@ const defaultPhotos: PhotoItem[] = [
   },
   {
     id: "3",
-    src: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&q=80",
-    alt: "Award ceremony moment",
-    caption: "Recognition for ESG Excellence"
+    src: "/src/assets/award-ceremony-3.jpeg",
+    alt: "Executive receiving award on stage",
+    caption: "Platinum Business Awards 2025"
   },
   {
     id: "4",
