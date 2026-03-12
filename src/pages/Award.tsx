@@ -10,6 +10,7 @@ import AwardModal from "@/components/AwardModal";
 import AwardCommitment from "@/components/AwardCommitment";
 import CommitmentSection from "@/components/CommitmentSection";
 import AwardIntroduction from "@/components/AwardIntroduction";
+import AwardsPhotoCollage from "@/components/AwardsPhotoCollage";
 
 interface AwardItem {
   id: string;
@@ -106,6 +107,7 @@ const Award: React.FC = () => {
         setShowTimeline={setShowTimeline}
       />
       <AwardIntroduction />
+      <AwardsPhotoCollage />
       <AwardTimeline 
         awards={sortedAwards}
         selectedCertification={selectedCertification}
@@ -114,11 +116,6 @@ const Award: React.FC = () => {
       />
       <AwardGrid 
         awards={sortedAwards}
-        selectedCertification={selectedCertification}
-        setSelectedCertification={setSelectedCertification}
-      />
-      <AwardModal 
-        awards={awards}
         selectedCertification={selectedCertification}
         setSelectedCertification={setSelectedCertification}
       />
