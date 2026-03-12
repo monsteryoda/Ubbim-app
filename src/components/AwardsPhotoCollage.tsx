@@ -70,12 +70,10 @@ const AwardsPhotoCollage: React.FC<AwardsPhotoCollageProps> = ({ photos }) => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <div className="flex items-center justify-center mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white flex items-center justify-center">
             <Camera className="w-10 h-10 text-[#4ADE80] mr-3" />
-            <h2 className="text-3xl md:text-4xl font-bold text-white">
-              Moments from the SME Awards Ceremony
-            </h2>
-          </div>
+            Moments from the SME Awards Ceremony
+          </h2>
         </motion.div>
 
         {/* Photo Grid */}
