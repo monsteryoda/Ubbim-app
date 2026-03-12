@@ -23,7 +23,7 @@ const Projects: React.FC = () => {
       id: "1",
       title: "Site Clearance Earthwork, Road & Drainage and Detention Pond Works for Kualiti Alam Sdn Bhd",
       description: "A modern residential development featuring sustainable design and premium amenities.",
-      image: "/src/assets/projects/construction-site.jpg",
+      image: "/src/assets/projects/kualiti-alam-site-clearance.png",
       category: "Residential",
       year: "2023"
     },
