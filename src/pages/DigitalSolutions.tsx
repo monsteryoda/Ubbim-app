@@ -40,7 +40,7 @@ const DigitalSolutions: React.FC = () => {
     },
     {
       title: "Custom Software Solutions",
-      description: "Comprehensive 3D scanning solution for large mechanical rooms. Create digital twins for better facility management and maintenance planning.",
+      description: "Tailored software solutions, including project management systems, digital permit to work systems, and GHG tracking systems, designed to meet your specific operational needs.",
       image: "/src/assets/projects/highlights-4.png",
       hasButton: true,
       link: "/services/digital-solutions/3d-scanning"
