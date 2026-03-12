@@ -34,7 +34,7 @@ const DigitalSolutions: React.FC = () => {
     {
       title: "Virtual Design Coordination",
       description: "Utilize virtual and augmented reality to visualize designs, coordinate teams, and improve project outcomes with immersive experiences.",
-      image: "/src/assets/projects/highlights-3.png",
+      image: "/src/assets/vr.jpeg",
       hasButton: true,
       link: "/services/digital-solutions/aerial-analytics"
     },
