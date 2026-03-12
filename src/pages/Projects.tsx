@@ -20,7 +20,7 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: "1",
-      title: "Site Clearance Earthwork, Road & Drainage and Detention Pond Works for Kualiti Alam Sdn Bhd",
+      title: "Sky Park Residences",
       description: "A modern residential development featuring sustainable design and premium amenities.",
       image: "/src/assets/projects/construction-site.jpg",
       category: "Residential",
