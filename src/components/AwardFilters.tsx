@@ -40,7 +40,6 @@ const AwardFilters: React.FC<AwardFiltersProps> = ({
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#1A4B8C]/90 to-transparent flex items-end">
                 <div className="p-8 text-white">
-                  <h3 className="text-2xl font-bold">Platinum Award for ESG</h3>
                 </div>
               </div>
             </div>
