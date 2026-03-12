@@ -32,7 +32,7 @@ const DigitalSolutions: React.FC = () => {
       link: "/services/digital-solutions/pm-system"
     },
     {
-      title: "Aerial Analytics Services",
+      title: "Virtual Design Coordination",
       description: "Advanced aerial data analytics for earthworks projects. Utilize drone technology and AI-powered analysis to optimize site planning and monitoring.",
       image: "/src/assets/projects/highlights-3.png",
       hasButton: true,
