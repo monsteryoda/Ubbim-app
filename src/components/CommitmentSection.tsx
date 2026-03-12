@@ -55,7 +55,7 @@ const CommitmentSection: React.FC = () => {
               </h2>
             </div>
             <p className="text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">
-              Our unwavering dedication to innovation and sustainability drives every project we undertake, ensuring we deliver value that transcends expectations.
+              Each recognition strengthens our resolve to:
             </p>
           </div>
 
