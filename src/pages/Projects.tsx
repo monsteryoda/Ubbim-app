@@ -4,13 +4,6 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Building2, MapPin, Calendar, ArrowRight } from "lucide-react";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 
 interface Project {
   id: string;
@@ -102,25 +95,11 @@ const Projects: React.FC = () => {
               className="group hover:shadow-2xl transition-all duration-300 border-none overflow-hidden cursor-pointer"
             >
               <CardContent className="p-0">
-                {/* Project Carousel */}
+                {/* Project Image */}
                 <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-gray-200 to-gray-300">
-                  <Carousel className="w-full h-full">
-                    <CarouselContent className="h-full">
-                      <CarouselItem className="h-full">
-                        <div className="flex items-center justify-center h-full bg-gradient-to-br from-gray-200 to-gray-300">
-                          <Building2 className="w-16 h-16 text-gray-400" />
-                        </div>
-                      </CarouselItem>
-                      <CarouselItem className="h-full">
-                        <div className="flex items-center justify-center h-full bg-gradient-to-br from-gray-300 to-gray-400">
-                          <Building2 className="w-16 h-16 text-gray-500" />
-                        </div>
-                      </CarouselItem>
-                    </CarouselContent>
-                    <CarouselPrevious className="left-2" />
-                    <CarouselNext className="right-2" />
-                  </Carousel>
-                  
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <Building2 className="w-16 h-16 text-gray-400" />
+                  </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1A4B8C]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   
                   {/* Category Badge */}
