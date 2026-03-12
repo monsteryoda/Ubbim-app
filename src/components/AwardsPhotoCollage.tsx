@@ -39,9 +39,9 @@ const defaultPhotos: PhotoItem[] = [
   },
   {
     id: "4",
-    src: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80",
-    alt: "Executive handshake with judge",
-    caption: "Meeting with SME Association judges"
+    src: "/src/assets/award-ceremony-4.jpeg",
+    alt: "Executive holding award trophy",
+    caption: "Platinum Business Awards 2025 - Executive Recognition"
   },
   {
     id: "5",
