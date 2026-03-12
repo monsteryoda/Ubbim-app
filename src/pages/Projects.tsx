@@ -139,7 +139,7 @@ const Projects: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-[#1A4B8C] mb-4">
-            Our Projects
+            Built Environment Projects
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Explore Our Success Stories in the Built Environment and Digital Innovation
