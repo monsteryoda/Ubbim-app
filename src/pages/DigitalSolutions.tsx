@@ -58,13 +58,6 @@ const DigitalSolutions: React.FC = () => {
       image: "/src/assets/projects/highlights-7.png",
       hasButton: true,
       link: "/services/digital-solutions/beena-app"
-    },
-    {
-      title: "Virtual Reality Remodelling",
-      description: "Immersive VR experience for warehouse remodelling projects. Visualize design changes before implementation and enhance client decision-making.",
-      image: "/src/assets/projects/highlights-9.png",
-      hasButton: true,
-      link: "/services/digital-solutions/vr-remodelling"
     }
   ];
 
