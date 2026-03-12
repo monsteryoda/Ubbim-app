@@ -102,22 +102,6 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
                 )}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1A4B8C]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
-              <div className="p-6">
-                <div className="flex items-start justify-between mb-3">
-                  <h3 className="text-lg font-bold text-[#1A4B8C] line-clamp-2">
-                    {cert.title}
-                  </h3>
-                  <Badge variant="secondary" className="bg-[#4ADE80] text-[#1A4B8C] text-xs font-semibold">
-                    {cert.year}
-                  </Badge>
-                </div>
-                <p className="text-sm text-gray-600 mb-3 line-clamp-2">
-                  {cert.organization}
-                </p>
-                <p className="text-sm text-gray-500 line-clamp-2">
-                  {cert.description}
-                </p>
-              </div>
             </CardContent>
           </Card>
         ))}
