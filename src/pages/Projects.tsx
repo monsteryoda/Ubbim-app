@@ -159,7 +159,7 @@ const Projects: React.FC = () => {
       image: "/src/assets/projects/highlights-7.png"
     },
     {
-      title: "AI-Powered Safety Monitoring System for Construction Sites",
+      title: "Virtual Reality Remodelling of a Storage Warehouse in Melaka",
       image: "/src/assets/projects/highlights-9.png"
     }
   ];
