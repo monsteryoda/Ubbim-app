@@ -28,7 +28,7 @@ const Projects: React.FC = () => {
     },
     {
       id: "2",
-      title: "UBBIM Headquarters",
+      title: "Development of Scheduled Waste Management Centre (\"SWMCJ\") Infrastructure Package for Cenviro Johor Sdn Bhd.",
       description: "State-of-the-art corporate headquarters with green building certification.",
       image: "/src/assets/projects/ubbim-hq.jpg",
       category: "Commercial",
