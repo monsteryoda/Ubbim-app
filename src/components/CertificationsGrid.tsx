@@ -4,10 +4,10 @@ import React, { useState } from "react";
 import { X, Award } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import iso9001 from "@/assets/certifications/iso-9001-2015.png";
-import iso14001 from "@/assets/certifications/iso-14001-2015.png";
+import iso9001 from "@/assets/certifications/iso-9001.png";
+import iso14001 from "@/assets/certifications/iso-14001.png";
 import iso45001 from "@/assets/certifications/iso-45001-2018.png";
-import iso14064 from "@/assets/certifications/iso-14064-1.png";
+import iso14064 from "@/assets/certifications/14064.png";
 import g7 from "@/assets/certifications/g7.png";
 import malaysiaBook from "@/assets/certifications/malaysia-book.png";
 
