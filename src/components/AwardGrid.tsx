@@ -2,7 +2,7 @@
 
 import React from "react";
 import { ChevronRight } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
@@ -71,7 +71,7 @@ const AwardGrid: React.FC<AwardGridProps> = ({
                 className={`group hover:shadow-2xl transition-all duration-500 border-none overflow-hidden cursor-pointer bg-white ${award.borderColor} border-2 hover:-translate-y-2`}
                 onClick={() => setSelectedCertification(award.id)}
               >
-                <CardContent className="p-8">
+                <div className="p-8">
                   <div className="relative">
                     <div className={`absolute inset-0 bg-gradient-to-br ${award.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500 rounded-2xl`} />
                     
@@ -107,7 +107,7 @@ const AwardGrid: React.FC<AwardGridProps> = ({
                       <ChevronRight className="w-5 h-5 ml-1" />
                     </motion.div>
                   </div>
-                </CardContent>
+                </div>
               </Card>
             </motion.div>
           ))}
