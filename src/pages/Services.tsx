@@ -40,37 +40,6 @@ const Services = () => {
     },
   ];
 
-  const digitalSolutions = [
-    {
-      title: "Aerial Analytics Solutions",
-      description: "Leverage drone technology for precise aerial surveys, mapping, and data analysis.",
-      icon: TrendingUp,
-      link: "/aerial-analytics",
-      image: "/aerial-analytics.png"
-    },
-    {
-      title: "3D Scanning Solutions",
-      description: "Advanced 3D scanning that provide accurate representations of physical spaces, enhancing project planning and execution",
-      icon: Building2,
-      link: "/3d-scanning",
-      image: "/3d-scanning.jpeg"
-    },
-    {
-      title: "Virtual Design Coordination",
-      description: "Utilize virtual and augmented reality to visualize designs, coordinate teams, and improve project outcomes with immersive experiences.",
-      icon: Cpu,
-      link: "/vr-coordination",
-      image: "/vr.jpeg"
-    },
-    {
-      title: "Custom Software Solutions",
-      description: "Tailored software solutions, including project management systems, digital permit to work systems, and GHG tracking systems, designed to meet your specific operational needs.",
-      icon: Users,
-      link: "/custom-software",
-      image: "/coding.jpeg"
-    }
-  ];
-
   const contactInfo = {
     address: "No. 219, Jalan S2 B10, Seremban 2, 70300 Seremban, Negeri Sembilan",
     phone: "+606-6016007",
@@ -116,51 +85,6 @@ const Services = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {builtEnvironmentServices.map((service, index) => (
-              <Card key={index} className="border-none shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300">
-                <div className="h-48 overflow-hidden relative">
-                  <img 
-                    src={service.image} 
-                    alt={service.title} 
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <Link to={service.link}>
-                      <button className="px-8 py-3 bg-[#005F6B] hover:bg-[#007A8A] text-white font-bold rounded-full text-sm transition-all duration-200 hover:scale-105">
-                        Learn More
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-                <CardContent className="p-6">
-                  <div className="flex items-center mb-3">
-                    <service.icon className="w-6 h-6 text-[#1A4B8C] mr-2" />
-                    <h3 className="text-xl font-bold text-[#1A4B8C]">
-                      {service.title}
-                    </h3>
-                  </div>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    {service.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Digital Solutions */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
-              DIGITAL SOLUTIONS
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              UBBIM's Digital Solutions bring the power of cutting-edge technology to the built environment. From aerial analytics to 3D scanning and custom software development, we offer tools that enhance project precision, streamline processes, and unlock new possibilities for innovation.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {digitalSolutions.map((service, index) => (
               <Card key={index} className="border-none shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300">
                 <div className="h-48 overflow-hidden relative">
                   <img 
