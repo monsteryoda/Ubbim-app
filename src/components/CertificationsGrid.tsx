@@ -56,7 +56,7 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
 
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div className="space-y-6 max-w-4xl mx-auto">
         {displayCertifications.map((cert) => (
           <Card 
             key={cert.id} 
@@ -65,14 +65,21 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
             }`}
             onClick={() => cert.hasLightbox !== false && setSelectedCertification(cert)}
           >
-            <div className="relative w-full" style={{ paddingBottom: "177.78%" }}>
-              {cert.image && (
-                <img
-                  src={cert.image}
-                  alt={cert.title}
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              )}
+            <div className="flex flex-col md:flex-row">
+              <div className="relative w-full md:w-1/2" style={{ paddingBottom: "100%" }}>
+                {cert.image && (
+                  <img
+                    src={cert.image}
+                    alt={cert.title}
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                )}
+              </div>
+              <div className="p-6 flex-1">
+                <h3 className="text-xl font-semibold mb-2">{cert.title}</h3>
+                <p className="text-gray-600 mb-2">{cert.organization} • {cert.year}</p>
+                <p className="text-gray-500">{cert.description}</p>
+              </div>
             </div>
           </Card>
         ))}
