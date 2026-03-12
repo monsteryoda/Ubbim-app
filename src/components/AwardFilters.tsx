@@ -22,7 +22,7 @@ const AwardFilters: React.FC<AwardFiltersProps> = ({
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-[#1A4B8C] mb-4">
-            SME Platinum Business Awards 2025
+            Our Awards & Recognition
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Celebrating excellence in construction, sustainability, and digital innovation
