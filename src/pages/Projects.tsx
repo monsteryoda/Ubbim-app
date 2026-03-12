@@ -102,7 +102,7 @@ const Projects: React.FC = () => {
               className="group hover:shadow-2xl transition-all duration-300 border-none overflow-hidden cursor-pointer"
             >
               <CardContent className="p-0">
-                {/* Responsive Image Carousel */}
+                {/* Project Carousel */}
                 <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-gray-200 to-gray-300">
                   <Carousel className="w-full h-full">
                     <CarouselContent className="h-full">
