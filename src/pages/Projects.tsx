@@ -122,16 +122,43 @@ const Projects: React.FC = () => {
   };
 
   const nextHighlightsSlide = () => {
-    setHighlightsIndex((prev) => (prev + 1) % projects.length);
+    setHighlightsIndex((prev) => (prev + 1) % 6);
   };
 
   const prevHighlightsSlide = () => {
-    setHighlightsIndex((prev) => (prev - 1 + projects.length) % projects.length);
+    setHighlightsIndex((prev) => (prev - 1 + 6) % 6);
   };
 
   const goToHighlightsSlide = (index: number) => {
     setHighlightsIndex(index);
   };
+
+  const digitalSolutions = [
+    {
+      title: "Digital Permit to Work System (e-ptw) for an incineration plant",
+      image: "/src/assets/projects/highlights-banner.png"
+    },
+    {
+      title: "Project Management System for Shutdown Operation",
+      image: "/src/assets/projects/highlights-2.png"
+    },
+    {
+      title: "Aerial Analytics Services for an Earthworks Project in Port Dickson",
+      image: "/src/assets/projects/highlights-3.png"
+    },
+    {
+      title: "3D Scanning and Facility Management System for Large Mechanical Room",
+      image: "/src/assets/projects/highlights-4.png"
+    },
+    {
+      title: "3D Process Animation Video for a Waste to Energy Plant in Johor",
+      image: "/src/assets/projects/highlights-5.png"
+    },
+    {
+      title: "Development of Building Contractors App (BEENA) for Association of Construction Project Managers",
+      image: "/src/assets/projects/highlights-7.png"
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 pt-24 pb-16">
@@ -228,72 +255,20 @@ const Projects: React.FC = () => {
                   className="flex transition-transform duration-500 ease-out"
                   style={{ transform: `translateX(-${highlightsIndex * 100}%)` }}
                 >
-                  {projects.map((project, index) => (
-                    <div key={project.id} className="w-full flex-shrink-0">
+                  {digitalSolutions.map((solution, index) => (
+                    <div key={index} className="w-full flex-shrink-0">
                       <Card className="border-none">
                         <CardContent className="p-0">
                           <div className="relative aspect-[16/9] overflow-hidden">
                             <img
-                              src={index === 0 ? "/src/assets/projects/highlights-banner.png" : index === 1 ? "/src/assets/projects/highlights-2.png" : index === 2 ? "/src/assets/projects/highlights-3.png" : index === 3 ? "/src/assets/projects/highlights-4.png" : index === 4 ? "/src/assets/projects/highlights-5.png" : index === 5 ? "/src/assets/projects/highlights-6.png" : index === 6 ? "/src/assets/projects/highlights-7.png" : project.image}
-                              alt={index === 0 ? "Digital Permit to Work System" : index === 1 ? "Financial Summary Dashboard" : index === 2 ? "Lorry Movement Tracking" : index === 3 ? "Aerial Analytics Services" : index === 4 ? "3D Scanning and Facility Management" : index === 5 ? "Virtual Reality Remodelling of a Storage Warehouse in Melaka" : index === 6 ? "Development of Building Contractors App (BEENA) for Association of Construction Project Managers" : project.title}
+                              src={solution.image}
+                              alt={solution.title}
                               className="w-full h-full object-cover"
                             />
-                            {index === 0 && (
-                              <>
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                                  <h4 className="text-2xl font-bold mb-2">Digital Permit to Work System (e-ptw) for an incineration plant</h4>
-                                </div>
-                              </>
-                            )}
-                            {index === 1 && (
-                              <>
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                                  <h4 className="text-2xl font-bold mb-2">Project Management System for Shutdown Operation</h4>
-                                </div>
-                              </>
-                            )}
-                            {index === 2 && (
-                              <>
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                                  <h4 className="text-2xl font-bold mb-2">Aerial Analytics Services for an Earthworks Project in Port Dickson</h4>
-                                </div>
-                              </>
-                            )}
-                            {index === 3 && (
-                              <>
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                                  <h4 className="text-2xl font-bold mb-2">3D Scanning and Facility Management System for Large Mechanical Room</h4>
-                                </div>
-                              </>
-                            )}
-                            {index === 4 && (
-                              <>
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                                  <h4 className="text-2xl font-bold mb-2">3D Process Animation Video for a Waste to Energy Plant in Johor</h4>
-                                </div>
-                              </>
-                            )}
-                            {index === 5 && (
-                              <>
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                                  <h4 className="text-2xl font-bold mb-2">Virtual Reality Remodelling of a Storage Warehouse in Melaka</h4>
-                                </div>
-                              </>
-                            )}
-                            {index === 6 && (
-                              <>
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                                  <h4 className="text-2xl font-bold mb-2">Development of Building Contractors App (BEENA) for Association of Construction Project Managers</h4>
-                                </div>
-                              </>
-                            )}
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                            <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                              <h4 className="text-2xl font-bold mb-2">{solution.title}</h4>
+                            </div>
                           </div>
                         </CardContent>
                       </Card>
@@ -322,7 +297,7 @@ const Projects: React.FC = () => {
 
               {/* Dots Indicator */}
               <div className="flex justify-center gap-2 mt-6">
-                {projects.map((_, index) => (
+                {digitalSolutions.map((_, index) => (
                   <button
                     key={index}
                     onClick={() => goToHighlightsSlide(index)}
