@@ -279,9 +279,6 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
               License & Certifications
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Recognized by international bodies for our commitment to excellence and continuous improvement
-            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-12">
