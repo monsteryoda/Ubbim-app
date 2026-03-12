@@ -8,6 +8,7 @@ import AwardTimeline from "@/components/AwardTimeline";
 import AwardGrid from "@/components/AwardGrid";
 import AwardModal from "@/components/AwardModal";
 import AwardCommitment from "@/components/AwardCommitment";
+import CommitmentSection from "@/components/CommitmentSection";
 
 interface AwardItem {
   id: string;
@@ -119,6 +120,7 @@ const Award: React.FC = () => {
         selectedCertification={selectedCertification}
         setSelectedCertification={setSelectedCertification}
       />
+      <CommitmentSection />
       <AwardCommitment />
     </div>
   );
