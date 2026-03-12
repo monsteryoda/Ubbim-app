@@ -25,7 +25,7 @@ const DigitalSolutions: React.FC = () => {
       link: "/services/digital-solutions/e-ptw"
     },
     {
-      title: "Project Management System for Shutdown Operation",
+      title: "3D Scanning Solutions",
       description: "Specialized project management platform for complex shutdown operations. Coordinate multiple teams, track progress, and ensure safety compliance during critical maintenance periods.",
       image: "/src/assets/projects/highlights-2.png",
       hasButton: true,
