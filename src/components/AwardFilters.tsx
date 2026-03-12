@@ -66,6 +66,56 @@ const AwardFilters: React.FC<AwardFiltersProps> = ({
         </div>
       </div>
     </section>
+
+    {/* New Section Below */}
+    <section className="py-16 bg-gradient-to-b from-white to-gray-50">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-[#1A4B8C] mb-4">
+            Additional Recognition
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            More achievements that showcase our commitment to excellence
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          {/* Award 3 */}
+          <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500">
+            <div className="relative h-80">
+              <img 
+                src={esgAwardImage} 
+                alt="Additional Award 1" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-8">
+              <h4 className="text-xl font-bold text-gray-800 mb-4">Award Title 1</h4>
+              <p className="text-gray-600 leading-relaxed text-justify">
+                Description text for the additional award goes here. This section highlights another achievement that demonstrates our dedication to quality and innovation in the construction industry.
+              </p>
+            </div>
+          </div>
+
+          {/* Award 4 */}
+          <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500">
+            <div className="relative h-80">
+              <img 
+                src={ictAwardImage} 
+                alt="Additional Award 2" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-8">
+              <h4 className="text-xl font-bold text-gray-800 mb-4">Award Title 2</h4>
+              <p className="text-gray-600 leading-relaxed text-justify">
+                Description text for the second additional award goes here. This recognition further validates our position as a leader in sustainable and innovative construction practices.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 
