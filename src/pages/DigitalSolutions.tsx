@@ -27,7 +27,7 @@ const DigitalSolutions: React.FC = () => {
     {
       title: "3D Scanning Solutions",
       description: "Advanced 3D scanning that provide accurate representations of physical spaces, enhancing project planning and execution.",
-      image: "/src/assets/projects/highlights-2.png",
+      image: "/src/assets/3d-scanning.jpeg",
       hasButton: true,
       link: "/services/digital-solutions/pm-system"
     },
