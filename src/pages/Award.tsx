@@ -99,13 +99,13 @@ const Award: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 pt-24 pb-16">
       <AwardHero />
-      <AwardIntroduction />
       <AwardFilters 
         filterCategory={filterCategory}
         setFilterCategory={setFilterCategory}
         showTimeline={showTimeline}
         setShowTimeline={setShowTimeline}
       />
+      <AwardIntroduction />
       <AwardTimeline 
         awards={sortedAwards}
         selectedCertification={selectedCertification}
