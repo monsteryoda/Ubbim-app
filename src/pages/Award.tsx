@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import { Award, Trophy, Medal, Star, Shield } from "lucide-react";
 import AwardHero from "@/components/AwardHero";
-import AwardStats from "@/components/AwardStats";
 import AwardFilters from "@/components/AwardFilters";
 import AwardTimeline from "@/components/AwardTimeline";
 import AwardGrid from "@/components/AwardGrid";
@@ -98,7 +97,6 @@ const Award: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 pt-24 pb-16">
       <AwardHero />
-      <AwardStats />
       <AwardFilters 
         filterCategory={filterCategory}
         setFilterCategory={setFilterCategory}
