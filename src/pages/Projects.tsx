@@ -116,14 +116,6 @@ const Projects: React.FC = () => {
                           
                           {/* Project Info Overlay */}
                           <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                            <div className="flex items-center gap-3 mb-3">
-                              <span className="px-3 py-1 bg-[#1A4B8C] rounded-full text-sm font-medium">
-                                {project.category}
-                              </span>
-                              <span className="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-sm">
-                                {project.year}
-                              </span>
-                            </div>
                             <h4 className="text-2xl font-bold mb-2">{project.title}</h4>
                           </div>
                         </div>
