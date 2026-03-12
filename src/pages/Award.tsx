@@ -7,7 +7,6 @@ import AwardFilters from "@/components/AwardFilters";
 import AwardTimeline from "@/components/AwardTimeline";
 import AwardGrid from "@/components/AwardGrid";
 import AwardModal from "@/components/AwardModal";
-import AwardCommitment from "@/components/AwardCommitment";
 import CommitmentSection from "@/components/CommitmentSection";
 import AwardIntroduction from "@/components/AwardIntroduction";
 import AwardsPhotoCollage from "@/components/AwardsPhotoCollage";
@@ -120,7 +119,6 @@ const Award: React.FC = () => {
         setSelectedCertification={setSelectedCertification}
       />
       <CommitmentSection />
-      <AwardCommitment />
     </div>
   );
 };
