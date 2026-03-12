@@ -92,7 +92,7 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
             onClick={() => cert.hasLightbox !== false && setSelectedCertification(cert)}
           >
             <CardContent className="p-0">
-              <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
+              <div className="relative aspect-[9/16] overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
                 {cert.image && (
                   <img
                     src={cert.image}
