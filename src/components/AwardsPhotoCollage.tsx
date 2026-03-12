@@ -73,7 +73,7 @@ const AwardsPhotoCollage: React.FC<AwardsPhotoCollageProps> = ({ photos }) => {
           <div className="flex items-center justify-center mb-4">
             <Camera className="w-10 h-10 text-[#4ADE80] mr-3" />
             <h2 className="text-3xl md:text-4xl font-bold text-white">
-              Award Ceremony Moments
+              Moments from the SME Awards Ceremony
             </h2>
           </div>
         </motion.div>
