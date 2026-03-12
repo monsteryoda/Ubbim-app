@@ -220,72 +220,69 @@ const Projects: React.FC = () => {
                   className="flex transition-transform duration-500 ease-out"
                   style={{ transform: `translateX(-${highlightsIndex * 100}%)` }}
                 >
-                  {projects.map((project, index) => {
-                    const digitalIndex = index >= 7 ? index - 1 : index;
-                    return (
-                      <div key={project.id} className="w-full flex-shrink-0">
-                        <Card className="border-none">
-                          <CardContent className="p-0">
-                            <div className="relative aspect-[16/9] overflow-hidden">
-                              <img
-                                src={digitalIndex === 0 ? "/src/assets/projects/highlights-banner.png" : digitalIndex === 1 ? "/src/assets/projects/highlights-2.png" : digitalIndex === 2 ? "/src/assets/projects/highlights-3.png" : digitalIndex === 3 ? "/src/assets/projects/highlights-4.png" : digitalIndex === 4 ? "/src/assets/projects/highlights-5.png" : digitalIndex === 5 ? "/src/assets/projects/highlights-6.png" : digitalIndex === 6 ? "/src/assets/projects/highlights-7.png" : project.image}
-                                alt={digitalIndex === 0 ? "Financial Summary Dashboard" : digitalIndex === 1 ? "Lorry Movement Tracking" : digitalIndex === 2 ? "Aerial Analytics Services" : digitalIndex === 3 ? "3D Scanning and Facility Management" : digitalIndex === 4 ? "3D Process Animation Video for a Waste to Energy Plant in Johor" : digitalIndex === 5 ? "Virtual Reality Remodelling of a Storage Warehouse in Melaka" : digitalIndex === 6 ? "Development of Building Contractors App (BEENA) for Association of Construction Project Managers" : project.title}
-                                className="w-full h-full object-cover"
-                              />
-                              {digitalIndex === 0 && (
-                                <>
-                                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                                  <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                                    <h4 className="text-2xl font-bold mb-2">Project Management System for Shutdown Operation</h4>
-                                  </div>
-                                </>
-                              )}
-                              {digitalIndex === 1 && (
-                                <>
-                                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                                  <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                                    <h4 className="text-2xl font-bold mb-2">Aerial Analytics Services for an Earthworks Project in Port Dickson</h4>
-                                  </div>
-                                </>
-                              )}
-                              {digitalIndex === 2 && (
-                                <>
-                                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                                  <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                                    <h4 className="text-2xl font-bold mb-2">3D Scanning and Facility Management System for Large Mechanical Room</h4>
-                                  </div>
-                                </>
-                              )}
-                              {digitalIndex === 3 && (
-                                <>
-                                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                                  <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                                    <h4 className="text-2xl font-bold mb-2">3D Process Animation Video for a Waste to Energy Plant in Johor</h4>
-                                  </div>
-                                </>
-                              )}
-                              {digitalIndex === 4 && (
-                                <>
-                                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                                  <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                                    <h4 className="text-2xl font-bold mb-2">Virtual Reality Remodelling of a Storage Warehouse in Melaka</h4>
-                                  </div>
-                                </>
-                              )}
-                              {digitalIndex === 5 && (
-                                <>
-                                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                                  <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                                    <h4 className="text-2xl font-bold mb-2">Development of Building Contractors App (BEENA) for Association of Construction Project Managers</h4>
-                                  </div>
-                                </>
-                              )}
-                            </div>
-                          </CardContent>
-                        </Card>
-                      </div>
-                    );
-                  })}
+                  {projects.map((project, index) => (
+                    <div key={project.id} className="w-full flex-shrink-0">
+                      <Card className="border-none">
+                        <CardContent className="p-0">
+                          <div className="relative aspect-[16/9] overflow-hidden">
+                            <img
+                              src={index === 0 ? "/src/assets/projects/highlights-banner.png" : index === 1 ? "/src/assets/projects/highlights-2.png" : index === 2 ? "/src/assets/projects/highlights-3.png" : index === 3 ? "/src/assets/projects/highlights-4.png" : index === 4 ? "/src/assets/projects/highlights-5.png" : index === 5 ? "/src/assets/projects/highlights-6.png" : index === 6 ? "/src/assets/projects/highlights-7.png" : project.image}
+                              alt={index === 0 ? "Financial Summary Dashboard" : index === 1 ? "Lorry Movement Tracking" : index === 2 ? "Aerial Analytics Services" : index === 3 ? "3D Scanning and Facility Management" : index === 4 ? "3D Process Animation Video for a Waste to Energy Plant in Johor" : index === 5 ? "Virtual Reality Remodelling of a Storage Warehouse in Melaka" : index === 6 ? "Development of Building Contractors App (BEENA) for Association of Construction Project Managers" : project.title}
+                              className="w-full h-full object-cover"
+                            />
+                            {index === 0 && (
+                              <>
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                                  <h4 className="text-2xl font-bold mb-2">Project Management System for Shutdown Operation</h4>
+                                </div>
+                              </>
+                            )}
+                            {index === 1 && (
+                              <>
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                                  <h4 className="text-2xl font-bold mb-2">Aerial Analytics Services for an Earthworks Project in Port Dickson</h4>
+                                </div>
+                              </>
+                            )}
+                            {index === 2 && (
+                              <>
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                                  <h4 className="text-2xl font-bold mb-2">3D Scanning and Facility Management System for Large Mechanical Room</h4>
+                                </div>
+                              </>
+                            )}
+                            {index === 3 && (
+                              <>
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                                  <h4 className="text-2xl font-bold mb-2">3D Process Animation Video for a Waste to Energy Plant in Johor</h4>
+                                </div>
+                              </>
+                            )}
+                            {index === 4 && (
+                              <>
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                                  <h4 className="text-2xl font-bold mb-2">Virtual Reality Remodelling of a Storage Warehouse in Melaka</h4>
+                                </div>
+                              </>
+                            )}
+                            {index === 5 && (
+                              <>
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                                  <h4 className="text-2xl font-bold mb-2">Development of Building Contractors App (BEENA) for Association of Construction Project Managers</h4>
+                                </div>
+                              </>
+                            )}
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  ))}
                 </div>
               </div>
 
