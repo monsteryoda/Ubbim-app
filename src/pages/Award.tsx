@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Award, Trophy, Medal, Star, Shield, CheckCircle, ChevronRight, X, Sparkles, Calendar, Building2, Filter, Clock, TrendingUp, ArrowUp } from "lucide-react";
+import { Award, Trophy, Medal, Star, Shield, CheckCircle, ChevronRight, Sparkles, Calendar, Building2, Filter, Clock, TrendingUp, ArrowUp } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -453,7 +453,7 @@ const Award: React.FC = () => {
                     onClick={() => setSelectedCertification(null)}
                     className="absolute top-4 right-4 w-12 h-12 bg-white/90 rounded-full flex items-center justify-center text-gray-700 hover:bg-[#1A4B8C] hover:text-white transition-colors z-10 shadow-lg"
                   >
-                    <X className="w-6 h-6" />
+                    <Award className="w-6 h-6" />
                   </motion.button>
                   
                   <div className="p-8">
