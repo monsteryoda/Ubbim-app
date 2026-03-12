@@ -98,12 +98,12 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
             onClick={() => cert.hasLightbox !== false && setSelectedCertification(cert)}
           >
             <CardContent className="p-0">
-              <div className="relative aspect-[9/16] overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
+              <div className="relative w-full" style={{ aspectRatio: '9/16' }}>
                 {cert.image && (
                   <img
                     src={cert.image}
                     alt={cert.title}
-                    className="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 )}
               </div>
@@ -133,7 +133,8 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
                 <img
                   src={selectedCertification.image}
                   alt={selectedCertification.title}
-                  className="w-full aspect-[9/16] object-contain"
+                  className="w-full"
+                  style={{ aspectRatio: '9/16' }}
                 />
               )}
             </div>
