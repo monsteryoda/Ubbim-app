@@ -17,10 +17,11 @@ import StructuralRepair from './pages/StructuralRepair';
 import Award from './pages/Award';
 import Projects from './pages/Projects';
 import SecuritySurveillance from './pages/SecuritySurveillance';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
-    <Router future={{ v7_startTransition: true }}>
+    <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <div className="min-h-screen">
         <Routes>
           <Route path="/" element={<Index />} />
@@ -38,6 +39,7 @@ function App() {
           <Route path="/award" element={<Award />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/services/security-surveillance" element={<SecuritySurveillance />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </Router>
