@@ -39,7 +39,7 @@ const DigitalSolutions: React.FC = () => {
       link: "/services/digital-solutions/aerial-analytics"
     },
     {
-      title: "3D Scanning and Facility Management",
+      title: "Custom Software Solutions",
       description: "Comprehensive 3D scanning solution for large mechanical rooms. Create digital twins for better facility management and maintenance planning.",
       image: "/src/assets/projects/highlights-4.png",
       hasButton: true,
