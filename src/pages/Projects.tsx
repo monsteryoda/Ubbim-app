@@ -16,7 +16,6 @@ interface Project {
 
 const Projects: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [gridIndex, setGridIndex] = useState(0);
 
   const projects: Project[] = [
     {
@@ -88,20 +87,6 @@ const Projects: React.FC = () => {
   const goToSlide = (index: number) => {
     setCurrentIndex(index);
   };
-
-  const nextGridSlide = () => {
-    setGridIndex((prev) => (prev + 3) % projects.length);
-  };
-
-  const prevGridSlide = () => {
-    setGridIndex((prev) => (prev - 3 + projects.length) % projects.length);
-  };
-
-  const goToGridSlide = (index: number) => {
-    setGridIndex(index);
-  };
-
-  const visibleProjects = projects.slice(gridIndex, gridIndex + 3);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 pt-24 pb-16">
@@ -183,81 +168,41 @@ const Projects: React.FC = () => {
               ))}
             </div>
           </div>
-        </div>
 
-        {/* Projects Grid Carousel */}
-        <div className="mt-16">
-          <h2 className="text-3xl font-bold text-[#1A4B8C] text-center mb-8">
-            Project Highlights
-          </h2>
-          <div className="relative">
-            <div className="overflow-hidden">
-              <div 
-                className="flex transition-transform duration-500 ease-out"
-                style={{ transform: `translateX(-${gridIndex * (100 / 3)}%)` }}
-              >
-                {visibleProjects.map((project) => (
-                  <div key={project.id} className="w-full flex-shrink-0 px-2">
-                    <Card className="group hover:shadow-xl transition-all duration-300 border-none h-full">
-                      <CardContent className="p-0">
-                        <div className="relative aspect-[4/3] overflow-hidden">
-                          <img
-                            src={project.image}
-                            alt={project.title}
-                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-[#1A4B8C]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                          <div className="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <h3 className="text-xl font-bold">{project.title}</h3>
-                            <p className="text-sm text-gray-200">{project.description}</p>
-                          </div>
-                        </div>
-                        <div className="p-4">
-                          <div className="flex items-center justify-between">
-                            <span className="px-3 py-1 bg-[#1A4B8C]/10 text-[#1A4B8C] rounded-full text-sm font-medium">
-                              {project.category}
-                            </span>
-                            <span className="text-gray-500 text-sm">{project.year}</span>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Navigation Buttons */}
-            <Button
-              onClick={prevGridSlide}
-              variant="outline"
-              size="icon"
-              className="absolute left-0 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white text-[#1A4B8C] border-2 z-10"
-            >
-              <ChevronLeft className="w-6 h-6" />
-            </Button>
-            <Button
-              onClick={nextGridSlide}
-              variant="outline"
-              size="icon"
-              className="absolute right-0 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white text-[#1A4B8C] border-2 z-10"
-            >
-              <ChevronRight className="w-6 h-6" />
-            </Button>
-
-            {/* Dots Indicator */}
-            <div className="flex justify-center gap-2 mt-6">
-              {Array.from({ length: Math.ceil(projects.length / 3) }, (_, index) => (
-                <button
-                  key={index}
-                  onClick={() => goToGridSlide(index * 3)}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    index === Math.floor(gridIndex / 3) 
-                      ? "bg-[#1A4B8C] w-8" 
-                      : "bg-gray-300 hover:bg-gray-400"
-                  }`}
-                  aria-label={`Go to slide ${index + 1}`}
-                />
+          {/* Projects Grid */}
+          <div className="mt-16">
+            <h2 className="text-3xl font-bold text-[#1A4B8C] text-center mb-8">
+              Project Highlights
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {projects.map((project) => (
+                <Card 
+                  key={project.id}
+                  className="group hover:shadow-xl transition-all duration-300 border-none cursor-pointer"
+                >
+                  <CardContent className="p-0">
+                    <div className="relative aspect-[4/3] overflow-hidden">
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#1A4B8C]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      <div className="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h3 className="text-xl font-bold">{project.title}</h3>
+                        <p className="text-sm text-gray-200">{project.description}</p>
+                      </div>
+                    </div>
+                    <div className="p-4">
+                      <div className="flex items-center justify-between">
+                        <span className="px-3 py-1 bg-[#1A4B8C]/10 text-[#1A4B8C] rounded-full text-sm font-medium">
+                          {project.category}
+                        </span>
+                        <span className="text-gray-500 text-sm">{project.year}</span>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
               ))}
             </div>
           </div>
