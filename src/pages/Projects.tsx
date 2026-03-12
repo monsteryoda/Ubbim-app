@@ -1,214 +1,216 @@
 "use client";
 
-import React, { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import React from "react";
+import { Link } from "react-router-dom";
+import { ArrowLeft, Building2, MapPin, Calendar, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 
-interface Project {
-  id: string;
-  title: string;
-  description: string;
-  image: string;
-  category: string;
-  year: string;
-}
-
-const Projects: React.FC = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const projects: Project[] = [
+const Projects = () => {
+  const projects = [
     {
-      id: "1",
-      title: "Sky Park Residences",
-      description: "A modern residential development featuring sustainable design and premium amenities.",
-      image: "/src/assets/projects/sky-park-residences.jpg",
-      category: "Residential",
-      year: "2023"
+      title: "Ministry of Defence Project",
+      location: "Singapore",
+      year: "2023",
+      category: "Defense Infrastructure",
+      image: "https://www.ublim.com/wp-content/uploads/2024/08/b39d1bf4d7445c5c632d52bb79cefa55.jpeg",
+      description: "Comprehensive defense infrastructure development with advanced security systems and modern facilities.",
+      completed: true,
     },
     {
-      id: "2",
-      title: "UBBIM Headquarters",
-      description: "State-of-the-art corporate headquarters with green building certification.",
-      image: "/src/assets/projects/ubbim-hq.jpg",
-      category: "Commercial",
-      year: "2022"
+      title: "Metro Line Expansion",
+      location: "São Paulo, Brazil",
+      year: "2023",
+      category: "Transportation",
+      image: "https://images.unsplash.com/photo-1535732759880-bbd5c7265e3f?w=800&q=80",
+      description: "Major metro line expansion project connecting key urban areas with state-of-the-art transit systems.",
+      completed: true,
     },
     {
-      id: "3",
-      title: "Eco Industrial Park",
-      description: "Sustainable industrial complex designed for energy efficiency and minimal environmental impact.",
-      image: "/src/assets/projects/eco-industrial-park.jpg",
-      category: "Industrial",
-      year: "2023"
+      title: "Green Energy Complex",
+      location: "Rio de Janeiro, Brazil",
+      year: "2022",
+      category: "Energy",
+      image: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=800&q=80",
+      description: "Sustainable energy complex featuring solar panels, wind turbines, and energy-efficient buildings.",
+      completed: true,
     },
     {
-      id: "4",
-      title: "Urban Transit Hub",
-      description: "Modern transportation hub integrating multiple transit systems with retail and office spaces.",
-      image: "/src/assets/projects/transit-hub.jpg",
+      title: "Highway Modernization",
+      location: "Minas Gerais, Brazil",
+      year: "2022",
       category: "Infrastructure",
-      year: "2024"
+      image: "https://images.unsplash.com/photo-1545158927-2c94795a9a6c?w=800&q=80",
+      description: "Complete highway modernization including new lanes, smart traffic systems, and safety improvements.",
+      completed: true,
     },
     {
-      id: "5",
-      title: "Green Valley Resort",
-      description: "Eco-friendly resort featuring sustainable architecture and nature-integrated design.",
-      image: "/src/assets/projects/green-valley-resort.jpg",
-      category: "Hospitality",
-      year: "2023"
-    },
-    {
-      id: "6",
-      title: "Smart City Plaza",
-      description: "Integrated smart city development with IoT-enabled infrastructure and sustainable systems.",
-      image: "/src/assets/projects/smart-city-plaza.jpg",
+      title: "Commercial Tower",
+      location: "Kuala Lumpur, Malaysia",
+      year: "2023",
       category: "Commercial",
-      year: "2024"
-    }
+      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+      description: "Modern commercial tower with mixed-use facilities, featuring offices, retail, and entertainment spaces.",
+      completed: true,
+    },
+    {
+      title: "Residential Development",
+      location: "Seremban, Malaysia",
+      year: "2024",
+      category: "Residential",
+      image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
+      description: "Luxury residential development with modern amenities, green spaces, and sustainable design features.",
+      completed: false,
+    },
   ];
 
-  const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % projects.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + projects.length) % projects.length);
-  };
-
-  const goToSlide = (index: number) => {
-    setCurrentIndex(index);
-  };
+  const stats = [
+    { value: "500+", label: "Projects Completed" },
+    { value: "15", label: "Countries Served" },
+    { value: "20+", label: "Years Experience" },
+    { value: "98%", label: "Client Satisfaction" },
+  ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 pt-24 pb-16">
-      <div className="container mx-auto px-4">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#1A4B8C] mb-4">
-            Our Projects
-          </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Explore our portfolio of innovative construction projects that showcase our commitment to quality, sustainability, and excellence.
-          </p>
+    <div className="min-h-screen">
+      {/* Navigation Bar */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#1A4B8C] shadow-lg">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between h-16">
+            <Link to="/" className="flex items-center space-x-2">
+              <img 
+                src="/ubbim-logo.png" 
+                alt="UBBIM Logo" 
+                className="h-10 w-auto"
+              />
+            </Link>
+            <div className="hidden md:flex items-center space-x-8">
+              <Link to="/" className="text-white hover:text-[#4ADE80] transition-colors font-medium">
+                Home
+              </Link>
+              <Link to="/services" className="text-white hover:text-[#4ADE80] transition-colors font-medium">
+                Services
+              </Link>
+              <Link to="/projects" className="text-[#4ADE80] font-medium">
+                Projects
+              </Link>
+              <Link to="/about" className="text-white hover:text-[#4ADE80] transition-colors font-medium">
+                About
+              </Link>
+              <Link to="/contact" className="text-white hover:text-[#4ADE80] transition-colors font-medium">
+                Contact
+              </Link>
+            </div>
+          </div>
         </div>
+      </nav>
 
-        {/* Carousel */}
-        <div className="max-w-6xl mx-auto">
-          <div className="relative">
-            {/* Carousel Container */}
-            <div className="overflow-hidden rounded-2xl shadow-2xl">
-              <div 
-                className="flex transition-transform duration-500 ease-out"
-                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-              >
-                {projects.map((project) => (
-                  <div key={project.id} className="w-full flex-shrink-0">
-                    <Card className="border-none">
-                      <CardContent className="p-0">
-                        <div className="relative aspect-[16/9] overflow-hidden">
-                          <img
-                            src={project.image}
-                            alt={project.title}
-                            className="w-full h-full object-cover"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                          
-                          {/* Project Info Overlay */}
-                          <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                            <div className="flex items-center gap-3 mb-3">
-                              <span className="px-3 py-1 bg-[#1A4B8C] rounded-full text-sm font-medium">
-                                {project.category}
-                              </span>
-                              <span className="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-sm">
-                                {project.year}
-                              </span>
-                            </div>
-                            <h3 className="text-3xl font-bold mb-2">{project.title}</h3>
-                            <p className="text-gray-200 text-lg">{project.description}</p>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </div>
-                ))}
+      {/* Hero Section */}
+      <section className="relative bg-[#1A4B8C] text-white py-24 lg:py-32 overflow-hidden pt-20">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80')] bg-cover bg-center" />
+        </div>
+        <div className="container mx-auto px-4 relative">
+          <div className="max-w-3xl">
+            <Link to="/" className="inline-flex items-center text-white/80 hover:text-white mb-6 transition-colors">
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              Back to Home
+            </Link>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              OUR PROJECTS
+            </h1>
+            <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
+              Showcasing excellence in construction and engineering across the globe
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {stats.map((stat, index) => (
+              <div key={index} className="text-center">
+                <div className="text-4xl md:text-5xl font-bold text-[#1A4B8C] mb-2">
+                  {stat.value}
+                </div>
+                <div className="text-gray-600">{stat.label}</div>
               </div>
-            </div>
-
-            {/* Navigation Buttons */}
-            <Button
-              onClick={prevSlide}
-              variant="outline"
-              size="icon"
-              className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white text-[#1A4B8C] border-2"
-            >
-              <ChevronLeft className="w-6 h-6" />
-            </Button>
-            <Button
-              onClick={nextSlide}
-              variant="outline"
-              size="icon"
-              className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white text-[#1A4B8C] border-2"
-            >
-              <ChevronRight className="w-6 h-6" />
-            </Button>
-
-            {/* Dots Indicator */}
-            <div className="flex justify-center gap-2 mt-6">
-              {projects.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => goToSlide(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    index === currentIndex 
-                      ? "bg-[#1A4B8C] w-8" 
-                      : "bg-gray-300 hover:bg-gray-400"
-                  }`}
-                  aria-label={`Go to slide ${index + 1}`}
-                />
-              ))}
-            </div>
-          </div>
-
-          {/* Projects Grid */}
-          <div className="mt-16">
-            <h2 className="text-3xl font-bold text-[#1A4B8C] text-center mb-8">
-              Project Highlights
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {projects.map((project) => (
-                <Card 
-                  key={project.id}
-                  className="group hover:shadow-xl transition-all duration-300 border-none cursor-pointer"
-                >
-                  <CardContent className="p-0">
-                    <div className="relative aspect-[4/3] overflow-hidden">
-                      <img
-                        src={project.image}
-                        alt={project.title}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#1A4B8C]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                      <div className="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <h3 className="text-xl font-bold">{project.title}</h3>
-                        <p className="text-sm text-gray-200">{project.description}</p>
-                      </div>
-                    </div>
-                    <div className="p-4">
-                      <div className="flex items-center justify-between">
-                        <span className="px-3 py-1 bg-[#1A4B8C]/10 text-[#1A4B8C] rounded-full text-sm font-medium">
-                          {project.category}
-                        </span>
-                        <span className="text-gray-500 text-sm">{project.year}</span>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+            ))}
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* Projects Grid */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
+              FEATURED PROJECTS
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Explore our portfolio of successful projects delivered with precision and excellence.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {projects.map((project, index) => (
+              <Card key={index} className="border-none shadow-lg overflow-hidden group hover:shadow-xl transition-shadow duration-300">
+                <div className="relative h-64 overflow-hidden">
+                  <img 
+                    src={project.image} 
+                    alt={project.title} 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute top-4 right-4">
+                    <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
+                      project.completed 
+                        ? "bg-[#4ADE80] text-[#1A4B8C]" 
+                        : "bg-[#1A4B8C] text-white"
+                    }`}>
+                      {project.completed ? "Completed" : "In Progress"}
+                    </span>
+                  </div>
+                </div>
+                <CardContent className="p-6">
+                  <div className="flex items-center text-sm text-gray-500 mb-2">
+                    <MapPin className="w-4 h-4 mr-1" />
+                    {project.location}
+                  </div>
+                  <div className="flex items-center text-sm text-gray-500 mb-3">
+                    <Calendar className="w-4 h-4 mr-1" />
+                    {project.year}
+                  </div>
+                  <span className="inline-block px-3 py-1 bg-[#1A4B8C]/10 text-[#1A4B8C] text-xs font-semibold rounded-full mb-3">
+                    {project.category}
+                  </span>
+                  <h3 className="text-xl font-bold text-[#1A4B8C] mb-2">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    {project.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-[#1A4B8C]">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            Want to See More?
+          </h2>
+          <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+            Contact us to learn about our complete portfolio and how we can help with your project.
+          </p>
+          <Button className="bg-[#4ADE80] hover:bg-[#3dd673] text-[#1A4B8C] px-8 py-6 text-lg font-semibold">
+            Contact Us
+          </Button>
+        </div>
+      </section>
     </div>
   );
 };

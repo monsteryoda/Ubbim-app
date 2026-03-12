@@ -1,27 +1,39 @@
 "use client";
 
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Index from "./pages/Index";
-import Services from "./pages/Services";
-import Projects from "./pages/Projects";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Award from "./pages/Award";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Index from './pages/Index';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Services from './pages/Services';
+import DesignBuildServices from './pages/DesignBuildServices';
+import DigitalSolutions from './pages/DigitalSolutions';
+import AerialAnalytics from './pages/AerialAnalytics';
+import ThreeDScanning from './pages/ThreeDScanning';
+import VRCoordination from './pages/VRCoordination';
+import CustomSoftware from './pages/CustomSoftware';
+import FirefightingServices from './pages/FirefightingServices';
+import StructuralRepair from './pages/StructuralRepair';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <Router>
       <div className="min-h-screen">
-        <Navbar />
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/projects" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/award" element={<Award />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/services/design-build" element={<DesignBuildServices />} />
+          <Route path="/services/digital-solutions" element={<DigitalSolutions />} />
+          <Route path="/aerial-analytics" element={<AerialAnalytics />} />
+          <Route path="/3d-scanning" element={<ThreeDScanning />} />
+          <Route path="/vr-coordination" element={<VRCoordination />} />
+          <Route path="/custom-software" element={<CustomSoftware />} />
+          <Route path="/firefighting" element={<FirefightingServices />} />
+          <Route path="/services/structural-repair" element={<StructuralRepair />} />
         </Routes>
       </div>
     </Router>
