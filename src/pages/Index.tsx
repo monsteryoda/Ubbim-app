@@ -302,18 +302,6 @@ const Index = () => {
             </h2>
           </div>
           <LogoCarousel logos={clientLogos} />
-          
-          {/* Certifications Link */}
-          <div className="mt-12 text-center">
-            <Link to="/licenses-certifications">
-              <Button 
-                size="lg" 
-                className="bg-[#4ADE80] text-[#1A4B8C] hover:bg-[#22c55e] font-semibold"
-              >
-                View Our Certifications
-              </Button>
-            </Link>
-          </div>
         </div>
       </section>
 
