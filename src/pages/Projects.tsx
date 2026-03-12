@@ -160,7 +160,7 @@ const Projects: React.FC = () => {
     },
     {
       title: "AI-Powered Safety Monitoring System for Construction Sites",
-      image: "/src/assets/projects/highlights-9.png"
+      image: "/src/assets/projects/highlights-8.png"
     }
   ];
 
