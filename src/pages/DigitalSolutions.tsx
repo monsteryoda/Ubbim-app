@@ -19,7 +19,7 @@ const DigitalSolutions: React.FC = () => {
   const solutions: DigitalSolution[] = [
     {
       title: "Aerial Analytics Solutions",
-      description: "Advanced aerial data analytics for earthworks projects. Utilize drone technology and AI-powered analysis to optimize site planning and monitoring.",
+      description: "Leverage drone technology for precise aerial surveys, mapping, and data analysis.",
       image: "/src/assets/projects/highlights-banner.png",
       hasButton: true,
       link: "/services/digital-solutions/e-ptw"
@@ -39,7 +39,7 @@ const DigitalSolutions: React.FC = () => {
       link: "/services/digital-solutions/aerial-analytics"
     },
     {
-      title: "3D Scanning and Facility Management",
+      title: "3D Scanning Solutions",
       description: "Comprehensive 3D scanning solution for large mechanical rooms. Create digital twins for better facility management and maintenance planning.",
       image: "/src/assets/projects/highlights-4.png",
       hasButton: true,
