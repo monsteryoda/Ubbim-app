@@ -4,7 +4,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Building2, Leaf, Award, HardHat, TrendingUp, Users, Phone, FileText, Shield, Cpu, MapPin, Mail, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { ArrowRight, Building2, Leaf, Award, HardHat, TrendingUp, Users, Phone, FileText, Shield, Cpu, MapPin, Mail, Facebook, Twitter, Linkedin, Instagram, ArrowLeft, CheckCircle } from "lucide-react";
 import LogoCarousel from "@/components/LogoCarousel";
 import CertificationsGrid from "@/components/CertificationsGrid";
 import Navbar from "@/components/Navbar";
@@ -56,91 +56,57 @@ const Index = () => {
   const certifications = [
     {
       id: "1",
-      title: "CIDB SCORE 3 Star Rating",
-      organization: "CIDB Malaysia",
-      year: "2022",
-      image: "/src/assets/certification-2022.png",
-      description: "Achieved 3-star rating under the CIDB SCORE evaluation system, recognizing excellent management and technical capabilities, compliance to best practices, and outstanding project management standards.",
+      title: "ISO 9001:2015",
+      subtitle: "Quality Management System",
+      description: "Provision of General Construction, Civil and Structural Engineering Services",
+      image: "/src/assets/certifications/iso-9001-2015.png",
+      icon: Shield,
+      color: "blue"
     },
     {
       id: "2",
-      title: "Sustainability Excellence",
-      organization: "Green Business Council",
-      year: "2023",
-      image: "https://images.unsplash.com/photo-1560421683-6856ea585c78?w=800&q=80",
-      description: "Awarded for implementing sustainable practices in construction projects, reducing carbon footprint by 40% across operations.",
+      title: "ISO 14001:2015",
+      subtitle: "Environmental Management System",
+      description: "Provision of General Construction, Civil and Structural Engineering Services",
+      image: "/src/assets/certifications/iso-14001-2015.png",
+      icon: Leaf,
+      color: "green"
     },
     {
       id: "3",
-      title: "Safety Leadership Award",
-      organization: "National Safety Council",
-      year: "2022",
-      image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=80",
-      description: "Honored for maintaining the highest safety standards with zero lost-time incidents across all project sites for three consecutive years.",
+      title: "ISO 45001:2018",
+      subtitle: "Occupational Health and Safety",
+      description: "Provision of General Construction, Civil and Structural Engineering Services",
+      image: "/src/assets/certifications/iso-45001-2018.png",
+      icon: Shield,
+      color: "orange"
     },
     {
       id: "4",
-      title: "Innovation in Construction",
-      organization: "International Building Tech Awards",
-      year: "2023",
-      image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80",
-      description: "Recognized for pioneering the use of BIM and AI-driven project management tools in large-scale infrastructure projects.",
+      title: "ISO 14064-1:2018",
+      subtitle: "Greenhouse Gases Part 1",
+      description: "Organization Level for Quantification and Reporting Greenhouse Gas Emission and Removals",
+      image: "/src/assets/certifications/iso-14064-1.png",
+      icon: Leaf,
+      color: "teal"
     },
     {
       id: "5",
-      title: "Excellence in Project Delivery",
-      organization: "Project Management Institute",
-      year: "2022",
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
-      description: "Awarded for delivering complex projects on time and within budget, exceeding client expectations across multiple sectors.",
+      title: "CIDB G7 Grade",
+      subtitle: "3 Star Rating",
+      description: "Good management and technical capabilities, compliance to best practices and good project management",
+      image: "/src/assets/certifications/cidb-g7.png",
+      icon: Award,
+      color: "amber"
     },
     {
       id: "6",
-      title: "Environmental Stewardship",
-      organization: "Environmental Protection Agency",
-      year: "2023",
-      image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&q=80",
-      description: "Recognized for implementing eco-friendly construction practices and achieving LEED certification on multiple projects.",
-    },
-    {
-      id: "7",
-      title: "ISO 9001:2015",
-      organization: "ACM-CCAS Limited",
-      year: "2017",
-      image: "/src/assets/certifications/iso-9001.png",
-      description: "Quality Management System Certification"
-    },
-    {
-      id: "8",
-      title: "ISO 14001:2015",
-      organization: "ACM-CCAS Limited",
-      year: "2019",
-      image: "/src/assets/certifications/14001.png",
-      description: "Environmental Management System Certification for general construction, civil and structural engineering services"
-    },
-    {
-      id: "9",
-      title: "ISO 45001:2018",
-      organization: "ACM-CCAS Limited",
-      year: "2019",
-      image: "/src/assets/certifications/iso-45001-2018.png",
-      description: "Occupational Health and Safety Management System Certification for provision of general construction, civil and structural engineering services"
-    },
-    {
-      id: "10",
-      title: "ISO 14064-1:2018",
-      organization: "Institute of Quality Malaysia",
-      year: "2022",
-      image: "/src/assets/certifications/14064.png",
-      description: "Greenhouse Gases Part 1 - Organization Level for Quantification and Reporting Greenhouse Gas Emission and Removals"
-    },
-    {
-      id: "11",
       title: "Malaysia Book of Records",
-      organization: "Malaysia Book of Records",
-      year: "2022",
+      subtitle: "First Construction Company Certified",
+      description: "First construction company certified by ISO 14064-1:2018 Greenhouse Part 1",
       image: "/src/assets/certifications/malaysia-book.png",
-      description: "First construction company certified by ISO 14064-1:2018 Greenhouse Part 1 for provision of construction in civil, structural engineering and E-Construction Project Management Service"
+      icon: Award,
+      color: "purple"
     }
   ];
 
@@ -302,15 +268,65 @@ const Index = () => {
             </h2>
           </div>
           <LogoCarousel logos={clientLogos} />
-          
-          {/* Certifications Link */}
-          <div className="mt-12 text-center">
+        </div>
+      </section>
+
+      {/* Certifications Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <Award className="w-16 h-16 mx-auto text-[#1A4B8C] mb-4" />
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
+              Our Commitment to Excellence
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Recognized by international bodies for our commitment to excellence and continuous improvement
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-12">
+            {certifications.map((cert) => (
+              <Card 
+                key={cert.id} 
+                className="group hover:shadow-2xl transition-all duration-300 border-none overflow-hidden"
+              >
+                <CardContent className="p-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <div className={`w-12 h-12 rounded-xl bg-${cert.color}-100 flex items-center justify-center`}>
+                      <cert.icon className={`w-6 h-6 text-${cert.color}-600`} />
+                    </div>
+                    <CheckCircle className="w-5 h-5 text-[#4ADE80]" />
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-[#1A4B8C] mb-2">
+                    {cert.title}
+                  </h3>
+                  <p className="text-sm text-gray-500 mb-3">
+                    {cert.subtitle}
+                  </p>
+                  <p className="text-gray-600 text-sm mb-4">
+                    {cert.description}
+                  </p>
+                  
+                  <div className="relative aspect-[3/4] rounded-lg overflow-hidden bg-gray-100">
+                    <img
+                      src={cert.image}
+                      alt={cert.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          <div className="text-center">
             <Link to="/licenses-certifications">
               <Button 
                 size="lg" 
-                className="bg-[#4ADE80] text-[#1A4B8C] hover:bg-[#22c55e] font-semibold"
+                className="bg-[#1A4B8C] hover:bg-[#0d2a5c] text-white font-semibold"
               >
-                View Our Certifications
+                View All Certifications <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </Link>
           </div>
