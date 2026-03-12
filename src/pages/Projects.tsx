@@ -234,8 +234,8 @@ const Projects: React.FC = () => {
                         <CardContent className="p-0">
                           <div className="relative aspect-[16/9] overflow-hidden">
                             <img
-                              src={index === 0 ? "/src/assets/projects/highlights-banner.png" : index === 1 ? "/src/assets/projects/highlights-2.png" : project.image}
-                              alt={index === 0 ? "Digital Permit to Work System" : index === 1 ? "Financial Summary Dashboard" : project.title}
+                              src={index === 0 ? "/src/assets/projects/highlights-banner.png" : index === 1 ? "/src/assets/projects/highlights-2.png" : index === 2 ? "/src/assets/projects/highlights-3.png" : project.image}
+                              alt={index === 0 ? "Digital Permit to Work System" : index === 1 ? "Financial Summary Dashboard" : index === 2 ? "Lorry Movement Tracking" : project.title}
                               className="w-full h-full object-cover"
                             />
                             {index === 0 && (
@@ -251,6 +251,14 @@ const Projects: React.FC = () => {
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                                 <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                                   <h4 className="text-2xl font-bold mb-2">Project Management System for Shutdown Operation</h4>
+                                </div>
+                              </>
+                            )}
+                            {index === 2 && (
+                              <>
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                                  <h4 className="text-2xl font-bold mb-2">Lorry Movement Tracking System</h4>
                                 </div>
                               </>
                             )}
