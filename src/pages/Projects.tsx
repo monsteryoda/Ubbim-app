@@ -266,7 +266,7 @@ const Projects: React.FC = () => {
                               <>
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                                 <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                                  <h4 className="text-2xl font-bold mb-2">3D Scanning and Facility Management System for Large Mechanical Room</h4>
+                                  <h4 className="text-2xl font-bold mb-2">Digital Twin Technology for Industrial Facilities</h4>
                                 </div>
                               </>
                             )}
