@@ -106,7 +106,6 @@ const Award: React.FC = () => {
         setShowTimeline={setShowTimeline}
       />
       <AwardIntroduction />
-      <AwardsPhotoCollage />
       <AwardTimeline 
         awards={sortedAwards}
         selectedCertification={selectedCertification}
@@ -119,6 +118,7 @@ const Award: React.FC = () => {
         setSelectedCertification={setSelectedCertification}
       />
       <CommitmentSection />
+      <AwardsPhotoCollage />
     </div>
   );
 };
