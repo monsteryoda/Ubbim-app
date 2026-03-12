@@ -9,7 +9,7 @@ import iso14001 from "@/assets/certifications/iso-14001.png";
 import iso45001 from "@/assets/certifications/iso-45001-2018.png";
 import iso14064 from "@/assets/certifications/14064.png";
 import cenviro from "@/assets/certifications/cenviro.png";
-import certification2022 from "@/assets/certification-2022.png";
+import malaysiaBook from "@/assets/certifications/malaysia-book.png";
 
 interface Certification {
   id: string;
@@ -77,11 +77,11 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
     },
     {
       id: "6",
-      title: "Certification 2022",
-      organization: "Various",
+      title: "Malaysia Book of Records",
+      organization: "Malaysia Book of Records",
       year: "2022",
-      image: certification2022,
-      description: "Additional certification achievements",
+      image: malaysiaBook,
+      description: "First construction company certified by ISO 14064-1:2018 Greenhouse Part 1",
       hasLightbox: true
     }
   ];
