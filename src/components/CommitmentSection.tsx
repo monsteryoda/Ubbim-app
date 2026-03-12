@@ -37,7 +37,7 @@ const CommitmentSection: React.FC = () => {
           <div className="relative mb-12">
             <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#4ADE80] rounded-full" />
             <blockquote className="pl-6 italic text-xl md:text-2xl text-gray-700 leading-relaxed">
-              "At UBBIM Resources, we believe that the future of construction lies in the harmonious integration of sustainability, innovation, and technology. Our commitment extends beyond building structures — we build legacies that stand the test of time."
+              "This recognition reinforces our mission to build a smarter, more sustainable future — one project at a time."
             </blockquote>
             <div className="mt-4 pl-6">
               <cite className="not-italic text-sm font-semibold text-[#1A4B8C]">
