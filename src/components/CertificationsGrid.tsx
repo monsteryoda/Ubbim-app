@@ -8,8 +8,8 @@ import iso9001 from "@/assets/certifications/iso-9001.png";
 import iso14001 from "@/assets/certifications/iso-14001.png";
 import iso45001 from "@/assets/certifications/iso-45001-2018.png";
 import iso14064 from "@/assets/certifications/14064.png";
-import g7 from "@/assets/certifications/g7.png";
-import malaysiaBook from "@/assets/certifications/malaysia-book.png";
+import cenviro from "@/assets/certifications/cenviro.png";
+import certification2022 from "@/assets/certification-2022.png";
 
 interface Certification {
   id: string;
@@ -68,20 +68,20 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
     },
     {
       id: "5",
-      title: "CIDB G7",
-      organization: "CIDB Malaysia",
+      title: "Cenviro Certification",
+      organization: "Cenviro",
       year: "2022",
-      image: g7,
-      description: "General Construction Class 7 Rating",
+      image: cenviro,
+      description: "Environmental Management Certification",
       hasLightbox: true
     },
     {
       id: "6",
-      title: "Malaysia Book of Records",
-      organization: "Malaysia Book of Records",
+      title: "Certification 2022",
+      organization: "Various",
       year: "2022",
-      image: malaysiaBook,
-      description: "First construction company certified by ISO 14064-1:2018 Greenhouse Part 1",
+      image: certification2022,
+      description: "Additional certification achievements",
       hasLightbox: true
     }
   ];
