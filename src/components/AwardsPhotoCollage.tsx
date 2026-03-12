@@ -51,9 +51,9 @@ const defaultPhotos: PhotoItem[] = [
   },
   {
     id: "6",
-    src: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800&q=80",
-    alt: "Team celebration",
-    caption: "Celebrating our achievements"
+    src: "/src/assets/award-ceremony-6.jpeg",
+    alt: "UBBIM awards and certificates display",
+    caption: "SME Awards Recognition - UBBIM Resources Sdn Bhd"
   }
 ];
 
