@@ -238,11 +238,6 @@ const Projects: React.FC = () => {
                             alt={project.title}
                             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                           />
-                          <div className="absolute inset-0 bg-gradient-to-t from-[#1A4B8C]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                          <div className="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <h3 className="text-xl font-bold">{project.title}</h3>
-                            <p className="text-sm text-gray-200">{project.description}</p>
-                          </div>
                         </div>
                         <div className="p-4">
                           <div className="flex items-center justify-between">
