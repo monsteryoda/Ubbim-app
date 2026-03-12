@@ -65,14 +65,6 @@ const Projects: React.FC = () => {
       image: "/src/assets/projects/smart-city-plaza.jpg",
       category: "Infrastructure",
       year: "2024"
-    },
-    {
-      id: "7",
-      title: "Environmental Remediation and Soil Treatment Facility for Industrial Zone Development",
-      description: "Comprehensive environmental cleanup and treatment facility for contaminated industrial land.",
-      image: "/src/assets/projects/environmental-facility.jpg",
-      category: "Environmental",
-      year: "2024"
     }
   ];
 
