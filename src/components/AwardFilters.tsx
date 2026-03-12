@@ -57,7 +57,7 @@ const AwardFilters: React.FC<AwardFiltersProps> = ({
               />
             </div>
             <div className="p-8">
-              <h4 className="text-xl font-bold text-gray-800 mb-4">Pioneering Digital Construction Technology</h4>
+              <h4 className="text-xl font-bold text-gray-800 mb-4">Platinum Award for ICT/Digitalization</h4>
               <p className="text-gray-600 leading-relaxed">
                 Awarded for groundbreaking digital transformation in construction using cutting-edge 
                 technologies. Our implementation of AI-powered project management, Building Information 
