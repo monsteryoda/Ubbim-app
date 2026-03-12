@@ -20,9 +20,9 @@ interface AwardsPhotoCollageProps {
 const defaultPhotos: PhotoItem[] = [
   {
     id: "1",
-    src: "https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80",
-    alt: "Executive receiving award on stage",
-    caption: "CEO accepting the Platinum Award",
+    src: "/src/assets/award-ceremony-1.jpeg",
+    alt: "UBBIM team receiving SME Environmental Award",
+    caption: "SME Environmental, Social, and Governance Adoption Award 2025",
     span: "2x1"
   },
   {
