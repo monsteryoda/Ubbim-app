@@ -90,7 +90,7 @@ const DigitalSolutions: React.FC = () => {
               At UBBIM, we leverage cutting-edge digital technologies to enhance project planning, execution, and management. From 3D scanning to virtual reality, our solutions drive efficiency and innovation.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {solutions.map((solution, index) => (
               <Card key={index} className="border-none shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300">
                 <div className="h-48 overflow-hidden relative">
