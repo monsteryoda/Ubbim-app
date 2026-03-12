@@ -5,7 +5,6 @@ import { ChevronLeft, ChevronRight, MapPin, Phone, Mail, Facebook, Twitter, Inst
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link as RouterLink } from "react-router-dom";
-import Navbar from "@/components/Navbar";
 
 interface Project {
   id: string;
@@ -167,121 +166,92 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen">
-      {/* Navigation Bar */}
-      <Navbar />
-
-      {/* Header Section */}
-      <section className="relative bg-[#1A4B8C] text-white py-24 lg:py-32 overflow-hidden pt-20">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80')] bg-cover bg-center" />
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 pt-24 pb-16">
+      <div className="container mx-auto px-4">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#1A4B8C] mb-4">
+            Built Environment Projects
+          </h1>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Explore Our Success Stories in the Built Environment and Digital Innovation
+          </p>
         </div>
-        <div className="container mx-auto px-4 relative">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              PROJECTS
-            </h1>
-            <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
-              Explore Our Success Stories in the Built Environment and Digital Innovation
-            </p>
-          </div>
-        </div>
-      </section>
 
-      {/* Main Carousel */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
-              Built Environment Projects
-            </h2>
-            <p className="text-gray-600 max-w-3xl mx-auto">
-              Discover the diverse range of projects we've delivered across residential, commercial, industrial, and infrastructure sectors.
-            </p>
-          </div>
-
-          <div className="max-w-6xl mx-auto">
-            <div className="relative">
-              {/* Carousel Container */}
-              <div className="overflow-hidden rounded-2xl shadow-2xl">
-                <div 
-                  className="flex transition-transform duration-500 ease-out"
-                  style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-                >
-                  {projects.map((project) => (
-                    <div key={project.id} className="w-full flex-shrink-0">
-                      <Card className="border-none">
-                        <CardContent className="p-0">
-                          <div className="relative aspect-[16/9] overflow-hidden">
-                            <img
-                              src={project.image}
-                              alt={project.title}
-                              className="w-full h-full object-cover"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                            
-                            {/* Project Info Overlay */}
-                            <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                              <h4 className="text-2xl font-bold mb-2">{project.title}</h4>
-                            </div>
+        {/* Main Carousel */}
+        <div className="max-w-6xl mx-auto">
+          <div className="relative">
+            {/* Carousel Container */}
+            <div className="overflow-hidden rounded-2xl shadow-2xl">
+              <div 
+                className="flex transition-transform duration-500 ease-out"
+                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+              >
+                {projects.map((project) => (
+                  <div key={project.id} className="w-full flex-shrink-0">
+                    <Card className="border-none">
+                      <CardContent className="p-0">
+                        <div className="relative aspect-[16/9] overflow-hidden">
+                          <img
+                            src={project.image}
+                            alt={project.title}
+                            className="w-full h-full object-cover"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                          
+                          {/* Project Info Overlay */}
+                          <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                            <h4 className="text-2xl font-bold mb-2">{project.title}</h4>
                           </div>
-                        </CardContent>
-                      </Card>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Navigation Buttons */}
-              <Button
-                onClick={prevSlide}
-                variant="outline"
-                size="icon"
-                className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white text-[#1A4B8C] border-2"
-              >
-                <ChevronLeft className="w-6 h-6" />
-              </Button>
-              <Button
-                onClick={nextSlide}
-                variant="outline"
-                size="icon"
-                className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white text-[#1A4B8C] border-2"
-              >
-                <ChevronRight className="w-6 h-6" />
-              </Button>
-
-              {/* Dots Indicator */}
-              <div className="flex justify-center gap-2 mt-6">
-                {projects.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => goToSlide(index)}
-                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                      index === currentIndex 
-                        ? "bg-[#1A4B8C] w-8" 
-                        : "bg-gray-300 hover:bg-gray-400"
-                    }`}
-                    aria-label={`Go to slide ${index + 1}`}
-                  />
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </div>
                 ))}
               </div>
             </div>
+
+            {/* Navigation Buttons */}
+            <Button
+              onClick={prevSlide}
+              variant="outline"
+              size="icon"
+              className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white text-[#1A4B8C] border-2"
+            >
+              <ChevronLeft className="w-6 h-6" />
+            </Button>
+            <Button
+              onClick={nextSlide}
+              variant="outline"
+              size="icon"
+              className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white text-[#1A4B8C] border-2"
+            >
+              <ChevronRight className="w-6 h-6" />
+            </Button>
+
+            {/* Dots Indicator */}
+            <div className="flex justify-center gap-2 mt-6">
+              {projects.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => goToSlide(index)}
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                    index === currentIndex 
+                      ? "bg-[#1A4B8C] w-8" 
+                      : "bg-gray-300 hover:bg-gray-400"
+                  }`}
+                  aria-label={`Go to slide ${index + 1}`}
+                />
+              ))}
+            </div>
           </div>
         </div>
-      </section>
 
-      {/* Digital Solutions Carousel */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
-              Digital Solutions
-            </h2>
-            <p className="text-gray-600 max-w-3xl mx-auto">
-              Innovative digital solutions that transform how projects are planned, executed, and managed.
-            </p>
-          </div>
-
+        {/* Digital Solutions Carousel */}
+        <div className="mt-16">
+          <h2 className="text-3xl font-bold text-[#1A4B8C] text-center mb-8">
+            Digital Solutions
+          </h2>
           <div className="max-w-6xl mx-auto">
             <div className="relative">
               {/* Carousel Container */}
@@ -348,141 +318,141 @@ const Projects: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
 
-      {/* Footer */}
-      <footer className="bg-[#1A4B8C] text-white">
-        <div className="container mx-auto px-4 py-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-            {/* Company Info */}
-            <div>
-              <div className="flex items-center space-x-2 mb-6">
-                <img 
-                  src="/ubbim-logo.png" 
-                  alt="UBBIM Logo" 
-                  className="h-12 w-auto"
-                />
+        {/* Footer */}
+        <footer className="bg-[#1A4B8C] text-white mt-16">
+          <div className="container mx-auto px-4 py-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+              {/* Company Info */}
+              <div>
+                <div className="flex items-center space-x-2 mb-6">
+                  <img 
+                    src="/ubbim-logo.png" 
+                    alt="UBBIM Logo" 
+                    className="h-12 w-auto"
+                  />
+                </div>
+                <p className="text-gray-300 leading-relaxed mb-6">
+                  UBBIM delivers comprehensive construction solutions with a focus on quality, innovation, and client satisfaction.
+                </p>
+                <div className="flex space-x-4">
+                  <a href="#" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                    <Facebook className="w-5 h-5" />
+                  </a>
+                  <a href="#" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                    <Twitter className="w-5 h-5" />
+                  </a>
+                  <a href="#" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                    <Instagram className="w-5 h-5" />
+                  </a>
+                  <a href="#" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                    <Linkedin className="w-5 h-5" />
+                  </a>
+                </div>
               </div>
-              <p className="text-gray-300 leading-relaxed mb-6">
-                UBBIM delivers comprehensive construction solutions with a focus on quality, innovation, and client satisfaction.
-              </p>
-              <div className="flex space-x-4">
-                <a href="#" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                  <Facebook className="w-5 h-5" />
-                </a>
-                <a href="#" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                  <Twitter className="w-5 h-5" />
-                </a>
-                <a href="#" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                  <Instagram className="w-5 h-5" />
-                </a>
-                <a href="#" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                  <Linkedin className="w-5 h-5" />
-                </a>
+
+              {/* Quick Links */}
+              <div>
+                <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
+                <ul className="space-y-3">
+                  <li>
+                    <RouterLink to="/" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                      Home
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink to="/services" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                      Services
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink to="/projects" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                      Projects
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink to="/about" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                      About Us
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink to="/contact" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                      Contact
+                    </RouterLink>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Services */}
+              <div>
+                <h3 className="text-lg font-semibold mb-6">Our Services</h3>
+                <ul className="space-y-3">
+                  <li>
+                    <RouterLink to="/services/design-build" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                      Design & Build
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink to="/firefighting" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                      Firefighting Services
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink to="/services/structural-repair" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                      Structural Repair
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink to="/services/security-surveillance" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
+                      Security & Surveillance
+                    </RouterLink>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Contact Info */}
+              <div>
+                <h3 className="text-lg font-semibold mb-6">Contact Us</h3>
+                <ul className="space-y-4">
+                  <li className="flex items-start space-x-3">
+                    <MapPin className="w-5 h-5 text-[#4ADE80] mt-0.5" />
+                    <span className="text-gray-300">
+                      No. 219, Jalan S2 B10,<br />
+                      Seremban 2, 70300 Seremban,<br />
+                      Negeri Sembilan
+                    </span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <Phone className="w-5 h-5 text-[#4ADE80]" />
+                    <span className="text-gray-300">+606-6016007</span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <Mail className="w-5 h-5 text-[#4ADE80]" />
+                    <span className="text-gray-300">admin@ubbim.com</span>
+                  </li>
+                </ul>
               </div>
             </div>
 
-            {/* Quick Links */}
-            <div>
-              <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
-              <ul className="space-y-3">
-                <li>
-                  <RouterLink to="/" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                    Home
-                  </RouterLink>
-                </li>
-                <li>
-                  <RouterLink to="/services" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                    Services
-                  </RouterLink>
-                </li>
-                <li>
-                  <RouterLink to="/projects" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                    Projects
-                  </RouterLink>
-                </li>
-                <li>
-                  <RouterLink to="/about" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                    About Us
-                  </RouterLink>
-                </li>
-                <li>
-                  <RouterLink to="/contact" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                    Contact
-                  </RouterLink>
-                </li>
-              </ul>
-            </div>
-
-            {/* Services */}
-            <div>
-              <h3 className="text-lg font-semibold mb-6">Our Services</h3>
-              <ul className="space-y-3">
-                <li>
-                  <RouterLink to="/services/design-build" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                    Design & Build
-                  </RouterLink>
-                </li>
-                <li>
-                  <RouterLink to="/firefighting" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                    Firefighting Services
-                  </RouterLink>
-                </li>
-                <li>
-                  <RouterLink to="/services/structural-repair" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                    Structural Repair
-                  </RouterLink>
-                </li>
-                <li>
-                  <RouterLink to="/services/security-surveillance" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                    Security & Surveillance
-                  </RouterLink>
-                </li>
-              </ul>
-            </div>
-
-            {/* Contact Info */}
-            <div>
-              <h3 className="text-lg font-semibold mb-6">Contact Us</h3>
-              <ul className="space-y-4">
-                <li className="flex items-start space-x-3">
-                  <MapPin className="w-5 h-5 text-[#4ADE80] mt-0.5" />
-                  <span className="text-gray-300">
-                    No. 219, Jalan S2 B10,<br />
-                    Seremban 2, 70300 Seremban,<br />
-                    Negeri Sembilan
-                  </span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <Phone className="w-5 h-5 text-[#4ADE80]" />
-                  <span className="text-gray-300">+606-6016007</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <Mail className="w-5 h-5 text-[#4ADE80]" />
-                  <span className="text-gray-300">admin@ubbim.com</span>
-                </li>
-              </ul>
+            {/* Bottom Bar */}
+            <div className="border-t border-gray-700 mt-12 pt-8">
+              <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <p className="text-gray-400 text-sm">
+                  © {new Date().getFullYear()} UBBIM. All rights reserved.
+                </p>
+                <div className="flex space-x-6">
+                  <a href="#" className="text-gray-400 hover:text-[#4ADE80] text-sm transition-colors">
+                    Privacy Policy
+                  </a>
+                  <a href="#" className="text-gray-400 hover:text-[#4ADE80] text-sm transition-colors">
+                    Terms of Service
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-
-          {/* Bottom Bar */}
-          <div className="border-t border-gray-700 mt-12 pt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-              <p className="text-gray-400 text-sm">
-                © {new Date().getFullYear()} UBBIM. All rights reserved.
-              </p>
-              <div className="flex space-x-6">
-                <a href="#" className="text-gray-400 hover:text-[#4ADE80] text-sm transition-colors">
-                  Privacy Policy
-                </a>
-                <a href="#" className="text-gray-400 hover:text-[#4ADE80] text-sm transition-colors">
-                  Terms of Service
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+        </footer>
+      </div>
     </div>
   );
 };
