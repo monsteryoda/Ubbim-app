@@ -8,6 +8,7 @@ import { ArrowRight, Building2, Leaf, Award, HardHat, TrendingUp, Users, Phone, 
 import LogoCarousel from "@/components/LogoCarousel";
 import CertificationsGrid from "@/components/CertificationsGrid";
 import Navbar from "@/components/Navbar";
+import LookingAheadBanner from "@/components/LookingAheadBanner";
 import { showSuccess } from "@/utils/toast";
 
 const Index = () => {
@@ -206,6 +207,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Looking Ahead Banner */}
+      <LookingAheadBanner />
 
       {/* Licenses & Certifications Section */}
       <section className="py-20 bg-gray-50">
