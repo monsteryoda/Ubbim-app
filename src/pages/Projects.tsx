@@ -68,10 +68,10 @@ const Projects: React.FC = () => {
     },
     {
       id: "7",
-      title: "Environmental Remediation and Soil Treatment Facility for Industrial Zone Development",
+      title: "Construction of PDRM Training Centre in Simpang Pulai, Pahang",
       description: "Comprehensive environmental cleanup and treatment facility for contaminated industrial land.",
       image: "/src/assets/projects/environmental-facility.jpg",
-      category: "Environmental",
+      category: "Infrastructure",
       year: "2024"
     }
   ];
