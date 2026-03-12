@@ -44,7 +44,7 @@ const Projects: React.FC = () => {
     },
     {
       id: "4",
-      title: "Urban Transit Hub",
+      title: "Design and Construction of Depolution System Plant at Tanjong Malim Perak for M/S Special Builder Sdn Bhd",
       description: "Modern transportation hub integrating multiple transit systems with retail and office spaces.",
       image: "/src/assets/projects/transit-hub.jpg",
       category: "Infrastructure",
