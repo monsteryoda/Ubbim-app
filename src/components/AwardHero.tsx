@@ -84,14 +84,19 @@ const AwardHero: React.FC = () => {
           >
             Awards & <span className="text-[#4ADE80]">Recognition</span>
           </motion.h1>
-          <motion.p
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto leading-relaxed"
           >
-            Recognized excellence in quality, environmental management, and occupational health and safety
-          </motion.p>
+            <p className="mb-4">
+              At UBBIM Resources, every milestone reflects our unwavering commitment to innovation, sustainability, and digital transformation in the built environment.
+            </p>
+            <p>
+              These recognitions are not just awards — they're a testament to our team's passion for pushing boundaries and redefining what's possible in construction and technology.
+            </p>
+          </motion.div>
         </motion.div>
       </div>
     </section>
