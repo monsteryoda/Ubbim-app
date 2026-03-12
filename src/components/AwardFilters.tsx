@@ -40,7 +40,7 @@ const AwardFilters: React.FC<AwardFiltersProps> = ({
               />
             </div>
             <div className="p-8">
-              <h4 className="text-xl font-bold text-gray-800 mb-4">Leadership in Environmental & Social Governance</h4>
+              <h4 className="text-xl font-bold text-gray-800 mb-4">Platinum Award for ESG</h4>
               <p className="text-gray-600 leading-relaxed">
                 Recognized for outstanding leadership in integrating ESG principles across all operations. 
                 Our commitment to sustainability includes eco-friendly construction materials, ISO 14001 
