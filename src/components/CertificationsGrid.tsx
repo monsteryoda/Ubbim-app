@@ -132,20 +132,6 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
                 />
               )}
             </div>
-            <div className="p-8">
-              <h3 className="text-2xl font-bold text-[#1A4B8C] mb-2">
-                {selectedCertification.title}
-              </h3>
-              <p className="text-gray-600 mb-2">
-                <span className="font-semibold">Organization:</span> {selectedCertification.organization}
-              </p>
-              <p className="text-gray-600 mb-2">
-                <span className="font-semibold">Year:</span> {selectedCertification.year}
-              </p>
-              <p className="text-gray-600">
-                {selectedCertification.description}
-              </p>
-            </div>
           </div>
         </div>
       )}
