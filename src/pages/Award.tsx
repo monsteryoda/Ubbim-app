@@ -11,6 +11,7 @@ import CommitmentSection from "@/components/CommitmentSection";
 import AwardIntroduction from "@/components/AwardIntroduction";
 import AwardsPhotoCollage from "@/components/AwardsPhotoCollage";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 interface AwardItem {
   id: string;
@@ -121,6 +122,7 @@ const Award: React.FC = () => {
       />
       <CommitmentSection />
       <AwardsPhotoCollage />
+      <Footer />
     </div>
   );
 };
