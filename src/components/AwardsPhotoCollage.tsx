@@ -27,9 +27,9 @@ const defaultPhotos: PhotoItem[] = [
   },
   {
     id: "2",
-    src: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?w=800&q=80",
-    alt: "Group photo with trophy",
-    caption: "UBBIM team with SME Award 2025"
+    src: "/src/assets/award-ceremony-2.jpeg",
+    alt: "UBBIM team receiving SME ICT Digitalisation Award",
+    caption: "SME ICT / Digitalisation Award 2025 - Platinum Business Awards"
   },
   {
     id: "3",
