@@ -85,6 +85,14 @@ const Projects: React.FC = () => {
     },
     {
       id: "9",
+      title: "Sustainable Housing Estate with Green Community Spaces",
+      description: "Eco-friendly residential community with solar panels and rainwater harvesting systems.",
+      image: "/src/assets/projects/green-housing.jpg",
+      category: "Residential",
+      year: "2024"
+    },
+    {
+      id: "10",
       title: "Advanced Manufacturing Facility for Automotive Industry",
       description: "State-of-the-art production plant with automated assembly lines and quality control systems.",
       image: "/src/assets/projects/manufacturing-facility.jpg",
@@ -92,7 +100,7 @@ const Projects: React.FC = () => {
       year: "2024"
     },
     {
-      id: "10",
+      id: "11",
       title: "Regional Highway Expansion and Bridge Construction Project",
       description: "Major infrastructure upgrade connecting urban centers with modern bridge structures.",
       image: "/src/assets/projects/highway-bridge.jpg",
