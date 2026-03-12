@@ -4,6 +4,12 @@ import React, { useState } from "react";
 import { X, Award } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import iso9001 from "@/assets/certifications/iso-9001-2015.png";
+import iso14001 from "@/assets/certifications/iso-14001-2015.png";
+import iso45001 from "@/assets/certifications/iso-45001-2018.png";
+import iso14064 from "@/assets/certifications/iso-14064-1.png";
+import g7 from "@/assets/certifications/g7.png";
+import malaysiaBook from "@/assets/certifications/malaysia-book.png";
 
 interface Certification {
   id: string;
@@ -29,7 +35,7 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
       title: "ISO 9001:2015",
       organization: "ACM-CCAS Limited",
       year: "2017",
-      image: "/src/assets/certifications/iso-9001-2015.png",
+      image: iso9001,
       description: "Quality Management System Certification",
       hasLightbox: true
     },
@@ -38,7 +44,7 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
       title: "ISO 14001:2015",
       organization: "ACM-CCAS Limited",
       year: "2019",
-      image: "/src/assets/certifications/iso-14001-2015.png",
+      image: iso14001,
       description: "Environmental Management System Certification",
       hasLightbox: true
     },
@@ -47,7 +53,7 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
       title: "ISO 45001:2018",
       organization: "ACM-CCAS Limited",
       year: "2019",
-      image: "/src/assets/certifications/iso-45001-2018.png",
+      image: iso45001,
       description: "Occupational Health and Safety Management System Certification",
       hasLightbox: true
     },
@@ -56,7 +62,7 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
       title: "ISO 14064-1:2018",
       organization: "Institute of Quality Malaysia",
       year: "2022",
-      image: "/src/assets/certifications/iso-14064-1.png",
+      image: iso14064,
       description: "Greenhouse Gases Part 1 - Organization Level for Quantification and Reporting Greenhouse Gas Emission and Removals",
       hasLightbox: true
     },
@@ -65,7 +71,7 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
       title: "CIDB G7",
       organization: "CIDB Malaysia",
       year: "2022",
-      image: "/src/assets/certifications/g7.png",
+      image: g7,
       description: "General Construction Class 7 Rating",
       hasLightbox: true
     },
@@ -74,7 +80,7 @@ const CertificationsGrid: React.FC<CertificationsGridProps> = ({ certifications 
       title: "Malaysia Book of Records",
       organization: "Malaysia Book of Records",
       year: "2022",
-      image: "/src/assets/certifications/malaysia-book.png",
+      image: malaysiaBook,
       description: "First construction company certified by ISO 14064-1:2018 Greenhouse Part 1",
       hasLightbox: true
     }
