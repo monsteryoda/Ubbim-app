@@ -19,7 +19,7 @@ import Projects from './pages/Projects';
 
 function App() {
   return (
-    <Router>
+    <Router future={{ v7_startTransition: true }}>
       <div className="min-h-screen">
         <Routes>
           <Route path="/" element={<Index />} />
