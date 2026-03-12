@@ -258,7 +258,7 @@ const Projects: React.FC = () => {
                               <>
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                                 <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                                  <h4 className="text-2xl font-bold mb-2">Aerial Analytics Services for an Earthworks Project in Port Dickson</h4>
+                                  <h4 className="text-2xl font-bold mb-2">Lorry Movement Tracking System</h4>
                                 </div>
                               </>
                             )}
