@@ -14,6 +14,7 @@ import VRCoordination from './pages/VRCoordination';
 import CustomSoftware from './pages/CustomSoftware';
 import FirefightingServices from './pages/FirefightingServices';
 import StructuralRepair from './pages/StructuralRepair';
+import Projects from './pages/Projects';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
@@ -34,6 +35,7 @@ function App() {
           <Route path="/custom-software" element={<CustomSoftware />} />
           <Route path="/firefighting" element={<FirefightingServices />} />
           <Route path="/services/structural-repair" element={<StructuralRepair />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </div>
     </Router>
