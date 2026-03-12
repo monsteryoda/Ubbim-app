@@ -87,7 +87,7 @@ const DigitalSolutions: React.FC = () => {
               OUR SERVICES
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              At UBBIM, we leverage cutting-edge digital technologies to enhance project planning, execution, and management. From 3D scanning to virtual reality, our solutions drive efficiency and innovation.
+              UBBIM's Digital Solutions bring the power of cutting-edge technology to the built environment. From aerial analytics to 3D scanning and custom software development, we offer tools that enhance project precision, streamline processes, and unlock new possibilities for innovation.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
