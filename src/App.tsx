@@ -14,8 +14,6 @@ import VRCoordination from './pages/VRCoordination';
 import CustomSoftware from './pages/CustomSoftware';
 import FirefightingServices from './pages/FirefightingServices';
 import StructuralRepair from './pages/StructuralRepair';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
 import Award from './pages/Award';
 import Projects from './pages/Projects';
 
