@@ -20,7 +20,7 @@ const DigitalSolutions: React.FC = () => {
     {
       title: "Aerial Analytics Solutions",
       description: "Leverage drone technology for precise aerial surveys, mapping, and data analysis.",
-      image: "/src/assets/projects/highlights-banner.png",
+      image: "/src/assets/aerial.png",
       hasButton: true,
       link: "/services/digital-solutions/e-ptw"
     },
