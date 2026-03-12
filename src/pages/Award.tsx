@@ -9,6 +9,7 @@ import AwardGrid from "@/components/AwardGrid";
 import AwardModal from "@/components/AwardModal";
 import AwardCommitment from "@/components/AwardCommitment";
 import CommitmentSection from "@/components/CommitmentSection";
+import AwardIntroduction from "@/components/AwardIntroduction";
 
 interface AwardItem {
   id: string;
@@ -98,6 +99,7 @@ const Award: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 pt-24 pb-16">
       <AwardHero />
+      <AwardIntroduction />
       <AwardFilters 
         filterCategory={filterCategory}
         setFilterCategory={setFilterCategory}
