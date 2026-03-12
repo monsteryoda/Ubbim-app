@@ -26,7 +26,7 @@ const DigitalSolutions: React.FC = () => {
     },
     {
       title: "3D Scanning Solutions",
-      description: "Specialized project management platform for complex shutdown operations. Coordinate multiple teams, track progress, and ensure safety compliance during critical maintenance periods.",
+      description: "Advanced 3D scanning that provide accurate representations of physical spaces, enhancing project planning and execution.",
       image: "/src/assets/projects/highlights-2.png",
       hasButton: true,
       link: "/services/digital-solutions/pm-system"
