@@ -169,20 +169,14 @@ const Projects = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-[#1A4B8C]">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Want to See More?
-          </h2>
-          <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-            Contact us to learn about our complete portfolio and how we can help with your project.
+      {/* Footer */}
+      <footer className="bg-[#1A4B8C] text-white">
+        <div className="container mx-auto px-4 py-4">
+          <p className="text-center text-gray-300 text-sm">
+            © Copyright {new Date().getFullYear()} UBBIM
           </p>
-          <Button className="bg-[#4ADE80] hover:bg-[#3dd673] text-[#1A4B8C] px-8 py-6 text-lg font-semibold">
-            Contact Us
-          </Button>
         </div>
-      </section>
+      </footer>
     </div>
   );
 };
