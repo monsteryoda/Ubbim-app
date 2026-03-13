@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft, HardHat, TrendingUp, Users, Award, MapPin, Phone, Mail, Facebook, Twitter, Instagram, Linkedin, Cpu, Shield, Flame, Wrench, Eye, Building2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -9,6 +9,13 @@ import Navbar from "@/components/Navbar";
 import { showSuccess } from "@/utils/toast";
 
 const Services = () => {
+  useEffect(() => {
+    document.title = "Built Environment Services - UBBIM";
+    return () => {
+      document.title = "UBBIM - Integrated Solutions for the Built Environment";
+    };
+  }, []);
+
   const builtEnvironmentServices = [
     {
       title: "Design & Build Services",
