@@ -51,13 +51,6 @@ const Contact = () => {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-6">
-                Send us a Message
-              </h2>
-              <p className="text-gray-600 mb-8">
-                Fill out the form below and we'll get back to you as soon as possible.
-              </p>
-              
               <Card className="border-none shadow-lg">
                 <CardContent className="p-8">
                   <form className="space-y-6" onSubmit={handleSubmit}>
