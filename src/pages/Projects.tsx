@@ -144,9 +144,8 @@ const Projects = () => {
                     alt={project.title} 
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#1A4B8C]/90 via-[#1A4B8C]/50 to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                    <p className="text-gray-100 leading-relaxed">{project.description}</p>
+                  <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/70 to-transparent">
+                    <p className="text-white leading-relaxed">{project.description}</p>
                   </div>
                 </div>
               </div>
