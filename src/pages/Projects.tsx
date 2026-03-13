@@ -17,7 +17,7 @@ const Projects = () => {
       year: "2023",
       category: "Defense Infrastructure",
       image: "/src/assets/ministry-defence-project.png",
-      description: "Comprehensive defense infrastructure development with advanced security systems and modern facilities.",
+      description: "Site Clearance Earthwork, Road & Drainage and Detention Pond Works for Kualiti Alam Sdn Bhd",
       completed: true,
     },
     {
