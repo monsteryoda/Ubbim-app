@@ -65,6 +65,15 @@ const Projects = () => {
       description: "Fabrication & Erection of Structure Steel for the Ampang Line LRT extension project",
       completed: false,
     },
+    {
+      title: "Industrial Warehouse",
+      location: "Johor, Malaysia",
+      year: "2024",
+      category: "Industrial",
+      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80",
+      description: "Construction of state-of-the-art logistics and distribution center with automated systems",
+      completed: true,
+    },
   ];
 
   const stats = [
