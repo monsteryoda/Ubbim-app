@@ -4,11 +4,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Building2, Leaf, Award, HardHat, TrendingUp, Users, Phone, FileText, Shield, Cpu, MapPin, Mail, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { ArrowRight, Building2, Leaf, Award, HardHat, TrendingUp, Users, Phone, FileText, Shield, Cpu, MapPin, Mail, Facebook, Twitter, Linkedin, Instagram, CheckCircle } from "lucide-react";
 import LogoCarousel from "@/components/LogoCarousel";
 import CertificationsGrid from "@/components/CertificationsGrid";
 import Navbar from "@/components/Navbar";
-import { showSuccess } from "@/utils/toast";
+import { showSuccess, showError } from "@/utils/toast";
 
 const Index = () => {
   const stats = [
@@ -80,8 +82,9 @@ const Index = () => {
     ],
   };
 
-  const handleContactClick = () => {
-    showSuccess("Thank you for your interest! We'll contact you shortly.");
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    showSuccess("Thank you for your message! We'll get back to you soon.");
   };
 
   return (
@@ -235,18 +238,119 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Contact Us Section with Office Details and Map */}
-      <section className="py-16 bg-white">
+      {/* Get In Touch Section */}
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
-              CONTACT US
+              GET IN TOUCH
             </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Have a project in mind? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+            </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            {/* Contact Form */}
+            <div>
+              <Card className="border-none shadow-xl">
+                <CardContent className="p-8">
+                  <form className="space-y-6" onSubmit={handleSubmit}>
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+                          First Name
+                        </label>
+                        <Input 
+                          type="text" 
+                          placeholder="John"
+                          className="border-gray-300 focus:border-[#1A4B8C] focus:ring-[#1A4B8C]"
+                          required
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+                          Last Name
+                        </label>
+                        <Input 
+                          type="text" 
+                          placeholder="Doe"
+                          className="border-gray-300 focus:border-[#1A4B8C] focus:ring-[#1A4B8C]"
+                          required
+                        />
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        Email Address
+                      </label>
+                      <Input 
+                        type="email" 
+                        placeholder="john@example.com"
+                        className="border-gray-300 focus:border-[#1A4B8C] focus:ring-[#1A4B8C]"
+                        required
+                      />
+                    </div>
+                    
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        Phone Number
+                      </label>
+                      <Input 
+                        type="tel" 
+                        placeholder="+60 12-345 6789"
+                        className="border-gray-300 focus:border-[#1A4B8C] focus:ring-[#1A4B8C]"
+                      />
+                    </div>
+                    
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        Subject
+                      </label>
+                      <Input 
+                        type="text" 
+                        placeholder="How can we help you?"
+                        className="border-gray-300 focus:border-[#1A4B8C] focus:ring-[#1A4B8C]"
+                        required
+                      />
+                    </div>
+                    
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        Message
+                      </label>
+                      <Textarea 
+                        placeholder="Tell us more about your project or inquiry..."
+                        rows={5}
+                        className="border-gray-300 focus:border-[#1A4B8C] focus:ring-[#1A4B8C]"
+                        required
+                      />
+                    </div>
+                    
+                    <Button 
+                      type="submit"
+                      className="w-full bg-[#1A4B8C] hover:bg-[#153a6e] text-white py-6 text-lg"
+                    >
+                      <CheckCircle className="w-5 h-5 mr-2" />
+                      Send Message
+                    </Button>
+                  </form>
+                </CardContent>
+              </Card>
+            </div>
+
             {/* Contact Details */}
             <div className="space-y-6">
+              <div>
+                <h3 className="text-2xl font-bold text-[#1A4B8C] mb-6">
+                  Contact Information
+                </h3>
+                <p className="text-gray-600 mb-8">
+                  Visit us or reach out through any of the following channels.
+                </p>
+              </div>
+
               {/* Address Card */}
               <Card className="border-none shadow-lg">
                 <CardContent className="p-6">
@@ -291,21 +395,44 @@ const Index = () => {
                   </div>
                 </CardContent>
               </Card>
-            </div>
 
-            {/* Google Map */}
-            <div className="rounded-2xl overflow-hidden shadow-lg h-96">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.823456789012!2d101.9123456!3d2.6987654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d33f1234567890%3A0x1234567890abcdef!2sNo.%20219%2C%20Jalan%20S2%20B10%2C%20Seremban%202%2C%2070300%20Seremban%2C%20Negeri%20Sembilan!5e0!3m2!1sen!2smy!4v1234567890123!5m2!1sen!2smy"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="UBBIM Office Location"
-              ></iframe>
+              {/* Social Media */}
+              <Card className="border-none shadow-lg">
+                <CardContent className="p-6">
+                  <h3 className="font-semibold text-lg text-[#1A4B8C] mb-4">Follow Us</h3>
+                  <div className="flex space-x-4">
+                    {officeDetails.socialLinks.map((social, index) => (
+                      <a
+                        key={index}
+                        href={social.href}
+                        className="w-12 h-12 bg-[#1A4B8C]/10 rounded-xl flex items-center justify-center hover:bg-[#1A4B8C] transition-colors duration-300"
+                        aria-label={social.label}
+                      >
+                        <social.icon className="w-5 h-5 text-[#1A4B8C] hover:text-white transition-colors duration-300" />
+                      </a>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Office Location Map */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="rounded-2xl overflow-hidden shadow-lg h-96">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.823456789012!2d101.9123456!3d2.6987654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d33f1234567890%3A0x1234567890abcdef!2sNo.%20219%2C%20Jalan%20S2%20B10%2C%20Seremban%202%2C%2070300%20Seremban%2C%20Negeri%20Sembilan!5e0!3m2!1sen!2smy!4v1234567890123!5m2!1sen!2smy"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="UBBIM Office Location"
+            ></iframe>
           </div>
         </div>
       </section>
