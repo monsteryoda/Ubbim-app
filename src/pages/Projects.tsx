@@ -92,7 +92,7 @@ const Projects = () => {
               OUR PROJECTS
             </h1>
             <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
-              Showcasing excellence in construction and engineering across the globe
+              Explore Our Success Stories in the Built Environment and Digital Innovation
             </p>
           </div>
         </div>
