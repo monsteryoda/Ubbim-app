@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Building2, MapPin, Calendar, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -10,6 +10,13 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Projects = () => {
+  useEffect(() => {
+    document.title = "Projects - UBBIM";
+    return () => {
+      document.title = "UBBIM - Integrated Solutions for the Built Environment";
+    };
+  }, []);
+
   const projects = [
     {
       title: "Ministry of Defence Project",
