@@ -4,7 +4,6 @@ import React from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import cidbLogo from "../assets/cidb-logo.png";
 import fgvLogo from "../assets/fgv-logo.png";
-import mofLogo from "../assets/mof-logo.png";
 
 interface Logo {
   name: string;

@@ -2,146 +2,203 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Building2, MapPin, Calendar, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { ArrowRight, Building2, Leaf, Award, HardHat, TrendingUp, Users, Phone, FileText, Shield, Cpu, MapPin, Mail, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 import LogoCarousel from "@/components/LogoCarousel";
-import cidbLogo from "../assets/cidb-logo.png";
-import fgvLogo from "../assets/fgv-logo.png";
-import mofLogo from "../assets/mof-logo.png";
+import CertificationsGrid from "@/components/CertificationsGrid";
+import Navbar from "@/components/Navbar";
+import { showSuccess } from "@/utils/toast";
 
 const Index = () => {
-  const logos = [
-    { name: "CIDB", image: cidbLogo },
-    { name: "FGV", image: fgvLogo },
-    { name: "MOF", image: mofLogo },
+  const stats = [
+    { value: "20+", label: "Years of Experience", icon: TrendingUp },
+    { value: "500+", label: "Projects Completed", icon: Building2 },
+    { value: "8,000+", label: "Employees", icon: Users },
+    { value: "15", label: "Countries", icon: Award },
   ];
 
   const services = [
     {
+      title: "Construction",
+      description: "Large-scale infrastructure and building construction with cutting-edge technology.",
       icon: Building2,
-      title: "Built Environment",
-      description: "Comprehensive construction and infrastructure solutions",
-      link: "/projects",
     },
     {
-      icon: MapPin,
-      title: "Digital Solutions",
-      description: "Innovative technology and digital transformation services",
-      link: "/projects",
-    },
-    {
-      icon: Calendar,
-      title: "Project Management",
-      description: "End-to-end project delivery and management",
-      link: "/projects",
+      title: "Engineering",
+      description: "Innovative engineering solutions for complex challenges in infrastructure.",
+      icon: HardHat,
     },
   ];
 
-  const stats = [
-    { value: "500+", label: "Projects Completed" },
-    { value: "15", label: "Countries Served" },
-    { value: "20+", label: "Years Experience" },
-    { value: "98%", label: "Client Satisfaction" },
+  const featuredProjects = [
+    {
+      title: "Ministry of Defence Project",
+      location: "Singapore",
+      image: "https://www.ublim.com/wp-content/uploads/2024/08/b39d1bf4d7445c5c632d52bb79cefa55.jpeg",
+    },
+    {
+      title: "Metro Line Expansion",
+      location: "São Paulo, Brazil",
+      image: "https://images.unsplash.com/photo-1535732759880-bbd5c7265e3f?w=800&q=80",
+    },
+    {
+      title: "Green Energy Complex",
+      location: "Rio de Janeiro, Brazil",
+      image: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=800&q=80",
+    },
+    {
+      title: "Highway Modernization",
+      location: "Minas Gerais, Brazil",
+      image: "https://images.unsplash.com/photo-1545158927-2c94795a9a6c?w=800&q=80",
+    },
   ];
+
+  const clientLogos = [
+    { name: "CIDB", image: "/src/assets/cidb-logo.png" },
+    { name: "Malaysia Airports", image: "/src/assets/malaysia-airports-logo.png" },
+    { name: "FGV", image: "/src/assets/fgv-logo.png" },
+    { name: "Northport", image: "/src/assets/northport-logo.png" },
+    { name: "MINDEF", image: "/src/assets/mindef-logo.png" },
+    { name: "Cenviro", image: "/src/assets/cenviro-logo.png" },
+    { name: "CIDB", image: "/src/assets/cidb-logo.png" },
+    { name: "Malaysia Airports", image: "/src/assets/malaysia-airports-logo.png" },
+    { name: "FGV", image: "/src/assets/fgv-logo.png" },
+    { name: "Northport", image: "/src/assets/northport-logo.png" },
+  ];
+
+  const officeDetails = {
+    address: "No. 219, Jalan S2 B10, Seremban 2, 70300 Seremban, Negeri Sembilan",
+    phone: "+606-6016007",
+    email: "admin@ubbim.com",
+    socialLinks: [
+      { icon: Facebook, href: "#", label: "Facebook" },
+      { icon: Twitter, href: "#", label: "Twitter" },
+      { icon: Linkedin, href: "#", label: "LinkedIn" },
+      { icon: Instagram, href: "#", label: "Instagram" },
+    ],
+  };
+
+  const handleContactClick = () => {
+    showSuccess("Thank you for your interest! We'll contact you shortly.");
+  };
 
   return (
     <div className="min-h-screen">
       {/* Navigation Bar */}
-      <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
-            <div className="flex items-center">
-              <Building2 className="w-8 h-8 text-[#1A4B8C]" />
-              <span className="ml-2 text-xl font-bold text-[#1A4B8C]">UBBIM</span>
-            </div>
-            <div className="hidden md:flex items-center space-x-8">
-              <Link to="/" className="text-gray-700 hover:text-[#1A4B8C] transition-colors">
-                Home
-              </Link>
-              <Link to="/projects" className="text-gray-700 hover:text-[#1A4B8C] transition-colors">
-                Projects
-              </Link>
-              <Link to="/about" className="text-gray-700 hover:text-[#1A4B8C] transition-colors">
-                About
-              </Link>
-              <Button className="bg-[#1A4B8C] hover:bg-[#143d7a]">
-                Contact Us
-              </Button>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Hero Section */}
-      <section className="relative bg-[#1A4B8C] text-white py-32 lg:py-40 overflow-hidden pt-20">
+      <section className="relative bg-[#1A4B8C] text-white py-24 lg:py-32 overflow-hidden pt-16">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80')] bg-cover bg-center" />
         </div>
         <div className="container mx-auto px-4 relative">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              BUILDING THE FUTURE, <br />
-              <span className="text-blue-300">ONE PROJECT AT A TIME</span>
+              Integrated Solutions for the{" "}
+              <span className="text-[#4ADE80]">Built Environment</span> and Beyond
             </h1>
-            <p className="text-lg md:text-xl text-gray-200 leading-relaxed mb-8">
-              Leading the way in built environment and digital solutions across Malaysia and beyond.
+            <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
+              From construction excellence to cutting-edge digital innovation, UBBIM delivers comprehensive services that shape the future of industries.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/projects">
-                <Button size="lg" className="bg-white text-[#1A4B8C] hover:bg-gray-100">
-                  View Our Projects
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </Button>
-              </Link>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                Learn More
-              </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Combined Stats, Video & About Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          {/* Stats Row */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+            {stats.map((stat, index) => (
+              <div key={index} className="text-center bg-white rounded-2xl p-6 shadow-lg">
+                <stat.icon className="w-8 h-8 mx-auto mb-3 text-[#1A4B8C]" />
+                <div className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-1">
+                  {stat.value}
+                </div>
+                <div className="text-gray-600 text-sm">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+
+          {/* Video & About Combined */}
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* YouTube Video */}
+            <div className="relative">
+              <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl bg-gray-900">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/IMFSWjvVlUM"
+                  title="UBBIM Company Video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
+                ></iframe>
+              </div>
+            </div>
+
+            {/* About Content */}
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-2">
+                ABOUT US
+              </h2>
+              <p className="text-sm text-gray-500 mb-6">
+                Experience, Expertise, and a Commitment to Excellence
+              </p>
+              <p className="text-gray-600 mb-6 leading-relaxed text-justify">
+                UBBIM is a leading construction project management company with over 20 years of experience in the industry. We provide comprehensive solutions for construction projects, including design-build services, project management, progress monitoring, and data analytics. Our team of experts is committed to delivering high-quality services that meet the unique needs of each and every one of our clients.
+              </p>
+              <p className="text-gray-600 mb-6 leading-relaxed text-justify">
+                At UBBIM, we are continuously looking for ways to improve our services through technology adoption. We utilize advanced digital technologies such as Building Information Modeling (BIM), virtual reality (VR), and other digital tools to optimize project performance and delivery. Our focus on technology adoption allows us to stay at the forefront of the industry and provide innovative solutions for our clients.
+              </p>
+              <p className="text-gray-600 leading-relaxed text-justify">
+                Our team brings a wealth of experience and expertise to every project, providing expert guidance and support throughout the project lifecycle. We are committed to delivering projects on time, on budget, and to the highest standards of quality. Contact us today to learn more about how we can help you with your construction project needs.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Logo Carousel */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
-              TRUSTED BY INDUSTRY LEADERS
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              We partner with leading organizations to deliver exceptional results
-            </p>
-          </div>
-          <LogoCarousel logos={logos} />
-        </div>
-      </section>
-
-      {/* Services Section */}
-      <section className="py-20 bg-gray-50">
+      {/* Services Preview */}
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
               OUR SERVICES
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Comprehensive solutions for your construction and digital needs
+              Comprehensive solutions for infrastructure development, from planning 
+              to execution.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+              <Card key={index} className="group hover:shadow-xl transition-shadow duration-300 border-none shadow-lg">
                 <CardContent className="p-8">
-                  <service.icon className="w-12 h-12 text-[#1A4B8C] mb-4" />
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
-                    {service.title}
+                  <div className="w-14 h-14 bg-[#1A4B8C]/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#1A4B8C] transition-colors duration-300">
+                    {index === 0 ? (
+                      <Building2 className="w-7 h-7 text-[#1A4B8C] group-hover:text-white transition-colors duration-300" />
+                    ) : (
+                      <HardHat className="w-7 h-7 text-[#1A4B8C] group-hover:text-white transition-colors duration-300" />
+                    )}
+                  </div>
+                  <h3 className="text-xl font-bold text-[#1A4B8C] mb-3">
+                    {index === 0 ? "BUILT ENVIRONMENT SERVICES" : "DIGITAL SOLUTIONS"}
                   </h3>
-                  <p className="text-gray-600 mb-4">
-                    {service.description}
+                  <p className="text-gray-600 mb-4 text-justify">
+                    {index === 0 
+                      ? "Our Built Environment Services encompass every phase of construction and infrastructure development, from design and build to maintenance and refurbishment. We specialize in delivering high-quality, sustainable solutions that meet the unique needs of each project, ensuring safety, efficiency, and long-term value."
+                      : "Our Digital Solutions integrate advanced technologies like aerial analytics, 3D scanning, and virtual design coordination to transform how projects are planned, executed, and managed. We also develop custom software tailored to optimize operations, enhance collaboration, and drive innovation across industries."
+                    }
                   </p>
-                  <Link to={service.link} className="inline-flex items-center text-[#1A4B8C] hover:text-[#143d7a] font-medium">
-                    Learn More
-                    <ArrowRight className="ml-2 w-4 h-4" />
+                  <Link
+                    to={index === 0 ? "/services" : "/services/digital-solutions"}
+                    className="inline-flex items-center text-[#1A4B8C] font-semibold hover:text-[#4ADE80] transition-colors"
+                  >
+                    Learn more <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>
                 </CardContent>
               </Card>
@@ -150,65 +207,107 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-16 bg-[#1A4B8C] text-white">
+      {/* Licenses & Certifications Section */}
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-4xl md:text-5xl font-bold mb-2">
-                  {stat.value}
-                </div>
-                <div className="text-gray-300">{stat.label}</div>
-              </div>
-            ))}
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
+              LICENSES & CERTIFICATIONS
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Our commitment to excellence is reflected in our industry-recognized certifications and credentials.
+            </p>
           </div>
+          <CertificationsGrid />
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white">
-        <div className="container mx-auto px-4 py-12">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <div className="flex items-center mb-4">
-                <Building2 className="w-8 h-8" />
-                <span className="ml-2 text-xl font-bold">UBBIM</span>
-              </div>
-              <p className="text-gray-400">
-                Building the future with innovation and excellence.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-bold mb-4">Services</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><Link to="/projects" className="hover:text-white">Built Environment</Link></li>
-                <li><Link to="/projects" className="hover:text-white">Digital Solutions</Link></li>
-                <li><Link to="/projects" className="hover:text-white">Project Management</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold mb-4">Company</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><Link to="/about" className="hover:text-white">About Us</Link></li>
-                <li><Link to="/projects" className="hover:text-white">Projects</Link></li>
-                <li><Link to="/" className="hover:text-white">Contact</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold mb-4">Contact</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li>Kuala Lumpur, Malaysia</li>
-                <li>info@ubbim.com</li>
-                <li>+60 3-1234 5678</li>
-              </ul>
-            </div>
+      {/* Featured Projects Slider */}
+      <section className="py-20 bg-[#1A4B8C]">
+        <div className="container mx-auto px-4">
+          <div className="mb-12 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              WE ARE TRUSTED BY
+            </h2>
           </div>
-          <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-            <p>© Copyright {new Date().getFullYear()} UBBIM. All rights reserved.</p>
+          <LogoCarousel logos={clientLogos} />
+        </div>
+      </section>
+
+      {/* Contact Us Section with Office Details and Map */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
+              CONTACT US
+            </h2>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Contact Details */}
+            <div className="space-y-6">
+              {/* Address Card */}
+              <Card className="border-none shadow-lg">
+                <CardContent className="p-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-[#1A4B8C]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <MapPin className="w-6 h-6 text-[#1A4B8C]" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-lg text-[#1A4B8C] mb-2">Address</h3>
+                      <p className="text-gray-600">{officeDetails.address}</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Phone Card */}
+              <Card className="border-none shadow-lg">
+                <CardContent className="p-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-[#1A4B8C]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <Phone className="w-6 h-6 text-[#1A4B8C]" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-lg text-[#1A4B8C] mb-2">Phone</h3>
+                      <p className="text-gray-600">{officeDetails.phone}</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Email Card */}
+              <Card className="border-none shadow-lg">
+                <CardContent className="p-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-[#1A4B8C]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <Mail className="w-6 h-6 text-[#1A4B8C]" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-lg text-[#1A4B8C] mb-2">Email</h3>
+                      <p className="text-gray-600">{officeDetails.email}</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Google Map */}
+            <div className="rounded-2xl overflow-hidden shadow-lg h-96">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.823456789012!2d101.9123456!3d2.6987654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d33f1234567890%3A0x1234567890abcdef!2sNo.%20219%2C%20Jalan%20S2%20B10%2C%20Seremban%202%2C%2070300%20Seremban%2C%20Negeri%20Sembilan!5e0!3m2!1sen!2smy!4v1234567890123!5m2!1sen!2smy"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="UBBIM Office Location"
+              ></iframe>
+            </div>
           </div>
         </div>
-      </footer>
+      </section>
     </div>
   );
 };
