@@ -8,6 +8,7 @@ import { ArrowRight, Building2, Leaf, Award, HardHat, TrendingUp, Users, Phone, 
 import LogoCarousel from "@/components/LogoCarousel";
 import CertificationsGrid from "@/components/CertificationsGrid";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import { showSuccess } from "@/utils/toast";
 
 const Index = () => {
@@ -309,6 +310,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
