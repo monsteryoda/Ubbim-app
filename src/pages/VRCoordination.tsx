@@ -12,17 +12,17 @@ const VRCoordination = () => {
     {
       title: "Virtual Reality (VR) Design Reviews",
       description: "Use VR to visualize and coordinate complex building designs before construction begins, reducing errors and rework.",
-      image: "/src/assets/vr-review.png"
+      image: "/vr-review.png"
     },
     {
       title: "Augmented Reality (AR) Site Visualization",
       description: "Overlay digital models onto real-world sites using AR, providing a clear understanding of how designs will fit within existing environments.",
-      image: "/src/assets/ar-site.jpg"
+      image: "/ar-site.jpg"
     },
     {
       title: "Process Video Animation",
       description: "Illustrate complex plant building processes and workflows with custom animations, making it easier for stakeholders to visualize and understand each step.",
-      image: "/src/assets/process-video.png"
+      image: "/process-video.png"
     }
   ];
 
@@ -215,135 +215,11 @@ const VRCoordination = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#1A4B8C] text-white">
-        <div className="container mx-auto px-4 py-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-            {/* Company Info */}
-            <div>
-              <div className="flex items-center space-x-2 mb-6">
-                <img 
-                  src="/ubbim-logo.png" 
-                  alt="UBBIM Logo" 
-                  className="h-12 w-auto"
-                />
-              </div>
-              <p className="text-gray-300 leading-relaxed mb-6">
-                UBBIM delivers comprehensive VR coordination solutions with a focus on innovation, precision, and client satisfaction.
-              </p>
-              <div className="flex space-x-4">
-                <a href="#" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                  <Facebook className="w-5 h-5" />
-                </a>
-                <a href="#" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                  <Twitter className="w-5 h-5" />
-                </a>
-                <a href="#" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                  <Instagram className="w-5 h-5" />
-                </a>
-                <a href="#" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                  <Linkedin className="w-5 h-5" />
-                </a>
-              </div>
-            </div>
-
-            {/* Quick Links */}
-            <div>
-              <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
-              <ul className="space-y-3">
-                <li>
-                  <Link to="/" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/services" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                    Services
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/projects" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                    Projects
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/about" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/contact" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            {/* Services */}
-            <div>
-              <h3 className="text-lg font-semibold mb-6">Our Services</h3>
-              <ul className="space-y-3">
-                <li>
-                  <Link to="/services/design-build" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                    Design & Build
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/aerial-analytics" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                    Aerial Analytics
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/3d-scanning" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                    3D Scanning
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/vr-coordination" className="text-gray-300 hover:text-[#4ADE80] transition-colors">
-                    VR Coordination
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            {/* Contact Info */}
-            <div>
-              <h3 className="text-lg font-semibold mb-6">Contact Us</h3>
-              <ul className="space-y-4">
-                <li className="flex items-start space-x-3">
-                  <MapPin className="w-5 h-5 text-[#4ADE80] mt-0.5" />
-                  <span className="text-gray-300">
-                    123 Construction Ave,<br />
-                    Building City, BC 12345
-                  </span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <Phone className="w-5 h-5 text-[#4ADE80]" />
-                  <span className="text-gray-300">+1 (555) 123-4567</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <Mail className="w-5 h-5 text-[#4ADE80]" />
-                  <span className="text-gray-300">info@ubbim.com</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Bottom Bar */}
-          <div className="border-t border-gray-700 mt-12 pt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-              <p className="text-gray-400 text-sm">
-                © {new Date().getFullYear()} UBBIM. All rights reserved.
-              </p>
-              <div className="flex space-x-6">
-                <a href="#" className="text-gray-400 hover:text-[#4ADE80] text-sm transition-colors">
-                  Privacy Policy
-                </a>
-                <a href="#" className="text-gray-400 hover:text-[#4ADE80] text-sm transition-colors">
-                  Terms of Service
-                </a>
-              </div>
-            </div>
-          </div>
+      <footer className="bg-[#1A4B8C] text-white py-4">
+        <div className="container mx-auto px-4">
+          <p className="text-center text-gray-300 text-sm">
+            © Copyright {new Date().getFullYear()} UBBIM
+          </p>
         </div>
       </footer>
     </div>
