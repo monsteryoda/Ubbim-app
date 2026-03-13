@@ -101,7 +101,7 @@ const Projects = () => {
       year: "2022",
       category: "Infrastructure",
       image: "/src/assets/special-builder-depolution-plant.png",
-      description: "Design and construction of advanced depolution system plant",
+      description: "Aerial Analytics Services for an Earthworks Project in Port Dickson",
       completed: true,
     },
     {
