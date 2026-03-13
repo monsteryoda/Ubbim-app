@@ -21,7 +21,7 @@ const AwardFilters: React.FC<AwardFiltersProps> = ({
     <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-[#1A4B8C] mb-4">
+          <h2 className="text-4xl font-bold text-[#1A4B8C] mb-4 uppercase">
             SME Platinum Business Awards 2025
           </h2>
         </div>
