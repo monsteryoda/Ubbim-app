@@ -71,7 +71,7 @@ const Projects = () => {
       year: "2024",
       category: "Industrial",
       image: "/src/assets/industrial-warehouse.png",
-      description: "Construction of state-of-the-art logistics and distribution center with automated systems",
+      description: "Construction of PDRM Training Centre in Simpang Pulai, Pahang",
       completed: true,
     },
   ];
