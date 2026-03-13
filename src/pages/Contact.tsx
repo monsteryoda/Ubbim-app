@@ -20,7 +20,7 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Navbar */}
+      {/* Navbar - Same as Homepage */}
       <Navbar />
       
       {/* Hero Section */}
