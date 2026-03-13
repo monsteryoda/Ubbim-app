@@ -25,7 +25,7 @@ const ThreeDScanning = () => {
     {
       title: "As-Built Documentation",
       description: "Produce precise as-built models for renovations, retrofits, and historical preservation, ensuring all modifications are accurately recorded.",
-      image: "/assets/as-built-documentation.webp"
+      image: "/assets/as-built-documentation.png"
     },
     {
       title: "Industrial Plant Scanning",
