@@ -26,7 +26,7 @@ const Projects = () => {
       year: "2023",
       category: "Transportation",
       image: "/src/assets/metro-line-expansion.png",
-      description: "Development of Scheduled Waste Management Centre ("SWMCJ") Infrastructure Package for Cenviro Johor Sdn Bhd.",
+      description: "Development of Scheduled Waste Management Centre ('SWMCJ') Infrastructure Package for Cenviro Johor Sdn Bhd.",
       completed: true,
     },
     {
