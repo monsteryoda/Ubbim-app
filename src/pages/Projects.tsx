@@ -82,7 +82,7 @@ const Projects = () => {
       location: "Kuala Lumpur, Malaysia",
       year: "2024",
       category: "Transportation",
-      image: "/src/assets/residential-development.png",
+      image: "/src/assets/lrt-extension-blueprint.png",
       description: "Steel fabrication and erection works for the new LRT extension line",
       completed: false,
     },
