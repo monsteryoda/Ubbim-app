@@ -25,7 +25,7 @@ const Projects = () => {
       location: "São Paulo, Brazil",
       year: "2023",
       category: "Transportation",
-      image: "https://images.unsplash.com/photo-1535732759880-bbd5c7265e3f?w=800&q=80",
+      image: "/src/assets/metro-line-expansion.png",
       description: "Major metro line expansion project connecting key urban areas with state-of-the-art transit systems.",
       completed: true,
     },
