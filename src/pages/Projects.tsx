@@ -113,6 +113,33 @@ const Projects = () => {
       description: "3D Scanning and Facility Management System for Large Mechanical Room",
       completed: true,
     },
+    {
+      title: "Smart Building Automation",
+      location: "Kuala Lumpur, Malaysia",
+      year: "2024",
+      category: "Technology",
+      image: "/src/assets/smart-building-automation.png",
+      description: "Integrated IoT Platform for Building Management and Energy Optimization",
+      completed: true,
+    },
+    {
+      title: "Coastal Protection System",
+      location: "Penang, Malaysia",
+      year: "2023",
+      category: "Infrastructure",
+      image: "/src/assets/coastal-protection-system.png",
+      description: "Advanced Flood Mitigation and Coastal Defense Engineering Project",
+      completed: true,
+    },
+    {
+      title: "Digital Twin Facility",
+      location: "Selangor, Malaysia",
+      year: "2024",
+      category: "Technology",
+      image: "/src/assets/digital-twin-facility.png",
+      description: "Real-time 3D Facility Monitoring and Predictive Maintenance System",
+      completed: false,
+    },
   ];
 
   const stats = [
