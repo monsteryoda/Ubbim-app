@@ -44,40 +44,17 @@ const Contact = () => {
       {/* Contact Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Google Map - Left Side */}
-            <div>
-              <Card className="border-none shadow-lg">
-                <CardContent className="p-0">
-                  <div className="rounded-2xl overflow-hidden h-96">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.823456789012!2d101.9123456!3d2.6987654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d33f1234567890%3A0x1234567890abcdef!2sNo.%20219%2C%20Jalan%20S2%20B10%2C%20Seremban%202%2C%2070300%20Seremban%2C%20Negeri%20Sembilan!5e0!3m2!1sen!2smy!4v1234567890123!5m2!1sen!2smy"
-                      width="100%"
-                      height="100%"
-                      style={{ border: 0 }}
-                      allowFullScreen=""
-                      loading="lazy"
-                      referrerPolicy="no-referrer-when-downgrade"
-                      title="UBBIM Office Location"
-                    ></iframe>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
+              CONTACT US
+            </h2>
+          </div>
 
-            {/* Office Details - Right Side */}
-            <div className="space-y-8">
-              <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-6">
-                  Office Details
-                </h2>
-                <p className="text-gray-600 mb-8">
-                  Visit us or reach out through any of the following channels.
-                </p>
-              </div>
-
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Contact Info Cards - Left Side */}
+            <div className="space-y-6">
               {/* Address Card */}
-              <Card className="border-none shadow-lg">
+              <Card className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-[#1A4B8C]/10 rounded-xl flex items-center justify-center flex-shrink-0">
@@ -92,7 +69,7 @@ const Contact = () => {
               </Card>
 
               {/* Phone Card */}
-              <Card className="border-none shadow-lg">
+              <Card className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-[#1A4B8C]/10 rounded-xl flex items-center justify-center flex-shrink-0">
@@ -107,7 +84,7 @@ const Contact = () => {
               </Card>
 
               {/* Email Card */}
-              <Card className="border-none shadow-lg">
+              <Card className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-[#1A4B8C]/10 rounded-xl flex items-center justify-center flex-shrink-0">
@@ -120,22 +97,23 @@ const Contact = () => {
                   </div>
                 </CardContent>
               </Card>
+            </div>
 
-              {/* Social Media */}
+            {/* Google Map - Right Side */}
+            <div>
               <Card className="border-none shadow-lg">
-                <CardContent className="p-6">
-                  <h3 className="font-semibold text-lg text-[#1A4B8C] mb-4">Follow Us</h3>
-                  <div className="flex space-x-4">
-                    {officeDetails.socialLinks.map((social, index) => (
-                      <a
-                        key={index}
-                        href={social.href}
-                        className="w-12 h-12 bg-[#1A4B8C]/10 rounded-xl flex items-center justify-center hover:bg-[#1A4B8C] transition-colors duration-300"
-                        aria-label={social.label}
-                      >
-                        <social.icon className="w-5 h-5 text-[#1A4B8C] hover:text-white transition-colors duration-300" />
-                      </a>
-                    ))}
+                <CardContent className="p-0">
+                  <div className="rounded-2xl overflow-hidden h-96">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.823456789012!2d101.9123456!3d2.6987654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d33f1234567890%3A0x1234567890abcdef!2sNo.%20219%2C%20Jalan%20S2%20B10%2C%20Seremban%202%2C%2070300%20Seremban%2C%20Negeri%20Sembilan!5e0!3m2!1sen!2smy!4v1234567890123!5m2!1sen!2smy"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen=""
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="UBBIM Office Location"
+                    ></iframe>
                   </div>
                 </CardContent>
               </Card>
