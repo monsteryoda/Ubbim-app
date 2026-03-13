@@ -3,6 +3,7 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import Navbar from "@/components/Navbar";
 
 const Contact = () => {
   const officeDetails = {
@@ -19,6 +20,9 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      {/* Navbar */}
+      <Navbar />
+      
       {/* Hero Section */}
       <section className="relative bg-[#1A4B8C] text-white py-20 lg:py-28 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
