@@ -47,7 +47,7 @@ const LogoCarousel: React.FC<LogoCarouselProps> = ({ logos }) => {
                 <img
                   src={logo.image}
                   alt={logo.name}
-                  className="h-[58px] object-contain bg-transparent"
+                  className="h-[80px] object-contain bg-transparent"
                 />
               </div>
             </div>
