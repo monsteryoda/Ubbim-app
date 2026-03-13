@@ -30,6 +30,13 @@ const Award: React.FC = () => {
   const [filterCategory, setFilterCategory] = useState<string>("all");
   const [showTimeline, setShowTimeline] = useState(false);
 
+  useEffect(() => {
+    document.title = "Award - UBBIM";
+    return () => {
+      document.title = "UBBIM - Integrated Solutions for the Built Environment";
+    };
+  }, []);
+
   const awards: AwardItem[] = [
     {
       id: "1",
