@@ -6,6 +6,8 @@ import { ArrowLeft, Building2, MapPin, Calendar, CheckCircle } from "lucide-reac
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Projects = () => {
   const projects = [
@@ -114,7 +116,7 @@ const Projects = () => {
         </div>
       </section>
 
-      {/* Projects Grid */}
+      {/* Projects Carousel */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -125,47 +127,43 @@ const Projects = () => {
               Explore our portfolio of successful projects delivered with precision and excellence.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <Carousel
+            showThumbs={false}
+            showArrows={true}
+            showStatus={false}
+            infiniteLoop
+            autoPlay
+            interval={5000}
+            className="max-w-4xl mx-auto"
+          >
             {projects.map((project, index) => (
-              <Card key={index} className="border-none shadow-lg overflow-hidden group hover:shadow-xl transition-shadow duration-300">
-                <div className="relative h-64 overflow-hidden">
+              <div key={index} className="relative">
+                <div className="relative h-96 md:h-[500px] overflow-hidden rounded-lg shadow-xl">
                   <img 
                     src={project.image} 
                     alt={project.title} 
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-full object-cover"
                   />
-                  <div className="absolute top-4 right-4">
-                    <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
-                      project.completed 
-                        ? "bg-[#4ADE80] text-[#1A4B8C]" 
-                        : "bg-[#1A4B8C] text-white"
-                    }`}>
-                      {project.completed ? "Completed" : "In Progress"}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#1A4B8C]/90 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                    <span className="inline-block px-3 py-1 bg-[#4ADE80] text-[#1A4B8C] text-xs font-semibold rounded-full mb-3">
+                      {project.category}
                     </span>
+                    <h3 className="text-2xl md:text-3xl font-bold mb-2">{project.title}</h3>
+                    <div className="flex items-center text-sm text-gray-200 mb-2">
+                      <MapPin className="w-4 h-4 mr-1" />
+                      {project.location}
+                    </div>
+                    <div className="flex items-center text-sm text-gray-200 mb-3">
+                      <Calendar className="w-4 h-4 mr-1" />
+                      {project.year}
+                    </div>
+                    <p className="text-gray-200">{project.description}</p>
                   </div>
                 </div>
-                <CardContent className="p-6">
-                  <div className="flex items-center text-sm text-gray-500 mb-2">
-                    <MapPin className="w-4 h-4 mr-1" />
-                    {project.location}
-                  </div>
-                  <div className="flex items-center text-sm text-gray-500 mb-3">
-                    <Calendar className="w-4 h-4 mr-1" />
-                    {project.year}
-                  </div>
-                  <span className="inline-block px-3 py-1 bg-[#1A4B8C]/10 text-[#1A4B8C] text-xs font-semibold rounded-full mb-3">
-                    {project.category}
-                  </span>
-                  <h3 className="text-xl font-bold text-[#1A4B8C] mb-2">
-                    {project.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm">
-                    {project.description}
-                  </p>
-                </CardContent>
-              </Card>
+              </div>
             ))}
-          </div>
+          </Carousel>
         </div>
       </section>
 
