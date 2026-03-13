@@ -35,7 +35,7 @@ const Projects = () => {
       year: "2022",
       category: "Energy",
       image: "/src/assets/green-energy-complex.png",
-      description: "Sustainable energy complex featuring solar panels, wind turbines, and energy-efficient buildings.",
+      description: "Modularised incinerator project for Kualiti Alam Sdn Bhd",
       completed: true,
     },
     {
