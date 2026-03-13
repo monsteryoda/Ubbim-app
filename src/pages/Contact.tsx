@@ -2,7 +2,6 @@
 
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 const Contact = () => {
@@ -40,9 +39,9 @@ const Contact = () => {
       {/* Contact Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Office Details */}
-            <div className="space-y-8">
+          <div className="grid lg:grid-cols-3 gap-12">
+            {/* Contact Info Cards */}
+            <div className="lg:col-span-2 space-y-8">
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-6">
                   Office Details
@@ -115,8 +114,10 @@ const Contact = () => {
                   </div>
                 </CardContent>
               </Card>
+            </div>
 
-              {/* Google Map */}
+            {/* Google Map */}
+            <div>
               <Card className="border-none shadow-lg">
                 <CardContent className="p-0">
                   <div className="rounded-2xl overflow-hidden h-96">
