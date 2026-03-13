@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Award, Trophy, Medal, Star, Shield } from "lucide-react";
 import AwardHero from "@/components/AwardHero";
 import AwardFilters from "@/components/AwardFilters";
