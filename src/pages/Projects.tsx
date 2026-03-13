@@ -26,7 +26,7 @@ const Projects = () => {
       year: "2023",
       category: "Transportation",
       image: "/src/assets/metro-line-expansion.png",
-      description: "Development of Scheduled Waste Management Centre (“SWMCJ”) Infrastructure Package for Cenviro Johor Sdn Bhd.",
+      description: "Development of Scheduled Waste Management Centre ("SWMCJ") Infrastructure Package for Cenviro Johor Sdn Bhd.",
       completed: true,
     },
     {
@@ -70,7 +70,7 @@ const Projects = () => {
       location: "Johor, Malaysia",
       year: "2024",
       category: "Industrial",
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80",
+      image: "/src/assets/industrial-warehouse.png",
       description: "Construction of state-of-the-art logistics and distribution center with automated systems",
       completed: true,
     },
