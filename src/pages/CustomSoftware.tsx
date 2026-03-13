@@ -22,7 +22,7 @@ const CustomSoftware = () => {
     {
       title: "Facility Management Solutions",
       description: "Optimize facility operations with software that helps you manage maintenance schedules, asset tracking, and resource allocation efficiently.",
-      image: "/src/assets/facility-management.png"
+      image: "/src/assets/facility-management.jpg"
     },
     {
       title: "Custom ERP Solutions",
