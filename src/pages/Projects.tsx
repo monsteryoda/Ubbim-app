@@ -52,7 +52,7 @@ const Projects = () => {
       location: "Kuala Lumpur, Malaysia",
       year: "2023",
       category: "Commercial",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+      image: "/src/assets/commercial-tower.png",
       description: "Modern commercial tower with mixed-use facilities, featuring offices, retail, and entertainment spaces.",
       completed: true,
     },
