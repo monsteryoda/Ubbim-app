@@ -233,9 +233,6 @@ const Projects = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
               DIGITAL SOLUTIONS
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Discover our latest completed and ongoing projects across Malaysia and beyond.
-            </p>
           </div>
           <Carousel
             showThumbs={false}
