@@ -119,7 +119,7 @@ const Projects = () => {
       year: "2024",
       category: "Technology",
       image: "/src/assets/smart-building-automation.png",
-      description: "Integrated IoT Platform for Building Management and Energy Optimization",
+      description: "3D Process Animation Video for Waste to Energy Plant",
       completed: true,
     },
     {
