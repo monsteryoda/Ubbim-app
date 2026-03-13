@@ -1,12 +1,19 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const Contact = () => {
+  useEffect(() => {
+    document.title = "Contact - UBBIM";
+    return () => {
+      document.title = "UBBIM - Integrated Solutions for the Built Environment";
+    };
+  }, []);
+
   const officeDetails = {
     address: "No. 219, Jalan S2 B10, Seremban 2, 70300 Seremban, Negeri Sembilan",
     phone: "+606-6016007",
