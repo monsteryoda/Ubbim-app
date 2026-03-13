@@ -34,7 +34,7 @@ const LookingAheadBanner: React.FC = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-center text-lg font-semibold text-[#1A4B8C] mb-4 tracking-wide uppercase"
+            className="text-center text-lg font-semibold text-[#1A4B8C] mb-4 tracking-wide"
           >
             LOOKING AHEAD
           </motion.h2>
@@ -54,7 +54,7 @@ const LookingAheadBanner: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="bg-gray-100 rounded-2xl p-8 md:p-12"
           >
-            <p className="text-gray-700 text-center text-lg md:text-xl leading-relaxed font-light whitespace-nowrap">
+            <p className="text-gray-700 text-center text-lg md:text-xl leading-relaxed font-light">
               As we continue our journey, we remain dedicated to transforming the construction landscape — blending technology, sustainability, and human innovation to create lasting value for our clients and communities.
             </p>
           </motion.div>
