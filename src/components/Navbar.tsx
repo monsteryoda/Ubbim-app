@@ -195,13 +195,6 @@ const Navbar = () => {
               ))}
             </nav>
           </div>
-
-          {/* Drawer Footer */}
-          <div className="p-4 border-t">
-            <Button className="w-full bg-[#1A4B8C] hover:bg-[#143a6e]">
-              Get Started
-            </Button>
-          </div>
         </div>
       </div>
 
