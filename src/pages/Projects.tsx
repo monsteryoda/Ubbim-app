@@ -43,7 +43,7 @@ const Projects = () => {
       location: "Minas Gerais, Brazil",
       year: "2022",
       category: "Infrastructure",
-      image: "https://images.unsplash.com/photo-1545158927-2c94795a9a6c?w=800&q=80",
+      image: "/src/assets/highway-modernization.png",
       description: "Complete highway modernization including new lanes, smart traffic systems, and safety improvements.",
       completed: true,
     },
