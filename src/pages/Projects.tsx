@@ -146,18 +146,7 @@ const Projects = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1A4B8C]/90 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                    <span className="inline-block px-3 py-1 bg-[#4ADE80] text-[#1A4B8C] text-xs font-semibold rounded-full mb-3">
-                      {project.category}
-                    </span>
                     <h3 className="text-2xl md:text-3xl font-bold mb-2">{project.title}</h3>
-                    <div className="flex items-center text-sm text-gray-200 mb-2">
-                      <MapPin className="w-4 h-4 mr-1" />
-                      {project.location}
-                    </div>
-                    <div className="flex items-center text-sm text-gray-200 mb-3">
-                      <Calendar className="w-4 h-4 mr-1" />
-                      {project.year}
-                    </div>
                     <p className="text-gray-200">{project.description}</p>
                   </div>
                 </div>
