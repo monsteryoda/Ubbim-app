@@ -61,7 +61,7 @@ const Projects = () => {
       location: "Seremban, Malaysia",
       year: "2024",
       category: "Residential",
-      image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
+      image: "/src/assets/residential-development.png",
       description: "Site Clearance Earthwork, Road & Drainage and Detention Pond Works for Kualiti Alam Sdn Bhd",
       completed: false,
     },
