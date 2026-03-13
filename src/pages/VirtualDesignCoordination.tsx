@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft, MapPin, Phone, Mail, Cube, Scan, FileText, Shield, TrendingUp, CheckCircle, Building2, Clock, Leaf, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -8,13 +8,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 
 const VirtualDesignCoordination = () => {
-  useEffect(() => {
-    document.title = "Virtual Design Coordination - UBBIM";
-    return () => {
-      document.title = "UBBIM - Integrated Solutions for the Built Environment";
-    };
-  }, []);
-
   const services = [
     {
       title: "Virtual Reality Walkthroughs",
