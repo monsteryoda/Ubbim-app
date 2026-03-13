@@ -44,7 +44,7 @@ const Projects = () => {
       year: "2022",
       category: "Infrastructure",
       image: "/src/assets/highway-modernization.png",
-      description: "Complete highway modernization including new lanes, smart traffic systems, and safety improvements.",
+      description: "Design and Construction of Depolution System Plant at Tanjong Malim Perak for M/S Special Builder Sdn Bhd",
       completed: true,
     },
     {
