@@ -62,7 +62,7 @@ const Projects = () => {
       year: "2024",
       category: "Residential",
       image: "/src/assets/residential-development.png",
-      description: "Site Clearance Earthwork, Road & Drainage and Detention Pond Works for Kualiti Alam Sdn Bhd",
+      description: "Fabrication & Erection of Structure Steel for the Ampang Line LRT extension project",
       completed: false,
     },
   ];
