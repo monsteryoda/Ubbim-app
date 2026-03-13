@@ -37,7 +37,7 @@ const AwardFilters: React.FC<AwardFiltersProps> = ({
               />
             </div>
             <div className="p-8">
-              <h4 className="text-xl font-bold text-gray-800 mb-4">Platinum Award for ESG</h4>
+              <h4 className="text-xl font-bold text-gray-800 mb-4 uppercase">Platinum Award for ESG</h4>
               <p className="text-gray-600 leading-relaxed text-justify">
                 Recognized for our leadership in sustainability, UBBIM Resources integrates ESG principles across every stage of our projects — from turning industrial by-products into eco-friendly materials like CenPave to upholding transparent governance through ISO standards and empowering local communities through training. This award affirms our belief that innovation and sustainability can progress hand in hand to build a greener future.
               </p>
@@ -54,7 +54,7 @@ const AwardFilters: React.FC<AwardFiltersProps> = ({
               />
             </div>
             <div className="p-8">
-              <h4 className="text-xl font-bold text-gray-800 mb-4">Platinum Award for ICT/Digitalization</h4>
+              <h4 className="text-xl font-bold text-gray-800 mb-4 uppercase">Platinum Award for ICT/Digitalization</h4>
               <p className="text-gray-600 leading-relaxed text-justify">
                 Honored for driving digital transformation in Malaysia's construction sector, UBBIM Resources leverages AI, BIM, drone analytics, and digital twin technologies to enhance project efficiency, transparency, and safety. This award reflects our commitment to reshaping the built environment through purposeful innovation and future-ready digital practices.
               </p>
