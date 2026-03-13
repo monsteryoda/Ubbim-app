@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import pointCloudImage from "../assets/construction-model-point-cloud.webp";
+import asBuiltImage from "../assets/as-built-documentation.png";
 
 const ThreeDScanning = () => {
   useEffect(() => {
@@ -25,7 +26,7 @@ const ThreeDScanning = () => {
     {
       title: "As-Built Documentation",
       description: "Produce precise as-built models for renovations, retrofits, and historical preservation, ensuring all modifications are accurately recorded.",
-      image: "../assets/as-built-documentation.png"
+      image: asBuiltImage
     },
     {
       title: "Industrial Plant Scanning",
