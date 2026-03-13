@@ -16,7 +16,7 @@ const Projects = () => {
       location: "Singapore",
       year: "2023",
       category: "Defense Infrastructure",
-      image: "https://www.ublim.com/wp-content/uploads/2024/08/b39d1bf4d7445c5c632d52bb79cefa55.jpeg",
+      image: "/src/assets/ministry-defence-project.png",
       description: "Comprehensive defense infrastructure development with advanced security systems and modern facilities.",
       completed: true,
     },
