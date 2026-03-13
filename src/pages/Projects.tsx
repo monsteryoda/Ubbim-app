@@ -34,7 +34,7 @@ const Projects = () => {
       location: "Rio de Janeiro, Brazil",
       year: "2022",
       category: "Energy",
-      image: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=800&q=80",
+      image: "/src/assets/green-energy-complex.png",
       description: "Sustainable energy complex featuring solar panels, wind turbines, and energy-efficient buildings.",
       completed: true,
     },
