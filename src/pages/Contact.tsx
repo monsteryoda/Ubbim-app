@@ -3,10 +3,7 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Instagram, CheckCircle } from "lucide-react";
-import { showSuccess, showError } from "@/utils/toast";
+import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 const Contact = () => {
   const officeDetails = {
@@ -19,11 +16,6 @@ const Contact = () => {
       { icon: Linkedin, href: "#", label: "LinkedIn" },
       { icon: Instagram, href: "#", label: "Instagram" },
     ],
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    showSuccess("Thank you for your message! We'll get back to you soon.");
   };
 
   return (
@@ -49,95 +41,6 @@ const Contact = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
-            <div>
-              <Card className="border-none shadow-lg">
-                <CardContent className="p-8">
-                  <form className="space-y-6" onSubmit={handleSubmit}>
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-2">
-                          First Name
-                        </label>
-                        <Input 
-                          type="text" 
-                          placeholder="John"
-                          className="border-gray-300 focus:border-[#1A4B8C] focus:ring-[#1A4B8C]"
-                          required
-                        />
-                      </div>
-                      <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-2">
-                          Last Name
-                        </label>
-                        <Input 
-                          type="text" 
-                          placeholder="Doe"
-                          className="border-gray-300 focus:border-[#1A4B8C] focus:ring-[#1A4B8C]"
-                          required
-                        />
-                      </div>
-                    </div>
-                    
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">
-                        Email Address
-                      </label>
-                      <Input 
-                        type="email" 
-                        placeholder="john@example.com"
-                        className="border-gray-300 focus:border-[#1A4B8C] focus:ring-[#1A4B8C]"
-                        required
-                      />
-                    </div>
-                    
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">
-                        Phone Number
-                      </label>
-                      <Input 
-                        type="tel" 
-                        placeholder="+60 12-345 6789"
-                        className="border-gray-300 focus:border-[#1A4B8C] focus:ring-[#1A4B8C]"
-                      />
-                    </div>
-                    
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">
-                        Subject
-                      </label>
-                      <Input 
-                        type="text" 
-                        placeholder="How can we help you?"
-                        className="border-gray-300 focus:border-[#1A4B8C] focus:ring-[#1A4B8C]"
-                        required
-                      />
-                    </div>
-                    
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">
-                        Message
-                      </label>
-                      <Textarea 
-                        placeholder="Tell us more about your project or inquiry..."
-                        rows={5}
-                        className="border-gray-300 focus:border-[#1A4B8C] focus:ring-[#1A4B8C]"
-                        required
-                      />
-                    </div>
-                    
-                    <Button 
-                      type="submit"
-                      className="w-full bg-[#1A4B8C] hover:bg-[#153a6e] text-white py-6 text-lg"
-                    >
-                      <CheckCircle className="w-5 h-5 mr-2" />
-                      Send Message
-                    </Button>
-                  </form>
-                </CardContent>
-              </Card>
-            </div>
-
             {/* Office Details */}
             <div className="space-y-8">
               <div>
