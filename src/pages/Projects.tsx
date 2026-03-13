@@ -76,6 +76,45 @@ const Projects = () => {
     },
   ];
 
+  const recentProjects = [
+    {
+      title: "Ampang Line LRT Extension",
+      location: "Kuala Lumpur, Malaysia",
+      year: "2024",
+      category: "Transportation",
+      image: "/src/assets/residential-development.png",
+      description: "Steel fabrication and erection works for the new LRT extension line",
+      completed: false,
+    },
+    {
+      title: "Cenviro Recovery Plant",
+      location: "Johor, Malaysia",
+      year: "2023",
+      category: "Industrial",
+      image: "/src/assets/commercial-tower.png",
+      description: "Storage tank and process equipment fabrication for waste management facility",
+      completed: true,
+    },
+    {
+      title: "Special Builder Depolution Plant",
+      location: "Perak, Malaysia",
+      year: "2022",
+      category: "Infrastructure",
+      image: "/src/assets/highway-modernization.png",
+      description: "Design and construction of advanced depolution system plant",
+      completed: true,
+    },
+    {
+      title: "Kualiti Alam Incinerator",
+      location: "Selangor, Malaysia",
+      year: "2022",
+      category: "Energy",
+      image: "/src/assets/green-energy-complex.png",
+      description: "Modularised incinerator project for sustainable waste management",
+      completed: true,
+    },
+  ];
+
   const stats = [
     { value: "500+", label: "Projects Completed" },
     { value: "15", label: "Countries Served" },
@@ -125,7 +164,7 @@ const Projects = () => {
         </div>
       </section>
 
-      {/* Projects Carousel */}
+      {/* Featured Projects Carousel */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -146,6 +185,44 @@ const Projects = () => {
             className="max-w-4xl mx-auto"
           >
             {projects.map((project, index) => (
+              <div key={index} className="relative">
+                <div className="relative h-96 md:h-[500px] overflow-hidden rounded-lg shadow-xl">
+                  <img 
+                    src={project.image} 
+                    alt={project.title} 
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/70 to-transparent">
+                    <p className="text-white leading-relaxed">{project.description}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </Carousel>
+        </div>
+      </section>
+
+      {/* Recent Projects Carousel */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
+              RECENT PROJECTS
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Discover our latest completed and ongoing projects across Malaysia and beyond.
+            </p>
+          </div>
+          <Carousel
+            showThumbs={false}
+            showArrows={true}
+            showStatus={false}
+            infiniteLoop
+            autoPlay
+            interval={5000}
+            className="max-w-4xl mx-auto"
+          >
+            {recentProjects.map((project, index) => (
               <div key={index} className="relative">
                 <div className="relative h-96 md:h-[500px] overflow-hidden rounded-lg shadow-xl">
                   <img 
