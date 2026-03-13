@@ -191,16 +191,13 @@ const Projects = () => {
         </div>
       </section>
 
-      {/* Featured Projects Carousel */}
+      {/* Built Environment Projects Carousel */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-4">
               BUILT ENVIRONMENT PROJECTS
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Explore our portfolio of successful projects delivered with precision and excellence.
-            </p>
           </div>
           <Carousel
             showThumbs={false}
@@ -229,7 +226,7 @@ const Projects = () => {
         </div>
       </section>
 
-      {/* Recent Projects Carousel */}
+      {/* Digital Solutions Carousel */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
