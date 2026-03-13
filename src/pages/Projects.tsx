@@ -100,7 +100,7 @@ const Projects = () => {
       location: "Perak, Malaysia",
       year: "2022",
       category: "Infrastructure",
-      image: "/src/assets/highway-modernization.png",
+      image: "/src/assets/special-builder-depolution-plant.png",
       description: "Design and construction of advanced depolution system plant",
       completed: true,
     },
