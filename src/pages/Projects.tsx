@@ -83,7 +83,7 @@ const Projects = () => {
       year: "2024",
       category: "Transportation",
       image: "/src/assets/lrt-extension-blueprint.png",
-      description: "Steel fabrication and erection works for the new LRT extension line",
+      description: "Digital Permit to Work System (e-ptw) for an incineration plant",
       completed: false,
     },
     {
