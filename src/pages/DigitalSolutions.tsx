@@ -131,7 +131,7 @@ const DigitalSolutions = () => {
                   <h3 className="text-xl font-bold text-[#1A4B8C] mb-3">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 leading-relaxed text-justify">
                     {service.description}
                   </p>
                 </div>
