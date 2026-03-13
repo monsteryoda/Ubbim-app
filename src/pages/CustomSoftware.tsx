@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft, MapPin, Phone, Mail, Code, Database, Shield, TrendingUp, CheckCircle, Building2, Clock, Leaf, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -8,6 +8,13 @@ import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 
 const CustomSoftware = () => {
+  useEffect(() => {
+    document.title = "Custom Software Solutions - UBBIM";
+    return () => {
+      document.title = "UBBIM - Integrated Solutions for the Built Environment";
+    };
+  }, []);
+
   const services = [
     {
       title: "Project Management Systems",
