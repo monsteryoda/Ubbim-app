@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft, MapPin, Phone, Mail, Cube, Scan, FileText, Shield, TrendingUp, CheckCircle, Building2, Clock, Leaf, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -9,6 +9,13 @@ import Navbar from "@/components/Navbar";
 import pointCloudImage from "../assets/construction-model-point-cloud.webp";
 
 const ThreeDScanning = () => {
+  useEffect(() => {
+    document.title = "3D Scanning Solutions - UBBIM";
+    return () => {
+      document.title = "UBBIM - Integrated Solutions for the Built Environment";
+    };
+  }, []);
+
   const services = [
     {
       title: "Laser Scanning",
