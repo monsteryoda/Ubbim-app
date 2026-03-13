@@ -2,8 +2,8 @@
 
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import Navbar from "@/components/Navbar";
 
 const Contact = () => {
   const officeDetails = {
@@ -20,8 +20,11 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      {/* Navigation Bar */}
+      <Navbar />
+
       {/* Hero Section */}
-      <section className="relative bg-[#1A4B8C] text-white py-20 lg:py-28 overflow-hidden">
+      <section className="relative bg-[#1A4B8C] text-white py-20 lg:py-28 overflow-hidden pt-20">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80')] bg-cover bg-center" />
         </div>
