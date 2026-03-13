@@ -194,7 +194,7 @@ const Projects = () => {
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/70 to-transparent">
-                    <p className="text-white leading-relaxed">{project.description}</p>
+                    <p className="text-white text-lg font-bold leading-relaxed">{project.description}</p>
                   </div>
                 </div>
               </div>
@@ -229,7 +229,7 @@ const Projects = () => {
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/70 to-transparent">
-                    <p className="text-white leading-relaxed">{project.description}</p>
+                    <p className="text-white text-lg font-bold leading-relaxed">{project.description}</p>
                   </div>
                 </div>
               </div>
