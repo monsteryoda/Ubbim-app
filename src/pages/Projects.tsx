@@ -128,7 +128,7 @@ const Projects = () => {
       year: "2023",
       category: "Infrastructure",
       image: "/src/assets/coastal-protection-system.png",
-      description: "Advanced Flood Mitigation and Coastal Defense Engineering Project",
+      description: "3D Virtual Reality Remodelling of a Storage Warehouse in Melaka",
       completed: true,
     },
     {
