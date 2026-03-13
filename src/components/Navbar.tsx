@@ -85,7 +85,7 @@ const Navbar = () => {
                   {/* Dropdown Menu */}
                   {link.hasDropdown && (
                     <div
-                      className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-64 bg-white rounded-lg shadow-xl overflow-hidden transition-all duration-200 ${
+                      className={`absolute top-full left-1/2 transform -translate-x/2 mt-2 w-64 bg-white rounded-lg shadow-xl overflow-hidden transition-all duration-200 ${
                         isServicesDropdownOpen ? "opacity-100 visible" : "opacity-0 invisible"
                       }`}
                     >
@@ -134,7 +134,11 @@ const Navbar = () => {
           {/* Drawer Header */}
           <div className="flex items-center justify-between p-4 border-b">
             <Link to="/" className="flex items-center space-x-2">
-              <span className="text-gray-800 font-bold text-xl">UBBIM</span>
+              <img 
+                src="/src/assets/ubbim-logo.png" 
+                alt="UBBIM Logo" 
+                className="h-12 w-auto"
+              />
             </Link>
             <button
               onClick={() => setIsDrawerOpen(false)}
