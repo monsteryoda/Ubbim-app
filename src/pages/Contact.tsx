@@ -34,6 +34,9 @@ const Contact = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               Get in <span className="text-[#4ADE80]">Touch</span>
             </h1>
+            <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
+              Feel free to contact us if you have any questions, feedback, or need assistance. Our team is here to help and will get back to you as soon as possible.
+            </p>
           </div>
         </div>
       </section>
