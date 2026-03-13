@@ -53,7 +53,7 @@ const Projects = () => {
       year: "2023",
       category: "Commercial",
       image: "/src/assets/commercial-tower.png",
-      description: "Modern commercial tower with mixed-use facilities, featuring offices, retail, and entertainment spaces.",
+      description: "Design, Fabrication and Erection of Storage Tank and Process Equipments for Cenviro Recovery and Recycling Plant",
       completed: true,
     },
     {
