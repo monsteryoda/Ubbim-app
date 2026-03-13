@@ -110,7 +110,7 @@ const Projects = () => {
       year: "2022",
       category: "Energy",
       image: "/src/assets/kualiti-alam-incinerator.png",
-      description: "Modularised incinerator project for sustainable waste management",
+      description: "3D Scanning and Facility Management System for Large Mechanical Room",
       completed: true,
     },
   ];
