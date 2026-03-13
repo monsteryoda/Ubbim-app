@@ -92,7 +92,7 @@ const Projects = () => {
       year: "2023",
       category: "Industrial",
       image: "/src/assets/cenviro-recovery-plant.png",
-      description: "Storage tank and process equipment fabrication for waste management facility",
+      description: "Project Management System for Shutdown Operation",
       completed: true,
     },
     {
