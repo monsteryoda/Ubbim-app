@@ -137,7 +137,7 @@ const Projects = () => {
       year: "2024",
       category: "Technology",
       image: "/src/assets/digital-twin-facility.png",
-      description: "Real-time 3D Facility Monitoring and Predictive Maintenance System",
+      description: "Development of Building Contractors App (BEENA) for Association of Construction Project Managers",
       completed: false,
     },
   ];
