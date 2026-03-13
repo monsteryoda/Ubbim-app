@@ -12,17 +12,17 @@ const VRCoordination = () => {
     {
       title: "Virtual Reality (VR) Design Reviews",
       description: "Use VR to visualize and coordinate complex building designs before construction begins, reducing errors and rework.",
-      image: "/vr-review.png"
+      image: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=800&q=80"
     },
     {
       title: "Augmented Reality (AR) Site Visualization",
       description: "Overlay digital models onto real-world sites using AR, providing a clear understanding of how designs will fit within existing environments.",
-      image: "/ar-site.jpg"
+      image: "https://images.unsplash.com/photo-1626262911894-2b0e7d2c7e3d?w=800&q=80"
     },
     {
       title: "Process Video Animation",
       description: "Illustrate complex plant building processes and workflows with custom animations, making it easier for stakeholders to visualize and understand each step.",
-      image: "/process-video.png"
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80"
     }
   ];
 
@@ -184,7 +184,7 @@ const VRCoordination = () => {
             <div className="relative">
               <div className="aspect-[16/10] overflow-hidden rounded-2xl shadow-2xl">
                 <img 
-                  src="/src/assets/key-benefit.jpg" 
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80" 
                   alt="VR Coordination" 
                   className="w-full h-full object-cover"
                 />
