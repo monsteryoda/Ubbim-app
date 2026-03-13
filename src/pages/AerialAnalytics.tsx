@@ -189,7 +189,7 @@ const AerialAnalytics = () => {
             <div className="relative">
               <div className="aspect-[16/10] overflow-hidden rounded-2xl shadow-2xl">
                 <img 
-                  src="/src/assets/aerial-analytics.png" 
+                  src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=800&q=80" 
                   alt="Aerial Analytics" 
                   className="w-full h-full object-cover"
                 />
