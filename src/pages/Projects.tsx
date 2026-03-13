@@ -109,7 +109,7 @@ const Projects = () => {
       location: "Selangor, Malaysia",
       year: "2022",
       category: "Energy",
-      image: "/src/assets/green-energy-complex.png",
+      image: "/src/assets/kualiti-alam-incinerator.png",
       description: "Modularised incinerator project for sustainable waste management",
       completed: true,
     },
