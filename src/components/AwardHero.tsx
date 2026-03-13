@@ -22,7 +22,7 @@ const AwardHero: React.FC = () => {
           alt="Awards display" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1A4B8C] via-[#2563eb] to-[#1A4B8C] opacity-90" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1e293b] via-[#475569] to-[#1e293b] opacity-90" />
         <div className="absolute inset-0">
           {floatingIcons.map((item, index) => (
             <motion.div
@@ -94,7 +94,7 @@ const AwardHero: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto leading-relaxed"
+            className="text-xl md:text-2xl text-gray-200 max-w-4xl mx-auto leading-relaxed"
           >
             <p className="mb-4">
               At UBBIM Resources, every milestone reflects our unwavering commitment to innovation, sustainability, and digital transformation in the built environment.
