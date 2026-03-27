@@ -15,7 +15,6 @@ interface LogoCarouselProps {
 const LogoCarousel: React.FC<LogoCarouselProps> = ({ logos }) => {
   const [currentIndex, setCurrentIndex] = React.useState(0);
   const [isAnimating, setIsAnimating] = React.useState(false);
-  const [isPaused, setIsPaused] = React.useState(false);
 
   const nextSlide = () => {
     if (isAnimating) return;
@@ -31,23 +30,8 @@ const LogoCarousel: React.FC<LogoCarouselProps> = ({ logos }) => {
     setTimeout(() => setIsAnimating(false), 500);
   };
 
-  // Autoplay functionality
-  React.useEffect(() => {
-    if (isPaused || logos.length <= 1) return;
-
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, [currentIndex, isPaused, logos.length]);
-
   return (
-    <div 
-      className="relative"
-      onMouseEnter={() => setIsPaused(true)}
-      onMouseLeave={() => setIsPaused(false)}
-    >
+    <div className="relative">
       <div className="overflow-hidden">
         <div
           className={`flex transition-transform duration-500 ease-out ${
@@ -61,7 +45,7 @@ const LogoCarousel: React.FC<LogoCarouselProps> = ({ logos }) => {
                 <img
                   src={logo.image}
                   alt={logo.name}
-                  className="h-[120px] object-contain bg-transparent"
+                  className="h-[80px] object-contain bg-transparent"
                   onError={(e) => {
                     (e.target as HTMLImageElement).src = "https://via.placeholder.com/200x80?text=" + logo.name;
                   }}
