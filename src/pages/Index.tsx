@@ -10,6 +10,13 @@ import CertificationsGrid from "@/components/CertificationsGrid";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { showSuccess } from "@/utils/toast";
+import cidbLogo from "@/assets/cidb-logo.png";
+import malaysiaAirportsLogo from "@/assets/malaysia-airports-logo.png";
+import fgvLogo from "@/assets/fgv-logo.png";
+import northportLogo from "@/assets/northport-logo.png";
+import mindefLogo from "@/assets/mindef-logo.png";
+import cenviroLogo from "@/assets/cenviro-logo.png";
+import mofLogo from "@/assets/mof-logo.png";
 
 const Index = () => {
   const stats = [
@@ -56,17 +63,17 @@ const Index = () => {
   ];
 
   const clientLogos = [
-    { name: "CIDB", image: "https://via.placeholder.com/200x80/1A4B8C/FFFFFF?text=CIDB" },
-    { name: "Malaysia Airports", image: "https://via.placeholder.com/200x80/1A4B8C/FFFFFF?text=Malaysia+Airports" },
-    { name: "FGV", image: "https://via.placeholder.com/200x80/1A4B8C/FFFFFF?text=FGV" },
-    { name: "Northport", image: "https://via.placeholder.com/200x80/1A4B8C/FFFFFF?text=Northport" },
-    { name: "MINDEF", image: "https://via.placeholder.com/200x80/1A4B8C/FFFFFF?text=MINDEF" },
-    { name: "Cenviro", image: "https://via.placeholder.com/200x80/1A4B8C/FFFFFF?text=Cenviro" },
-    { name: "MOF", image: "https://via.placeholder.com/200x80/1A4B8C/FFFFFF?text=MOF" },
-    { name: "CIDB", image: "https://via.placeholder.com/200x80/1A4B8C/FFFFFF?text=CIDB" },
-    { name: "Malaysia Airports", image: "https://via.placeholder.com/200x80/1A4B8C/FFFFFF?text=Malaysia+Airports" },
-    { name: "FGV", image: "https://via.placeholder.com/200x80/1A4B8C/FFFFFF?text=FGV" },
-    { name: "Northport", image: "https://via.placeholder.com/200x80/1A4B8C/FFFFFF?text=Northport" },
+    { name: "CIDB", image: cidbLogo },
+    { name: "Malaysia Airports", image: malaysiaAirportsLogo },
+    { name: "FGV", image: fgvLogo },
+    { name: "Northport", image: northportLogo },
+    { name: "MINDEF", image: mindefLogo },
+    { name: "Cenviro", image: cenviroLogo },
+    { name: "MOF", image: mofLogo },
+    { name: "CIDB", image: cidbLogo },
+    { name: "Malaysia Airports", image: malaysiaAirportsLogo },
+    { name: "FGV", image: fgvLogo },
+    { name: "Northport", image: northportLogo },
   ];
 
   const officeDetails = {
