@@ -111,17 +111,49 @@ const Index = () => {
       {/* Combined Stats, Video & About Section */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          {/* Stats Row */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center bg-white rounded-2xl p-6 shadow-lg">
-                <stat.icon className="w-8 h-8 mx-auto mb-3 text-[#1A4B8C]" />
-                <div className="text-3xl md:text-4xl font-bold text-[#1A4B8C] mb-1">
-                  {stat.value}
+          {/* 3 Stack Cards - Years of Experience, ISO, National Recognition */}
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            {/* Years of Experience Card */}
+            <Card className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300 bg-gradient-to-br from-[#1A4B8C] to-[#2563EB] text-white">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <TrendingUp className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-gray-600 text-sm">{stat.label}</div>
-              </div>
-            ))}
+                <div className="text-5xl font-bold mb-2">20+</div>
+                <div className="text-lg text-white/90">Years of Experience</div>
+                <p className="text-white/80 mt-4 text-sm">
+                  Two decades of excellence in construction project management and digital innovation
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* ISO Certifications Card */}
+            <Card className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300 bg-gradient-to-br from-[#4ADE80] to-[#22C55E] text-white">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Shield className="w-8 h-8 text-white" />
+                </div>
+                <div className="text-5xl font-bold mb-2">ISO</div>
+                <div className="text-lg text-white/90">Certified</div>
+                <p className="text-white/80 mt-4 text-sm">
+                  ISO 9001, ISO 14001, ISO 45001 certified for quality, environment, and safety
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* National Recognition Card */}
+            <Card className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300 bg-gradient-to-br from-[#F59E0B] to-[#FBBF24] text-white">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Award className="w-8 h-8 text-white" />
+                </div>
+                <div className="text-5xl font-bold mb-2">15+</div>
+                <div className="text-lg text-white/90">National Awards</div>
+                <p className="text-white/80 mt-4 text-sm">
+                  Recognized across Malaysia for excellence in construction and digital solutions
+                </p>
+              </CardContent>
+            </Card>
           </div>
 
           {/* Video & About Combined */}
