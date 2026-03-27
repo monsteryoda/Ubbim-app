@@ -62,7 +62,7 @@ const Navbar = () => {
                   {link.name === "Services" ? (
                     <span
                       className={`flex items-center space-x-1 transition-colors font-medium ${
-                        isActive(link.href) ? "text-[#1A4B8C]" : "text-gray-700 hover:text-[#1A4B8C]"
+                        isActive(link.href) ? "text-[#60A5FA]" : "text-gray-700 hover:text-[#60A5FA]"
                       }`}
                     >
                       <span>{link.name}</span>
@@ -74,7 +74,7 @@ const Navbar = () => {
                       target={link.isExternal ? "_blank" : undefined}
                       rel={link.isExternal ? "noopener noreferrer" : undefined}
                       className={`flex items-center space-x-1 transition-colors font-medium ${
-                        isActive(link.href) ? "text-[#1A4B8C]" : "text-gray-700 hover:text-[#1A4B8C]"
+                        isActive(link.href) ? "text-[#60A5FA]" : "text-gray-700 hover:text-[#60A5FA]"
                       }`}
                     >
                       <span>{link.name}</span>
@@ -94,8 +94,8 @@ const Navbar = () => {
                           <Link
                             key={item.name}
                             to={item.href}
-                            className={`block px-4 py-3 text-gray-700 hover:bg-[#1A4B8C]/10 hover:text-[#1A4B8C] transition-colors font-medium ${
-                              isActive(item.href) ? "bg-[#1A4B8C]/10 text-[#1A4B8C]" : ""
+                            className={`block px-4 py-3 text-gray-700 hover:bg-[#60A5FA]/10 hover:text-[#60A5FA] transition-colors font-medium ${
+                              isActive(item.href) ? "bg-[#60A5FA]/10 text-[#60A5FA]" : ""
                             }`}
                           >
                             {item.name}
@@ -156,8 +156,8 @@ const Navbar = () => {
                 <div key={link.name}>
                   {link.name === "Services" ? (
                     <span
-                      className={`block px-4 py-3 text-gray-700 hover:bg-[#1A4B8C]/10 hover:text-[#1A4B8C] rounded-lg transition-colors font-medium ${
-                        isActive(link.href) ? "bg-[#1A4B8C]/10 text-[#1A4B8C]" : ""
+                      className={`block px-4 py-3 text-gray-700 hover:bg-[#60A5FA]/10 hover:text-[#60A5FA] rounded-lg transition-colors font-medium ${
+                        isActive(link.href) ? "bg-[#60A5FA]/10 text-[#60A5FA]" : ""
                       }`}
                     >
                       {link.name}
@@ -168,8 +168,8 @@ const Navbar = () => {
                       target={link.isExternal ? "_blank" : undefined}
                       rel={link.isExternal ? "noopener noreferrer" : undefined}
                       onClick={() => setIsDrawerOpen(false)}
-                      className={`block px-4 py-3 text-gray-700 hover:bg-[#1A4B8C]/10 hover:text-[#1A4B8C] rounded-lg transition-colors font-medium ${
-                        isActive(link.href) ? "bg-[#1A4B8C]/10 text-[#1A4B8C]" : ""
+                      className={`block px-4 py-3 text-gray-700 hover:bg-[#60A5FA]/10 hover:text-[#60A5FA] rounded-lg transition-colors font-medium ${
+                        isActive(link.href) ? "bg-[#60A5FA]/10 text-[#60A5FA]" : ""
                       }`}
                     >
                       {link.name}
@@ -182,8 +182,8 @@ const Navbar = () => {
                           key={item.name}
                           to={item.href}
                           onClick={() => setIsDrawerOpen(false)}
-                          className={`block px-4 py-2 text-sm text-gray-600 hover:bg-[#1A4B8C]/10 hover:text-[#1A4B8C] rounded transition-colors ${
-                            isActive(item.href) ? "bg-[#1A4B8C]/10 text-[#1A4B8C]" : ""
+                          className={`block px-4 py-2 text-sm text-gray-600 hover:bg-[#60A5FA]/10 hover:text-[#60A5FA] rounded transition-colors ${
+                            isActive(item.href) ? "bg-[#60A5FA]/10 text-[#60A5FA]" : ""
                           }`}
                         >
                           {item.name}
