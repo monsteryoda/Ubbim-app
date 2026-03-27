@@ -9,7 +9,6 @@ import LogoCarousel from "@/components/LogoCarousel";
 import CertificationsGrid from "@/components/CertificationsGrid";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import StackCards from "@/components/StackCards";
 import { showSuccess } from "@/utils/toast";
 
 const Index = () => {
@@ -164,9 +163,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      {/* Stack Cards Section */}
-      <StackCards />
 
       {/* Services Preview */}
       <section className="py-20 bg-white">
