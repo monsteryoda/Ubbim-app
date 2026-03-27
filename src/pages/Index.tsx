@@ -56,17 +56,17 @@ const Index = () => {
   ];
 
   const clientLogos = [
-    { name: "CIDB", image: "/cidb-logo.png" },
-    { name: "Malaysia Airports", image: "/malaysia-airports-logo.png" },
-    { name: "FGV", image: "/fgv-logo.png" },
-    { name: "Northport", image: "/northport-logo.png" },
-    { name: "MINDEF", image: "/mindef-logo.png" },
-    { name: "Cenviro", image: "/cenviro-logo.png" },
-    { name: "MOF", image: "/mof-logo.png" },
-    { name: "CIDB", image: "/cidb-logo.png" },
-    { name: "Malaysia Airports", image: "/malaysia-airports-logo.png" },
-    { name: "FGV", image: "/fgv-logo.png" },
-    { name: "Northport", image: "/northport-logo.png" },
+    { name: "CIDB", image: "https://via.placeholder.com/200x80/1A4B8C/FFFFFF?text=CIDB" },
+    { name: "Malaysia Airports", image: "https://via.placeholder.com/200x80/1A4B8C/FFFFFF?text=Malaysia+Airports" },
+    { name: "FGV", image: "https://via.placeholder.com/200x80/1A4B8C/FFFFFF?text=FGV" },
+    { name: "Northport", image: "https://via.placeholder.com/200x80/1A4B8C/FFFFFF?text=Northport" },
+    { name: "MINDEF", image: "https://via.placeholder.com/200x80/1A4B8C/FFFFFF?text=MINDEF" },
+    { name: "Cenviro", image: "https://via.placeholder.com/200x80/1A4B8C/FFFFFF?text=Cenviro" },
+    { name: "MOF", image: "https://via.placeholder.com/200x80/1A4B8C/FFFFFF?text=MOF" },
+    { name: "CIDB", image: "https://via.placeholder.com/200x80/1A4B8C/FFFFFF?text=CIDB" },
+    { name: "Malaysia Airports", image: "https://via.placeholder.com/200x80/1A4B8C/FFFFFF?text=Malaysia+Airports" },
+    { name: "FGV", image: "https://via.placeholder.com/200x80/1A4B8C/FFFFFF?text=FGV" },
+    { name: "Northport", image: "https://via.placeholder.com/200x80/1A4B8C/FFFFFF?text=Northport" },
   ];
 
   const officeDetails = {
