@@ -168,7 +168,7 @@ const StructuralRepair = () => {
             <div className="relative">
               <div className="aspect-[16/10] overflow-hidden rounded-2xl shadow-2xl">
                 <img 
-                  src="/src/assets/why-choose-us.png" 
+                  src="/sr4.png" 
                   alt="Why Choose Us" 
                   className="w-full h-full object-cover"
                 />
