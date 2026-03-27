@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 const Navbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
+  const [logoError, setLogoError] = useState(false);
   const location = useLocation();
 
   const navLinks = [
@@ -35,6 +36,10 @@ const Navbar = () => {
     return location.pathname.startsWith(path);
   };
 
+  const handleLogoError = () => {
+    setLogoError(true);
+  };
+
   return (
     <>
       {/* Navigation Bar */}
@@ -43,11 +48,18 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
-              <img 
-                src="/ubbim-logo.png" 
-                alt="UBBIM Logo" 
-                className="h-[58px] w-auto"
-              />
+              {logoError ? (
+                <div className="h-[58px] w-auto flex items-center justify-center bg-[#1A4B8C] rounded text-white font-bold px-3">
+                  UBBIM
+                </div>
+              ) : (
+                <img 
+                  src="/ubbim-logo.png" 
+                  alt="UBBIM Logo" 
+                  className="h-[58px] w-auto"
+                  onError={handleLogoError}
+                />
+              )}
             </Link>
 
             {/* Desktop Navigation */}
@@ -134,11 +146,18 @@ const Navbar = () => {
           {/* Drawer Header */}
           <div className="flex items-center justify-between p-4 border-b">
             <Link to="/" className="flex items-center space-x-2">
-              <img 
-                src="/ubbim-logo.png" 
-                alt="UBBIM Logo" 
-                className="h-12 w-auto"
-              />
+              {logoError ? (
+                <div className="h-12 w-auto flex items-center justify-center bg-[#1A4B8C] rounded text-white font-bold px-3">
+                  UBBIM
+                </div>
+              ) : (
+                <img 
+                  src="/ubbim-logo.png" 
+                  alt="UBBIM Logo" 
+                  className="h-12 w-auto"
+                  onError={handleLogoError}
+                />
+              )}
             </Link>
             <button
               onClick={() => setIsDrawerOpen(false)}
