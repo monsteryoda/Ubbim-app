@@ -15,6 +15,7 @@ interface LogoCarouselProps {
 const LogoCarousel: React.FC<LogoCarouselProps> = ({ logos }) => {
   const [currentIndex, setCurrentIndex] = React.useState(0);
   const [isAnimating, setIsAnimating] = React.useState(false);
+  const [isPaused, setIsPaused] = React.useState(false);
 
   const nextSlide = () => {
     if (isAnimating) return;
@@ -30,8 +31,23 @@ const LogoCarousel: React.FC<LogoCarouselProps> = ({ logos }) => {
     setTimeout(() => setIsAnimating(false), 500);
   };
 
+  // Autoplay functionality
+  React.useEffect(() => {
+    if (isPaused || logos.length <= 1) return;
+
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [currentIndex, isPaused, logos.length]);
+
   return (
-    <div className="relative">
+    <div 
+      className="relative"
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+    >
       <div className="overflow-hidden">
         <div
           className={`flex transition-transform duration-500 ease-out ${
