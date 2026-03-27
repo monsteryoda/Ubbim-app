@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
-import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Instagram, ArrowLeft } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -37,6 +38,10 @@ const Contact = () => {
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80')] bg-cover bg-center" />
         </div>
         <div className="container mx-auto px-4 relative">
+          <Link to="/" className="inline-flex items-center text-white/80 hover:text-white mb-6 transition-colors">
+            <ArrowLeft className="w-4 h-4 mr-2" />
+            Back to Homepage
+          </Link>
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               Get in <span className="text-[#4ADE80]">Touch</span>
