@@ -3,6 +3,7 @@
 import React from "react";
 import { Award } from "lucide-react";
 import { motion } from "framer-motion";
+import awardsImage from "@/assets/awards-hero.jpg";
 
 const AwardHero: React.FC = () => {
   const floatingIcons = [
@@ -17,7 +18,7 @@ const AwardHero: React.FC = () => {
     <section className="relative overflow-hidden">
       <div className="absolute inset-0">
         <img 
-          src="/9a36169ee1f398096b881e61cb367112.png" 
+          src="/ubbim-awards-hero.png" 
           alt="Awards display" 
           className="w-full h-full object-cover"
         />
