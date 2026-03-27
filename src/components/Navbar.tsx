@@ -38,7 +38,7 @@ const Navbar = () => {
   return (
     <>
       {/* Navigation Bar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#60A5FA] shadow-lg">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
@@ -62,7 +62,7 @@ const Navbar = () => {
                   {link.name === "Services" ? (
                     <span
                       className={`flex items-center space-x-1 transition-colors font-medium ${
-                        isActive(link.href) ? "text-[#4ADE80]" : "text-white hover:text-[#4ADE80]"
+                        isActive(link.href) ? "text-[#1A4B8C]" : "text-gray-700 hover:text-[#1A4B8C]"
                       }`}
                     >
                       <span>{link.name}</span>
@@ -74,7 +74,7 @@ const Navbar = () => {
                       target={link.isExternal ? "_blank" : undefined}
                       rel={link.isExternal ? "noopener noreferrer" : undefined}
                       className={`flex items-center space-x-1 transition-colors font-medium ${
-                        isActive(link.href) ? "text-[#4ADE80]" : "text-white hover:text-[#4ADE80]"
+                        isActive(link.href) ? "text-[#1A4B8C]" : "text-gray-700 hover:text-[#1A4B8C]"
                       }`}
                     >
                       <span>{link.name}</span>
@@ -111,7 +111,7 @@ const Navbar = () => {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsDrawerOpen(!isDrawerOpen)}
-              className="md:hidden text-white p-2"
+              className="md:hidden text-gray-700 p-2"
               aria-label="Toggle menu"
             >
               {isDrawerOpen ? (
