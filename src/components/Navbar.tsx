@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ubbimLogo from "@/assets/ubbim-logo.png";
 
 const Navbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -41,11 +42,13 @@ const Navbar = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
-            {/* Logo - Text based to avoid image errors */}
+            {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
-              <div className="h-[58px] w-auto flex items-center justify-center bg-[#1A4B8C] rounded text-white font-bold px-4 text-xl">
-                UBBIM
-              </div>
+              <img 
+                src={ubbimLogo} 
+                alt="UBBIM Logo" 
+                className="h-[58px] w-auto"
+              />
             </Link>
 
             {/* Desktop Navigation */}
@@ -132,9 +135,11 @@ const Navbar = () => {
           {/* Drawer Header */}
           <div className="flex items-center justify-between p-4 border-b">
             <Link to="/" className="flex items-center space-x-2">
-              <div className="h-12 w-auto flex items-center justify-center bg-[#1A4B8C] rounded text-white font-bold px-3">
-                UBBIM
-              </div>
+              <img 
+                src={ubbimLogo} 
+                alt="UBBIM Logo" 
+                className="h-12 w-auto"
+              />
             </Link>
             <button
               onClick={() => setIsDrawerOpen(false)}
