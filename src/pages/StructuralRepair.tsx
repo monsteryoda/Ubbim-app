@@ -24,7 +24,7 @@ const StructuralRepair = () => {
     {
       title: "Interior Refurbishment",
       description: "Modernize and refresh interior spaces, from offices to residential units, with custom refurbishment solutions that enhance functionality and aesthetics.",
-      image: "/src/assets/interior-refurbishment.jpeg"
+      image: "/ir2.jpeg"
     },
     {
       title: "Waterproofing and Damp Proofing",
