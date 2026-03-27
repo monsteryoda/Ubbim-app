@@ -19,7 +19,7 @@ const StructuralRepair = () => {
     {
       title: "Structural Repairs",
       description: "Reinforce and restore the structural integrity of buildings, addressing issues such as cracks, settlement, and foundation damage.",
-      image: "/src/assets/structural-repair.png"
+      image: "/sr1.png"
     },
     {
       title: "Interior Refurbishment",
