@@ -56,17 +56,17 @@ const Index = () => {
   ];
 
   const clientLogos = [
-    { name: "CIDB", image: "/src/assets/cidb-logo.png" },
-    { name: "Malaysia Airports", image: "/src/assets/malaysia-airports-logo.png" },
-    { name: "FGV", image: "/src/assets/fgv-logo.png" },
-    { name: "Northport", image: "/src/assets/northport-logo.png" },
-    { name: "MINDEF", image: "/src/assets/mindef-logo.png" },
-    { name: "Cenviro", image: "/src/assets/cenviro-logo.png" },
-    { name: "MOF", image: "/src/assets/mof-logo.png" },
-    { name: "CIDB", image: "/src/assets/cidb-logo.png" },
-    { name: "Malaysia Airports", image: "/src/assets/malaysia-airports-logo.png" },
-    { name: "FGV", image: "/src/assets/fgv-logo.png" },
-    { name: "Northport", image: "/src/assets/northport-logo.png" },
+    { name: "CIDB", image: "/cidb-logo.png" },
+    { name: "Malaysia Airports", image: "/malaysia-airports-logo.png" },
+    { name: "FGV", image: "/fgv-logo.png" },
+    { name: "Northport", image: "/northport-logo.png" },
+    { name: "MINDEF", image: "/mindef-logo.png" },
+    { name: "Cenviro", image: "/cenviro-logo.png" },
+    { name: "MOF", image: "/mof-logo.png" },
+    { name: "CIDB", image: "/cidb-logo.png" },
+    { name: "Malaysia Airports", image: "/malaysia-airports-logo.png" },
+    { name: "FGV", image: "/fgv-logo.png" },
+    { name: "Northport", image: "/northport-logo.png" },
   ];
 
   const officeDetails = {
