@@ -46,9 +46,6 @@ const LogoCarousel: React.FC<LogoCarouselProps> = ({ logos }) => {
                   src={logo.image}
                   alt={logo.name}
                   className="h-[80px] object-contain bg-transparent"
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${logo.name}&background=1A4B8C&color=fff&size=160`;
-                  }}
                 />
               </div>
             </div>
