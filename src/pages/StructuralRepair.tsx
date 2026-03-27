@@ -6,6 +6,7 @@ import { ArrowLeft, Flame, Shield, AlertTriangle, Wrench, CheckCircle, Building2
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
+import ubbimLogo from "@/assets/ubbim-logo.png";
 
 const StructuralRepair = () => {
   useEffect(() => {

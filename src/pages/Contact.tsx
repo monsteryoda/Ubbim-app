@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Instagram, ArrowLeft } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ubbimLogo from "@/assets/ubbim-logo.png";
 
 const Contact = () => {
   useEffect(() => {

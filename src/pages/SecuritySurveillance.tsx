@@ -6,6 +6,7 @@ import { ArrowLeft, Shield, Camera, Lock, Eye, Smartphone, AlertTriangle, Wrench
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
+import ubbimLogo from "@/assets/ubbim-logo.png";
 
 const SecuritySurveillance = () => {
   useEffect(() => {

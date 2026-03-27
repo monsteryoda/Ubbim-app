@@ -6,6 +6,7 @@ import { ArrowLeft, HardHat, TrendingUp, Users, Award, CheckCircle, Building2, C
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
+import ubbimLogo from "@/assets/ubbim-logo.png";
 
 const DesignBuildServices = () => {
   useEffect(() => {

@@ -8,6 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import pointCloudImage from "../assets/construction-model-point-cloud.webp";
 import asBuiltImage from "../assets/as-built-documentation.png";
+import ubbimLogo from "@/assets/ubbim-logo.png";
 
 const ThreeDScanning = () => {
   useEffect(() => {
