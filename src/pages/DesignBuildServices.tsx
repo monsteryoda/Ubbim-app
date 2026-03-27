@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft, HardHat, TrendingUp, Users, Award, CheckCircle, Building2, Clock, Shield, Leaf, Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -14,6 +14,9 @@ const DesignBuildServices = () => {
       document.title = "UBBIM - Integrated Solutions for the Built Environment";
     };
   }, []);
+
+  const [archImageLoaded, setArchImageLoaded] = useState(false);
+  const [archImageError, setArchImageError] = useState(false);
 
   const features = [
     {
@@ -75,17 +78,20 @@ const DesignBuildServices = () => {
     {
       title: "Architectural Design",
       description: "Transform your ideas into detailed architectural plans that reflect your vision, needs, and budget.",
-      image: "/arch-1.png"
+      image: "/arch-1.png",
+      fallbackImage: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80"
     },
     {
       title: "Construction Management",
       description: "Ensure your project stays on track with expert management of timelines, resources, and quality control.",
-      image: "/chooseus.jpg"
+      image: "/chooseus.jpg",
+      fallbackImage: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80"
     },
     {
       title: "General Contracting",
       description: "Rely on our skilled team to handle every aspect of construction, from sourcing materials to managing subcontractors.",
-      image: "/chooseus.jpg"
+      image: "/chooseus.jpg",
+      fallbackImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80"
     }
   ];
 
@@ -143,7 +149,14 @@ const DesignBuildServices = () => {
                     src={service.image} 
                     alt={service.title} 
                     className="w-full h-full object-cover"
+                    onError={() => setArchImageError(true)}
+                    onLoad={() => setArchImageLoaded(true)}
                   />
+                  {!archImageLoaded && !archImageError && (
+                    <div className="absolute inset-0 flex items-center justify-center bg-gray-200">
+                      <p className="text-gray-500 text-sm">Loading...</p>
+                    </div>
+                  )}
                 </div>
                 <div className="p-6 bg-white flex-1 flex flex-col">
                   <h3 className="text-xl font-bold text-[#1A4B8C] mb-3">
