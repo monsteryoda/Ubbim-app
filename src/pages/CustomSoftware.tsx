@@ -6,7 +6,6 @@ import { ArrowLeft, MapPin, Phone, Mail, Code, Database, Shield, TrendingUp, Che
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
-import ubbimLogo from "@/assets/ubbim-logo.png";
 
 const CustomSoftware = () => {
   useEffect(() => {

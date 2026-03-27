@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import { showSuccess } from "@/utils/toast";
-import ubbimLogo from "@/assets/ubbim-logo.png";
 
 const Services = () => {
   useEffect(() => {

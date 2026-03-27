@@ -17,7 +17,6 @@ import northportLogo from "@/assets/northport-logo.png";
 import mindefLogo from "@/assets/mindef-logo.png";
 import cenviroLogo from "@/assets/cenviro-logo.png";
 import mofLogo from "@/assets/mof-logo.png";
-import ubbimLogo from "@/assets/ubbim-logo.png";
 
 const Index = () => {
   const stats = [

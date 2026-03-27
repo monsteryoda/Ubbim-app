@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Building2, Users, Award, TrendingUp, Shield, Leaf, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import ubbimLogo from "@/assets/ubbim-logo.png";
 
 const About = () => {
   const values = [
@@ -56,9 +55,9 @@ const About = () => {
           <div className="flex items-center justify-between h-16">
             <Link to="/" className="flex items-center space-x-2">
               <img 
-                src={ubbimLogo} 
+                src="/ubbim-logo.png" 
                 alt="UBBIM Logo" 
-                className="h-10 w-auto object-contain"
+                className="h-10 w-auto"
               />
             </Link>
             <div className="hidden md:flex items-center space-x-8">

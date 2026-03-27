@@ -47,7 +47,7 @@ const Navbar = () => {
               <img 
                 src={ubbimLogo} 
                 alt="UBBIM Logo" 
-                className="h-[58px] w-auto object-contain"
+                className="h-[58px] w-auto"
               />
             </Link>
 
@@ -138,7 +138,7 @@ const Navbar = () => {
               <img 
                 src={ubbimLogo} 
                 alt="UBBIM Logo" 
-                className="h-12 w-auto object-contain"
+                className="h-12 w-auto"
               />
             </Link>
             <button

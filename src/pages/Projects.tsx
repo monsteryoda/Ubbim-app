@@ -8,7 +8,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import ubbimLogo from "@/assets/ubbim-logo.png";
 
 const Projects = () => {
   useEffect(() => {

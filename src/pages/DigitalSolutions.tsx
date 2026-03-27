@@ -6,7 +6,6 @@ import { ArrowLeft, Building2, TrendingUp, Users, Award, CheckCircle, Cpu, Clock
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
-import ubbimLogo from "@/assets/ubbim-logo.png";
 
 const DigitalSolutions = () => {
   useEffect(() => {

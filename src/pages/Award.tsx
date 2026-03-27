@@ -13,7 +13,6 @@ import AwardsPhotoCollage from "@/components/AwardsPhotoCollage";
 import LookingAheadBanner from "@/components/LookingAheadBanner";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import ubbimLogo from "@/assets/ubbim-logo.png";
 
 interface AwardItem {
   id: string;
