@@ -18,7 +18,7 @@ const AwardHero: React.FC = () => {
     <section className="relative overflow-hidden">
       <div className="absolute inset-0">
         <img 
-          src={awardsImage} 
+          src="/ubbim-awards-hero.png" 
           alt="Awards display" 
           className="w-full h-full object-cover"
         />
