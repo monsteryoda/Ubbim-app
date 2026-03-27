@@ -44,7 +44,7 @@ const Navbar = () => {
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
               <img 
-                src="/ubbim-logo.png" 
+                src="/src/assets/ubbim-logo.png" 
                 alt="UBBIM Logo" 
                 className="h-[58px] w-auto"
               />
@@ -135,7 +135,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between p-4 border-b">
             <Link to="/" className="flex items-center space-x-2">
               <img 
-                src="/ubbim-logo.png" 
+                src="/src/assets/ubbim-logo.png" 
                 alt="UBBIM Logo" 
                 className="h-12 w-auto"
               />
