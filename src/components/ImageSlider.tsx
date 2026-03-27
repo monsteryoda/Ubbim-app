@@ -44,8 +44,8 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ projects }) => {
                 <div className="absolute bottom-0 left-0 right-0 p-4" style={{ height: '58px' }}>
                   <div className="flex items-center">
                     <img 
-                      src="/src/assets/mindef-logo.png" 
-                      alt="MINDEF" 
+                      src="/ubbim-logo.png" 
+                      alt="UBBIM" 
                       className="w-14 h-14 object-contain mr-3"
                     />
                     <div>
