@@ -24,7 +24,7 @@ const FirefightingServices = () => {
     {
       title: "Fire Suppression Systems",
       description: "Implement effective fire suppression systems, including sprinklers, gas suppression, and foam systems, tailored to your facility's needs.",
-      image: "/src/assets/fire-suppression.jpeg"
+      image: "/fs2.webp"
     },
     {
       title: "Fire Extinguishers and Hose Reels",
