@@ -6,9 +6,6 @@ import { ArrowLeft, HardHat, TrendingUp, Users, Award, CheckCircle, Building2, C
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
-import architecturalDesign from "@/assets/architectural-design.png";
-import constructionManagement from "@/assets/construction-management.png";
-import generalContracting from "@/assets/general-contracting.jpeg";
 
 const DesignBuildServices = () => {
   useEffect(() => {
@@ -78,17 +75,17 @@ const DesignBuildServices = () => {
     {
       title: "Architectural Design",
       description: "Transform your ideas into detailed architectural plans that reflect your vision, needs, and budget.",
-      image: architecturalDesign
+      image: "/architectural-design.png"
     },
     {
       title: "Construction Management",
       description: "Ensure your project stays on track with expert management of timelines, resources, and quality control.",
-      image: constructionManagement
+      image: "/construction-management.png"
     },
     {
       title: "General Contracting",
       description: "Rely on our skilled team to handle every aspect of construction, from sourcing materials to managing subcontractors.",
-      image: generalContracting
+      image: "/general-contracting.jpeg"
     }
   ];
 
