@@ -29,7 +29,7 @@ const StructuralRepair = () => {
     {
       title: "Waterproofing and Damp Proofing",
       description: "Protect buildings from water damage with advanced waterproofing and damp proofing techniques that ensure long-lasting durability.",
-      image: "/src/assets/damp-proofing.jpeg"
+      image: "/sr3.jpeg"
     }
   ];
 
