@@ -47,12 +47,6 @@ const About = () => {
     { value: "20+", label: "Years of Excellence" }
   ];
 
-  const Logo = () => (
-    <div className="h-10 w-auto flex items-center justify-center bg-[#1A4B8C] rounded text-white font-bold px-3 text-lg">
-      UBBIM
-    </div>
-  );
-
   return (
     <div className="min-h-screen">
       {/* Navigation Bar */}
@@ -60,7 +54,11 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             <Link to="/" className="flex items-center space-x-2">
-              <Logo />
+              <img 
+                src="/ubbim-logo.png" 
+                alt="UBBIM Logo" 
+                className="h-10 w-auto"
+              />
             </Link>
             <div className="hidden md:flex items-center space-x-8">
               <Link to="/" className="text-white hover:text-[#4ADE80] transition-colors font-medium">
