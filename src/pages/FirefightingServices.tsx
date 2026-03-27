@@ -29,7 +29,7 @@ const FirefightingServices = () => {
     {
       title: "Fire Extinguishers and Hose Reels",
       description: "Supply and maintenance of fire extinguishers and hose reels, ensuring they are always ready for use in an emergency.",
-      image: "/src/assets/fire-extinguisher.jpeg"
+      image: "/fs3.jpeg"
     }
   ];
 
