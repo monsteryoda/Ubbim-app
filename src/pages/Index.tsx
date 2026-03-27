@@ -91,17 +91,17 @@ const Index = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative bg-white text-[#1A4B8C] py-24 lg:py-32 overflow-hidden pt-16">
-        <div className="absolute inset-0 opacity-5">
+      <section className="relative bg-[#1A4B8C] text-white py-24 lg:py-32 overflow-hidden pt-16">
+        <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80')] bg-cover bg-center" />
         </div>
         <div className="container mx-auto px-4 relative">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               Integrated Solutions for the{" "}
-              <span className="text-[#60A5FA]">Built Environment</span> and Beyond
+              <span className="text-[#4ADE80]">Built Environment</span> and Beyond
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
               From construction excellence to cutting-edge digital innovation, UBBIM delivers comprehensive services that shape the future of industries.
             </p>
           </div>
@@ -230,7 +230,7 @@ const Index = () => {
                   </p>
                   <Link
                     to={index === 0 ? "/services" : "/services/digital-solutions"}
-                    className="inline-flex items-center text-[#1A4B8C] font-semibold hover:text-[#60A5FA] transition-colors"
+                    className="inline-flex items-center text-[#1A4B8C] font-semibold hover:text-[#4ADE80] transition-colors"
                   >
                     Learn more <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>
