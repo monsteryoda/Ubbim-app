@@ -29,7 +29,7 @@ const SecuritySurveillance = () => {
     {
       title: "Intrusion Detection Systems",
       description: "Detect unauthorized access and potential threats with intrusion detection systems that alert you in real-time.",
-      image: "/src/assets/alarm-systems.png"
+      image: "/detect-3.png"
     },
     {
       title: "Integrated Security Management",
