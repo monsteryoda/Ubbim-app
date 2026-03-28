@@ -143,7 +143,7 @@ const Projects = () => {
       location: "Selangor, Malaysia",
       year: "2024",
       category: "Technology",
-      image: "/src/assets/digital-twin-facility.png",
+      image: "/d-7.png",
       description: "Development of Building Contractors App (BEENA) for Association of Construction Project Managers",
       completed: false,
     },
