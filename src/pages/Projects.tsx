@@ -59,7 +59,7 @@ const Projects = () => {
       location: "Kuala Lumpur, Malaysia",
       year: "2023",
       category: "Commercial",
-      image: "/src/assets/commercial-tower.png",
+      image: "/ss-5.png",
       description: "Design, Fabrication and Erection of Storage Tank and Process Equipments for Cenviro Recovery and Recycling Plant",
       completed: true,
     },
