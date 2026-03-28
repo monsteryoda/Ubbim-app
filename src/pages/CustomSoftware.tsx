@@ -34,7 +34,7 @@ const CustomSoftware = () => {
     {
       title: "Custom ERP Solutions",
       description: "Develop a bespoke ERP system that integrates all facets of your business, providing seamless operations and real-time data visibility.",
-      image: "/src/assets/erp-solutions.png"
+      image: "/custom-erp.jpg"
     }
   ];
 
