@@ -39,7 +39,7 @@ const defaultPhotos: PhotoItem[] = [
   },
   {
     id: "4",
-    src: "/src/assets/award-ceremony-4.jpeg",
+    src: "/a-4.jpeg",
     alt: "Executive holding award trophy",
     caption: "Platinum Business Awards 2025 - Executive Recognition"
   },
