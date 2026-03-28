@@ -134,7 +134,7 @@ const Projects = () => {
       location: "Penang, Malaysia",
       year: "2023",
       category: "Infrastructure",
-      image: "/src/assets/coastal-protection-system.png",
+      image: "/d-6.png",
       description: "3D Virtual Reality Remodelling of a Storage Warehouse in Melaka",
       completed: true,
     },
