@@ -34,7 +34,7 @@ const SecuritySurveillance = () => {
     {
       title: "Integrated Security Management",
       description: "Centralize your security operations with integrated management systems that control video, access, and alarm systems from a single platform.",
-      image: "/src/assets/integrated-security.jpeg"
+      image: "/integrated-security.jpeg"
     }
   ];
 
@@ -173,7 +173,7 @@ const SecuritySurveillance = () => {
             <div className="relative">
               <div className="aspect-[16/10] overflow-hidden rounded-2xl shadow-2xl">
                 <img 
-                  src="/src/assets/security-surveillance.jpg" 
+                  src="/security-surveillance.jpg" 
                   alt="Why Choose Us" 
                   className="w-full h-full object-cover"
                 />
