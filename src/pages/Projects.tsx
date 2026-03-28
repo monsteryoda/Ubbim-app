@@ -32,7 +32,7 @@ const Projects = () => {
       location: "São Paulo, Brazil",
       year: "2023",
       category: "Transportation",
-      image: "/src/assets/metro-line-expansion.png",
+      image: "/ss-2.png",
       description: "Development of Scheduled Waste Management Centre ('SWMCJ') Infrastructure Package for Cenviro Johor Sdn Bhd.",
       completed: true,
     },
