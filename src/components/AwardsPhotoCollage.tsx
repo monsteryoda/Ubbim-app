@@ -45,7 +45,7 @@ const defaultPhotos: PhotoItem[] = [
   },
   {
     id: "5",
-    src: "/src/assets/award-ceremony-5.jpeg",
+    src: "/a-5.jpeg",
     alt: "UBBIM team with awards at SME Malaysia event",
     caption: "SME Malaysia Platinum Business Awards 2025"
   },
