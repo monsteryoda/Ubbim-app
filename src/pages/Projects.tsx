@@ -23,7 +23,7 @@ const Projects = () => {
       location: "Singapore",
       year: "2023",
       category: "Defense Infrastructure",
-      image: "/src/assets/ministry-defence-project.png",
+      image: "/ss-1.png",
       description: "Site Clearance Earthwork, Road & Drainage and Detention Pond Works for Kualiti Alam Sdn Bhd",
       completed: true,
     },
