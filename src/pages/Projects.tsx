@@ -50,7 +50,7 @@ const Projects = () => {
       location: "Minas Gerais, Brazil",
       year: "2022",
       category: "Infrastructure",
-      image: "/src/assets/highway-modernization.png",
+      image: "/ss-4.png",
       description: "Design and Construction of Depolution System Plant at Tanjong Malim Perak for M/S Special Builder Sdn Bhd",
       completed: true,
     },
