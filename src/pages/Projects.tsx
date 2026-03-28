@@ -89,7 +89,7 @@ const Projects = () => {
       location: "Kuala Lumpur, Malaysia",
       year: "2024",
       category: "Transportation",
-      image: "/src/assets/lrt-extension-blueprint.png",
+      image: "/d-1.png",
       description: "Digital Permit to Work System (e-ptw) for an incineration plant",
       completed: false,
     },
