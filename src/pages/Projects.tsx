@@ -107,7 +107,7 @@ const Projects = () => {
       location: "Perak, Malaysia",
       year: "2022",
       category: "Infrastructure",
-      image: "/src/assets/special-builder-depolution-plant.png",
+      image: "/d-3.png",
       description: "Aerial Analytics Services for an Earthworks Project in Port Dickson",
       completed: true,
     },
