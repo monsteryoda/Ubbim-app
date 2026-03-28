@@ -116,7 +116,7 @@ const Projects = () => {
       location: "Selangor, Malaysia",
       year: "2022",
       category: "Energy",
-      image: "/src/assets/kualiti-alam-incinerator.png",
+      image: "/d-4.png",
       description: "3D Scanning and Facility Management System for Large Mechanical Room",
       completed: true,
     },
