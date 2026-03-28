@@ -19,12 +19,12 @@ const SecuritySurveillance = () => {
     {
       title: "Video Surveillance Systems",
       description: "Install high-definition CCTV cameras with advanced features like motion detection, night vision, and remote monitoring to keep your property secure.",
-      image: "/src/assets/cctv-systems.jpeg"
+      image: "/vsc-1.jpeg"
     },
     {
       title: "Access Control Systems",
       description: "Implement access control systems that restrict entry to authorized personnel only, using key cards, biometrics, or mobile credentials.",
-      image: "/src/assets/access-control.jpeg"
+      image: "/access-2.jpeg"
     },
     {
       title: "Intrusion Detection Systems",
