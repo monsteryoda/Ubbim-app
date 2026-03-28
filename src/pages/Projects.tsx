@@ -125,7 +125,7 @@ const Projects = () => {
       location: "Johor, Malaysia",
       year: "2024",
       category: "Technology",
-      image: "/src/assets/smart-building-automation.png",
+      image: "/d-5.png",
       description: "3D Process Animation Video for Waste to Energy Plant",
       completed: true,
     },
