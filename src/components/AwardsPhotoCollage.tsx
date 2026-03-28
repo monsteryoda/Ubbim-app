@@ -33,7 +33,7 @@ const defaultPhotos: PhotoItem[] = [
   },
   {
     id: "3",
-    src: "/src/assets/award-ceremony-3.jpeg",
+    src: "/a-3.jpeg",
     alt: "Executive receiving award on stage",
     caption: "Platinum Business Awards 2025"
   },
