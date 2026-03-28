@@ -191,7 +191,7 @@ const VRCoordination = () => {
             <div className="relative">
               <div className="aspect-[16/10] overflow-hidden rounded-2xl shadow-2xl">
                 <img 
-                  src="/src/assets/key-benefit.jpg" 
+                  src="/scan.jpg" 
                   alt="VR Coordination" 
                   className="w-full h-full object-cover"
                 />
