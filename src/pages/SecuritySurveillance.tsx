@@ -173,7 +173,7 @@ const SecuritySurveillance = () => {
             <div className="relative">
               <div className="aspect-[16/10] overflow-hidden rounded-2xl shadow-2xl">
                 <img 
-                  src="/security-surveillance.jpg" 
+                  src="/cs-4.jpg" 
                   alt="Why Choose Us" 
                   className="w-full h-full object-cover"
                 />
