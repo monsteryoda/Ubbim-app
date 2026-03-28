@@ -98,7 +98,7 @@ const Projects = () => {
       location: "Johor, Malaysia",
       year: "2023",
       category: "Industrial",
-      image: "/src/assets/cenviro-recovery-plant.png",
+      image: "/d-2.png",
       description: "Project Management System for Shutdown Operation",
       completed: true,
     },
