@@ -68,7 +68,7 @@ const Projects = () => {
       location: "Seremban, Malaysia",
       year: "2024",
       category: "Residential",
-      image: "/src/assets/residential-development.png",
+      image: "/ss-6.png",
       description: "Fabrication & Erection of Structure Steel for the Ampang Line LRT extension project",
       completed: false,
     },
