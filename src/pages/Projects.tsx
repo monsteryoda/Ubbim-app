@@ -77,7 +77,7 @@ const Projects = () => {
       location: "Johor, Malaysia",
       year: "2024",
       category: "Industrial",
-      image: "/src/assets/industrial-warehouse.png",
+      image: "/ss-7.png",
       description: "Construction of PDRM Training Centre in Simpang Pulai, Pahang",
       completed: true,
     },
