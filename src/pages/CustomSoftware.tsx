@@ -24,7 +24,7 @@ const CustomSoftware = () => {
     {
       title: "Digital Permit to Work Systems",
       description: "Simplify the permit process with a digital system that ensures compliance, enhances safety, and reduces administrative burdens.",
-      image: "/src/assets/permit-system.png"
+      image: "/digital-permit.png"
     },
     {
       title: "Facility Management Solutions",
