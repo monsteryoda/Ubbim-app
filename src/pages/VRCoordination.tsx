@@ -29,7 +29,7 @@ const VRCoordination = () => {
     {
       title: "Process Video Animation",
       description: "Illustrate complex plant building processes and workflows with custom animations, making it easier for stakeholders to visualize and understand each step.",
-      image: "/src/assets/process-video.png"
+      image: "/pv.png"
     }
   ];
 
