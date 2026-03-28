@@ -196,7 +196,7 @@ const CustomSoftware = () => {
             <div className="relative">
               <div className="aspect-[16/10] overflow-hidden rounded-2xl shadow-2xl">
                 <img 
-                  src="/src/assets/key-benefits.png" 
+                  src="/key-benefits.png" 
                   alt="Custom Software" 
                   className="w-full h-full object-cover"
                 />
