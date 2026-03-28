@@ -24,7 +24,7 @@ const VRCoordination = () => {
     {
       title: "Augmented Reality (AR) Site Visualization",
       description: "Overlay digital models onto real-world sites using AR, providing a clear understanding of how designs will fit within existing environments.",
-      image: "/src/assets/ar-site.jpg"
+      image: "/ar.jpg"
     },
     {
       title: "Process Video Animation",
