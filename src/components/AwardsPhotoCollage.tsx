@@ -20,7 +20,7 @@ interface AwardsPhotoCollageProps {
 const defaultPhotos: PhotoItem[] = [
   {
     id: "1",
-    src: "/src/assets/award-ceremony-1.jpeg",
+    src: "/a-1.jpeg",
     alt: "UBBIM team receiving SME Environmental Award",
     caption: "SME Environmental, Social, and Governance Adoption Award 2025",
     span: "2x1"
