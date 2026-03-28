@@ -19,7 +19,7 @@ const CustomSoftware = () => {
     {
       title: "Project Management Systems",
       description: "Streamline your project workflows with custom management systems that provide real-time tracking, reporting, and collaboration tools.",
-      image: "/src/assets/project-management.png"
+      image: "/pms.png"
     },
     {
       title: "Digital Permit to Work Systems",
