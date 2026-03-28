@@ -157,7 +157,7 @@ const Index = () => {
                 <div className="text-5xl font-bold mb-2">2</div>
                 <div className="text-lg text-white/90">National Awards</div>
                 <p className="text-white/80 mt-4 text-sm">
-                  Recognized across Malaysia for excellence in construction and digital solutions
+                  Recognized across Malaysia for excellence in ESG and Digital Adoption
                 </p>
               </CardContent>
             </Card>
