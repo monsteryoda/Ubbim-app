@@ -19,7 +19,7 @@ const VRCoordination = () => {
     {
       title: "Virtual Reality (VR) Design Reviews",
       description: "Use VR to visualize and coordinate complex building designs before construction begins, reducing errors and rework.",
-      image: "/src/assets/vr-review.png"
+      image: "/vr.png"
     },
     {
       title: "Augmented Reality (AR) Site Visualization",
