@@ -154,7 +154,7 @@ const Index = () => {
                 <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Award className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-5xl font-bold mb-2">15+</div>
+                <div className="text-5xl font-bold mb-2">2</div>
                 <div className="text-lg text-white/90">National Awards</div>
                 <p className="text-white/80 mt-4 text-sm">
                   Recognized across Malaysia for excellence in construction and digital solutions
