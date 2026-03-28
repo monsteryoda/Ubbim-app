@@ -41,7 +41,7 @@ const Projects = () => {
       location: "Rio de Janeiro, Brazil",
       year: "2022",
       category: "Energy",
-      image: "/src/assets/green-energy-complex.png",
+      image: "/ss-3.png",
       description: "Modularised incinerator project for Kualiti Alam Sdn Bhd",
       completed: true,
     },
