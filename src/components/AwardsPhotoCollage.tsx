@@ -51,7 +51,7 @@ const defaultPhotos: PhotoItem[] = [
   },
   {
     id: "6",
-    src: "/src/assets/award-ceremony-6.jpeg",
+    src: "/a-6.jpeg",
     alt: "UBBIM awards and certificates display",
     caption: "SME Awards Recognition - UBBIM Resources Sdn Bhd"
   }
